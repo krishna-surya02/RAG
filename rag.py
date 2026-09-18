@@ -7,6 +7,7 @@ Retrieval lives in retrieval.py, which evaluate.py and inspect_view.py also
 call, so what is measured is what is served.
 """
 
+import hashlib
 import os
 import re
 import sys
@@ -17,10 +18,16 @@ os.environ.setdefault("TRANSFORMERS_VERBOSITY", "error")
 
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import PromptTemplate
-from langchain_core.runnables import RunnableLambda, RunnablePassthrough
+from langchain_core.runnables import RunnableLambda
 
 import config
+import redact
 import retrieval
+import tracing
+
+# Bump whenever PROMPT's text changes. The trace records this and a hash of the
+# template, so an answer can always be tied to the exact instructions behind it.
+PROMPT_VERSION = "claims-v1"
 
 # The "say so plainly" rule carries most of the weight here. An adjuster asking
 # about one exclusion code is not helped by a fluent paragraph about a
@@ -58,42 +65,86 @@ def strip_think(text):
     return re.sub(r"<think>.*?</think>", "", text, flags=re.DOTALL).strip()
 
 
-def build_chain():
-    fetch_context = RunnableLambda(
-        lambda question: retrieval.format_hits(retrieval.retrieve(question))
-    )
-    return (
-        {"context": fetch_context, "question": RunnablePassthrough()}
-        | PROMPT
-        | config.get_llm()
-        | StrOutputParser()
-        | RunnableLambda(strip_think)
-    )
+PROMPT_SHA256 = hashlib.sha256(PROMPT.template.encode("utf-8")).hexdigest()
+
+
+def answer(question, source="cli", request=None):
+    """Answer one question and append its trace. The path every served answer takes.
+
+    The question is redacted before anything else touches it, so retrieval, the
+    model and the trace all see the same text, and a replay sends the model
+    exactly what it was sent the first time. The LLM is invoked directly rather
+    than through StrOutputParser so the whole message survives: raw content,
+    reasoning, token usage and fingerprint all go into the trace.
+    """
+    clean, found = redact.redact(question)
+    trace_id = tracing.new_trace_id()
+    seed = tracing.seed_for(trace_id)
+    record = {
+        "trace_id": trace_id,
+        "ts": tracing.now_utc(),
+        "source": source,
+        "request": request or {},
+        "app": tracing.app_version(),
+        "input": {"question": clean, "redacted": redact.counts(found)},
+    }
+    latency = {}
+    try:
+        timer = tracing.Timer()
+        k, candidates = config.TOP_K, config.CANDIDATE_K
+        hits = retrieval.retrieve(clean, k=k, candidates=candidates)
+        latency["retrieval"] = timer.ms()
+        record["retrieval"] = tracing.retrieval_block(
+            hits, k, candidates, config.RETRIEVAL_MODE, config.RETRIEVAL_BACKEND,
+            retrieval._cache_key(),
+        )
+
+        rendered = PROMPT.format(context=retrieval.format_hits(hits), question=clean)
+        record["prompt"] = {
+            "version": PROMPT_VERSION,
+            "template_sha256": PROMPT_SHA256,
+            "rendered": rendered,
+        }
+
+        llm = config.get_llm()
+        record["model"] = tracing.model_block(llm, seed)
+        timer = tracing.Timer()
+        message = llm.bind(seed=seed).invoke(rendered)
+        latency["generation"] = timer.ms()
+
+        final = strip_think(message.content)
+        record["output"] = tracing.output_block(message, final)
+        return final
+    except Exception as exc:
+        record["error"] = f"{type(exc).__name__}: {exc}"
+        raise
+    finally:
+        record["latency_ms"] = latency
+        tracing.write_trace(record, pii_values=[value for _, value, _ in found])
 
 
 def answer_with_context(question, k=None):
     """Answer, and hand back the chunks it was answered from.
 
-    The chain above hides its context inside the pipe, which is exactly what
-    makes a bad answer hard to diagnose. This variant returns both, so the
-    inspection view can show whether a wrong answer came from missing context
-    or from misused context.
+    Returns the chunks alongside the answer, so the inspection view can show
+    whether a wrong answer came from missing context or from misused context.
+    Untraced on purpose: it serves the inspection view with an arbitrary k, and
+    debugging runs do not belong in the trace population.
     """
     hits = retrieval.retrieve(question, k=k)
     chain = PROMPT | config.get_llm() | StrOutputParser() | RunnableLambda(strip_think)
-    answer = chain.invoke(
+    text = chain.invoke(
         {"context": retrieval.format_hits(hits), "question": question}
     )
-    return hits, answer
+    return hits, text
 
 
 def main():
     config.preflight()
-    chain = build_chain()
 
     question = " ".join(sys.argv[1:]).strip()
     if question:
-        print(chain.invoke(question))
+        print(answer(question))
         return
 
     print(
@@ -111,7 +162,7 @@ def main():
             return
         if not question:
             continue
-        print(f"\n{chain.invoke(question)}\n")
+        print(f"\n{answer(question)}\n")
 
 
 if __name__ == "__main__":
