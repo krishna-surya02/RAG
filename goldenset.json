@@ -1,0 +1,32 @@
+{
+  "_about": [
+    "Twelve adjuster questions, each tagged with the chunk id that actually answers it.",
+    "Gold ids are derived from the corpus with:  python inspect_view.py --find \"<phrase>\"",
+    "Never let the retriever pick its own ground truth; that makes the measurement circular.",
+    "At least four questions must carry an exact token dense retrieval is bad at:",
+    "an exclusion code, a form number with edition, or an endorsement number.",
+    "The rest are soft semantic questions, so a change can be checked for regressions",
+    "and not just for wins."
+  ],
+  "_schema": {
+    "id": "short handle, q01..q12",
+    "question": "the question in adjuster phrasing",
+    "kind": "exact-token | semantic",
+    "exact_tokens": "identifiers the answer must rest on, e.g. [\"E-17\", \"HO-0304\", \"03-24\"]",
+    "gold_chunk_id": "sha256 chunk id from ingest.chunk_id, via inspect_view.py --find",
+    "gold_locator": {
+      "source_file": "the PDF filename",
+      "page": "0-based page index",
+      "phrase": "a distinctive literal phrase inside the gold chunk"
+    },
+    "authored": "true if written for this evaluation rather than harvested from real traffic",
+    "notes": "why this chunk is the correct answer, and what the near-miss decoys are"
+  },
+  "_gold_locator_note": [
+    "gold_chunk_id is a hash of the chunk text, so changing CHUNK_SIZE or CHUNK_OVERLAP",
+    "invalidates every id here. gold_locator is the fallback: the runner resolves by id,",
+    "falls back to the phrase, and reports a mismatch instead of scoring a stale id as a",
+    "retrieval miss, which would be a lie about the retriever."
+  ],
+  "questions": []
+}

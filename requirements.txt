@@ -3,9 +3,11 @@ langchain-core
 langchain-community
 langchain-text-splitters
 langchain-postgres>=0.0.15
-langchain-ollama
+langchain-groq
+sentence-transformers
 pypdf
 psycopg[binary]
 pgvector
 SQLAlchemy
 python-dotenv
+numpy

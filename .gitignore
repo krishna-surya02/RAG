@@ -1,4 +1,6 @@
 .env
+.index_cache/
+eval_out/
 __pycache__/
 *.py[cod]
 .DS_Store
