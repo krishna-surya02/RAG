@@ -11,8 +11,8 @@ import os
 import sys
 from pathlib import Path
 
-# transformers is installed without a torch/TF backend and warns about it on
-# import. We never use it — silence the noise before langchain pulls it in.
+# sentence-transformers logs model-loading chatter on every run. Quiet it before
+# the import; the first-run download bar comes from huggingface_hub and still shows.
 os.environ.setdefault("TRANSFORMERS_VERBOSITY", "error")
 
 from langchain_community.document_loaders import PyPDFLoader
@@ -71,6 +71,13 @@ def main():
     for pdf_path in pdf_paths:
         page_count, chunks = load_and_split(pdf_path, splitter)
         ids = [chunk_id(chunk, i) for i, chunk in enumerate(chunks)]
+
+        # Also stamp the id into metadata. It is already the row key, but that
+        # is only reachable as Document.id at query time — the inspection view
+        # and the golden set want it next to source_file and page. Safe to do
+        # after hashing: chunk_id reads only source_file, page, index and text.
+        for chunk, cid in zip(chunks, ids):
+            chunk.metadata["chunk_id"] = cid
 
         for start in range(0, len(chunks), BATCH_SIZE):
             batch = chunks[start : start + BATCH_SIZE]
