@@ -269,3 +269,38 @@ idea of "correct". Each of those differs from what produced the failures in §3.
 
 This traffic is synthetic (§0), so the rates describe this mix, not production. None of the four points
 depends on the rates.
+
+## 6. Turning §3 into a judge, a golden set, and a paced run
+
+What existed after §5 was a rubric applied once, by hand, to 20 traces. This section turns that into code:
+[taxonomy.md](taxonomy.md) names the five §3 patterns formally; [judge_v1.txt](judge_v1.txt) is an LLM judge
+built against the §5 point-3 finding specifically — traces #1, #11 and #17 quote retrieved text *accurately*,
+so a judge that only checks groundedness-in-context would pass all three. `judge_v1.txt` is handed a
+`gold_answer` (the correct call, form/edition and code) per question and grades against that, not against
+whatever the retriever happened to fetch; [goldenset.json](goldenset.json) now carries a `gold_answer` block on
+all 12 questions for exactly this reason, on top of the `gold_chunk_id` `evaluate.py` already used.
+[regression_set.json](regression_set.json) freezes traces #3 and #17 — both hand-graded "wrong call" — as the
+judge's own self-check: run `judge_v1.txt` against it before trusting a verdict on anything else.
+[evaluate_answers.py](evaluate_answers.py) does the generation and grading, in that order and never re-mixed:
+`--generate` calls `rag.answer()` exactly once per goldenset question and freezes the result, `--judge` grades
+a frozen file and can be re-run with a later judge prompt without ever calling the live model again. §1 already
+showed why that separation matters — replaying trace `ee140943812b` reproduced the prompt and retrieval
+byte-for-byte but not the answer (similarity 0.226), so labelling has to happen against one saved text, not
+against whatever the model says this time.
+
+Populating `goldenset.json` alone fixed `evaluate.py`, which errored on an empty file: `hit@3` is now 8/12
+(66.7%), and the four misses — q02, q07, q10, q11 — are exactly the sibling-edition and cross-form near-duplicate
+traps the golden set was built around, with `recall@25` at 12/12 (every gold chunk was fetched somewhere in the
+candidate pool, so every miss here is a ranking problem, not a recall-ceiling one — the same split §3 draws for
+the sampled traces).
+
+**Run schedule.** Groq's free tier gives roughly 200k tokens/day on the one model reachable from this account
+(`openai/gpt-oss-120b` — `config.py` notes `llama-3.3-70b-versatile` 404s here), and generation plus two full
+judge passes over the answer set is estimated in the 150–280k range depending on how much a judge call's own
+reasoning tokens run (§0's generation figures — 2,077 and 2,297 tokens for traces #3 and #17 — are the only real
+per-call numbers on hand so far). That doesn't reliably fit one day on one model, so the run is paced: check
+whether a second model is actually reachable on this account first (`Groq(...).models.list()`, free), dry-run
+the judge on 3 items to measure real per-call cost before spending the rest of a day's budget on it, then
+generate the 12 new answers plus judge v1's full pass on day one, and judge v2's full pass — after reviewing
+v1's disagreements against this section's own hand grades — on day two. Not run yet as of this writing; this
+section will be updated with the actual numbers once it is.
