@@ -86,6 +86,11 @@ CANDIDATE_K = _int_env("CANDIDATE_K", 25)
 RETRIEVAL_BACKEND = os.getenv("RETRIEVAL_BACKEND", "local")
 INDEX_CACHE_DIR = os.getenv("INDEX_CACHE_DIR", ".index_cache")
 
+# --- Traces ----------------------------------------------------------------
+# Every answer rag.py serves appends one redacted JSON line here. Point it
+# somewhere else for experiments, so they never mix with real traffic.
+TRACE_PATH = os.getenv("TRACE_PATH", "traces/claims_traces.jsonl")
+
 
 def preflight(require_chat_model=True):
     """Fail with a readable message instead of a raw traceback mid-query."""

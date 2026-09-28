@@ -6,7 +6,13 @@
     "At least four questions must carry an exact token dense retrieval is bad at:",
     "an exclusion code, a form number with edition, or an endorsement number.",
     "The rest are soft semantic questions, so a change can be checked for regressions",
-    "and not just for wins."
+    "and not just for wins.",
+    "Eight of the twelve are exact-token, deliberately built around this corpus's own traps:",
+    "three near-identical editions of HO-0304 whose exclusion chunks never name their own",
+    "edition (only the [file, page] label does), and two endorsements that each attach to",
+    "only some of those editions. q01/q09, q02, q07 and q11 share text word-for-word with a",
+    "sibling edition or sibling form; a retriever that lands on the sibling chunk still looks",
+    "plausible, which is exactly what makes it worth testing."
   ],
   "_schema": {
     "id": "short handle, q01..q12",
@@ -20,7 +26,22 @@
       "phrase": "a distinctive literal phrase inside the gold chunk"
     },
     "authored": "true if written for this evaluation rather than harvested from real traffic",
-    "notes": "why this chunk is the correct answer, and what the near-miss decoys are"
+    "notes": "why this chunk is the correct answer, and what the near-miss decoys are",
+    "gold_answer": {
+      "_purpose": [
+        "Added for the answer-quality judge (judge_v1.txt), not for evaluate.py's retrieval",
+        "metric. notes.md §5 point 3: a judge that only checks groundedness-in-context would",
+        "pass a confident, accurately-quoted answer that rests on the wrong edition or the wrong",
+        "form, because faithfulness to a chunk says nothing about whether that chunk was the",
+        "right one. The judge is handed these facts and grades against them, not against",
+        "whatever got retrieved."
+      ],
+      "call": "the correct outcome in adjuster terms: pay/deny/covered/not-covered, with any limit or sublimit that bounds it",
+      "correct_policy_form_edition": "the exact form and edition actually in force for this question",
+      "correct_exclusion_or_code": "the code the answer should rest on, or null if none applies",
+      "must_not_cite": "sibling identifiers that would be wrong if cited as the basis (list, may be empty)",
+      "rationale": "one or two sentences a person can check the PDF text against"
+    }
   },
   "_gold_locator_note": [
     "gold_chunk_id is a hash of the chunk text, so changing CHUNK_SIZE or CHUNK_OVERLAP",
@@ -28,5 +49,258 @@
     "falls back to the phrase, and reports a mismatch instead of scoring a stale id as a",
     "retrieval miss, which would be a lie about the retriever."
   ],
-  "questions": []
+  "questions": [
+    {
+      "id": "q01",
+      "question": "The insured is on HO-0304, Edition 03-24, with no endorsements attached. Their water heater's tank suddenly ruptured in the garage, water damage estimated at $8,200. Do we pay or deny?",
+      "kind": "exact-token",
+      "exact_tokens": ["HO-0304", "03-24"],
+      "gold_chunk_id": "a5dc28c1d4b7ba257e5511f5f830546262f74086d1a00739c5cf70c05010ad86",
+      "gold_locator": {
+        "source_file": "HO-0304_ed-03-24.pdf",
+        "page": 1,
+        "phrase": "may be purchased by attachment of Endorsement HO-2405, Water Backup and Sump Discharge Enhanced Limits"
+      },
+      "authored": true,
+      "notes": "03-24's E-17 is 'Revised': sudden and accidental discharge from a household appliance is carved back into coverage up to a $10,000 sublimit, even with no endorsement attached. $8,200 is under that sublimit. The near-miss decoy is 01-22/02-23's E-17, which has no such carve-back and would wrongly read as a flat exclusion; citing either of those editions here is the sibling_edition failure.",
+      "gold_answer": {
+        "call": "pay, up to the $10,000 sudden-discharge sublimit (so $8,200 in full, less the $1,000 deductible)",
+        "correct_policy_form_edition": "HO-0304, Edition 03-24",
+        "correct_exclusion_or_code": "E-17 (Revised)",
+        "must_not_cite": ["E-17, Edition 01-22", "E-17, Edition 02-23"],
+        "rationale": "Edition 03-24's E-17 explicitly excepts 'sudden and accidental discharge ... from within a plumbing, heating, air conditioning, automatic fire protective sprinkler system, or household appliance' from the water-backup exclusion, up to $10,000 per occurrence, 'even without attachment of an endorsement.' A water heater is a household appliance and a tank rupture is a sudden discharge."
+      }
+    },
+    {
+      "id": "q02",
+      "question": "HO-0304, Edition 01-22, no endorsements on file. The sump pump failed mechanically and sewage backed up into the basement. Is this covered, and if not, which exclusion applies?",
+      "kind": "exact-token",
+      "exact_tokens": ["HO-0304", "01-22"],
+      "gold_chunk_id": "07308f759da4e6632d752d0fa60cbcf5763ec2e29b50f8943f7decd18207d4b5",
+      "gold_locator": {
+        "source_file": "HO-0304_ed-01-22.pdf",
+        "page": 1,
+        "phrase": "This exclusion applies even if the backup or overflow results from heavy rainfall, a blocked municipal sewer line, or mechanical failure of the sump pump"
+      },
+      "authored": true,
+      "notes": "01-22's own E-17 excludes sump/sewer backup outright, buyable back only by HO-2306, which isn't attached. The call (deny) happens to come out the same from 03-24's E-17 too, since 03-24's carve-back explicitly does not cover 'backup through sewers or drains' either — so this question tests whether the answer cites the right edition (01-22) rather than whether it reaches the right yes/no, the same split notes.md draws between 'wrong call' and 'right call, resting on the wrong edition' (trace 11).",
+      "gold_answer": {
+        "call": "deny, no coverage without an endorsement",
+        "correct_policy_form_edition": "HO-0304, Edition 01-22",
+        "correct_exclusion_or_code": "E-17",
+        "must_not_cite": ["E-17, Edition 03-24 (Revised)", "E-17, Edition 02-23"],
+        "rationale": "E-17 in Edition 01-22 excludes sump/sewer backup 'regardless of the cause,' buyable back only by Endorsement HO-2306. None is on file, so the loss is excluded. The provision must be cited as the 01-22 text, not a sibling edition's, even though the deny call itself would survive citing 03-24's revised E-17 too."
+      }
+    },
+    {
+      "id": "q03",
+      "question": "The insured has HO-0304 Edition 03-24 with Endorsement HO-2306 attached at the Enhanced Limit. Sewer backup from outside the plumbing caused $10,000 in damage. Does the endorsement cover this?",
+      "kind": "exact-token",
+      "exact_tokens": ["HO-0304", "03-24", "HO-2306"],
+      "gold_chunk_id": "e7c4734eb330de5d26e7d8e0dd67b6fbd78522a650f4310ff8662f554ea80709",
+      "gold_locator": {
+        "source_file": "Endorsement_HO-2306.pdf",
+        "page": 0,
+        "phrase": "This endorsement applies only while attached to Form HO-0304, Edition 01-22 or Edition 02-23"
+      },
+      "authored": true,
+      "notes": "The scenario is impossible as stated: HO-2306's own CONDITIONS line says it attaches only to Edition 01-22 or 02-23 and is 'superseded by Endorsement HO-2405' on 03-24 policies. The right answer flags the mis-stated endorsement instead of silently grading the coverage question — this is the unflagged_endorsement_mismatch trap (traces 8, 12, 17), deliberately built rather than sampled.",
+      "gold_answer": {
+        "call": "the premise is wrong — HO-2306 cannot be attached to a 03-24 policy at all; HO-2405 is the endorsement that exists for 03-24, and it does cover sewer/drain backup from outside the plumbing system",
+        "correct_policy_form_edition": "HO-0304, Edition 03-24",
+        "correct_exclusion_or_code": null,
+        "must_not_cite": ["HO-2306 as if it validly attaches to Edition 03-24"],
+        "rationale": "HO-2306's CONDITIONS: 'applies only while attached to Form HO-0304, Edition 01-22 or Edition 02-23 ... superseded by Endorsement HO-2405 on policies written on Edition 03-24.' Answering the coverage question as asked, without flagging that mismatch, is the failure mode."
+      }
+    },
+    {
+      "id": "q04",
+      "question": "HO-0304, Edition 02-23. A heavy snowfall accumulated on the roof and it collapsed, damaging the ceiling below. Is the collapse covered?",
+      "kind": "exact-token",
+      "exact_tokens": ["HO-0304", "02-23"],
+      "gold_chunk_id": "b96f1a724a879596ac61d785cac6684e9090dfd82699a24306475441f4e82e18",
+      "gold_locator": {
+        "source_file": "HO-0304_ed-02-23.pdf",
+        "page": 1,
+        "phrase": "which applies only to collapse caused by decay, insect or vermin damage, defective materials in construction, or the weight of ice, snow, sleet, or rain that collects on a roof"
+      },
+      "authored": true,
+      "notes": "E-20's Additional Coverage exception for weight of snow/ice/sleet/rain is edition-specific: 01-22's E-20 exception list has no such clause at all (only decay/insect/defective materials), and 03-24's adds 'or people' on top of 02-23's wording. Citing 01-22's E-20 here would wrongly deny a covered loss; citing 03-24's would still reach pay but on the wrong edition's text.",
+      "gold_answer": {
+        "call": "pay — collapse from the weight of snow is one of the named exceptions to E-20",
+        "correct_policy_form_edition": "HO-0304, Edition 02-23",
+        "correct_exclusion_or_code": "E-20 (Additional Coverage — Collapse exception)",
+        "must_not_cite": ["E-20, Edition 01-22"],
+        "rationale": "02-23's E-20 excludes collapse generally 'except as specifically provided under the Additional Coverage — Collapse provision, which applies only to collapse caused by decay, insect or vermin damage, defective materials in construction, or the weight of ice, snow, sleet, or rain that collects on a roof.' 01-22 lacks this weather clause entirely."
+      }
+    },
+    {
+      "id": "q05",
+      "question": "HO-0304, Edition 02-23, no endorsements. Hidden mold was found behind a wall, caused by a covered plumbing leak discovered 45 days ago; remediation hasn't started yet. Is the mold damage covered?",
+      "kind": "exact-token",
+      "exact_tokens": ["HO-0304", "02-23"],
+      "gold_chunk_id": "71d0dc4579b90bc97b7f3a043ccf74822ef927895ab2f1171922cee5a0ee280e",
+      "gold_locator": {
+        "source_file": "HO-0304_ed-02-23.pdf",
+        "page": 1,
+        "phrase": "coverage is limited to $10,000 and requires remediation to begin within 30 days of discovery. E-11 Wear and Tear"
+      },
+      "authored": true,
+      "notes": "02-23's E-10 adds a 30-day-to-remediate condition onto the $10,000 mold sublimit that neither 01-22 nor 03-24 has. 45 days have passed with no remediation, so the condition is unmet. The near-miss decoy is 01-22/03-24's E-10, which is otherwise word-for-word the same and would wrongly suggest coverage survives regardless of when remediation starts.",
+      "gold_answer": {
+        "call": "deny — the sublimit's own 30-day-to-remediate condition was missed",
+        "correct_policy_form_edition": "HO-0304, Edition 02-23",
+        "correct_exclusion_or_code": "E-10",
+        "must_not_cite": ["E-10, Edition 01-22", "E-10, Edition 03-24"],
+        "rationale": "02-23's E-10: mold hidden in walls/ceilings from a covered plumbing leak is covered 'up to $10,000 and requires remediation to begin within 30 days of discovery.' At 45 days with no remediation started, the condition fails and the exclusion applies in full."
+      }
+    },
+    {
+      "id": "q06",
+      "question": "The Whitfields' policy is a named-peril broad form, not the special form — a tree limb fell during high winds and the roof caved in, letting rain damage the ceiling below. Is this covered, and does the collapse exclusion get in the way?",
+      "kind": "semantic",
+      "exact_tokens": [],
+      "gold_chunk_id": "014cd9cf2439cb67e6ec63e82b5a8d172ef48fb927456a1ed6182ceaa4774e77",
+      "gold_locator": {
+        "source_file": "HO-0500_ed-01-23.pdf",
+        "page": 0,
+        "phrase": "This is a named-peril form, not an open-perils form."
+      },
+      "authored": true,
+      "notes": "No code or form number is stated — 'named-peril broad form' has to map onto HO-0500 (titled HOMEOWNERS BROAD FORM) rather than HO-0304 (HOMEOWNERS SPECIAL FORM), which is what makes this semantic rather than exact-token. Windstorm is a named peril in Section II, and F-11's Collapse exclusion excepts collapse 'caused by a named peril in Section II,' so the two provisions have to be read together.",
+      "gold_answer": {
+        "call": "pay, less the $2,500 deductible",
+        "correct_policy_form_edition": "HO-0500, Edition 01-23",
+        "correct_exclusion_or_code": null,
+        "must_not_cite": ["F-11 as a bar to coverage on its own, without its named-peril exception"],
+        "rationale": "'Windstorm or hail' is a named peril under Section II. F-11 Collapse excludes collapse 'except as caused by a named peril in Section II,' so a windstorm-caused collapse is not barred by F-11, and the resulting water damage from the opening is part of the same covered occurrence."
+      }
+    },
+    {
+      "id": "q07",
+      "question": "The insured's policy is HO-0304, Edition 01-22, with Endorsement HO-2306 attached at the Enhanced Limit. Prolonged heavy humidity over several months has caused visible mold on the bathroom ceiling, unrelated to any single plumbing leak. Is this covered, and what's the limit?",
+      "kind": "exact-token",
+      "exact_tokens": ["HO-0304", "01-22", "HO-2306"],
+      "gold_chunk_id": "5b377c547c028d3160cb5669787109174580cb5bc490922a2b966793d4ac25b0",
+      "gold_locator": {
+        "source_file": "HO-0304_ed-01-22.pdf",
+        "page": 1,
+        "phrase": "E-12 Mechanical Breakdown. We do not cover loss caused by mechanical breakdown of any appliance, fixture, or piece of equipment. E-13 Smog"
+      },
+      "authored": true,
+      "notes": "notes.md §3 names this explicitly: 'E-4 and E-10 are word-for-word the same in 01-22 and 03-24.' A retriever or a model can cite 03-24's identical E-10 text here and be textually correct while attributing it to the wrong policy — the canonical sibling_edition case, distinct from getting the call itself wrong. HO-2306 is also a decoy: it only buys back E-17 (water backup), never E-10 (mold), so it is irrelevant to this loss regardless of edition.",
+      "gold_answer": {
+        "call": "deny, no coverage and no limit — humidity-driven mold with no discrete covered plumbing leak doesn't meet E-10's exception",
+        "correct_policy_form_edition": "HO-0304, Edition 01-22",
+        "correct_exclusion_or_code": "E-10",
+        "must_not_cite": ["E-10, Edition 03-24 (identical wording, wrong edition)", "HO-2306 as relevant to a mold claim"],
+        "rationale": "E-10 excludes mold except when 'hidden within the walls or ceilings and results from a plumbing leak that is itself a covered loss.' Mold from prolonged humidity, with no discrete covered leak, doesn't meet that exception, so it's excluded outright — and HO-2306 only buys back E-17, not E-10."
+      }
+    },
+    {
+      "id": "q08",
+      "question": "HO-0304, Edition 03-24, with Endorsement HO-2405 attached and the Enhanced Limit set to $25,000 in the Declarations. A dishwasher's water supply line suddenly burst, causing $19,000 in damage, no sewer or drain backup involved. How much would we pay for the water damage, before the deductible?",
+      "kind": "exact-token",
+      "exact_tokens": ["HO-0304", "03-24", "HO-2405"],
+      "gold_chunk_id": "4396357190ccbe15af492e0cb0620814ca0be214c8b07398ecf24cb3a6b82c2b",
+      "gold_locator": {
+        "source_file": "Endorsement_HO-2405.pdf",
+        "page": 0,
+        "phrase": "Increases the sudden-and-accidental-discharge sublimit already provided by Edition 03-24's E-17 exclusion from $10,000 to the Enhanced Limit"
+      },
+      "authored": true,
+      "notes": "Tests exact arithmetic against the endorsement text rather than the base policy's default $10,000 sublimit, which is the near-miss decoy a retriever fixated on 'E-17' alone might surface instead of the endorsement that actually governs this policy.",
+      "gold_answer": {
+        "call": "pay $19,000 in full (under the $25,000 Enhanced Limit), before the $1,000 deductible",
+        "correct_policy_form_edition": "HO-0304, Edition 03-24",
+        "correct_exclusion_or_code": "E-17 (Revised), enhanced by Endorsement HO-2405",
+        "must_not_cite": ["the base $10,000 sublimit, as if HO-2405 were not attached"],
+        "rationale": "HO-2405 item 1: 'Increases the sudden-and-accidental-discharge sublimit already provided by Edition 03-24's E-17 exclusion from $10,000 to the Enhanced Limit shown in the Declarations ($25,000 or $50,000).' $19,000 is under the stated $25,000 Enhanced Limit."
+      }
+    },
+    {
+      "id": "q09",
+      "question": "Policy is HO-0304, the newest edition, no endorsements on file. The homeowner's water heater tank suddenly split open in the utility closet, spilling roughly $6,000 of water damage. What exclusion code would I cite to deny this claim?",
+      "kind": "semantic",
+      "exact_tokens": ["HO-0304"],
+      "gold_chunk_id": "a5dc28c1d4b7ba257e5511f5f830546262f74086d1a00739c5cf70c05010ad86",
+      "gold_locator": {
+        "source_file": "HO-0304_ed-03-24.pdf",
+        "page": 1,
+        "phrase": "may be purchased by attachment of Endorsement HO-2405, Water Backup and Sump Discharge Enhanced Limits"
+      },
+      "authored": true,
+      "notes": "The leading_question_accepted trap, same shape as regression trace #3 (e5a9d62978c7) but reworded so it isn't a byte-for-byte repeat of the frozen regression case. 'The newest edition' has to resolve to 03-24 semantically, not by a literal edition token, which is why this is marked semantic rather than exact-token despite the underlying evidence chunk being the same as q01.",
+      "gold_answer": {
+        "call": "pay, up to $10,000 (so $6,000 in full, less the deductible) — not a denial at all",
+        "correct_policy_form_edition": "HO-0304, Edition 03-24",
+        "correct_exclusion_or_code": null,
+        "must_not_cite": ["any exclusion code, as if a denial were warranted"],
+        "rationale": "Same as q01: 03-24's revised E-17 explicitly covers sudden/accidental discharge from a household appliance up to $10,000, with no endorsement required. The question's premise (that there's something to deny) is false, and the correct answer has to reject it rather than supply a code."
+      }
+    },
+    {
+      "id": "q10",
+      "question": "The insured's named-peril broad-form policy had its sump pump fail electrically during heavy rain, and water backed up into the basement — no plumbing discharge was involved. Is this covered?",
+      "kind": "semantic",
+      "exact_tokens": [],
+      "gold_chunk_id": "9c37bc7c1c5ed43095f06260073f477af3477fc3244b209e11e24c049a7b0e06",
+      "gold_locator": {
+        "source_file": "HO-0500_ed-01-23.pdf",
+        "page": 0,
+        "phrase": "unless the peril listed in Section II — accidental discharge from within a plumbing system — applies"
+      },
+      "authored": true,
+      "notes": "HO-0500's F-3 and HO-0304's E-17 use near-identical phrasing ('backs up through sewers or drains ... discharged from a sump'), which is exactly the kind of cross-form near-duplicate that dense retrieval confuses; the near-miss decoy is any HO-0304 E-17 chunk, none of which is the form actually in force here.",
+      "gold_answer": {
+        "call": "deny — sump backup with no plumbing-system discharge doesn't meet F-3's own exception",
+        "correct_policy_form_edition": "HO-0500, Edition 01-23",
+        "correct_exclusion_or_code": "F-3",
+        "must_not_cite": ["HO-0304's E-17 (similar wording, wrong form)"],
+        "rationale": "F-3 excludes backup/overflow from a sump 'unless the peril listed in Section II — accidental discharge from within a plumbing system — applies.' An electrically failed sump pump causing backup is not a discharge from within the plumbing system, so the exception doesn't apply and F-3 excludes the loss."
+      }
+    },
+    {
+      "id": "q11",
+      "question": "Insured is on HO-0500 Edition 01-23, with Endorsement HO-2306 attached at the Enhanced Limit. Surface water from a heavy storm ran down the driveway and in under the garage door. Which exclusion applies here, if any, and does the endorsement change anything?",
+      "kind": "exact-token",
+      "exact_tokens": ["HO-0500", "01-23", "HO-2306"],
+      "gold_chunk_id": "9c37bc7c1c5ed43095f06260073f477af3477fc3244b209e11e24c049a7b0e06",
+      "gold_locator": {
+        "source_file": "HO-0500_ed-01-23.pdf",
+        "page": 0,
+        "phrase": "F-1 Flood. We do not cover loss caused by flood, surface water, waves, tidal water, or overflow of a body of water, whether driven by wind or not."
+      },
+      "authored": true,
+      "notes": "The corrected pair to regression trace #17 (49b3b6408320), which answered this exact scenario with HO-0304's E-3 instead of HO-0500's own F-1, and treated HO-2306 as though it could attach to an HO-0500 policy. Near-miss decoys: HO-0304's E-3 (same substance, wrong form's code) and HO-2306 itself (attaches only to HO-0304 01-22/02-23, never to HO-0500, and even where it does attach its own text says flood/surface water 'continues to apply in full').",
+      "gold_answer": {
+        "call": "deny — excluded regardless of the endorsement",
+        "correct_policy_form_edition": "HO-0500, Edition 01-23",
+        "correct_exclusion_or_code": "F-1",
+        "must_not_cite": ["E-3 (HO-0304's parallel exclusion, wrong form)", "HO-2306 as attachable to HO-0500"],
+        "rationale": "HO-0500's own F-1 excludes flood and surface water outright, with no carve-back. HO-2306 cannot attach to HO-0500 at all (it attaches only to HO-0304, Edition 01-22 or 02-23), and even where it does attach it does not cover flood/surface water either."
+      }
+    },
+    {
+      "id": "q12",
+      "question": "What documentation needs to go with the hospitalization-expenses line on the health insurance claim form?",
+      "kind": "semantic",
+      "exact_tokens": [],
+      "gold_chunk_id": "62ada1848ac29c272c3cd0bc0458c74ad62b773be485f9b0db827881e9acd00b",
+      "gold_locator": {
+        "source_file": "Claim_Form.pdf",
+        "page": 0,
+        "phrase": "Hospitalization Expenses:  Rs.         Claim Form Duly signed"
+      },
+      "authored": true,
+      "notes": "A true-negative control: an entirely different document family (a health claim form, not a homeowners exclusion) with no sibling edition to confuse. notes.md §4 (P4) predicts health-form questions should be answered correctly precisely because there's no edition trap here — this question checks that the judge doesn't over-flag on a genuinely easy case.",
+      "gold_answer": {
+        "call": "Claim Form duly signed, and a copy of the claim intimation if any",
+        "correct_policy_form_edition": null,
+        "correct_exclusion_or_code": null,
+        "must_not_cite": [],
+        "rationale": "The form's hospitalization-expenses row lists required attachments directly: 'Claim Form Duly signed' and 'Copy of the claim intimation, if any.'"
+      }
+    }
+  ]
 }

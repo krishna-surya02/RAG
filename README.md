@@ -156,13 +156,37 @@ spend the budget reasoning before emitting anything, so a small cap yields an
 empty answer rather than a truncated one. `<think>` blocks are stripped
 automatically.
 
+## Traces
+
+Every answer `rag.py` serves appends one JSON line to `traces/claims_traces.jsonl`:
+the redacted question, the prompt version and the exact prompt sent, every
+retrieved chunk id with its score, the model and every sampling parameter
+including a per-trace seed, and the raw output with its reasoning and token
+usage. Claimant names and claim numbers are removed before retrieval, the model
+or the trace sees the question, and the trace writer checks again before it
+writes.
+
+```bash
+python replay.py --seed 918                      # replay one random trace from the line alone
+python sample_traces.py --seed 20260918 --n 20   # seeded random sample
+python sample_traces.py --trace-id 3f2a --show   # read one
+```
+
+Groq does not honour `seed` across backends, so a replay reproduces the prompt
+and the retrieval exactly, but reproduces the answer only approximately.
+
 ## Files
 
 - `config.py` — all settings and the store/LLM factories; every script reads from here
 - `embeddings.py` — local sentence-transformers embedder, wrapped for LangChain
 - `ingest.py` — PDFs → chunks → embeddings → pgvector (idempotent)
 - `retrieval.py` — the one place ranking happens; shared by the app and the evaluation
-- `rag.py` — prompt + LLM chain, one-shot or interactive
+- `rag.py` — `answer()`: redact, retrieve, prompt, generate, trace; one-shot or interactive
+- `redact.py` — strips claimant names and claim numbers at ingress; `--selftest`
+- `tracing.py` — one redacted JSON line per answer in `traces/claims_traces.jsonl`
+- `replay.py` — rebuilds one trace's prompt, retrieval and answer from the trace line alone
+- `sample_traces.py` — seeded random sample of trace ids, plus a reading view (`--show`)
+- `traffic.py` — seeded synthetic adjuster traffic through `rag.answer`, and a PII leak check
 - `inspect_view.py` — what was retrieved, what it carries, and where the gold chunk ranked
 - `evaluate.py` — hit-rate@3 and p50 latency over the golden set, plus before/after compare
 - `goldenset.json` — evaluation questions, each tagged with its known-correct chunk id
