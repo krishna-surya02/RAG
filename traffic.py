@@ -4,6 +4,12 @@
     python traffic.py --seed 11 --n 1000 --token-budget 180000
     python traffic.py --seed 11 --check-leaks                  # grep the trace file for PII
 
+    # --kind notes plays adjuster-notes traffic through summarize() instead of
+    # questions through rag.answer() — the claim-summary feature's own traffic:
+    python traffic.py --seed 11 --kind notes --preview 5
+    python traffic.py --seed 11 --kind notes --n 40 --token-budget 60000 \\
+        --traces traces/summary_traces.jsonl
+
 There is no production traffic to analyse, so this stands in for a week of it.
 It is not a test set: nothing here knows the right answer, and it was written
 before any trace existed, so the mix could not be tuned toward failures that had
@@ -219,10 +225,135 @@ def generate(seed, n):
         yield seq, body, pii
 
 
+# --- Adjuster notes (claim-summary feature) -----------------------------------
+# Same vocabulary as the Q&A generator above, restructured as first-notice-of-
+# loss intake notes for summarize.py rather than a question for rag.py: no
+# ASKS suffix, and a date of loss added (the Q&A narratives above never state
+# one — summarize.py's Date of Loss field needs something to restate).
+
+_MONTHS = [
+    "January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December",
+]
+
+
+def _date_of_loss(rng, year=2026):
+    return f"{rng.choice(_MONTHS)} {rng.randrange(1, 28)}, {year}"
+
+
+def generate_notes(seed, n):
+    """Yield n (seq, notes, pii) triples, deterministically for a seed. Same
+    discipline as generate() above: one rng, drawn in order, so a longer run
+    is an extension of a shorter one.
+
+    Every note carries a claim number and a name (unlike generate()'s 70%),
+    because the claim-summary feature always needs one to echo back."""
+    import random
+
+    rng = random.Random(seed)
+    for seq in range(n):
+        form, edition, phrasings = rng.choice(POLICIES)
+        policy = rng.choice(phrasings)
+        _, narratives = rng.choice(PERILS)
+        narrative = rng.choice(narratives).format(days=rng.choice([30, 45, 75, 90]))
+        endorsement = _endorsement(rng, form, edition)
+        estimate = rng.choice(["", f" Estimate is ${rng.randrange(35, 600) * 100:,}."])
+
+        name = f"{rng.choice(FIRST)} {rng.choice(LAST)}"
+        number = _claim_number(rng)
+        ref = _claim_ref(rng, number)
+
+        notes = (
+            f"{ref[0].upper()}{ref[1:]}, insured {name}. Policy is {policy}, "
+            f"{_endorsement_phrase(rng, endorsement)}. "
+            f"Date of loss: {_date_of_loss(rng)}. "
+            f"{narrative[0].upper()}{narrative[1:]}.{estimate}"
+        )
+        yield seq, notes, {"name": name, "claim_number": number}
+
+
+def run_notes(seed, n, token_budget, tpm, path):
+    """Same pacing/budget/resume discipline as run(), against summarize()
+    instead of rag.answer() — the claim-summary feature's own trace population."""
+    import groq
+
+    from summarize import summarize
+
+    config.preflight()
+    done = _existing_seqs(path, seed, source="summary-traffic")
+    spent = 0
+    written = 0
+    for seq, notes, _ in generate_notes(seed, n):
+        if seq in done:
+            continue
+        if spent >= token_budget:
+            print(f"token budget {token_budget} reached after {written} new traces; stopping")
+            break
+        started = time.monotonic()
+        try:
+            summarize(notes, source="summary-traffic", request={"seed": seed, "seq": seq})
+        except groq.RateLimitError as exc:
+            if re.search(r"per day|TPD|RPD", str(exc)):
+                print(f"daily quota reached at seq {seq}; stopping")
+                break
+            print(f"seq {seq}: per-minute rate limit, backing off 60s")
+            time.sleep(60)
+            continue
+        except Exception as exc:  # traced by summarize; keep the run going
+            print(f"seq {seq}: {type(exc).__name__}: {exc}")
+            continue
+
+        last = tracing.load_traces(path)[-1]
+        used = ((last.get("output") or {}).get("token_usage") or {}).get("total_tokens", 0)
+        spent += used
+        written += 1
+        print(f"seq {seq:>4}  {used:>5} tok  total {spent:>7}  {last['trace_id'][:12]}", flush=True)
+
+        wait = used / (tpm * 0.8) * 60.0 - (time.monotonic() - started)
+        if wait > 0:
+            time.sleep(wait)
+    print(f"done: {written} traces written this run, {spent} tokens")
+
+
+def check_leaks_notes(seed, path):
+    """check_leaks()'s counterpart for summarize() traces.
+
+    The claim number is *supposed* to appear in output.final here (see
+    summarize.py's module docstring) — grepping for it would flag every
+    correct trace as a leak. Only the claimant name has no business
+    appearing anywhere in a claim summary, so only the name is checked."""
+    traces = [t for t in tracing.load_traces(path) if t.get("source") == "summary-traffic"]
+    seqs = {t["request"]["seq"]: t for t in traces if t["request"].get("seed") == seed}
+    text = open(path, encoding="utf-8").read()
+
+    secrets = set()
+    injected = over = 0
+    for seq, _, pii in generate_notes(seed, max(seqs) + 1 if seqs else 0):
+        if seq not in seqs:
+            continue
+        notes = seqs[seq]["input"]["notes"]
+        injected += 1
+        secrets.update(part for part in pii["name"].split())
+        if "[CLAIMANT_" not in notes:
+            over += 1
+            print(f"  under-redacted seq {seq} (no [CLAIMANT_] placeholder): {notes[:120]}")
+
+    leaks = []
+    for secret in sorted(secrets):
+        hits = len(re.findall(rf"(?<![\w'’-]){re.escape(secret)}(?![\w-])", text))
+        if hits:
+            leaks.append((secret, hits))
+    print(f"traces checked: {len(seqs)}   carried injected names: {injected}")
+    print(f"distinct name-parts searched: {len(secrets)}")
+    print(f"leaks: {len(leaks)} {leaks if leaks else ''}")
+    print(f"under-redacted notes (no [CLAIMANT_] placeholder): {over}")
+    return not leaks
+
+
 # --- Running ----------------------------------------------------------------------
 
 
-def _existing_seqs(path, seed):
+def _existing_seqs(path, seed, source="traffic"):
     try:
         traces = tracing.load_traces(path)
     except SystemExit:
@@ -230,7 +361,7 @@ def _existing_seqs(path, seed):
     return {
         t["request"]["seq"]
         for t in traces
-        if t.get("source") == "traffic" and t.get("request", {}).get("seed") == seed
+        if t.get("source") == source and t.get("request", {}).get("seed") == seed
     }
 
 
@@ -329,8 +460,22 @@ def main():
     parser.add_argument("--traces", default=None, help="trace file (default TRACE_PATH)")
     parser.add_argument("--preview", type=int, metavar="N", help="print N questions and exit")
     parser.add_argument("--check-leaks", action="store_true")
+    parser.add_argument(
+        "--kind", choices=["questions", "notes"], default="questions",
+        help="questions -> rag.answer() traffic (default); notes -> summarize() adjuster-notes traffic",
+    )
     args = parser.parse_args()
     path = args.traces or config.TRACE_PATH
+
+    if args.kind == "notes":
+        if args.preview:
+            for seq, notes, pii in generate_notes(args.seed, args.preview):
+                print(f"{seq:>3} {'PII ' if pii else '    '}{notes}")
+            return
+        if args.check_leaks:
+            sys.exit(0 if check_leaks_notes(args.seed, path) else 1)
+        run_notes(args.seed, args.n, args.token_budget, args.tpm, path)
+        return
 
     if args.preview:
         for seq, question, pii in generate(args.seed, args.preview):

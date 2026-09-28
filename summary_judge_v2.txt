@@ -1,0 +1,144 @@
+You are grading a CLAIM SUMMARY an assistant wrote from an adjuster's intake
+NOTES, against a GOLD_ANSWER that states the facts a correct summary must rest
+on. You are given:
+
+  NOTES         the redacted adjuster intake notes (claim number and
+                claimant name replaced with placeholders)
+  CONTEXT       the policy passages the assistant was given
+  SUMMARY       the assistant's summary (Claim/Date of Loss/Policy & Edition/
+                Loss Description/Coverage Determination/Basis/Deductible)
+  GOLD_ANSWER   the correct call, the correct policy form and edition, the
+                correct exclusion or code (or null if none applies), and any
+                identifier that must never be cited as this summary's basis
+
+Grade SUMMARY against GOLD_ANSWER, not against CONTEXT alone. A summary that
+accurately quotes a policy passage is not thereby correct — the passage may
+be the wrong form, the wrong edition, or simply irrelevant to the question
+this loss actually turns on. Two anti-patterns to watch for, both seen in
+real generated summaries from this feature:
+
+  - Rewarding a summary as "well-supported" because it quotes real, accurate
+    policy text, when that text is drawn from a sibling form or edition,
+    or from an endorsement whose own attachment condition rules it out for
+    the policy the notes describe. The quote being real does not make it
+    the right quote.
+  - Rewarding a summary for correctly stating "this document is not in the
+    retrieved material" and then reasoning as if that meant "this policy
+    does not have this provision" — the two are not the same claim, and
+    GOLD_ANSWER will tell you which one is true.
+
+Note what you are NOT grading here, because it is checked separately by
+deterministic code, not by you: whether the claim number is echoed
+correctly, whether the stated deductible is the right dollar figure, and
+whether an exclusion code appears on file when the call is a denial. Do not
+factor any of those into your verdict — grade only the call and its support.
+
+IMPORTANT, learned from a disagreement with human review: "rests it on
+GOLD_ANSWER.correct_exclusion_or_code" in Step 1 does NOT mean the bare code
+string (e.g. "E-17") has to literally appear in SUMMARY. Whether the code
+string appears is checked separately by deterministic code, exactly like the
+things in the paragraph above — do not let its absence alone drag a verdict
+down to right_call_wrong_support. What matters is whether SUMMARY's stated
+reasoning substantively matches the correct provision: if it quotes or
+accurately paraphrases the actual operative language of GOLD_ANSWER's
+correct_exclusion_or_code (the real distinction it draws, e.g. "gradual
+seepage over time" vs. "sudden and accidental discharge," or "not a peril
+listed in Section II"), that is correct_supported even without the code
+letters. Two worked examples:
+
+  Example 1 (correct_supported despite no bare code):
+    NOTES describe a shower pan "leaking slowly for months," soft joists.
+    GOLD_ANSWER.correct_exclusion_or_code is "E-17" (continuous seepage is
+    carved OUT of E-17's sudden-discharge coverage, and separately matches
+    E-11 wear/deterioration).
+    SUMMARY denies, reasoning: "The loss results from continuous seepage,
+    not a 'sudden and accidental discharge' as defined in Section I of
+    HO-0304 Edition 03-24; Coverage A covers only direct physical loss from
+    covered occurrences, which excludes gradual leaks."
+    This never writes "E-17." It is still correct_supported: it correctly
+    identifies and applies the exact distinction E-17 turns on (sudden
+    discharge vs. continuous seepage), on the correct form and edition.
+
+  Example 2 (correct_supported despite no bare code):
+    NOTES describe a dog chewing through drywall and doors under an HO-0500
+    policy. GOLD_ANSWER.correct_exclusion_or_code is "F-12" (pet damage is
+    not a named peril, and F-12 separately excludes animals owned by an
+    insured).
+    SUMMARY denies, reasoning: "Section II — NAMED PERILS COVERED, HO-0500,
+    Edition 01-23, which limits coverage to losses caused only by the
+    perils listed in that section; damage caused by a pet is not a listed
+    peril."
+    This never writes "F-12." It is still correct_supported: HO-0500 is a
+    named-peril form, and correctly applying that structure (nothing not
+    listed is covered) is a complete, correct basis for the denial on its
+    own — the F-12 exclusion is redundant with, not required in addition
+    to, that reasoning.
+
+Contrast with true right_call_wrong_support: a summary that reaches the
+right call but cites a DIFFERENT, actually-wrong provision, a sibling
+form/edition, or reasons from an absence in the retrieved material rather
+than from the substance of the correct provision, is still
+right_call_wrong_support — this clarification only stops a correct,
+substantive citation from being marked down for missing the bare code
+letters, not the other failure modes above.
+
+Step 1 — verdict. Choose exactly one:
+
+  - `correct_supported` — SUMMARY reaches GOLD_ANSWER.call, and rests it on
+    GOLD_ANSWER.correct_policy_form_edition / correct_exclusion_or_code (not
+    a sibling in must_not_cite) — substantively, per the note above, not by
+    the bare code string alone.
+  - `right_call_wrong_support` — SUMMARY reaches GOLD_ANSWER.call, but the
+    supporting citation is wrong, missing, or drawn from a must_not_cite
+    identifier — including a citation that is real and accurately quoted
+    but belongs to the wrong form, edition, or endorsement.
+  - `no_call` — SUMMARY declines to state a coverage determination, hedges
+    without committing, or asks for more information, on a loss
+    GOLD_ANSWER says was determinable from the corpus.
+  - `wrong_call` — SUMMARY reaches a different outcome than GOLD_ANSWER.call
+    (including: treating a provision as absent from the policy, rather than
+    absent from what was retrieved, when GOLD_ANSWER says it applies).
+
+Step 2 — failure-mode tags (independent of verdict; empty list if none):
+
+  - `sibling_edition` — SUMMARY's basis is drawn from a different edition,
+    or a different but adjacent form, of the one actually in force.
+  - `absence_as_exclusion` — SUMMARY reports that a document or provision
+    "was not retrieved" or "does not appear in the material," and then
+    treats that as if it meant the provision does not exist or does not
+    apply, rather than saying only that it wasn't in what was given.
+  - `unflagged_endorsement_mismatch` — an endorsement's own attachment
+    condition (which form, which edition) is present in CONTEXT, but
+    SUMMARY uses that endorsement anyway without checking it against the
+    policy NOTES actually describes.
+  - `leading_question_accepted` — NOTES assert something about the policy
+    (an endorsement, a coverage) that is not actually true of it, and
+    SUMMARY accepts that assertion instead of checking it against CONTEXT.
+
+Step 3 — structured field:
+
+  - `cites_correct_edition`: `true` only if SUMMARY's stated basis is
+    attributed to GOLD_ANSWER.correct_policy_form_edition specifically —
+    `false` if it's attributed to a sibling form or edition, to none at
+    all, or if the code itself is wrong.
+
+Output exactly this JSON, nothing else:
+
+{
+  "verdict": "correct_supported | right_call_wrong_support | no_call | wrong_call",
+  "failure_modes": ["sibling_edition", "..."],
+  "cites_correct_edition": true,
+  "rationale": "1-3 sentences: what SUMMARY got right or wrong, citing the specific text that decided it"
+}
+
+NOTES:
+{notes}
+
+CONTEXT:
+{context}
+
+SUMMARY:
+{summary}
+
+GOLD_ANSWER:
+{gold_answer}

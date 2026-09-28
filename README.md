@@ -51,6 +51,35 @@ from Postgres instead, run `python ingest.py` once and set
 `RETRIEVAL_BACKEND=pgvector`. Both paths chunk through `ingest.py` and share the
 same chunk ids, so a chunk means the same thing either way.
 
+## Claim summaries
+
+`summarize.py` writes a claim summary from an adjuster's intake notes — same
+served path as `rag.py` (redact, retrieve, prompt, generate, trace), except the
+claim number is spliced into the finished summary afterward, in code, from the
+value `redact.redact()` found at ingress. The model never sees or invents it;
+see `summarize.py`'s module docstring for why.
+
+```bash
+python summarize.py "Claim CLM-2026-004512, insured Priya Raman. Policy is \
+HO-0304 ed. 03-24, no endorsements. Date of loss: March 3, 2026. The washing \
+machine hose split and flooded the laundry room. Estimate is \$8,200."
+```
+
+To grade a batch of frozen summaries against an LLM judge plus deterministic
+checks (claim number echoed, date of loss parseable, deductible numeric,
+exclusion cited on denial), and print a pass-rate table broken out by
+taxonomy mode:
+
+```bash
+python evaluate_summaries.py --judge summary_judge_v1.txt \
+    --in summary_goldenset.json summary_regression_set.json \
+    --out eval_out/summary_judged_v1.json
+```
+
+See `week6_report.md` for the full judge/human-agreement study this was built
+for, and `evaluate_answers.py` / `judge_v1.txt` / `goldenset.json` for the
+equivalent harness over `rag.py`'s coverage-question answers.
+
 ## Measuring retrieval
 
 When an answer is wrong, three very different things could have happened, and
@@ -166,6 +195,11 @@ usage. Claimant names and claim numbers are removed before retrieval, the model
 or the trace sees the question, and the trace writer checks again before it
 writes.
 
+`summarize.py` writes to its own `traces/summary_traces.jsonl`, same schema,
+with one deliberate difference: the trace writer's second-lock scrub is told
+to leave the claim number alone for this feature, since a claim summary is
+supposed to carry it back out — only the claimant name stays covered.
+
 ```bash
 python replay.py --seed 918                      # replay one random trace from the line alone
 python sample_traces.py --seed 20260918 --n 20   # seeded random sample
@@ -190,3 +224,7 @@ and the retrieval exactly, but reproduces the answer only approximately.
 - `inspect_view.py` — what was retrieved, what it carries, and where the gold chunk ranked
 - `evaluate.py` — hit-rate@3 and p50 latency over the golden set, plus before/after compare
 - `goldenset.json` — evaluation questions, each tagged with its known-correct chunk id
+- `evaluate_answers.py` / `judge_v1.txt` — LLM-judged answer quality over `goldenset.json` and `regression_set.json`
+- `summarize.py` — `summarize()`: redact, retrieve, prompt, generate, splice in the claim number, trace
+- `evaluate_summaries.py` / `summary_judge_v1.txt` / `summary_judge_v2.txt` — the same judge/assertion harness for claim summaries; `week6_report.md` has the full write-up
+- `summary_goldenset.json` / `summary_regression_set.json` — 25 taxonomy-tagged summary cases plus 2 frozen regression cases
