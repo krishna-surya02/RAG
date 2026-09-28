@@ -1,0 +1,56 @@
+--- claims_tools.py (before: 2 tools, get_claim + check_policy_exclusions)
++++ claims_tools.py (after: adds compute_payout as the third tool)
+@@ -204,6 +204,39 @@
+     }
+ 
+ 
++# --- Tool 3 ------------------------------------------------------------------
++
++
++class ComputePayoutArgs(BaseModel):
++    claimed_amount: float = Field(description="The dollar amount claimed.")
++    deductible: float = Field(description="The policy deductible to subtract.")
++    claim_status: Literal["approved", "denied", "partial"] = Field(
++        description="approved: pay in full above the deductible. denied: pay "
++        "nothing. partial: pay up to a cap, above the deductible."
++    )
++    cap: Optional[float] = Field(
++        default=None,
++        description="Required when claim_status is 'partial': the dollar cap "
++        "(a sublimit or endorsement limit) the payout is capped at before the "
++        "deductible is subtracted. Ignored otherwise.",
++    )
++
++
++def compute_payout(
++    claimed_amount: float, deductible: float, claim_status: str, cap: Optional[float] = None
++) -> dict:
++    """Compute the dollar amount payable to the claimant, given the claimed
++    amount, the deductible, and a final claim_status decision. Does not decide
++    claim status or check exclusions -- call check_policy_exclusions first to
++    decide that, then call this once to do the arithmetic."""
++    if claim_status == "denied":
++        payout = 0.0
++    else:
++        base = min(claimed_amount, cap) if (claim_status == "partial" and cap is not None) else claimed_amount
++        payout = max(0.0, base - deductible)
++    return {"payout": round(payout, 2)}
++
++
+ # --- LangChain tool wrappers ---------------------------------------------
+ 
+ get_claim_tool = StructuredTool.from_function(
+@@ -220,5 +253,12 @@
+     args_schema=CheckPolicyExclusionsArgs,
+ )
+ 
+-TOOLS = [get_claim_tool, check_policy_exclusions_tool]
++compute_payout_tool = StructuredTool.from_function(
++    func=compute_payout,
++    name="compute_payout",
++    description=compute_payout.__doc__,
++    args_schema=ComputePayoutArgs,
++)
++
++TOOLS = [get_claim_tool, check_policy_exclusions_tool, compute_payout_tool]
+ TOOLS_BY_NAME = {t.name: t for t in TOOLS}
