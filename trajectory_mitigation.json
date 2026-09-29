@@ -1,0 +1,68 @@
+{
+  "before": {
+    "n_runs": 20,
+    "argument_validity_rate": 0.9489795918367347,
+    "trajectory_pass_rate": 0.5,
+    "failure_mode_tally": {
+      "mandatory_tool_skipped": 2,
+      "wrong_tool_order": 0,
+      "argument_hallucination": 0,
+      "ungrounded_citation": 10,
+      "redundant_tool_call": 0
+    }
+  },
+  "after": {
+    "n_runs": 20,
+    "argument_validity_rate": 1.0,
+    "trajectory_pass_rate": 0.9,
+    "failure_mode_tally": {
+      "mandatory_tool_skipped": 2,
+      "wrong_tool_order": 0,
+      "argument_hallucination": 0,
+      "ungrounded_citation": 0,
+      "redundant_tool_call": 0
+    }
+  },
+  "regression": [
+    {
+      "mode": "mandatory_tool_skipped",
+      "before": 2,
+      "after": 2,
+      "delta": 0,
+      "verdict": "unaffected"
+    },
+    {
+      "mode": "wrong_tool_order",
+      "before": 0,
+      "after": 0,
+      "delta": 0,
+      "verdict": "unaffected"
+    },
+    {
+      "mode": "argument_hallucination",
+      "before": 0,
+      "after": 0,
+      "delta": 0,
+      "verdict": "unaffected"
+    },
+    {
+      "mode": "ungrounded_citation",
+      "before": 10,
+      "after": 0,
+      "delta": -10,
+      "verdict": "improved"
+    },
+    {
+      "mode": "redundant_tool_call",
+      "before": 0,
+      "after": 0,
+      "delta": 0,
+      "verdict": "unaffected"
+    }
+  ],
+  "price": {
+    "old_call_ms": 17.67,
+    "new_call_ms": 17.16,
+    "added_ms": -0.51
+  }
+}
