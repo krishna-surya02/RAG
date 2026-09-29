@@ -1,0 +1,238 @@
+{
+  "_about": "Blind hand-labeling worksheet for the claim-summary feature (summarize.py). Drawn from traces/summary_traces.jsonl with sha256 cb0a73b424ce15f67ea902e10653c138c1d7ccbd1f42e6ff1f5d47a61b758560, 29 lines. Rule: sorted(trace_ids) -> random.Random(20260923).sample(ids, 25).",
+  "_criterion": "For each case, read `notes` and `summary` only -- no judge output exists yet for this feature, and none is shown here. Set `label` to \"pass\" or \"fail\":\n  pass = the summary reaches the correct pay/deny call, on the correct policy edition, with a correct or absent exclusion basis, and states no fact that contradicts the notes.\n  fail = any of the above is wrong.",
+  "_instructions": "Fill in every `label` (and, optionally, a short `note` on your reasoning -- useful later for picking few-shot examples). Then commit this file before any judge prompt for this feature is written -- the commit timestamp is the ordering proof Week 6 asks for.",
+  "seed": 20260923,
+  "n": 25,
+  "source_trace_file": "traces/summary_traces.jsonl",
+  "source_sha256": "cb0a73b424ce15f67ea902e10653c138c1d7ccbd1f42e6ff1f5d47a61b758560",
+  "source_lines": 29,
+  "cases": [
+    {
+      "id": "s01",
+      "trace_id": "67da9649b82f4a26a09c4e3495a98d2c",
+      "line": 22,
+      "notes": "Claim #[CLAIM_NO_1], insured [CLAIMANT_1]. Policy is the March 2024 edition of HO-0304, no endorsements. Date of loss: April 2, 2026. The shower pan has been leaking slowly for months and the joists below are soft. Estimate is $50,600.",
+      "summary": "Claim: 5570143\nDate of Loss: April 2, 2026  \nPolicy & Edition: HO-0304, Edition 03-24  \nLoss Description: The shower pan has been leaking slowly for months, resulting in soft joists beneath the bathroom; estimated loss $50,600.  \nCoverage Determination: deny  \nBasis: The loss results from continuous seepage, not a “sudden and accidental discharge” as defined in Section I of HO-0304 Edition 03-24; Coverage A covers only direct physical loss from covered occurrences, which excludes gradual leaks. (Form HO-0304, Edition 03-24, definition “Sudden and accidental discharge”)  \nDeductible: $1,000 All Perils",
+      "label": "pass",
+      "note": "gradual leak over months, denied on wear/seepage grounds -- consistent, edition matches"
+    },
+    {
+      "id": "s02",
+      "trace_id": "3e070cecb41c4abd8f5c7190c97ddafd",
+      "line": 27,
+      "notes": "Claim no. [CLAIM_NO_1], insured [CLAIMANT_1]. Policy is HO-0500 Edition 01-23, with HO-2306. Date of loss: April 7, 2026. The sump pump motor burned out and the sump overflowed into the finished basement. Estimate is $58,600.",
+      "summary": "Claim: 26-9800992\nDate of Loss: April 7, 2026  \nPolicy & Edition: HO-0500 Edition 01-23 – identifier does not appear in the retrieved material; retrieved forms: HO-0304 (editions 01-22, 02-23) and Endorsement HO-2306  \nLoss Description: The sump pump motor burned out, causing the sump to overflow into the finished basement.  \nCoverage Determination: Pay up to $5,000 (limit of endorsement); excess amount denied.  \nBasis: Endorsement HO-2306 – “Subject to the limit shown below, we cover direct physical loss caused by water or waterborne material which backs up through sewers or drains, or which overflows or is discharged from a sump, sump pump, or related equipment… LIMIT OF LIABILITY $5,000 per occurrence.” (Endorsement HO-2306, attached to Form HO-0304, Edition 01-22 or 02-23)  \nDeductible: not stated",
+      "label": "fail",
+      "note": "notes say HO-0500 ed 01-23; basis admits it wasn't retrieved then substitutes HO-0304/HO-2306 -- wrong form cited"
+    },
+    {
+      "id": "s03",
+      "trace_id": "6309f7211fb54c8c8e23602cb6dbadb4",
+      "line": 11,
+      "notes": "Claim #[CLAIM_NO_1], insured [CLAIMANT_1]. Policy is HO-0304 Edition 03-24, Endorsement HO-2405 attached with the $50,000 Enhanced Limit. Date of loss: October 14, 2026. Ice and snow built up on a flat roof section and the ceiling below caved in. Estimate is $4,500.",
+      "summary": "Claim: CLM-2026-277266\nDate of Loss: October 14, 2026  \nPolicy & Edition: HO-0304, Edition 03-24  \nLoss Description: Ice and snow accumulated on a flat roof section, causing the roof to collapse and the ceiling below to cave in.  \nCoverage Determination: deny  \nBasis: The identifier “HO-0304 Edition 03-24” does not appear in the retrieved material; the only HO-0304 provisions retrieved are from editions 01-22 and 02-23, which contain no collapse or ice‑and‑snow weight coverage provision. Consequently, no applicable coverage provision is present for this loss.  \nDeductible: $1,000 All Perils (as stated in the HO-0304 declarations)",
+      "label": "fail",
+      "note": "Policy&Edition says 03-24 but Basis says 03-24 'not in retrieved material' -- self-contradicts, denies on absence; ice/snow collapse is likely covered per this policy family's established E-20 pattern"
+    },
+    {
+      "id": "s04",
+      "trace_id": "f7e8a2d8f4a74d52b818fa8279830a56",
+      "line": 16,
+      "notes": "[CLAIM_NO_1], insured [CLAIMANT_1]. Policy is HO-0304 ed. 02-23, base form only. Date of loss: August 17, 2026. Hail damaged the roof shingles and dented the gutters. Estimate is $36,000.",
+      "summary": "Claim: CLM-2026-683371\nDate of Loss: August 17, 2026  \nPolicy & Edition: HO-0304, Edition 02-23  \nLoss Description: Hail struck the residence, damaging roof shingles and denting the gutters. Estimated repair cost is $36,000.  \nCoverage Determination: Pay, no sublimit identified (loss is within the dwelling coverage amount).  \nBasis: The identifier HO‑0304 Edition 02‑23 does not appear with a coverage provision in the retrieved material; the only passage retrieved for that edition is the exclusion list (HO‑0304_ed‑02‑23, page 1), which does not contain an exclusion for hail, indicating the loss is covered.  \nDeductible: not stated",
+      "label": "pass",
+      "note": "hail is a standard covered peril; absence-of-exclusion reasoning is weak but the pay call is plausible"
+    },
+    {
+      "id": "s05",
+      "trace_id": "ea72616e48b540b2966c790a781afb56",
+      "line": 10,
+      "notes": "Claim no. [CLAIM_NO_1], insured [CLAIMANT_1]. Policy is HO-0500 ed. 01-23, no endorsements on file. Date of loss: October 16, 2026. After a sudden pipe leak inside the wall, mold was found behind the drywall. Estimate is $25,200.",
+      "summary": "Claim: PRP90712606\nDate of Loss: October 16, 2026  \nPolicy & Edition: HO-0500 ed. 01-23  \nLoss Description: A sudden pipe leak inside a wall resulted in mold behind the drywall; the repair estimate is $25,200.  \nCoverage Determination: cannot determine from provided context  \nBasis: HO-0500 ed. 01-23 does not appear in the retrieved material; the retrieved material includes HO-0304 ed‑03‑24, HO-0304 ed‑02‑23, and HO-0304 ed‑01‑22, each containing an E‑10 Mold, Fungus, or Wet Rot exclusion that limits coverage for hidden mold from a plumbing leak to $10,000.  \nDeductible: not stated",
+      "label": "fail",
+      "note": "notes say HO-0500; basis pulls HO-0304's mold exclusion instead and lands on a non-answer ('cannot determine') -- wrong form, no real call reached"
+    },
+    {
+      "id": "s06",
+      "trace_id": "69fe8ceed6484a7285cc033c992ee879",
+      "line": 29,
+      "notes": "[CLAIM_NO_1], insured [CLAIMANT_1]. Policy is HO 03 04 (01/22), Endorsement HO-2405 attached with the $25,000 Enhanced Limit. Date of loss: March 18, 2026. A small earthquake cracked the foundation and the basement walls.",
+      "summary": "Claim: 26-5448736\nDate of Loss: March 18, 2026  \nPolicy & Edition: HO-0304, Edition 01-22  \nLoss Description: A small earthquake cracked the foundation and basement walls of the insured residence.  \nCoverage Determination: deny  \nBasis: Endorsement HO-2405 does not appear in the retrieved material; the only endorsement provided is HO-2306, which covers water‑backup losses, not earthquake damage. Coverage A “insures against direct physical loss to the dwelling, subject to the exclusions in Section III” (Form HO-0304, Edition 01‑22), and no provision in the retrieved policy language extends coverage to earth movement.  \nDeductible: $1,000 All Perils",
+      "label": "fail",
+      "note": "right call (deny) but wrong support: never cites E-2 Earth Movement (verified: HO-0304 01-22 Section III explicitly excludes earthquake); also misses that Endorsement HO-2405 cannot attach to a 01-22 policy at all (HO-2405's own CONDITIONS: attaches only to Edition 03-24) -- an unflagged endorsement mismatch on top of the weak basis"
+    },
+    {
+      "id": "s07",
+      "trace_id": "84aafc16b8cc48c69c62c12ce7951ef0",
+      "line": 2,
+      "notes": "[CLAIM_NO_1], insured [CLAIMANT_1]. Policy is the February 2023 edition of HO-0304, with HO-2306 at the Enhanced Limit. Date of loss: February 5, 2026. A substation failure two miles away caused a three-day outage and the freezer contents spoiled.",
+      "summary": "Claim: 26-1053362\nDate of Loss: February 5, 2026  \nPolicy & Edition: HO-0304, Edition 02-23 (February 2023) with Endorsement HO-2306 – Enhanced Limit  \nLoss Description: The insured’s freezer contents spoiled after a three‑day power outage caused by a substation failure two miles away.  \nCoverage Determination: deny  \nBasis: Endorsement HO-2306 — Sewer and Drain Backup Coverage, attached to Form HO-0304, Edition 02-23, which provides coverage only for direct physical loss caused by water or waterborne material backup (“COVERAGE PROVIDED” provision) and does not extend to loss caused by power outage.  \nDeductible: $1,000",
+      "label": "fail",
+      "note": "right call (deny) but wrong support: bases the denial on HO-2306's sewer-backup language, which is irrelevant to a power outage, instead of citing the actual governing E-4 Power Failure exclusion (verified in HO-0304 ed 02-23 Section III, same wording as s15's correct citation)"
+    },
+    {
+      "id": "s08",
+      "trace_id": "3a7969de609b4ce18fc18e1a61a4576e",
+      "line": 3,
+      "notes": "Claim #[CLAIM_NO_1], insured [CLAIMANT_1]. Policy is HO-0304 Edition 02-23, Endorsement HO-2306 attached. Date of loss: December 27, 2026. The sump pump float switch stuck and the pit overflowed onto the basement carpet. Estimate is $6,900.",
+      "summary": "Claim: CLM-2026-680334\nDate of Loss: December 27, 2026  \nPolicy & Edition: HO-0304 Edition 02-23 (Endorsement HO-2306 attached)  \nLoss Description: The sump pump’s float switch failed, causing the sump pit to overflow and flood the basement carpet.  \nCoverage Determination: Pay up to the $5,000 per‑occurrence limit; any amount above that is denied.  \nBasis: “Subject to the limit shown below, we cover direct physical loss caused by water or waterborne material which backs up through sewers or drains, or which overflows or is discharged from a sump, sump pump, or related equipment… LIMIT OF LIABILITY $5,000 per occurrence.” – Endorsement HO‑2306, attached to Form HO‑0304, Edition 02‑23 (buys back Exclusion E‑17).  \nDeductible: not stated",
+      "label": "pass",
+      "note": "sump float switch under HO-2306 buy-back, $5,000 limit applied consistently"
+    },
+    {
+      "id": "s09",
+      "trace_id": "0bf013d9008c4fed9ae92bc7ff24b23f",
+      "line": 15,
+      "notes": "Claim #[CLAIM_NO_1], insured [CLAIMANT_1]. Policy is HO-0304 Edition 01-22, with HO-2306 (basic limit). Date of loss: May 23, 2026. A small earthquake cracked the foundation and the basement walls. Estimate is $33,700.",
+      "summary": "Claim: CLM-2026-532900\nDate of Loss: May 23, 2026  \nPolicy & Edition: HO-0304, Edition 01-22  \nLoss Description: A small earthquake caused cracking of the foundation and basement walls of the insured dwelling. Estimated loss is $33,700.  \nCoverage Determination: Pay, subject to the $1,000 deductible and the dwelling limit of $350,000.  \nBasis: “Coverage A insures against direct physical loss to the dwelling, subject to the exclusions in Section III.” – HO-0304, Edition 01‑22, Section II.  \nDeductible: $1,000 All Perils",
+      "label": "fail",
+      "note": "earthquake claim paid with zero exclusion analysis -- inconsistent with s06's correct denial on the same fact pattern"
+    },
+    {
+      "id": "s10",
+      "trace_id": "0fdaaf54cde14e2c8fd4d9a11b62e93b",
+      "line": 18,
+      "notes": "Claim no. [CLAIM_NO_1], insured [CLAIMANT_1]. Policy is the HO-0500 broad form, 01-23 edition, no endorsements. Date of loss: August 12, 2026. The insured's own dog chewed through the drywall and two interior doors.",
+      "summary": "Claim: CLM-2026-039250\nDate of Loss: August 12, 2026  \nPolicy & Edition: HO-0500, Edition 01-23  \nLoss Description: The insured’s dog chewed through drywall and two interior doors.  \nCoverage Determination: deny  \nBasis: Section II — NAMED PERILS COVERED, HO-0500, Edition 01-23, which limits coverage to losses caused only by the perils listed in that section; damage caused by a pet is not a listed peril.  \nDeductible: $2,500",
+      "label": "pass",
+      "note": "named-perils form, pet damage not a listed peril -- clean reasoning"
+    },
+    {
+      "id": "s11",
+      "trace_id": "aea067fd140b44fb8659a3041c791c60",
+      "line": 20,
+      "notes": "Claim #[CLAIM_NO_1], insured [CLAIMANT_1]. Policy is HO 03 04 (02/23), with HO-2306 (basic limit). Date of loss: April 22, 2026. A small earthquake cracked the foundation and the basement walls. Estimate is $11,600.",
+      "summary": "Claim: 2815601\nDate of Loss: April 22, 2026  \nPolicy & Edition: HO-0304, Edition 02-23  \nLoss Description: A small earthquake caused cracking of the foundation and basement walls of the dwelling.  \nCoverage Determination: Pay, subject to the $1,000 deductible (loss within Coverage A limit of $350,000).  \nBasis: \"Coverage A insures against direct physical loss to the dwelling, subject to the exclusions in Section III.\" – HO-0304, Edition 02-23  \nDeductible: $1,000 All Perils",
+      "label": "fail",
+      "note": "same failure as s09: earthquake paid via generic Coverage A clause, no exclusion check"
+    },
+    {
+      "id": "s12",
+      "trace_id": "c39a543914e3453986304c82a2614236",
+      "line": 14,
+      "notes": "Claim #[CLAIM_NO_1], insured [CLAIMANT_1]. Policy is the 2022 HO-0304 form, base form only. Date of loss: October 11, 2026. Lumber and windows were stolen from the addition, which is still under construction. Estimate is $10,000.",
+      "summary": "Claim: 26-4914415\nDate of Loss: October 11, 2026  \nPolicy & Edition: HO-0304, Edition 01-22  \nLoss Description: Lumber and windows were stolen from an addition that is still under construction.  \nCoverage Determination: pay, within the $175,000 Personal Property limit (subject to the $1,000 deductible)  \nBasis: “Coverage C insures personal property owned or used by an insured while it is anywhere in the world, subject to special limits and the exclusions in Section III.” – HO‑0304, Edition 01‑22, Section II (no applicable exclusion for theft of building materials during construction appears in this edition)  \nDeductible: $1,000",
+      "label": "fail",
+      "note": "stolen construction materials on an unfinished addition cited under Coverage C (personal property) -- likely wrong coverage part for building materials not yet part of the structure"
+    },
+    {
+      "id": "s13",
+      "trace_id": "b41e00f624d149f484c4e74491fee42f",
+      "line": 21,
+      "notes": "Claim [CLAIM_NO_1], insured [CLAIMANT_1]. Policy is HO 03 04 (03/24), no endorsements. Date of loss: October 23, 2026. A kitchen grease fire damaged the cabinets and the ceiling. Estimate is $6,400.",
+      "summary": "Claim: 26-9506871\nDate of Loss: October 23, 2026  \nPolicy & Edition: HO-0304, Edition 03-24  \nLoss Description: A kitchen grease fire caused damage to cabinets and the ceiling.  \nCoverage Determination: pay, subject to $1,000 deductible  \nBasis: The policy provides All‑Perils coverage and does not list fire as an excluded peril; deductible is $1,000 All Perils (HO-0304, Edition 03-24).  \nDeductible: $1,000",
+      "label": "pass",
+      "note": "kitchen fire, standard covered peril, clean"
+    },
+    {
+      "id": "s14",
+      "trace_id": "be8941b7b6374f20a8284940242a492b",
+      "line": 6,
+      "notes": "[CLAIM_NO_1], insured [CLAIMANT_1]. Policy is HO-0304 ed. 03-24, no endorsements. Date of loss: November 6, 2026. A storm knocked out power to the street, the sump pump stopped, and the basement took on water from the pit.",
+      "summary": "Claim: PRP84690420\nDate of Loss: November 6, 2026  \nPolicy & Edition: HO-0304, Edition 03-24  \nLoss Description: A storm caused a power outage that stopped the sump pump, allowing water from the sump pit to flow into the basement.  \nCoverage Determination: deny  \nBasis: Exclusion E-17 Water Backup and Sump Overflow (Revised) in Form HO-0304, Edition 03-24, which excludes loss caused by backup or overflow from a sump pump and provides no coverage for such loss without the endorsement.  \nDeductible: not stated",
+      "label": "pass",
+      "note": "sump backup without endorsement denied under E-17 -- consistent with the established carve-back pattern"
+    },
+    {
+      "id": "s15",
+      "trace_id": "d8f651458fed45c3badf421edfce1c42",
+      "line": 25,
+      "notes": "Claim #[CLAIM_NO_1], insured [CLAIMANT_1]. Policy is HO-0304 ed. 01-22, no endorsements. Date of loss: June 10, 2026. A substation failure two miles away caused a three-day outage and the freezer contents spoiled. Estimate is $57,400.",
+      "summary": "Claim: PRP30495925\nDate of Loss: June 10, 2026  \nPolicy & Edition: HO-0304 ed. 01-22  \nLoss Description: A power outage caused by a substation failure located two miles from the residence lasted three days, resulting in spoilage of freezer contents.  \nCoverage Determination: deny – loss excluded, no payable amount  \nBasis: “E-4 Power Failure. We do not cover loss caused by the failure of power or other utility service if the failure takes place off the residence premises.” (HO-0304, edition 01-22, exclusion code E-4)  \nDeductible: not stated",
+      "label": "pass",
+      "note": "specific E-4 power-failure citation, clean"
+    },
+    {
+      "id": "s16",
+      "trace_id": "66e88453d80648ff8caa56388cb1eed1",
+      "line": 12,
+      "notes": "Claim #[CLAIM_NO_1], insured [CLAIMANT_1]. Policy is the March 2024 edition of HO-0304, no endorsements. Date of loss: November 10, 2026. The washing machine hose split and flooded the laundry room.",
+      "summary": "Claim: 3362667\nDate of Loss: November 10, 2026  \nPolicy & Edition: HO-0304, Edition 03-24  \nLoss Description: The washing machine hose ruptured, causing water to flood the laundry room.  \nCoverage Determination: Pay, subject to the $350,000 limit of Coverage A and the $1,000 deductible.  \nBasis: “Coverage A insures against direct physical loss to the dwelling, subject to the exclusions in Section III.” (HO‑0304, Edition 03‑24, Section II) and “Sudden and accidental discharge means the abrupt release of water or steam from within a … household appliance” (HO‑0304, Edition 03‑24, Section I).  \nDeductible: $1,000 All Perils",
+      "label": "fail",
+      "note": "appliance sudden-discharge claim should be bounded by the $10,000 E-17 sublimit (per the same policy family's established pattern), not the general $350,000 dwelling limit cited here"
+    },
+    {
+      "id": "s17",
+      "trace_id": "cb27ec44a3d64e3a9ce172276aa8e49d",
+      "line": 23,
+      "notes": "Claim #[CLAIM_NO_1], insured [CLAIMANT_1]. Policy is HO 03 04 (03/24), no endorsements. Date of loss: August 12, 2026. Water backed up through the basement floor drain after heavy rain overwhelmed the city sewer. Estimate is $48,600.",
+      "summary": "Claim: 26-2585763\nDate of Loss: August 12, 2026  \nPolicy & Edition: HO-0304, Edition 03-24  \nLoss Description: Water backed up through the basement floor drain after heavy rain overwhelmed the city sewer, causing estimated damage of $48,600.  \nCoverage Determination: deny  \nBasis: Exclusion E-17 Water Backup and Sump Overflow (Revised) in HO-0304, Edition 03-24, which excludes loss caused by water or waterborne material that backs up through sewers or drains.  \nDeductible: $1,000",
+      "label": "pass",
+      "note": "sewer backup denied without endorsement, consistent with E-17"
+    },
+    {
+      "id": "s18",
+      "trace_id": "c960f129aa9541848e3df655f06938cd",
+      "line": 9,
+      "notes": "Claim no. [CLAIM_NO_1], insured [CLAIMANT_1]. Policy is HO-0500 ed. 01-23, base form only. Date of loss: March 5, 2026. Mold is growing across the basement walls from years of high humidity. Estimate is $7,000.",
+      "summary": "Claim: 2165198\nDate of Loss: March 5, 2026  \nPolicy & Edition: HO-0500, Edition 01-23  \nLoss Description: Mold has grown across the basement walls due to years of high humidity.  \nCoverage Determination: deny, no coverage available  \nBasis: F-9 Mold and Fungus exclusion, HO-0500 edition 01-23, code F-9, which states that loss caused by mold or fungus is not covered unless a Limited Fungi, Wet or Dry Rot Coverage endorsement is attached.  \nDeductible: not stated",
+      "label": "pass",
+      "note": "correctly retrieves and cites HO-0500's own F-9 mold code -- good contrast to s02/s05's misretrieval"
+    },
+    {
+      "id": "s19",
+      "trace_id": "c250ef994bb7425fa0d3ecdad422c5e5",
+      "line": 28,
+      "notes": "Claim no. [CLAIM_NO_1], insured [CLAIMANT_1]. Policy is HO 03 04 (01/22), Endorsement HO-2306 attached (basic limit). Date of loss: April 22, 2026. Hail damaged the roof shingles and dented the gutters. Estimate is $54,000.",
+      "summary": "Claim: 1315843\nDate of Loss: April 22, 2026  \nPolicy & Edition: HO-0304, Edition 01-22  \nLoss Description: Hail damaged the roof shingles and dented the gutters.  \nCoverage Determination: pay, subject to $1,000 deductible  \nBasis: “Coverage A insures against direct physical loss to the dwelling, subject to the exclusions in Section III.” (HO-0304, Edition 01‑22, Section II)  \nDeductible: $1,000 All Perils",
+      "label": "pass",
+      "note": "hail paid, generic citation but plausible outcome"
+    },
+    {
+      "id": "s20",
+      "trace_id": "38fb7a3a5f874beba48a7ab063c23a9a",
+      "line": 13,
+      "notes": "Claim number [CLAIM_NO_1], insured [CLAIMANT_1]. Policy is HO 03 04 (02/23), base form only. Date of loss: September 25, 2026. Ice and snow built up on a flat roof section and the ceiling below caved in.",
+      "summary": "Claim: 4382637\nDate of Loss: September 25, 2026  \nPolicy & Edition: HO-0304, Edition 02-23  \nLoss Description: Ice and snow accumulated on a flat roof, causing the roof to collapse and the ceiling below to cave in.  \nCoverage Determination: Pay, subject to the $1,000 deductible (full amount up to the dwelling limit).  \nBasis: “Coverage A insures against direct physical loss to the dwelling, subject to the exclusions in Section III.” HO‑0304, Edition 02‑23.  The E‑20 Collapse exclusion does not appear in the retrieved material for this edition, so no exclusion bars coverage for collapse caused by ice and snow.  \nDeductible: $1,000 All Perils",
+      "label": "fail",
+      "note": "reaches the likely-correct call (pay) but the stated basis is wrong -- claims E-20 'not found' instead of citing the actual ice/snow/sleet/rain exception; criterion requires a correct basis, not just a lucky call"
+    },
+    {
+      "id": "s21",
+      "trace_id": "1e3fa56968e142cd898abbe39a527e04",
+      "line": 7,
+      "notes": "[CLAIM_NO_1], insured [CLAIMANT_1]. Policy is HO 03 04 (03/24), base form only. Date of loss: September 22, 2026. The house had been empty for 45 days while on the market and someone broke in and vandalized it.",
+      "summary": "Claim: PRP31459411\nDate of Loss: September 22, 2026  \nPolicy & Edition: HO-0304, Edition 03-24  \nLoss Description: The dwelling had been vacant for 45 days while on the market and was broken into, resulting in vandalism.  \nCoverage Determination: Pay, subject to the $1,000 deductible (no sublimit applicable).  \nBasis: Exclusion E-18 “Vandalism if Vacant” in HO-0304_ed-03-24.pdf, page 2 states that loss caused by vandalism is not covered only if the dwelling has been vacant for more than 60 consecutive days; the 45‑day vacancy does not trigger the exclusion, so coverage under Coverage A applies.  \nDeductible: $1,000 All Perils",
+      "label": "pass",
+      "note": "specific 45-vs-60-day vacancy threshold correctly applied"
+    },
+    {
+      "id": "s22",
+      "trace_id": "67f49b724a224dbdb0b469b71b2a6715",
+      "line": 5,
+      "notes": "Claim no. [CLAIM_NO_1], insured [CLAIMANT_1]. Policy is HO-0304 ed. 01-22, no endorsements on file. Date of loss: August 13, 2026. Ice and snow built up on a flat roof section and the ceiling below caved in. Estimate is $18,400.",
+      "summary": "Claim: 9412752\nDate of Loss: August 13, 2026  \nPolicy & Edition: HO-0304, Edition 01-22  \nLoss Description: Ice and snow built up on a flat roof section and the roof collapsed, causing the ceiling below to cave in.  \nCoverage Determination: deny  \nBasis: The identifier “E-20 Collapse” does not appear in the retrieved material for HO-0304 ed. 01‑22; the retrieved excerpts contain exclusions E‑11 through E‑17 and other sections but no collapse provision.  \nDeductible: not stated",
+      "label": "pass",
+      "note": "CORRECTED after reading the actual PDF: HO-0304 ed 01-22's E-20 Collapse exception covers only decay/insect/defective-materials -- unlike 02-23 and 03-24, it does NOT except ice/snow/sleet/rain. So for this specific edition, denial is the correct call. (Basis is still weak -- claims E-20 wasn't retrieved rather than citing it -- but the call itself is right.)"
+    },
+    {
+      "id": "s23",
+      "trace_id": "b2a63e63e8a44365a1e3a0f6d8d2d1b6",
+      "line": 26,
+      "notes": "[CLAIM_NO_1], insured [CLAIMANT_1]. Policy is HO-0304 ed. 03-24, with HO-2405 with the $50,000 Enhanced Limit. Date of loss: May 22, 2026. A storm knocked out power to the street, the sump pump stopped, and the basement took on water from the pit. Estimate is $22,900.",
+      "summary": "Claim: CLM-2026-169975\nDate of Loss: May 22, 2026  \nPolicy & Edition: HO-0304, Edition 03-24 (with Endorsement HO-2405 – Enhanced Limit $50,000)  \nLoss Description: A storm caused a power outage that stopped the sump pump, allowing water from the sump pit to flood the basement.  \nCoverage Determination: Pay, covered up to the $50,000 per‑occurrence limit (estimated loss $22,900).  \nBasis: “Adds coverage for loss caused by water that backs up through sewers or drains, or that overflows or is discharged from a sump, sump pump, or related equipment, from a source outside the plumbing system — coverage that base Edition 03-24 E-17 does not provide even with the sudden‑discharge carve‑back.” (Endorsement HO-2405, Form HO-0304, Edition 03-24, Enhanced Limit provision)  \nDeductible: not stated",
+      "label": "pass",
+      "note": "specific, internally consistent Enhanced Limit reasoning for sump backup from an external source"
+    },
+    {
+      "id": "s24",
+      "trace_id": "20b7a8ad01a4466288e5e4cb79f0fa60",
+      "line": 19,
+      "notes": "Claim number [CLAIM_NO_1], insured [CLAIMANT_1]. Policy is the February 2023 edition of HO-0304, no endorsements. Date of loss: March 11, 2026. Hail damaged the roof shingles and dented the gutters. Estimate is $54,500.",
+      "summary": "Claim: 9795139\nDate of Loss: March 11, 2026  \nPolicy & Edition: HO-0304, Edition 02-23  \nLoss Description: Hail struck the residence, damaging roof shingles and denting the gutters.  \nCoverage Determination: pay, subject to the $350,000 Coverage A limit and $1,000 deductible.  \nBasis: \"Coverage A insures against direct physical loss to the dwelling, subject to the exclusions in Section III.\" – HO-0304, Edition 02-23.  \nDeductible: $1,000 All Perils",
+      "label": "pass",
+      "note": "hail paid, same generic-but-plausible pattern as s19"
+    },
+    {
+      "id": "s25",
+      "trace_id": "1ddb1a0d8cb14eb0898717635a11c27e",
+      "line": 8,
+      "notes": "[CLAIM_NO_1], insured [CLAIMANT_1]. Policy is the February 2023 edition of HO-0304, no endorsements on file. Date of loss: July 25, 2026. A slow drip under the kitchen sink went unnoticed for about four months and rotted the subfloor.",
+      "summary": "Claim: 26-3722817\nDate of Loss: July 25, 2026  \nPolicy & Edition: HO-0304, Edition 02-23  \nLoss Description: A slow drip under the kitchen sink went unnoticed for about four months, causing rot to the subfloor.  \nCoverage Determination: deny  \nBasis: “We do not cover loss caused by wear and tear, marring, deterioration, inherent vice, or latent defect.” – HO-0304, Edition 02-23, Exclusion E-11  \nDeductible: $1,000",
+      "label": "pass",
+      "note": "gradual drip/rot denied under E-11 wear-and-tear, specific citation, consistent with s01"
+    }
+  ],
+  "_labeling_provenance": "IMPORTANT: these labels were set by Claude (the AI assistant), applying a checklist heuristic plus general insurance-practice reasoning, at the explicit direction of the repo owner -- NOT through independent blind human review. The owner was offered a walkthrough and a fast confirm-or-adjust path first. Any 'agreement' figure computed against these labels measures the judge's agreement with this AI-assisted read, not with a human's. Disclose this if these numbers are submitted as evidence of human/judge agreement. UPDATE: s06, s07 and s22 were revised after directly reading the policy PDFs in docs/ (HO-0304 ed 01-22/02-23/03-24, HO-0500 ed 01-23, both endorsements) -- the initial checklist-only pass had gotten the earth-movement and ice/snow-collapse edition differences wrong. Labels are now grounded in the actual policy text, not just real-world-insurance intuition, but are still AI-derived, not independent blind human review."
+}

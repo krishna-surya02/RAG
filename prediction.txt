@@ -1,0 +1,11 @@
+Prediction, filed before iterating judge_v1.txt into judge_v2.txt:
+
+Adding s01 and s10 as few-shot examples (both: judge said right_call_wrong_support
+because the Basis text never states the bare exclusion code, even though it
+substantively and correctly explains the same provision in its own words) will teach
+the judge to grade correct_supported when the reasoning is substantively right, since
+literal code-presence is now checked separately by the exclusion_id_on_denial
+deterministic assertion -- so agreement_after should rise from 88% (22/25) toward
+23-24/25, by flipping s01 and s10 specifically, without changing anything about the
+9 cases that are wrong_call for a real substantive reason (missed E-2, wrong form,
+etc.), since those aren't citation-format disagreements at all.
