@@ -103,6 +103,39 @@ race numbers (pass rate, p50 latency, tokens, cost per claim for each
 system), the budget-termination demo, and the verdict on whether any of the
 10 claims forces an agent.
 
+## Trajectory evaluation: scoring the path, not just the answer
+
+`race.py` only checks four output fields against ground truth — it never
+looks at which tools were called or what arguments they were given. An agent
+can reach the right payout without ever opening the exclusions, on a claim
+that happens to be clean, and `race.py` calls that a pass. `trajectory_eval.py`
+scores the tool-call path itself: tool-choice accuracy, argument validity
+(were the arguments grounded in a real prior result, or invented?), step
+efficiency, and cost — then reports the gap between outcome pass rate and
+trajectory pass rate as a number.
+
+```bash
+python trajectory_eval.py                     # score every agent trace already on disk -- fast, no API calls
+python trajectory_eval.py --run --trials 2    # drive fresh live trials (2/claim, 20 total), then score them
+python trajectory_eval.py --mitigation        # add to either of the above: also run the before/after report
+```
+
+`--run` takes 20-25 minutes — it paces itself the same way `race.py` does,
+under Groq's per-minute token limit. `--mitigation` replays each run's
+recorded `check_policy_exclusions` arguments through the (patched) tool
+directly — no extra Groq calls — and writes the before/after regression
+table.
+
+Other flags: `--since ISO_TS` scores only traces at/after a timestamp, so a
+fresh batch isn't mixed with older ones; `--trace-path`, `--csv-path`,
+`--summary-path`, `--mitigation-path` override the default input/output file
+paths; `--quiet` suppresses the printed tables and only writes the files.
+
+See `week8_report.md` for the full numbers from the run already on disk: a
+50-point outcome-vs-trajectory gap, the two real failure modes that gap was
+hiding (a wrong-policy-edition citation and a skipped mandatory tool call),
+and the one mitigation applied to the larger of the two.
+
 ## Measuring retrieval
 
 When an answer is wrong, three very different things could have happened, and
@@ -256,3 +289,7 @@ and the retrieval exactly, but reproduces the answer only approximately.
 - `claim_agent.py` — claims triage as a tool-calling loop, with four budgets (iterations/tokens/cost/wall-clock) enforced
 - `claim_workflow.py` — the same three tools called in a fixed sequence, no loop
 - `race.py` / `claims_data.json` — races both systems over 10 claims; `week7_report.md` has the full write-up
+- `trajectory_eval.py` — scores agent trajectories (tool-choice accuracy, argument validity, step efficiency, cost) against `EXPECTED_SEQUENCES`, plus a mitigation before/after harness; `week8_report.md` has the full write-up
+- `trajectory.csv` / `trajectory_summary.json` — per-run rows / the trajectory number summary for the fresh 20-run batch
+- `trajectory_baseline.csv` / `trajectory_baseline_summary.json` — the same scorer run against the pre-existing 2026-09-28 trace, for validation
+- `trajectory_mitigation.json` — before/after regression table and measured price for the citation-edition fix

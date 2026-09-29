@@ -12,6 +12,7 @@ claimant name.
 """
 
 import json
+import re
 from pathlib import Path
 from typing import Literal, Optional
 
@@ -50,6 +51,22 @@ _CAUSE_QUERY = {
     "ice_snow_collapse": "collapse from weight of ice snow sleet or rain",
     "other": "homeowners policy exclusions",
 }
+
+_EDITION_RE = re.compile(r"_ed-(\d{2}-\d{2})\.pdf$")
+
+
+def extract_edition(source_file):
+    """'HO-0304_ed-01-22.pdf' -> '01-22'. None when the filename carries no
+    embedded edition (an endorsement or claim-form PDF, or no hit at all) --
+    those never count as a mismatch, since there's nothing to mismatch. Pure
+    and passive: used by trajectory_eval.py to score citations, and (once the
+    week-8 mitigation is applied) by check_policy_exclusions itself to filter
+    retrieval candidates by edition."""
+    if not source_file:
+        return None
+    match = _EDITION_RE.search(source_file)
+    return match.group(1) if match else None
+
 
 # Grounded in the same PDF-verified facts already established in
 # summary_goldenset.json's gold_answer fields (week 6). Keyed by
@@ -177,11 +194,21 @@ def check_policy_exclusions(form: str, edition: str, cause: str) -> dict:
     import retrieval
 
     query = _CAUSE_QUERY.get(cause, _CAUSE_QUERY["other"])
-    hits = retrieval.retrieve(f"{form} edition {edition}: {query}", k=1)
+    # k=5, not 1: sibling editions can be textually identical (taxonomy.md's
+    # sibling_edition pattern -- "E-4 and E-10 are word-for-word the same in
+    # 01-22 and 03-24"), so no amount of query rewording reliably separates
+    # them by embedding similarity alone. Filtering the top-k candidates by
+    # the edition already embedded in each PDF's filename is deterministic
+    # where re-ranking by text similarity is not. week8's trajectory_eval.py
+    # found this citation wrong-edition in half of a 20-run sample.
+    hits = retrieval.retrieve(f"{form} edition {edition}: {query}", k=5)
     citation = None
     if hits:
-        hit = hits[0]
+        same_edition = [h for h in hits if extract_edition(h.source_file) in (None, edition)]
+        hit = same_edition[0] if same_edition else hits[0]
         citation = {"source_file": hit.source_file, "page": hit.page, "chunk_id": hit.chunk_id}
+        if extract_edition(hit.source_file) not in (None, edition):
+            citation["edition_mismatch"] = True
 
     rule = _RULES.get((form, edition, cause))
     if rule is None:

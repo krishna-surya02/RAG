@@ -1,0 +1,198 @@
+{
+  "n_runs": 20,
+  "tool_choice_accuracy": 0.9,
+  "argument_validity_rate": 0.9489795918367347,
+  "step_efficiency": {
+    "mean": 0.9666666666666667,
+    "max": 1.0
+  },
+  "cost": {
+    "cost_p50": 0.000533,
+    "cost_max": 0.000605,
+    "tokens_p50": 5327.0,
+    "tokens_max": 5597,
+    "latency_p50_ms": 2908.9,
+    "latency_max_ms": 13946.9
+  },
+  "outcome_pass_rate": 1.0,
+  "trajectory_pass_rate": 0.5,
+  "failure_mode_tally": {
+    "mandatory_tool_skipped": 2,
+    "wrong_tool_order": 0,
+    "argument_hallucination": 0,
+    "ungrounded_citation": 10,
+    "redundant_tool_call": 0
+  },
+  "divergences": [
+    {
+      "trace_id": "bcdaf728c4454aaa86459b8557014708",
+      "claim_id": "CLM-2026-010003",
+      "ts": "2026-09-29T06:11:11.679+00:00",
+      "failing_checks": [
+        {
+          "trace_id": "bcdaf728c4454aaa86459b8557014708",
+          "claim_id": "CLM-2026-010003",
+          "turn": 2,
+          "tool": "check_policy_exclusions",
+          "check": "citation_edition_matches_claim",
+          "applicable": true,
+          "passed": false,
+          "detail": "cited 'HO-0304_ed-03-24.pdf' (edition 03-24) vs claim's real edition '01-22'"
+        }
+      ]
+    },
+    {
+      "trace_id": "22cc9ae59c5548fca810d8099b9ace84",
+      "claim_id": "CLM-2026-010003",
+      "ts": "2026-09-29T06:12:14.486+00:00",
+      "failing_checks": [
+        {
+          "trace_id": "22cc9ae59c5548fca810d8099b9ace84",
+          "claim_id": "CLM-2026-010003",
+          "turn": 2,
+          "tool": "check_policy_exclusions",
+          "check": "citation_edition_matches_claim",
+          "applicable": true,
+          "passed": false,
+          "detail": "cited 'HO-0304_ed-03-24.pdf' (edition 03-24) vs claim's real edition '01-22'"
+        }
+      ]
+    },
+    {
+      "trace_id": "bd45473b72524293b9baf22f21ad2677",
+      "claim_id": "CLM-2026-010005",
+      "ts": "2026-09-29T06:15:23.404+00:00",
+      "failing_checks": [
+        {
+          "trace_id": "bd45473b72524293b9baf22f21ad2677",
+          "claim_id": "CLM-2026-010005",
+          "turn": 2,
+          "tool": "check_policy_exclusions",
+          "check": "citation_edition_matches_claim",
+          "applicable": true,
+          "passed": false,
+          "detail": "cited 'HO-0304_ed-03-24.pdf' (edition 03-24) vs claim's real edition '01-22'"
+        }
+      ]
+    },
+    {
+      "trace_id": "81c99c430af14ff1826e5dce2ec13b70",
+      "claim_id": "CLM-2026-010005",
+      "ts": "2026-09-29T06:16:25.530+00:00",
+      "failing_checks": [
+        {
+          "trace_id": "81c99c430af14ff1826e5dce2ec13b70",
+          "claim_id": "CLM-2026-010005",
+          "turn": 2,
+          "tool": "check_policy_exclusions",
+          "check": "citation_edition_matches_claim",
+          "applicable": true,
+          "passed": false,
+          "detail": "cited 'HO-0304_ed-03-24.pdf' (edition 03-24) vs claim's real edition '01-22'"
+        }
+      ]
+    },
+    {
+      "trace_id": "301cae934ac04db8ba321dd66fda459a",
+      "claim_id": "CLM-2026-010006",
+      "ts": "2026-09-29T06:17:28.343+00:00",
+      "failing_checks": [
+        {
+          "trace_id": "301cae934ac04db8ba321dd66fda459a",
+          "claim_id": "CLM-2026-010006",
+          "turn": 2,
+          "tool": "check_policy_exclusions",
+          "check": "citation_edition_matches_claim",
+          "applicable": true,
+          "passed": false,
+          "detail": "cited 'HO-0500_ed-01-23.pdf' (edition 01-23) vs claim's real edition '03-24'"
+        }
+      ]
+    },
+    {
+      "trace_id": "3fe234e1f64941b8a53a62f57cb69c5c",
+      "claim_id": "CLM-2026-010006",
+      "ts": "2026-09-29T06:18:30.871+00:00",
+      "failing_checks": [
+        {
+          "trace_id": "3fe234e1f64941b8a53a62f57cb69c5c",
+          "claim_id": "CLM-2026-010006",
+          "turn": 2,
+          "tool": "check_policy_exclusions",
+          "check": "citation_edition_matches_claim",
+          "applicable": true,
+          "passed": false,
+          "detail": "cited 'HO-0500_ed-01-23.pdf' (edition 01-23) vs claim's real edition '03-24'"
+        }
+      ]
+    },
+    {
+      "trace_id": "840453fe43a140ab980867a86a65b813",
+      "claim_id": "CLM-2026-010008",
+      "ts": "2026-09-29T06:21:41.100+00:00",
+      "failing_checks": [
+        {
+          "trace_id": "840453fe43a140ab980867a86a65b813",
+          "claim_id": "CLM-2026-010008",
+          "turn": 2,
+          "tool": "check_policy_exclusions",
+          "check": "citation_edition_matches_claim",
+          "applicable": true,
+          "passed": false,
+          "detail": "cited 'HO-0304_ed-01-22.pdf' (edition 01-22) vs claim's real edition '03-24'"
+        }
+      ]
+    },
+    {
+      "trace_id": "480bd494b17f4185aa393b3773ae30c9",
+      "claim_id": "CLM-2026-010008",
+      "ts": "2026-09-29T06:22:42.938+00:00",
+      "failing_checks": [
+        {
+          "trace_id": "480bd494b17f4185aa393b3773ae30c9",
+          "claim_id": "CLM-2026-010008",
+          "turn": 2,
+          "tool": "check_policy_exclusions",
+          "check": "citation_edition_matches_claim",
+          "applicable": true,
+          "passed": false,
+          "detail": "cited 'HO-0304_ed-01-22.pdf' (edition 01-22) vs claim's real edition '03-24'"
+        }
+      ]
+    },
+    {
+      "trace_id": "62684bde40fc4652b685878fc5df163a",
+      "claim_id": "CLM-2026-010010",
+      "ts": "2026-09-29T06:25:51.949+00:00",
+      "failing_checks": [
+        {
+          "trace_id": "62684bde40fc4652b685878fc5df163a",
+          "claim_id": "CLM-2026-010010",
+          "turn": 2,
+          "tool": "check_policy_exclusions",
+          "check": "citation_edition_matches_claim",
+          "applicable": true,
+          "passed": false,
+          "detail": "cited 'HO-0304_ed-02-23.pdf' (edition 02-23) vs claim's real edition '01-22'"
+        }
+      ]
+    },
+    {
+      "trace_id": "a29d54e92286413093511d551f4ac6c9",
+      "claim_id": "CLM-2026-010010",
+      "ts": "2026-09-29T06:26:55.136+00:00",
+      "failing_checks": [
+        {
+          "trace_id": "a29d54e92286413093511d551f4ac6c9",
+          "claim_id": "CLM-2026-010010",
+          "turn": 2,
+          "tool": "check_policy_exclusions",
+          "check": "citation_edition_matches_claim",
+          "applicable": true,
+          "passed": false,
+          "detail": "cited 'HO-0304_ed-02-23.pdf' (edition 02-23) vs claim's real edition '01-22'"
+        }
+      ]
+    }
+  ]
+}
