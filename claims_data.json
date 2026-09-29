@@ -1,0 +1,205 @@
+{
+  "_about": "10 claims for week7's agent-vs-workflow race. 8 of the 10 (raw_notes, form, edition, endorsement, claimed_amount where present, and the pay/deny call + exclusion code in `expected`) are reconstructed from summary_goldenset.json's PDF-verified cases (see `source_goldenset_id`) by substituting real synthetic claim_id/claimant names back into the redacted [CLAIM_NO_1]/[CLAIMANT_1] placeholders. `claimed_amount_source: \"supplemented\"` marks the 3 cases (s06, s16, s20) whose original goldenset notes stated no dollar estimate -- those amounts are invented for this exercise, not PDF-sourced. get_claim() is the only reader of raw_notes; it must run redact.redact() on it before handing anything to a model, exactly like rag.py/summarize.py do at ingress. `expected` is the race scorer's ground truth and must never be returned by get_claim() or any tool.",
+  "claims": [
+    {
+      "claim_id": "CLM-2026-010001",
+      "source_goldenset_id": "s01",
+      "raw_notes": "Claim #CLM-2026-010001, insured Priya Raman. Policy is the March 2024 edition of HO-0304, no endorsements. Date of loss: April 2, 2026. The shower pan has been leaking slowly for months and the joists below are soft. Estimate is $50,600.",
+      "form": "HO-0304",
+      "edition": "03-24",
+      "endorsement": null,
+      "endorsement_limit": null,
+      "date_of_loss": "2026-04-02",
+      "claimed_amount": 50600,
+      "claimed_amount_source": "goldenset",
+      "deductible": 1000,
+      "expected": {
+        "cause_category": "wear_and_tear",
+        "claim_status": "denied",
+        "exclusion_code": "E-17",
+        "cap": null,
+        "payout": 0
+      }
+    },
+    {
+      "claim_id": "CLM-2026-010002",
+      "source_goldenset_id": "s04",
+      "raw_notes": "CLM-2026-010002, insured Marcus Oyelaran. Policy is HO-0304 ed. 02-23, base form only. Date of loss: August 17, 2026. Hail damaged the roof shingles and dented the gutters. Estimate is $36,000.",
+      "form": "HO-0304",
+      "edition": "02-23",
+      "endorsement": null,
+      "endorsement_limit": null,
+      "date_of_loss": "2026-08-17",
+      "claimed_amount": 36000,
+      "claimed_amount_source": "goldenset",
+      "deductible": 1000,
+      "expected": {
+        "cause_category": "hail",
+        "claim_status": "approved",
+        "exclusion_code": null,
+        "cap": null,
+        "payout": 35000
+      }
+    },
+    {
+      "claim_id": "CLM-2026-010003",
+      "source_goldenset_id": "s06",
+      "raw_notes": "CLM-2026-010003, insured Dana Whitfield. Policy is HO 03 04 (01/22), Endorsement HO-2405 attached with the $25,000 Enhanced Limit. Date of loss: March 18, 2026. A small earthquake cracked the foundation and the basement walls. Estimate is $41,200.",
+      "form": "HO-0304",
+      "edition": "01-22",
+      "endorsement": "HO-2405",
+      "endorsement_limit": 25000,
+      "date_of_loss": "2026-03-18",
+      "claimed_amount": 41200,
+      "claimed_amount_source": "supplemented",
+      "deductible": 1000,
+      "expected": {
+        "cause_category": "earthquake",
+        "claim_status": "denied",
+        "exclusion_code": "E-2",
+        "cap": null,
+        "payout": 0
+      }
+    },
+    {
+      "claim_id": "CLM-2026-010004",
+      "source_goldenset_id": "s08",
+      "raw_notes": "Claim #CLM-2026-010004, insured Tomás Herrera. Policy is HO-0304 Edition 02-23, Endorsement HO-2306 attached. Date of loss: December 27, 2026. The sump pump float switch stuck and the pit overflowed onto the basement carpet. Estimate is $6,900.",
+      "form": "HO-0304",
+      "edition": "02-23",
+      "endorsement": "HO-2306",
+      "endorsement_limit": 5000,
+      "date_of_loss": "2026-12-27",
+      "claimed_amount": 6900,
+      "claimed_amount_source": "goldenset",
+      "deductible": 1000,
+      "expected": {
+        "cause_category": "sump_failure",
+        "claim_status": "partial",
+        "exclusion_code": "E-17",
+        "cap": 5000,
+        "payout": 4000
+      }
+    },
+    {
+      "claim_id": "CLM-2026-010005",
+      "source_goldenset_id": "s12",
+      "raw_notes": "Claim #CLM-2026-010005, insured Keiko Tanabe. Policy is the 2022 HO-0304 form, base form only. Date of loss: October 11, 2026. Lumber and windows were stolen from the addition, which is still under construction. Estimate is $10,000.",
+      "form": "HO-0304",
+      "edition": "01-22",
+      "endorsement": null,
+      "endorsement_limit": null,
+      "date_of_loss": "2026-10-11",
+      "claimed_amount": 10000,
+      "claimed_amount_source": "goldenset",
+      "deductible": 1000,
+      "expected": {
+        "cause_category": "theft_construction",
+        "claim_status": "denied",
+        "exclusion_code": "E-19",
+        "cap": null,
+        "payout": 0
+      }
+    },
+    {
+      "claim_id": "CLM-2026-010006",
+      "source_goldenset_id": "s13",
+      "raw_notes": "Claim CLM-2026-010006, insured Liam O'Connell. Policy is HO 03 04 (03/24), no endorsements. Date of loss: October 23, 2026. A kitchen grease fire damaged the cabinets and the ceiling. Estimate is $6,400.",
+      "form": "HO-0304",
+      "edition": "03-24",
+      "endorsement": null,
+      "endorsement_limit": null,
+      "date_of_loss": "2026-10-23",
+      "claimed_amount": 6400,
+      "claimed_amount_source": "goldenset",
+      "deductible": 1000,
+      "expected": {
+        "cause_category": "fire",
+        "claim_status": "approved",
+        "exclusion_code": null,
+        "cap": null,
+        "payout": 5400
+      }
+    },
+    {
+      "claim_id": "CLM-2026-010007",
+      "source_goldenset_id": "s16",
+      "raw_notes": "Claim #CLM-2026-010007, insured Fatima Al-Sayed. Policy is the March 2024 edition of HO-0304, no endorsements. Date of loss: November 10, 2026. The washing machine hose split and flooded the laundry room. Estimate is $22,400.",
+      "form": "HO-0304",
+      "edition": "03-24",
+      "endorsement": null,
+      "endorsement_limit": null,
+      "date_of_loss": "2026-11-10",
+      "claimed_amount": 22400,
+      "claimed_amount_source": "supplemented",
+      "deductible": 1000,
+      "expected": {
+        "cause_category": "sudden_discharge",
+        "claim_status": "partial",
+        "exclusion_code": "E-17",
+        "cap": 10000,
+        "payout": 9000
+      }
+    },
+    {
+      "claim_id": "CLM-2026-010008",
+      "source_goldenset_id": "s17",
+      "raw_notes": "Claim #CLM-2026-010008, insured Grace Nguyen-Tran. Policy is HO 03 04 (03/24), no endorsements. Date of loss: August 12, 2026. Water backed up through the basement floor drain after heavy rain overwhelmed the city sewer. Estimate is $48,600.",
+      "form": "HO-0304",
+      "edition": "03-24",
+      "endorsement": null,
+      "endorsement_limit": null,
+      "date_of_loss": "2026-08-12",
+      "claimed_amount": 48600,
+      "claimed_amount_source": "goldenset",
+      "deductible": 1000,
+      "expected": {
+        "cause_category": "sewer_backup",
+        "claim_status": "denied",
+        "exclusion_code": "E-17",
+        "cap": null,
+        "payout": 0
+      }
+    },
+    {
+      "claim_id": "CLM-2026-010009",
+      "source_goldenset_id": "s20",
+      "raw_notes": "Claim number CLM-2026-010009, insured Robert Mendoza. Policy is HO 03 04 (02/23), base form only. Date of loss: September 25, 2026. Ice and snow built up on a flat roof section and the ceiling below caved in. Estimate is $27,300.",
+      "form": "HO-0304",
+      "edition": "02-23",
+      "endorsement": null,
+      "endorsement_limit": null,
+      "date_of_loss": "2026-09-25",
+      "claimed_amount": 27300,
+      "claimed_amount_source": "supplemented",
+      "deductible": 1000,
+      "expected": {
+        "cause_category": "ice_snow_collapse",
+        "claim_status": "approved",
+        "exclusion_code": "E-20",
+        "cap": null,
+        "payout": 26300
+      }
+    },
+    {
+      "claim_id": "CLM-2026-010010",
+      "source_goldenset_id": "s22",
+      "raw_notes": "Claim no. CLM-2026-010010, insured Aisha Bello. Policy is HO-0304 ed. 01-22, no endorsements on file. Date of loss: August 13, 2026. Ice and snow built up on a flat roof section and the ceiling below caved in. Estimate is $18,400.",
+      "form": "HO-0304",
+      "edition": "01-22",
+      "endorsement": null,
+      "endorsement_limit": null,
+      "date_of_loss": "2026-08-13",
+      "claimed_amount": 18400,
+      "claimed_amount_source": "goldenset",
+      "deductible": 1000,
+      "expected": {
+        "cause_category": "ice_snow_collapse",
+        "claim_status": "denied",
+        "exclusion_code": "E-20",
+        "cap": null,
+        "payout": 0
+      }
+    }
+  ]
+}

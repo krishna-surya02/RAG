@@ -80,6 +80,29 @@ See `week6_report.md` for the full judge/human-agreement study this was built
 for, and `evaluate_answers.py` / `judge_v1.txt` / `goldenset.json` for the
 equivalent harness over `rag.py`'s coverage-question answers.
 
+## Claims triage: agent vs workflow
+
+Week 7 asks whether a claims-triage task needs an agent at all. `claim_agent.py`
+is a tool-calling loop over three tools (`get_claim`, `check_policy_exclusions`,
+`compute_payout`, all in `claims_tools.py`) with four budgets enforced --
+iterations, tokens, cost, wall-clock. `claim_workflow.py` calls the same three
+tools in a fixed, hard-coded sequence, no loop. `race.py` runs both over the
+10 claims in `claims_data.json` and scores them against held-back expected
+outcomes.
+
+```bash
+python claim_agent.py CLM-2026-010007       # tool-calling loop
+python claim_workflow.py CLM-2026-010007    # fixed pipeline, same tools/model
+python race.py                              # both systems over all 10 claims -> race.csv
+```
+
+`race.py` takes 10-15 minutes -- it paces itself under Groq's per-minute
+token limit rather than racing through it, so latency numbers reflect real
+model+tool time, not rate-limit backoff. See `week7_report.md` for the full
+race numbers (pass rate, p50 latency, tokens, cost per claim for each
+system), the budget-termination demo, and the verdict on whether any of the
+10 claims forces an agent.
+
 ## Measuring retrieval
 
 When an answer is wrong, three very different things could have happened, and
@@ -228,3 +251,8 @@ and the retrieval exactly, but reproduces the answer only approximately.
 - `summarize.py` — `summarize()`: redact, retrieve, prompt, generate, splice in the claim number, trace
 - `evaluate_summaries.py` / `summary_judge_v1.txt` / `summary_judge_v2.txt` — the same judge/assertion harness for claim summaries; `week6_report.md` has the full write-up
 - `summary_goldenset.json` / `summary_regression_set.json` — 25 taxonomy-tagged summary cases plus 2 frozen regression cases
+- `claims_tools.py` — the three claims-triage tools (`get_claim`, `check_policy_exclusions`, `compute_payout`), shared by both systems below
+- `claims_common.py` — shared output contract, Groq pricing, trace writer, and the rate limiter `race.py` uses
+- `claim_agent.py` — claims triage as a tool-calling loop, with four budgets (iterations/tokens/cost/wall-clock) enforced
+- `claim_workflow.py` — the same three tools called in a fixed sequence, no loop
+- `race.py` / `claims_data.json` — races both systems over 10 claims; `week7_report.md` has the full write-up

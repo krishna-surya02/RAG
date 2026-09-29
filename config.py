@@ -134,9 +134,13 @@ def get_vector_store(pre_delete_collection=False):
     )
 
 
-def get_llm():
+def get_llm(model=None):
+    """`model` overrides CHAT_MODEL for one client -- e.g. claim_agent.py and
+    claim_workflow.py pin their own model, so a daily per-model quota hit on
+    CHAT_MODEL doesn't block them (Groq's TPD limit is per model, not
+    account-wide)."""
     return ChatGroq(
-        model=CHAT_MODEL,
+        model=model or CHAT_MODEL,
         api_key=GROQ_API_KEY,
         temperature=TEMPERATURE,
         max_tokens=MAX_TOKENS,

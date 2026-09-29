@@ -1,0 +1,43 @@
+Budget-termination demo
+========================
+
+Command:
+    python claim_agent.py CLM-2026-010007 --max-iterations 1
+
+This claim (the washing-machine-hose flood, s16) normally takes the agent 4
+model turns to resolve (get_claim -> check_policy_exclusions -> compute_payout
+-> final JSON; see the untruncated run in traces/claims_agent_traces.jsonl).
+Capping max_iterations at 1 forces the loop to hit a budget mid-task, right
+after its first (and only permitted) tool call, before it has enough
+information to answer. All four budgets (max_iterations, max_tokens, max_cost,
+max_seconds) are checked at the top of every loop turn, before the next model
+call is made -- so a breach is caught before any further spend, not after.
+
+Full stdout:
+------------
+[turn 1] calling model (2 messages so far)
+[turn 1] model call used 919+99 tokens (cumulative 1018 tok, $0.000197)
+[turn 1] tool call: get_claim({'claim_id': 'CLM-2026-010007'}) -> {'claim_id': 'CLM-2026-010007', 'notes': 'Claim #[CLAIM_NO_1], insured [CLAIMANT_1]. Policy is the March 2024 edition of HO-0304, no endorsements. Date of loss: November 10, 2026. The washing machine hose split and flooded the laundry room. Estimate is $22,400.', 'form': 'HO-0304', 'edition': '03-24', 'endorsement': None, 'endorsement_limit': None, 'date_of_loss': '2026-11-10', 'claimed_amount': 22400, 'deductible': 1000}
+[turn 1] BUDGET EXCEEDED: ran out of iterations
+{
+  "status": "budget_exceeded",
+  "budget": "max_iterations",
+  "limit": 1,
+  "actual": 1
+}
+
+What happened: the model used its one allowed turn to call get_claim, same as
+it would in an unconstrained run. On the next loop iteration the budget check
+at the top of the loop found turn 2 would exceed max_iterations=1, so the
+loop exited immediately -- no second model call was made, no exception was
+raised, and no retry was attempted. run_claim() returned a plain
+{"status": "budget_exceeded", "budget": "max_iterations", "limit": 1,
+"actual": 1} result, the same shape race.py treats as an automatic fail, and
+the same run is recorded to traces/claims_agent_traces.jsonl with that status
+so it's auditable after the fact. Nothing spun, retried, or crashed.
+
+The other three budgets (max_tokens, max_cost, max_seconds) are enforced by
+the identical check at the same point in the loop (claim_agent.py's breach()
+function) -- max_iterations was picked for this demo only because it is the
+cheapest one to trigger deterministically without depending on network
+latency or token-count variance between runs.
