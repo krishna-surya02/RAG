@@ -1,0 +1,163 @@
+[
+  {
+    "direction": "client->server",
+    "message": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "initialize",
+      "params": {
+        "protocolVersion": "2025-11-25",
+        "capabilities": {},
+        "clientInfo": {
+          "name": "capture_wire",
+          "version": "0"
+        }
+      }
+    }
+  },
+  {
+    "direction": "server->client",
+    "message": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "result": {
+        "capabilities": {
+          "prompts": {
+            "listChanged": false
+          },
+          "resources": {
+            "listChanged": false,
+            "subscribe": false
+          },
+          "tools": {
+            "listChanged": false
+          }
+        },
+        "protocolVersion": "2025-11-25",
+        "serverInfo": {
+          "name": "claims-system",
+          "version": ""
+        }
+      }
+    }
+  },
+  {
+    "direction": "client->server",
+    "message": {
+      "jsonrpc": "2.0",
+      "method": "notifications/initialized"
+    }
+  },
+  {
+    "direction": "client->server",
+    "message": {
+      "jsonrpc": "2.0",
+      "id": 2,
+      "method": "tools/list"
+    }
+  },
+  {
+    "direction": "server->client",
+    "message": {
+      "jsonrpc": "2.0",
+      "id": 2,
+      "result": {
+        "tools": [
+          {
+            "description": "Look up the current status of one claim by claim number (CLM-YYYY-nnnnnn).\n    Returns JSON with status, policy form/edition, date of loss and claimed amount.",
+            "inputSchema": {
+              "properties": {
+                "claim_number": {
+                  "title": "Claim Number",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "claim_number"
+              ],
+              "type": "object",
+              "title": "get_claim_statusArguments"
+            },
+            "name": "get_claim_status",
+            "outputSchema": {
+              "properties": {
+                "result": {
+                  "title": "Result",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "result"
+              ],
+              "type": "object",
+              "title": "get_claim_statusOutput"
+            }
+          },
+          {
+            "description": "Fetch the adjuster note history for one claim by claim number\n    (CLM-YYYY-nnnnnn). Returns a JSON list of dated notes, newest first; the\n    claimant's name is redacted.",
+            "inputSchema": {
+              "properties": {
+                "claim_number": {
+                  "title": "Claim Number",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "claim_number"
+              ],
+              "type": "object",
+              "title": "get_adjuster_notesArguments"
+            },
+            "name": "get_adjuster_notes",
+            "outputSchema": {
+              "properties": {
+                "result": {
+                  "title": "Result",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "result"
+              ],
+              "type": "object",
+              "title": "get_adjuster_notesOutput"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "direction": "client->server",
+    "message": {
+      "jsonrpc": "2.0",
+      "id": 3,
+      "method": "tools/call",
+      "params": {
+        "name": "get_claim_status",
+        "arguments": {
+          "claim_number": "CLM-2026-010007"
+        }
+      }
+    }
+  },
+  {
+    "direction": "server->client",
+    "message": {
+      "jsonrpc": "2.0",
+      "id": 3,
+      "result": {
+        "content": [
+          {
+            "text": "{\"claim_number\": \"CLM-2026-010007\", \"status\": \"under_review\", \"form\": \"HO-0304\", \"edition\": \"03-24\", \"date_of_loss\": \"2026-11-10\", \"claimed_amount\": 22400}",
+            "type": "text"
+          }
+        ],
+        "isError": false,
+        "structuredContent": {
+          "result": "{\"claim_number\": \"CLM-2026-010007\", \"status\": \"under_review\", \"form\": \"HO-0304\", \"edition\": \"03-24\", \"date_of_loss\": \"2026-11-10\", \"claimed_amount\": 22400}"
+        }
+      }
+    }
+  }
+]

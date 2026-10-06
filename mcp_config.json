@@ -1,0 +1,12 @@
+{
+  "servers": {
+    "policy-search": {
+      "command": ".venv/bin/python",
+      "args": ["policy_server.py"]
+    },
+    "claims-system": {
+      "command": ".venv/bin/python",
+      "args": ["claims_server.py"]
+    }
+  }
+}

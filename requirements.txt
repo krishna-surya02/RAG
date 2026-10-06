@@ -11,3 +11,4 @@ pgvector
 SQLAlchemy
 python-dotenv
 numpy
+mcp

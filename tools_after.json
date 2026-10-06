@@ -1,0 +1,129 @@
+{
+  "count": 3,
+  "tools": [
+    {
+      "server": "policy-search",
+      "name": "search_policy"
+    },
+    {
+      "server": "claims-system",
+      "name": "get_claim_status"
+    },
+    {
+      "server": "claims-system",
+      "name": "get_adjuster_notes"
+    }
+  ],
+  "raw": [
+    {
+      "server": "policy-search",
+      "name": "search_policy",
+      "description": "Search policy documents.",
+      "inputSchema": {
+        "properties": {
+          "query": {
+            "title": "Query",
+            "type": "string"
+          },
+          "edition": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Edition"
+          },
+          "k": {
+            "default": 3,
+            "title": "K",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "query"
+        ],
+        "type": "object",
+        "title": "search_policyArguments"
+      },
+      "outputSchema": {
+        "properties": {
+          "result": {
+            "title": "Result",
+            "type": "string"
+          }
+        },
+        "required": [
+          "result"
+        ],
+        "type": "object",
+        "title": "search_policyOutput"
+      }
+    },
+    {
+      "server": "claims-system",
+      "name": "get_claim_status",
+      "description": "Look up the current status of one claim by claim number (CLM-YYYY-nnnnnn).\n    Returns JSON with status, policy form/edition, date of loss and claimed amount.",
+      "inputSchema": {
+        "properties": {
+          "claim_number": {
+            "title": "Claim Number",
+            "type": "string"
+          }
+        },
+        "required": [
+          "claim_number"
+        ],
+        "type": "object",
+        "title": "get_claim_statusArguments"
+      },
+      "outputSchema": {
+        "properties": {
+          "result": {
+            "title": "Result",
+            "type": "string"
+          }
+        },
+        "required": [
+          "result"
+        ],
+        "type": "object",
+        "title": "get_claim_statusOutput"
+      }
+    },
+    {
+      "server": "claims-system",
+      "name": "get_adjuster_notes",
+      "description": "Fetch the adjuster note history for one claim by claim number\n    (CLM-YYYY-nnnnnn). Returns a JSON list of dated notes, newest first; the\n    claimant's name is redacted.",
+      "inputSchema": {
+        "properties": {
+          "claim_number": {
+            "title": "Claim Number",
+            "type": "string"
+          }
+        },
+        "required": [
+          "claim_number"
+        ],
+        "type": "object",
+        "title": "get_adjuster_notesArguments"
+      },
+      "outputSchema": {
+        "properties": {
+          "result": {
+            "title": "Result",
+            "type": "string"
+          }
+        },
+        "required": [
+          "result"
+        ],
+        "type": "object",
+        "title": "get_adjuster_notesOutput"
+      }
+    }
+  ]
+}

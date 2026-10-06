@@ -1,0 +1,225 @@
+{
+  "_about": "Raw JSON-RPC (stdio, newline-delimited) against claims_server.py (a MOCK of the platform team's server). 'message' is verbatim from capture_wire.py; 'annotations' are hand-written, one per top-level field.",
+  "model_call": "The model call happens in mcp_agent.py (the host/client, Groq), between tool results and the next turn; it does NOT happen in the MCP server or anywhere on this wire.",
+  "exchange": [
+    {
+      "direction": "client->server",
+      "message": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "initialize",
+        "params": {
+          "protocolVersion": "2025-11-25",
+          "capabilities": {},
+          "clientInfo": {
+            "name": "capture_wire",
+            "version": "0"
+          }
+        }
+      },
+      "annotations": {
+        "jsonrpc": "JSON-RPC 2.0 version tag; required on every message, always the string '2.0'.",
+        "id": "Client-chosen request id (1). The server must echo it in its reply so the client can match reply to request.",
+        "method": "'initialize' = the mandatory first request; opens the session and negotiates protocol.",
+        "params": {
+          "_": "Request arguments.",
+          "protocolVersion": "Newest MCP spec revision the client speaks; server answers with the one it will use.",
+          "capabilities": "Features the client offers the server (sampling, roots, ...). {} = none offered.",
+          "clientInfo": "Who is calling: name/version, for server-side logs only."
+        }
+      }
+    },
+    {
+      "direction": "server->client",
+      "message": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "result": {
+          "capabilities": {
+            "prompts": {
+              "listChanged": false
+            },
+            "resources": {
+              "listChanged": false,
+              "subscribe": false
+            },
+            "tools": {
+              "listChanged": false
+            }
+          },
+          "protocolVersion": "2025-11-25",
+          "serverInfo": {
+            "name": "claims-system",
+            "version": ""
+          }
+        }
+      },
+      "annotations": {
+        "jsonrpc": "JSON-RPC 2.0 version tag; required on every message, always the string '2.0'.",
+        "id": "Echo of request id 1: this is the reply to initialize.",
+        "result": {
+          "_": "Success payload (a reply carries 'result' XOR 'error').",
+          "capabilities": "What the server can do: tools (listChanged=false: its tool set won't change mid-session), plus prompts/resources it advertises but doesn't use here.",
+          "protocolVersion": "Version agreed for this session (2025-11-25).",
+          "serverInfo": "Server's self-declared name ('claims-system') and version (empty string)."
+        }
+      }
+    },
+    {
+      "direction": "client->server",
+      "message": {
+        "jsonrpc": "2.0",
+        "method": "notifications/initialized"
+      },
+      "annotations": {
+        "jsonrpc": "JSON-RPC 2.0 version tag; required on every message, always the string '2.0'.",
+        "method": "'notifications/initialized' = client says handshake done. No 'id' field: a notification, so no reply is sent or expected."
+      }
+    },
+    {
+      "direction": "client->server",
+      "message": {
+        "jsonrpc": "2.0",
+        "id": 2,
+        "method": "tools/list"
+      },
+      "annotations": {
+        "jsonrpc": "JSON-RPC 2.0 version tag; required on every message, always the string '2.0'.",
+        "id": "Request id 2.",
+        "method": "'tools/list' = discovery. This is the call mcp_agent.py uses to learn what tools exist; no params needed."
+      }
+    },
+    {
+      "direction": "server->client",
+      "message": {
+        "jsonrpc": "2.0",
+        "id": 2,
+        "result": {
+          "tools": [
+            {
+              "description": "Look up the current status of one claim by claim number (CLM-YYYY-nnnnnn).\n    Returns JSON with status, policy form/edition, date of loss and claimed amount.",
+              "inputSchema": {
+                "properties": {
+                  "claim_number": {
+                    "title": "Claim Number",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "claim_number"
+                ],
+                "type": "object",
+                "title": "get_claim_statusArguments"
+              },
+              "name": "get_claim_status",
+              "outputSchema": {
+                "properties": {
+                  "result": {
+                    "title": "Result",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "result"
+                ],
+                "type": "object",
+                "title": "get_claim_statusOutput"
+              }
+            },
+            {
+              "description": "Fetch the adjuster note history for one claim by claim number\n    (CLM-YYYY-nnnnnn). Returns a JSON list of dated notes, newest first; the\n    claimant's name is redacted.",
+              "inputSchema": {
+                "properties": {
+                  "claim_number": {
+                    "title": "Claim Number",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "claim_number"
+                ],
+                "type": "object",
+                "title": "get_adjuster_notesArguments"
+              },
+              "name": "get_adjuster_notes",
+              "outputSchema": {
+                "properties": {
+                  "result": {
+                    "title": "Result",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "result"
+                ],
+                "type": "object",
+                "title": "get_adjuster_notesOutput"
+              }
+            }
+          ]
+        }
+      },
+      "annotations": {
+        "jsonrpc": "JSON-RPC 2.0 version tag; required on every message, always the string '2.0'.",
+        "id": "Echo of 2.",
+        "result": {
+          "_": "Success payload.",
+          "tools": "One entry per tool. Each: name (what the model will call), description (the docstring -- the model reads this as a prompt), inputSchema (JSON Schema for arguments; becomes the model's tool 'parameters'), outputSchema (SDK-generated schema of structuredContent; the model never needs it)."
+        }
+      }
+    },
+    {
+      "direction": "client->server",
+      "message": {
+        "jsonrpc": "2.0",
+        "id": 3,
+        "method": "tools/call",
+        "params": {
+          "name": "get_claim_status",
+          "arguments": {
+            "claim_number": "CLM-2026-010007"
+          }
+        }
+      },
+      "annotations": {
+        "jsonrpc": "JSON-RPC 2.0 version tag; required on every message, always the string '2.0'.",
+        "id": "Request id 3.",
+        "method": "'tools/call' = execute one tool. The only message here that runs claim-lookup code.",
+        "params": {
+          "_": "Call arguments.",
+          "name": "Which tool to run -- must match a name from tools/list.",
+          "arguments": "Values conforming to that tool's inputSchema; in the agent these are what the model generated."
+        }
+      }
+    },
+    {
+      "direction": "server->client",
+      "message": {
+        "jsonrpc": "2.0",
+        "id": 3,
+        "result": {
+          "content": [
+            {
+              "text": "{\"claim_number\": \"CLM-2026-010007\", \"status\": \"under_review\", \"form\": \"HO-0304\", \"edition\": \"03-24\", \"date_of_loss\": \"2026-11-10\", \"claimed_amount\": 22400}",
+              "type": "text"
+            }
+          ],
+          "isError": false,
+          "structuredContent": {
+            "result": "{\"claim_number\": \"CLM-2026-010007\", \"status\": \"under_review\", \"form\": \"HO-0304\", \"edition\": \"03-24\", \"date_of_loss\": \"2026-11-10\", \"claimed_amount\": 22400}"
+          }
+        }
+      },
+      "annotations": {
+        "jsonrpc": "JSON-RPC 2.0 version tag; required on every message, always the string '2.0'.",
+        "id": "Echo of 3.",
+        "result": {
+          "_": "Success payload of the call.",
+          "content": "List of content blocks returned to the model; here one text block whose 'text' is the claim JSON (as a string).",
+          "isError": "false = tool succeeded. Tool failures come back as isError=true inside a normal result, NOT as a JSON-RPC 'error' -- so the model can read and react to them.",
+          "structuredContent": "Same data in machine-readable form (SDK wraps the string in {result: ...}); the agent uses 'content', not this."
+        }
+      }
+    }
+  ]
+}
