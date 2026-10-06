@@ -1,0 +1,59 @@
+{
+  "count": 1,
+  "tools": [
+    {
+      "server": "policy-search",
+      "name": "search_policy"
+    }
+  ],
+  "raw": [
+    {
+      "server": "policy-search",
+      "name": "search_policy",
+      "description": "Search policy documents.",
+      "inputSchema": {
+        "properties": {
+          "query": {
+            "title": "Query",
+            "type": "string"
+          },
+          "edition": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Edition"
+          },
+          "k": {
+            "default": 3,
+            "title": "K",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "query"
+        ],
+        "type": "object",
+        "title": "search_policyArguments"
+      },
+      "outputSchema": {
+        "properties": {
+          "result": {
+            "title": "Result",
+            "type": "string"
+          }
+        },
+        "required": [
+          "result"
+        ],
+        "type": "object",
+        "title": "search_policyOutput"
+      }
+    }
+  ]
+}
