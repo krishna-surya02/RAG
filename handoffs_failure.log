@@ -1,0 +1,3 @@
+{"claim_id": "CLM-2026-010001", "from": "orchestrator", "to": "decomposer", "calls": 1, "prompt_tokens": 294, "completion_tokens": 392, "total_tokens": 686}
+{"claim_id": "CLM-2026-010001", "from": "orchestrator", "to": "notes_worker", "calls": 1, "prompt_tokens": 357, "completion_tokens": 242, "total_tokens": 599}
+{"claim_id": "CLM-2026-010001", "from": "workers", "to": "synthesiser", "calls": 1, "prompt_tokens": 640, "completion_tokens": 455, "total_tokens": 1095}
