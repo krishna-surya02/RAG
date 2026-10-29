@@ -1,0 +1,276 @@
+{
+  "label": "after-v2",
+  "passed": 9,
+  "total": 13,
+  "rows": [
+    {
+      "id": "q01",
+      "origin": "goldenset",
+      "passed": true,
+      "reasons": [],
+      "verdict": "correct_supported",
+      "answer_call": "covered",
+      "trace_id": "5390eb21732845acaa1d85428f3748bf",
+      "prompt_version": "claims-v2",
+      "retrieval_mode": "scoped",
+      "context_files": [
+        "HO-0304_ed-03-24.pdf",
+        "HO-0304_ed-03-24.pdf",
+        "HO-0304_ed-03-24.pdf",
+        "HO-0304_ed-03-24.pdf",
+        "HO-0304_ed-03-24.pdf"
+      ],
+      "answer_head": "**Coverage applies – the claim should be paid.** **Why:** The loss is caused by a “sudden and accidental discharge” from a water‑heater tank (a household appliance). Under the HO‑0304, Edition 03‑24 policy the exclusion E‑17 states: > “We d",
+      "judge_rationale": "The answer correctly identifies that the loss is a sudden and accidental discharge from a household appliance, which is covered under E‑17 of HO‑0304 Edition 03‑24 up to a $10,000 sublimit. It cites the exact exclusion language and notes the sublimit exceeds the $8,200 loss, so the claim should be paid."
+    },
+    {
+      "id": "q02",
+      "origin": "goldenset",
+      "passed": true,
+      "reasons": [],
+      "verdict": "correct_supported",
+      "answer_call": "excluded",
+      "trace_id": "3b362f661ed84d5cb5bf8c4c02574660",
+      "prompt_version": "claims-v2",
+      "retrieval_mode": "scoped",
+      "context_files": [
+        "HO-0304_ed-01-22.pdf",
+        "HO-0304_ed-01-22.pdf",
+        "HO-0304_ed-01-22.pdf",
+        "HO-0304_ed-01-22.pdf",
+        "HO-0304_ed-01-22.pdf"
+      ],
+      "answer_head": "The loss is **not covered**. **Applicable exclusion** > “**E‑17 Water Backup and Sump Overflow.** We do not cover loss caused by water or waterborne material which backs up through sewers or drains, or which overflows or is discharged from ",
+      "judge_rationale": "The assistant correctly denied coverage, citing E‑17 Water Backup and Sump Overflow from HO‑0304, Edition 01‑22, and noted the lack of an endorsement to buy back the exclusion. The quoted text matches the 01‑22 edition and the call matches the gold answer."
+    },
+    {
+      "id": "q03",
+      "origin": "goldenset",
+      "passed": true,
+      "reasons": [],
+      "verdict": "correct_supported",
+      "answer_call": "other",
+      "trace_id": "f9c112eeae1048a7af2b6d9d328d83e7",
+      "prompt_version": "claims-v2",
+      "retrieval_mode": "scoped",
+      "context_files": [
+        "Endorsement_HO-2306.pdf",
+        "Endorsement_HO-2306.pdf",
+        "Endorsement_HO-2405.pdf",
+        "HO-0304_ed-03-24.pdf",
+        "Endorsement_HO-2405.pdf"
+      ],
+      "answer_head": "The endorsement **does not cover** the loss. **Why** - **Endorsement HO‑2306** is limited to **Form HO‑0304, Edition 01‑22 or Edition 02‑23** only. > “This endorsement applies only while attached to Form HO‑0304, Edition 01‑22 or Edition 02",
+      "judge_rationale": "The answer correctly notes that HO‑2306 only applies to Editions 01‑22 or 02‑23 and is superseded by HO‑2405 on Edition 03‑24, and therefore cannot provide coverage for sewer‑backup loss on a 03‑24 policy. It cites the relevant conditions and E‑17 text from the 03‑24 edition, matching the gold answer’s reasoning."
+    },
+    {
+      "id": "q04",
+      "origin": "goldenset",
+      "passed": false,
+      "reasons": [
+        "verdict wrong_call"
+      ],
+      "verdict": "wrong_call",
+      "answer_call": "other",
+      "trace_id": "e44e5b187bcb424998d31bcd1ce3c3d5",
+      "prompt_version": "claims-v2",
+      "retrieval_mode": "scoped",
+      "context_files": [
+        "HO-0304_ed-02-23.pdf",
+        "HO-0304_ed-02-23.pdf",
+        "HO-0304_ed-02-23.pdf",
+        "HO-0304_ed-02-23.pdf",
+        "HO-0304_ed-02-23.pdf"
+      ],
+      "answer_head": "The policy’s **E‑20 Collapse** exclusion applies. > **E‑20 Collapse.** “We do not cover loss caused by collapse, **except as specifically provided under the Additional Coverage — Collapse provision, which applies only to collapse caused by ",
+      "judge_rationale": "The assistant incorrectly concluded that the collapse is excluded by E‑20, ignoring the clause that specifically allows coverage for collapse caused by the weight of ice, snow, sleet, or rain on a roof. The correct call is to pay, as the policy’s E‑20 exception covers this scenario."
+    },
+    {
+      "id": "q05",
+      "origin": "goldenset",
+      "passed": true,
+      "reasons": [],
+      "verdict": "correct_supported",
+      "answer_call": "covered",
+      "trace_id": "39d7499092394836926ef6a24123da2c",
+      "prompt_version": "claims-v2",
+      "retrieval_mode": "scoped",
+      "context_files": [
+        "HO-0304_ed-02-23.pdf",
+        "HO-0304_ed-02-23.pdf",
+        "HO-0304_ed-02-23.pdf",
+        "HO-0304_ed-02-23.pdf",
+        "HO-0304_ed-02-23.pdf"
+      ],
+      "answer_head": "The only provision that deals with mold in **HO‑0304, Edition 02‑23** is exclusion **E‑10**: > “We do not cover loss caused by mold, fungus, or wet rot, **except mold, fungus, or wet rot that is hidden within the walls or ceilings and resul",
+      "judge_rationale": "The answer correctly identifies E‑10 from HO‑0304, Edition 02‑23, quotes the 30‑day remediation requirement, and concludes the mold is not covered because remediation has not begun within 30 days, matching the gold answer."
+    },
+    {
+      "id": "q06",
+      "origin": "goldenset",
+      "passed": true,
+      "reasons": [],
+      "verdict": "correct_supported",
+      "answer_call": "covered",
+      "trace_id": "f9d3599c34aa47bc88616b6b09001742",
+      "prompt_version": "claims-v2",
+      "retrieval_mode": "scoped",
+      "context_files": [
+        "HO-0500_ed-01-23.pdf",
+        "HO-0500_ed-01-23.pdf",
+        "HO-0500_ed-01-23.pdf",
+        "HO-0500_ed-01-23.pdf",
+        "HO-0304_ed-03-24.pdf"
+      ],
+      "answer_head": "**Coverage** Yes. Under the **HO‑0500, Edition 01‑23** (Homeowners Broad Form) the loss would be covered. * **Named peril** – Section II lists the perils that trigger coverage. It includes both “**windstorm or hail**” and “**falling objects",
+      "judge_rationale": "The answer correctly identifies that the loss is a covered named peril (windstorm/falling object) under HO‑0500, Edition 01‑23, and correctly applies the exception in F‑11 that excludes collapse only when not caused by a named peril. It therefore reaches the correct outcome of payment (minus the deductible) and does not misattribute the exclusion as a blanket bar."
+    },
+    {
+      "id": "q07",
+      "origin": "goldenset",
+      "passed": false,
+      "reasons": [
+        "assertion exclusion_id_on_denial: expected 'E-10', judge saw None"
+      ],
+      "verdict": "right_call_wrong_support",
+      "answer_call": "other",
+      "trace_id": "6d553dbbf1434b879aa1ff2cb62d4973",
+      "prompt_version": "claims-v2",
+      "retrieval_mode": "scoped",
+      "context_files": [
+        "Endorsement_HO-2405.pdf",
+        "Endorsement_HO-2306.pdf",
+        "Endorsement_HO-2306.pdf",
+        "HO-0304_ed-01-22.pdf",
+        "Endorsement_HO-2405.pdf"
+      ],
+      "answer_head": "**Coverage determination** - **Form & edition** – The policy is **Form HO‑0304, Edition 01‑22** with **Endorsement HO‑2306** attached. - **Endorsement language** – HO‑2306 states: > “Subject to the limit shown below, we **cover direct physi",
+      "judge_rationale": "The assistant correctly denied coverage and stated no limit, matching the gold answer’s outcome. However, it justified the denial by citing the coverage language of Endorsement HO‑2306 and claiming it does not cover continuous seepage or mold, while omitting the actual governing exclusion E‑10. Thus the support is incorrect and the answer relies on the wrong provision."
+    },
+    {
+      "id": "q08",
+      "origin": "goldenset",
+      "passed": true,
+      "reasons": [],
+      "verdict": "correct_supported",
+      "answer_call": "other",
+      "trace_id": "04d865a5e111400d94d21b026c1a88d5",
+      "prompt_version": "claims-v2",
+      "retrieval_mode": "scoped",
+      "context_files": [
+        "Endorsement_HO-2405.pdf",
+        "HO-0304_ed-03-24.pdf",
+        "Endorsement_HO-2306.pdf",
+        "Endorsement_HO-2306.pdf",
+        "HO-0304_ed-03-24.pdf"
+      ],
+      "answer_head": "**Coverage amount:** $19,000 (the full loss, because it is below the $25,000 enhanced sub‑limit). **Why:** - The base Exclusion E‑17 on **Form HO‑0304, Edition 03‑24** provides coverage for “sudden and accidental discharge” up to a **$10,00",
+      "judge_rationale": "The answer correctly identifies the coverage amount as $19,000, citing the base E‑17 sublimit text and the endorsement’s increase to the $25,000 enhanced limit, matching the gold answer’s call and using the correct policy edition."
+    },
+    {
+      "id": "q09",
+      "origin": "goldenset",
+      "passed": true,
+      "reasons": [],
+      "verdict": "right_call_wrong_support",
+      "answer_call": "other",
+      "trace_id": "6302ccc772ce40b48c315197ccc88590",
+      "prompt_version": "claims-v2",
+      "retrieval_mode": "scoped",
+      "context_files": [
+        "HO-0304_ed-03-24.pdf",
+        "HO-0304_ed-03-24.pdf",
+        "HO-0304_ed-03-24.pdf",
+        "HO-0304_ed-03-24.pdf",
+        "HO-0304_ed-03-24.pdf"
+      ],
+      "answer_head": "The only exclusion that addresses this type of loss is **E‑17 Water Backup and Sump Overflow (Revised)** in the HO‑0304, Edition 03‑24 form. > **E‑17 Water Backup and Sump Overflow (Revised).** “We do not cover loss caused by water or water",
+      "judge_rationale": "The assistant correctly determined that the loss is covered (pay up to $10,000) and therefore no exclusion code should be cited. However, it still quoted E‑17, which the gold answer explicitly forbids citing as a denial. Thus the outcome is correct but the supporting citation is inappropriate."
+    },
+    {
+      "id": "q10",
+      "origin": "goldenset",
+      "passed": true,
+      "reasons": [],
+      "verdict": "correct_supported",
+      "answer_call": "excluded",
+      "trace_id": "c7b54465a19c40cfb3ea1e998d292895",
+      "prompt_version": "claims-v2",
+      "retrieval_mode": "scoped",
+      "context_files": [
+        "HO-0500_ed-01-23.pdf",
+        "HO-0500_ed-01-23.pdf",
+        "HO-0500_ed-01-23.pdf",
+        "HO-0500_ed-01-23.pdf",
+        "HO-0304_ed-03-24.pdf"
+      ],
+      "answer_head": "The loss is **not covered** under the HO‑0500 Broad Form (Edition 01‑23). **Why:** - **Exclusion F‑3 (Water Backup)** in the HO‑0500 form states: > “We do not cover loss caused by water that backs up through sewers or drains, or that overfl",
+      "judge_rationale": "The answer correctly cites Exclusion F‑3 from the HO‑0500, Edition 01‑23, explaining that the sump‑pump failure is an electrical failure and not an accidental discharge from a plumbing system, so the exception does not apply and the loss is excluded."
+    },
+    {
+      "id": "q11",
+      "origin": "goldenset",
+      "passed": false,
+      "reasons": [
+        "verdict wrong_call",
+        "assertion exclusion_id_on_denial: expected 'F-1', judge saw 'E-3'"
+      ],
+      "verdict": "wrong_call",
+      "answer_call": "excluded",
+      "trace_id": "30dfa5dacc0a4c3da325b2f07cfe54b0",
+      "prompt_version": "claims-v2",
+      "retrieval_mode": "scoped",
+      "context_files": [
+        "Endorsement_HO-2306.pdf",
+        "Endorsement_HO-2306.pdf",
+        "Endorsement_HO-2405.pdf",
+        "Endorsement_HO-2405.pdf",
+        "HO-0500_ed-01-23.pdf"
+      ],
+      "answer_head": "**Applicable exclusion** The loss you describe – surface water from a heavy storm entering under the garage door – is excluded by **Exclusion E‑3 (Surface Water/Flood)**. > “This endorsement does not cover loss caused by flood, surface wate",
+      "judge_rationale": "The assistant incorrectly identifies the exclusion as E‑3, which applies to HO‑0304, whereas the correct exclusion for HO‑0500, Edition 01‑23 is F‑1. The answer otherwise correctly notes that HO‑2306 cannot attach to HO‑0500 and does not alter the surface‑water exclusion."
+    },
+    {
+      "id": "q12",
+      "origin": "goldenset",
+      "passed": false,
+      "reasons": [
+        "verdict wrong_call"
+      ],
+      "verdict": "wrong_call",
+      "answer_call": "other",
+      "trace_id": "8589937059cf445d93ad88d0abc4ce44",
+      "prompt_version": "claims-v2",
+      "retrieval_mode": "scoped",
+      "context_files": [
+        "Claim_Form.pdf",
+        "Claim_Form.pdf",
+        "Claim_Form.pdf",
+        "Claim_Form.pdf",
+        "Claim_Form.pdf"
+      ],
+      "answer_head": "The claim form itself requires that you attach the supporting bills/receipts for the amount you are claiming under **“iii. Hospitalization Expenses”**. - The form lists a **“DETAILS OF BILLS ENCLOSED:”** section where you must show the tota",
+      "judge_rationale": "The answer incorrectly states that the hospitalization‑expenses line requires the original hospital bills/receipts, whereas the gold answer specifies that only the claim form itself (duly signed) and a copy of the claim intimation are required. The answer therefore reaches a different outcome than the correct call."
+    },
+    {
+      "id": "w11_termite_0122",
+      "origin": "evals/case_w11_termite_0122.json",
+      "passed": true,
+      "reasons": [],
+      "verdict": "correct_supported",
+      "answer_call": "other",
+      "trace_id": "393e42ffa2d5463795bf842b4e51993e",
+      "prompt_version": "claims-v2",
+      "retrieval_mode": "scoped",
+      "context_files": [
+        "HO-0304_ed-01-22.pdf",
+        "HO-0304_ed-01-22.pdf",
+        "HO-0304_ed-01-22.pdf",
+        "HO-0304_ed-01-22.pdf",
+        "HO-0304_ed-01-22.pdf"
+      ],
+      "answer_head": "The HO‑0304 Special Form, Edition 01‑22 contains an explicit exclusion for damage caused by insects: > **E‑15 Birds, Vermin, Rodents, Insects.** “We do not cover loss caused by birds, vermin, rodents, or insects.” > — HO‑0304, Edition 01‑22",
+      "judge_rationale": "The answer correctly cites E‑15 from HO‑0304 Edition 01‑22, identifies termites as insects, and notes the absence of a buy‑back endorsement, matching the gold answer’s denial of coverage."
+    }
+  ]
+}

@@ -33,6 +33,7 @@ import argparse
 import re
 import sys
 import time
+from pathlib import Path
 
 import config
 import tracing
@@ -365,24 +366,65 @@ def _existing_seqs(path, seed, source="traffic"):
     }
 
 
-def run(seed, n, token_budget, tpm, path):
+def user_for(seed, seq, users):
+    """Which adjuster asked question `seq`. Its own generator, keyed on seed and
+    seq, so adding users never changes which questions a seed produces."""
+    import random
+
+    if not users:
+        return None
+    return f"adj-{random.Random(f'{seed}:{seq}').randrange(users) + 1:02d}"
+
+
+def _choose_plant(pool_path, n, done):
+    """One (seq, entry) picked from os.urandom, not the seed: the seed is in the
+    command line and the logs, so a seed-derived choice could be recomputed by
+    the finder. The choice is written to a sealed file and nowhere else."""
+    import json
+    import os
+
+    entries = json.loads(Path(pool_path).read_text(encoding="utf-8"))["entries"]
+    open_seqs = [seq for seq in range(n) if seq not in done]
+    pick = lambda items: items[int.from_bytes(os.urandom(4), "big") % len(items)]
+    return pick(open_seqs), pick(entries)
+
+
+def _planted(question_body, entry, pii):
+    """The entry's question, wrapped in that seq's own claimant and claim number
+    the way the rest of the day's questions are, so it reads like traffic."""
+    import os
+    import random
+
+    if pii is None:
+        return entry["question"]
+    return _with_pii(random.Random(os.urandom(8)), entry["question"], pii["name"], pii["claim_number"])
+
+
+def run(seed, n, token_budget, tpm, path, users=0, plant_pool=None):
     import groq
 
+    import plant
     from rag import answer
 
     config.preflight()
     done = _existing_seqs(path, seed)
+    plant_seq, plant_entry = _choose_plant(plant_pool, n, done) if plant_pool else (None, None)
     spent = 0
     written = 0
-    for seq, question, _ in generate(seed, n):
+    for seq, question, pii in generate(seed, n):
         if seq in done:
             continue
         if spent >= token_budget:
             print(f"token budget {token_budget} reached after {written} new traces; stopping")
             break
         started = time.monotonic()
+        real_get_llm = config.get_llm
+        if seq == plant_seq:
+            question = _planted(question, plant_entry, pii)
+            config.get_llm = lambda model=None: plant._SwappedAnswer(real_get_llm(model), plant_entry["bad_answer"])
         try:
-            answer(question, source="traffic", request={"seed": seed, "seq": seq})
+            answer(question, source="traffic", request={"seed": seed, "seq": seq},
+                   user=user_for(seed, seq, users))
         except groq.RateLimitError as exc:
             # The trace for this call was written with the error. A daily cap
             # will not clear by waiting; a per-minute one will.
@@ -395,8 +437,12 @@ def run(seed, n, token_budget, tpm, path):
         except Exception as exc:  # traced by rag.answer; keep the run going
             print(f"seq {seq}: {type(exc).__name__}: {exc}")
             continue
+        finally:
+            config.get_llm = real_get_llm
 
         last = tracing.load_traces(path)[-1]
+        if seq == plant_seq:
+            _seal_plant(plant_pool, seq, plant_entry, last)
         used = ((last.get("output") or {}).get("token_usage") or {}).get("total_tokens", 0)
         spent += used
         written += 1
@@ -408,6 +454,16 @@ def run(seed, n, token_budget, tpm, path):
         if wait > 0:
             time.sleep(wait)
     print(f"done: {written} traces written this run, {spent} tokens")
+
+
+def _seal_plant(pool_path, seq, entry, record):
+    import json
+
+    sealed = Path(pool_path).with_name(".plant_sealed.json")
+    sealed.write_text(json.dumps({
+        "seq": seq, "pool_id": entry["id"], "trace_id": record["trace_id"],
+        "user": record.get("user"), "ts": record["ts"],
+    }, indent=2), encoding="utf-8")
 
 
 # --- Leak check --------------------------------------------------------------------
@@ -461,6 +517,15 @@ def main():
     parser.add_argument("--preview", type=int, metavar="N", help="print N questions and exit")
     parser.add_argument("--check-leaks", action="store_true")
     parser.add_argument(
+        "--plant-pool", metavar="JSON",
+        help="plant one bad answer from this pool at a random seq; the choice goes to "
+        "evals/.plant_sealed.json and is never printed",
+    )
+    parser.add_argument(
+        "--users", type=int, default=0,
+        help="spread questions across N adjuster ids (adj-01..adj-NN), logged as trace.user",
+    )
+    parser.add_argument(
         "--kind", choices=["questions", "notes"], default="questions",
         help="questions -> rag.answer() traffic (default); notes -> summarize() adjuster-notes traffic",
     )
@@ -479,11 +544,12 @@ def main():
 
     if args.preview:
         for seq, question, pii in generate(args.seed, args.preview):
-            print(f"{seq:>3} {'PII ' if pii else '    '}{question}")
+            user = user_for(args.seed, seq, args.users) or ""
+            print(f"{seq:>3} {user:<7}{'PII ' if pii else '    '}{question}")
         return
     if args.check_leaks:
         sys.exit(0 if check_leaks(args.seed, path) else 1)
-    run(args.seed, args.n, args.token_budget, args.tpm, path)
+    run(args.seed, args.n, args.token_budget, args.tpm, path, users=args.users, plant_pool=args.plant_pool)
 
 
 if __name__ == "__main__":

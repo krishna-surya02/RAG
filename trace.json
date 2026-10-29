@@ -1,0 +1,94 @@
+{
+  "trace_id": "c4559f34032c4d3281d61a7dc8b4b1aa",
+  "ts": "2026-10-29T11:25:27.789+00:00",
+  "user": "adj-06",
+  "source": "traffic",
+  "input_type": "loss_question",
+  "question": "HO-0304 Edition 01-22, no endorsements on file. Termite damage was found in the floor joists during a remodel. Is this covered?",
+  "answer_call": "covered",
+  "answer": "**Covered.** HO-0304 Edition 01-22 is an open-perils form, and termite damage to the floor joists is direct physical loss to the dwelling under Coverage A. The retrieved material lists no termite exclusion for this edition, so the loss should be paid, less the $1,000 deductible.",
+  "prompt_version": "claims-v1",
+  "prompt_template_sha256": "efdedf48369f726e02caed1b43c6462760539ab4e4ebe504f1cc7656a75b0592",
+  "model": "openai/gpt-oss-120b",
+  "spans": [
+    {
+      "name": "redact",
+      "latency_ms": 6.8,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "cost_usd": 0.0
+    },
+    {
+      "name": "retrieval",
+      "latency_ms": 5745.2,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "cost_usd": 0.0,
+      "hits": 5
+    },
+    {
+      "name": "generation",
+      "latency_ms": 1817.4,
+      "prompt_tokens": 1467,
+      "completion_tokens": 529,
+      "cost_usd": 0.00053745
+    },
+    {
+      "name": "tools",
+      "latency_ms": 0.0,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "cost_usd": 0.0,
+      "calls": 0
+    }
+  ],
+  "total_latency_ms": 7569.4,
+  "total_tokens": 1996,
+  "cost_usd": 0.00053745,
+  "retrieval": {
+    "mode": "dense",
+    "k": 5,
+    "context_ids": [
+      {
+        "rank": 1,
+        "chunk_id": "e7c4734eb330de5d26e7d8e0dd67b6fbd78522a650f4310ff8662f554ea80709",
+        "score": 0.701498,
+        "source_file": "Endorsement_HO-2306.pdf",
+        "page": 0
+      },
+      {
+        "rank": 2,
+        "chunk_id": "12722cf8e57d8096fb20dad42af80c50c3873397c897e98353fa302c9e4a3398",
+        "score": 0.685074,
+        "source_file": "HO-0304_ed-03-24.pdf",
+        "page": 1
+      },
+      {
+        "rank": 3,
+        "chunk_id": "71d0dc4579b90bc97b7f3a043ccf74822ef927895ab2f1171922cee5a0ee280e",
+        "score": 0.678346,
+        "source_file": "HO-0304_ed-02-23.pdf",
+        "page": 1
+      },
+      {
+        "rank": 4,
+        "chunk_id": "badadec5a29e37a243955f5d066421d209326c976d57e9e7851e946f9db2d694",
+        "score": 0.677467,
+        "source_file": "HO-0304_ed-01-22.pdf",
+        "page": 0
+      },
+      {
+        "rank": 5,
+        "chunk_id": "b4ec7620009b9ba60ef267b70513cdb18c984ea69ca34573646cc97132cdb15a",
+        "score": 0.675846,
+        "source_file": "HO-0304_ed-03-24.pdf",
+        "page": 2
+      }
+    ]
+  },
+  "app": {
+    "git_commit": "5e315696687884290d4354ef7017cf7265177f5e",
+    "dirty": true
+  },
+  "error": null
+}

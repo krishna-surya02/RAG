@@ -1,0 +1,73 @@
+{
+  "label": "after-v2-q04-x3",
+  "passed": 0,
+  "total": 3,
+  "rows": [
+    {
+      "id": "q04#1",
+      "origin": "goldenset",
+      "passed": false,
+      "reasons": [
+        "verdict no_call"
+      ],
+      "verdict": "no_call",
+      "answer_call": "other",
+      "trace_id": "24b011d9dabf426b88fa137a2ad0b5cd",
+      "prompt_version": "claims-v2",
+      "retrieval_mode": "scoped",
+      "context_files": [
+        "HO-0304_ed-02-23.pdf",
+        "HO-0304_ed-02-23.pdf",
+        "HO-0304_ed-02-23.pdf",
+        "HO-0304_ed-02-23.pdf",
+        "HO-0304_ed-02-23.pdf"
+      ],
+      "answer_head": "**Relevant provision (HO‑0304, Edition 02‑23, Exclusion E‑20 – Collapse)** > “We do not cover loss caused by collapse, **except as specifically provided under the Additional Coverage — Collapse provision, which applies only to collapse caus",
+      "judge_rationale": "The assistant cites E‑20 from the correct edition but then hedges, saying coverage cannot be confirmed from the excerpts provided. It does not give a definitive pay or deny answer, so it fails to meet the gold answer’s call that the collapse is covered."
+    },
+    {
+      "id": "q04#2",
+      "origin": "goldenset",
+      "passed": false,
+      "reasons": [
+        "verdict wrong_call"
+      ],
+      "verdict": "wrong_call",
+      "answer_call": "other",
+      "trace_id": "43265cf6f7fe431aa908ff646f7c7de4",
+      "prompt_version": "claims-v2",
+      "retrieval_mode": "scoped",
+      "context_files": [
+        "HO-0304_ed-02-23.pdf",
+        "HO-0304_ed-02-23.pdf",
+        "HO-0304_ed-02-23.pdf",
+        "HO-0304_ed-02-23.pdf",
+        "HO-0304_ed-02-23.pdf"
+      ],
+      "answer_head": "The only exclusion that addresses collapse in the HO‑0304, Edition 02‑23 material is **E‑20 Collapse**: > “We do not cover loss caused by collapse, **except as specifically provided under the Additional Coverage — Collapse provision, which ",
+      "judge_rationale": "The assistant correctly cites E‑20 from the 02‑23 edition, but incorrectly concludes that coverage cannot be confirmed because the Additional Coverage – Collapse provision is not shown in the retrieved excerpts. The gold answer states that the 02‑23 edition’s E‑20 includes an exception for collapse caused by the weight of ice, snow, sleet, or rain, so the loss is covered. The assistant’s conclusion therefore misstates the outcome."
+    },
+    {
+      "id": "q04#3",
+      "origin": "goldenset",
+      "passed": false,
+      "reasons": [
+        "verdict wrong_call"
+      ],
+      "verdict": "wrong_call",
+      "answer_call": "other",
+      "trace_id": "495cc895c9c44784a471290a344c9b1e",
+      "prompt_version": "claims-v2",
+      "retrieval_mode": "scoped",
+      "context_files": [
+        "HO-0304_ed-02-23.pdf",
+        "HO-0304_ed-02-23.pdf",
+        "HO-0304_ed-02-23.pdf",
+        "HO-0304_ed-02-23.pdf",
+        "HO-0304_ed-02-23.pdf"
+      ],
+      "answer_head": "**Relevant provision (HO‑0304, Edition 02‑23 – Exclusion E‑20 Collapse)** > “We do not cover loss caused by collapse, **except as specifically provided under the Additional Coverage — Collapse provision, which applies only to collapse cause",
+      "judge_rationale": "The assistant states the collapse \"could be covered\" but hedges, saying coverage cannot be definitively confirmed from the passages provided. The gold answer requires a definitive pay call that collapse from snow is covered under E‑20’s exception. The assistant’s uncertainty makes its answer incorrect."
+    }
+  ]
+}

@@ -58,6 +58,13 @@ MAX_TOKENS = _optional_int_env("MAX_TOKENS")
 REQUEST_TIMEOUT = float(os.getenv("REQUEST_TIMEOUT", 60))
 MAX_RETRIES = _int_env("MAX_RETRIES", 2)
 
+# Per-token pricing for CHAT_MODEL, used for the cost on every trace's spans.
+# Source: https://console.groq.com/docs/model/openai/gpt-oss-120b, checked
+# 2026-10-27 -- $0.15 / 1M input, $0.60 / 1M output. If CHAT_MODEL changes these
+# no longer apply; override them here or in .env rather than guessing.
+PRICE_INPUT_PER_M = float(os.getenv("PRICE_INPUT_PER_M", 0.15))
+PRICE_OUTPUT_PER_M = float(os.getenv("PRICE_OUTPUT_PER_M", 0.60))
+
 # --- Embeddings (local) ----------------------------------------------------
 # EMBED_DIM must match the model's output width. It is baked into the
 # langchain_pg_embedding "vector(N)" column when that table is first created,
@@ -73,7 +80,11 @@ TOP_K = _int_env("TOP_K", 5)
 # Ranking strategy, shared by rag.py and evaluate.py so the retriever that is
 # measured is the retriever that ships. "dense" is the original behaviour:
 # cosine nearest-neighbour over the embedding, nothing else.
-RETRIEVAL_MODE = os.getenv("RETRIEVAL_MODE", "dense")
+#
+# "scoped" (week 11, now the default) ranks dense candidates, then drops chunks
+# from editions and forms the question rules out -- see retrieval._rank_scoped.
+# Rollback is RETRIEVAL_MODE=dense in .env, no re-index needed.
+RETRIEVAL_MODE = os.getenv("RETRIEVAL_MODE", "scoped")
 
 # How many chunks a ranker pulls before the final top-k cut. Only matters for
 # modes that rerank or fuse; "dense" slices its top-k straight off the front.

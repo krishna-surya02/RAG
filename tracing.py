@@ -134,6 +134,107 @@ class Timer:
         return round((time.perf_counter() - self.start) * 1000.0, 1)
 
 
+# --- Week-11 slice fields ------------------------------------------------------
+# A complaint arrives as "it told a claimant something was covered, sometime
+# yesterday". Finding that from logs needs fields you can filter on without
+# reading every answer: who asked, what kind of question it was, what the answer
+# concluded, and what each stage cost. The trace already had prompt version and
+# retrieved chunk ids; these are the rest.
+
+
+def cost_usd(prompt_tokens, completion_tokens):
+    return round(
+        (prompt_tokens or 0) / 1_000_000 * config.PRICE_INPUT_PER_M
+        + (completion_tokens or 0) / 1_000_000 * config.PRICE_OUTPUT_PER_M,
+        8,
+    )
+
+
+def span(name, latency_ms, prompt_tokens=0, completion_tokens=0, **extra):
+    """One stage of a request. Stages that call no model still get a span with
+    zero tokens and zero cost, so a breakdown by stage never has a hole in it."""
+    return {
+        "name": name,
+        "latency_ms": latency_ms,
+        "prompt_tokens": prompt_tokens,
+        "completion_tokens": completion_tokens,
+        "cost_usd": cost_usd(prompt_tokens, completion_tokens),
+        **extra,
+    }
+
+
+_GENERAL_RE = re.compile(
+    r"duties after a loss|did the wording|what does exclusion|open-perils|named-perils"
+    r"|what is the deductible|mold sublimit and are there conditions|weight of people",
+    re.I,
+)
+_ENDORSEMENT_RE = re.compile(
+    r"can endorsement \S+ be attached|difference between endorsement|does the endorsement change",
+    re.I,
+)
+_LIMIT_RE = re.compile(r"up to what limit|most we'?d pay|\blimit\b", re.I)
+
+
+def classify_input(question):
+    """The kind of question, from its wording alone. Deterministic on purpose:
+    a slice is only useful if the same question always lands in the same one."""
+    if re.search(r"hospitali[sz]|claim form", question, re.I):
+        return "health_form"
+    if _GENERAL_RE.search(question):
+        return "general_policy"
+    if _ENDORSEMENT_RE.search(question):
+        return "endorsement_check"
+    if _LIMIT_RE.search(question):
+        return "coverage_limit"
+    return "loss_question"
+
+
+_NO_CALL_RE = re.compile(
+    r"does not (?:appear|contain|include)|cannot (?:be )?(?:determine|confirm|drawn|cite|say)"
+    r"|can(?:'|’)?t (?:determine|confirm)|not (?:able|possible) to (?:determine|confirm)"
+    r"|insufficient (?:information|context)|not in the retrieved",
+    re.I,
+)
+_EXCLUDED_RE = re.compile(
+    r"\bdeny\b|\bdenied\b|\bdenial\b|(?<!not )\bexcluded\b|not covered|no coverage"
+    r"|is not payable|exclusion(?: code)? to cite|applicable exclusion:|exclusion \S+ applies|would (?:likely )?be excluded",
+    re.I,
+)
+_COVERED_RE = re.compile(
+    # "covered by this exclusion" is how answers say a loss falls under an
+    # exclusion -- the opposite call.
+    r"\bpay\b|\bpayable\b|(?<!not )\bcovered\b(?! by (?:this|the|that)\b[^.]{0,40}exclusion)"
+    r"|coverage applies|not excluded"
+    r"|no (?:specific |applicable )?exclusion (?:to apply|applies|bars)",
+    re.I,
+)
+
+
+def answer_call(text):
+    """covered | excluded | no_call | other, read off the answer's opening.
+
+    Answers lead with their conclusion and then quote provisions, and the
+    quotes are full of "excluded" whatever the call was — so only the opening
+    is read. A stated call beats a hedge: "the context has no exclusion for
+    this, so pay it" is a covered call resting on missing context, which is
+    exactly the answer a complaint is about, not a no-call. Crude, and meant
+    only as a filter for finding candidates, not a grade."""
+    if not text:
+        return "no_call"
+    head = re.sub(r"[*_#>`]", "", text).replace("\u2011", "-").strip()[:400]
+    excluded = _EXCLUDED_RE.search(head)
+    covered = _COVERED_RE.search(head)
+    if excluded and covered:
+        return "covered" if covered.start() < excluded.start() else "excluded"
+    if excluded:
+        return "excluded"
+    if covered:
+        return "covered"
+    if _NO_CALL_RE.search(head):
+        return "no_call"
+    return "other"
+
+
 # --- Writing -----------------------------------------------------------------
 
 

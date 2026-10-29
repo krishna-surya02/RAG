@@ -1,0 +1,69 @@
+{
+  "label": "after-v2-w11-x3",
+  "passed": 2,
+  "total": 3,
+  "rows": [
+    {
+      "id": "w11_termite_0122#1",
+      "origin": "evals/case_w11_termite_0122.json",
+      "passed": false,
+      "reasons": [
+        "answer_call is 'covered', which this case forbids"
+      ],
+      "verdict": "correct_supported",
+      "answer_call": "covered",
+      "trace_id": "d30588afba624faaba8389e940049101",
+      "prompt_version": "claims-v2",
+      "retrieval_mode": "scoped",
+      "context_files": [
+        "HO-0304_ed-01-22.pdf",
+        "HO-0304_ed-01-22.pdf",
+        "HO-0304_ed-01-22.pdf",
+        "HO-0304_ed-01-22.pdf",
+        "HO-0304_ed-01-22.pdf"
+      ],
+      "answer_head": "The policy’s exclusion list contains the following provision: > **E‑15 Birds, Vermin, Rodents, Insects.** “We do not cover loss caused by birds, vermin, rodents, or insects.” > *Form HO‑0304, Edition 01‑22, Section III – Exclusions.* Termit",
+      "judge_rationale": "The answer correctly identifies E‑15 Birds, Vermin, Rodents, Insects as the exclusion that bars coverage for termite damage, and notes that no endorsement is on file to buy back the exclusion, matching the gold answer’s call to deny coverage."
+    },
+    {
+      "id": "w11_termite_0122#2",
+      "origin": "evals/case_w11_termite_0122.json",
+      "passed": true,
+      "reasons": [],
+      "verdict": "correct_supported",
+      "answer_call": "excluded",
+      "trace_id": "03256eb41f4e41888ba39c1ce6e842e1",
+      "prompt_version": "claims-v2",
+      "retrieval_mode": "scoped",
+      "context_files": [
+        "HO-0304_ed-01-22.pdf",
+        "HO-0304_ed-01-22.pdf",
+        "HO-0304_ed-01-22.pdf",
+        "HO-0304_ed-01-22.pdf",
+        "HO-0304_ed-01-22.pdf"
+      ],
+      "answer_head": "**Not covered.** The HO‑0304 — Homeowners Special Form, Edition 01‑22 contains the following exclusion: > “**E‑15 Birds, Vermin, Rodents, Insects.** We do not cover loss caused by birds, vermin, rodents, or insects.” > — HO‑0304, Edition 01",
+      "judge_rationale": "The assistant correctly identified that termite damage is insect damage and cited Exclusion E‑15 from HO‑0304, Edition 01‑22, matching the gold answer’s denial of coverage."
+    },
+    {
+      "id": "w11_termite_0122#3",
+      "origin": "evals/case_w11_termite_0122.json",
+      "passed": true,
+      "reasons": [],
+      "verdict": "correct_supported",
+      "answer_call": "excluded",
+      "trace_id": "f4b3920f05f64a1c9a3d9d3a68cef964",
+      "prompt_version": "claims-v2",
+      "retrieval_mode": "scoped",
+      "context_files": [
+        "HO-0304_ed-01-22.pdf",
+        "HO-0304_ed-01-22.pdf",
+        "HO-0304_ed-01-22.pdf",
+        "HO-0304_ed-01-22.pdf",
+        "HO-0304_ed-01-22.pdf"
+      ],
+      "answer_head": "The loss is **not covered**. The HO‑0304, Edition 01‑22 policy contains the following exclusion: > **E‑15 Birds, Vermin, Rodents, Insects.** “We do not cover loss caused by birds, vermin, rodents, or insects.” > — *HO‑0304, Edition 01‑22, S",
+      "judge_rationale": "The assistant correctly identified that Termite damage is covered by the E‑15 exclusion in HO‑0304 Edition 01‑22 and denied coverage, matching the gold answer."
+    }
+  ]
+}
