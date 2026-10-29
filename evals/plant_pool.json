@@ -1,0 +1,185 @@
+{
+  "_about": [
+    "Week 11 plant pool. traffic.py --plant-pool picks ONE entry and ONE seq at random (os.urandom),",
+    "asks that entry's question at that seq through rag.answer(), and logs bad_answer in place of",
+    "the model's text. Every entry is an excluded loss whose bad_answer says it is covered.",
+    "Pre-screened offline: the deciding chunk (gold_chunk_id) is missing from dense top-5 and",
+    "present in scoped top-5 -- the week-5 failure mechanism (notes.md section 3)."
+  ],
+  "entries": [
+    {
+      "id": "mold_0223",
+      "question": "Insured is on HO-0304 ed. 02-23, no endorsements. Mold is growing across the basement walls from years of high humidity. Is this covered?",
+      "kind": "exact-token",
+      "gold_chunk_id": "1aa2ecb6436bd7a69ab6eb2c8fe173daed89fcffe77745e1a52d90a9e2298f61",
+      "gold_answer": {
+        "call": "deny — humidity mold with no covered plumbing leak is outside E-10's exception",
+        "correct_policy_form_edition": "HO-0304, Edition 02-23",
+        "correct_exclusion_or_code": "E-10",
+        "must_not_cite": [
+          "E-10, Edition 01-22",
+          "E-10, Edition 03-24"
+        ],
+        "rationale": "HO-0304 Edition 02-23, E-10 Mold, Fungus, or Wet Rot: \"We do not cover loss caused by mold, fungus, or wet rot, except mold, fungus, or wet rot that is hidden within the walls or ceilings and results from a plumbing leak that is itself a covered loss\" No endorsement is on the policy, so nothing buys it back."
+      },
+      "must_not_call": "covered",
+      "bad_answer": "**Yes — this is covered.** HO-0304 Edition 02-23 does not contain an exclusion that applies to mold caused by humidity; the retrieved Section I coverages insure direct physical loss to the dwelling unless a listed exclusion applies, and none of the exclusions provided address long-term humidity. Pay the remediation under Coverage A, less the $1,000 deductible."
+    },
+    {
+      "id": "mold_0122",
+      "question": "Policy is the January 2022 edition of HO-0304, base form only. Mold is growing across the basement walls from years of high humidity. Can you confirm coverage and quote the provision?",
+      "kind": "exact-token",
+      "gold_chunk_id": "81638e690253cc18388db2c8f1cdcd6d09d772f14f4cdc34f04799e9609c5e91",
+      "gold_answer": {
+        "call": "deny — humidity mold with no covered plumbing leak is outside E-10's exception",
+        "correct_policy_form_edition": "HO-0304, Edition 01-22",
+        "correct_exclusion_or_code": "E-10",
+        "must_not_cite": [
+          "E-10, Edition 02-23",
+          "E-10, Edition 03-24"
+        ],
+        "rationale": "HO-0304 Edition 01-22, E-10 Mold, Fungus, or Wet Rot: \"We do not cover loss caused by mold, fungus, or wet rot, except mold, fungus, or wet rot that is hidden within the walls or ceilings and results from a plumbing leak that is itself a covered loss\" No endorsement is on the policy, so nothing buys it back."
+      },
+      "must_not_call": "covered",
+      "bad_answer": "**Coverage confirmed.** Under HO-0304 Edition 01-22 this mold loss is covered up to the $10,000 mold sublimit: \"coverage is limited to $10,000.\" Pay up to $10,000, less the $1,000 deductible."
+    },
+    {
+      "id": "termite_0122",
+      "question": "HO-0304 Edition 01-22, no endorsements on file. Termite damage was found in the floor joists during a remodel. Is this covered?",
+      "kind": "exact-token",
+      "gold_chunk_id": "5b377c547c028d3160cb5669787109174580cb5bc490922a2b966793d4ac25b0",
+      "gold_answer": {
+        "call": "deny — insect damage is excluded",
+        "correct_policy_form_edition": "HO-0304, Edition 01-22",
+        "correct_exclusion_or_code": "E-15",
+        "must_not_cite": [
+          "E-15, Edition 02-23",
+          "E-15, Edition 03-24"
+        ],
+        "rationale": "HO-0304 Edition 01-22, E-15 Birds, Vermin, Rodents, Insects: \"We do not cover loss caused by birds, vermin, rodents, or insects.\" No endorsement is on the policy, so nothing buys it back."
+      },
+      "must_not_call": "covered",
+      "bad_answer": "**Covered.** HO-0304 Edition 01-22 is an open-perils form, and termite damage to the floor joists is direct physical loss to the dwelling under Coverage A. The retrieved material lists no termite exclusion for this edition, so the loss should be paid, less the $1,000 deductible."
+    },
+    {
+      "id": "termite_0223",
+      "question": "Policy is HO 03 04 (02/23), no endorsements. Termite damage was found in the floor joists during a remodel. Is this covered?",
+      "kind": "exact-token",
+      "gold_chunk_id": "71d0dc4579b90bc97b7f3a043ccf74822ef927895ab2f1171922cee5a0ee280e",
+      "gold_answer": {
+        "call": "deny — insect damage is excluded",
+        "correct_policy_form_edition": "HO-0304, Edition 02-23",
+        "correct_exclusion_or_code": "E-15",
+        "must_not_cite": [
+          "E-15, Edition 01-22",
+          "E-15, Edition 03-24"
+        ],
+        "rationale": "HO-0304 Edition 02-23, E-15 Birds, Vermin, Rodents, Insects: \"We do not cover loss caused by birds, vermin, rodents, or insects.\" No endorsement is on the policy, so nothing buys it back."
+      },
+      "must_not_call": "covered",
+      "bad_answer": "**Yes, covered.** Under HO-0304 Edition 02-23, Coverage A insures the dwelling against direct physical loss, and termite damage discovered during a remodel is hidden damage rather than wear and tear. Pay the joist repair less the $1,000 deductible."
+    },
+    {
+      "id": "surface_0500",
+      "question": "Insured is on HO-0500 ed. 01-23, no endorsements. Surface water from a heavy storm ran down the driveway and in under the garage door. Is this covered?",
+      "kind": "exact-token",
+      "gold_chunk_id": "9c37bc7c1c5ed43095f06260073f477af3477fc3244b209e11e24c049a7b0e06",
+      "gold_answer": {
+        "call": "deny — flood and surface water are excluded",
+        "correct_policy_form_edition": "HO-0500, Edition 01-23",
+        "correct_exclusion_or_code": "F-1",
+        "must_not_cite": [
+          "E-2",
+          "E-3",
+          "E-4",
+          "E-10",
+          "E-15",
+          "E-17"
+        ],
+        "rationale": "HO-0500 Edition 01-23 (named-peril form), F-1 Flood: \"We do not cover loss caused by flood, surface water, waves, tidal water, or overflow of a body of water, whether driven by wind or not.\" HO-0304 E-codes do not apply to this form."
+      },
+      "must_not_call": "covered",
+      "bad_answer": "**Covered.** HO-0500 Edition 01-23 lists windstorm among its Section II named perils, and the water entered as a direct result of the storm. Pay the garage damage, less the $2,500 deductible."
+    },
+    {
+      "id": "quake_0500",
+      "question": "HO 05 00 (01/23), no endorsements on file. A small earthquake cracked the foundation and the basement walls. Is this covered?",
+      "kind": "exact-token",
+      "gold_chunk_id": "9c37bc7c1c5ed43095f06260073f477af3477fc3244b209e11e24c049a7b0e06",
+      "gold_answer": {
+        "call": "deny — earthquake is excluded",
+        "correct_policy_form_edition": "HO-0500, Edition 01-23",
+        "correct_exclusion_or_code": "F-2",
+        "must_not_cite": [
+          "E-2",
+          "E-3",
+          "E-4",
+          "E-10",
+          "E-15",
+          "E-17"
+        ],
+        "rationale": "HO-0500 Edition 01-23 (named-peril form), F-2 Earth Movement: \"We do not cover loss caused by earthquake, landslide, or sinkhole.\" HO-0304 E-codes do not apply to this form."
+      },
+      "must_not_call": "covered",
+      "bad_answer": "**Yes — covered under Coverage A.** The foundation and basement walls are part of the dwelling, and the retrieved HO-0500 material shows no earth-movement exclusion. Pay the structural repair less the $2,500 deductible."
+    },
+    {
+      "id": "power_0223",
+      "question": "Insured is on the 2023 HO-0304, base form only. A substation failure two miles away caused a three-day outage and the freezer contents spoiled. Can you confirm coverage and quote the provision?",
+      "kind": "exact-token",
+      "gold_chunk_id": "1aa2ecb6436bd7a69ab6eb2c8fe173daed89fcffe77745e1a52d90a9e2298f61",
+      "gold_answer": {
+        "call": "deny — off-premises power failure is excluded",
+        "correct_policy_form_edition": "HO-0304, Edition 02-23",
+        "correct_exclusion_or_code": "E-4",
+        "must_not_cite": [
+          "E-4, Edition 01-22",
+          "E-4, Edition 03-24"
+        ],
+        "rationale": "HO-0304 Edition 02-23, E-4 Power Failure: \"We do not cover loss caused by the failure of power or other utility service if the failure takes place off the residence premises.\" No endorsement is on the policy, so nothing buys it back."
+      },
+      "must_not_call": "covered",
+      "bad_answer": "**Coverage confirmed.** Spoiled freezer contents are personal property, insured under Coverage C of HO-0304 Edition 02-23 for direct physical loss. Nothing in the retrieved exclusions removes food spoilage, so pay the freezer contents less the $1,000 deductible."
+    },
+    {
+      "id": "power_0500",
+      "question": "HO-0500 Edition 01-23, no endorsements. A substation failure two miles away caused a three-day outage and the freezer contents spoiled. Is this covered?",
+      "kind": "exact-token",
+      "gold_chunk_id": "6afa1ad80728cb2af85db8190ff26b49d635b00ec24673b2021fb7d414ecbfbd",
+      "gold_answer": {
+        "call": "deny — off-premises power interruption is excluded",
+        "correct_policy_form_edition": "HO-0500, Edition 01-23",
+        "correct_exclusion_or_code": "F-10",
+        "must_not_cite": [
+          "E-2",
+          "E-3",
+          "E-4",
+          "E-10",
+          "E-15",
+          "E-17"
+        ],
+        "rationale": "HO-0500 Edition 01-23 (named-peril form), F-10 Power Failure Off Premises: \"We do not cover loss from power interruption originating away from the residence premises.\" HO-0304 E-codes do not apply to this form."
+      },
+      "must_not_call": "covered",
+      "bad_answer": "**Covered.** HO-0500 Section II includes \"sudden and accidental damage from artificially generated electrical current,\" which describes the outage. Pay the spoiled freezer contents under Coverage C, less the $2,500 deductible."
+    },
+    {
+      "id": "sewer_0122",
+      "question": "HO-0304 ed. 01-22, no endorsements on file. The municipal sewer line clogged and sewage came up through the basement drains. Is this covered?",
+      "kind": "exact-token",
+      "gold_chunk_id": "5b377c547c028d3160cb5669787109174580cb5bc490922a2b966793d4ac25b0",
+      "gold_answer": {
+        "call": "deny — no coverage without an endorsement (HO-2306 is not attached)",
+        "correct_policy_form_edition": "HO-0304, Edition 01-22",
+        "correct_exclusion_or_code": "E-17",
+        "must_not_cite": [
+          "E-17, Edition 02-23",
+          "E-17, Edition 03-24"
+        ],
+        "rationale": "HO-0304 Edition 01-22, E-17 Water Backup and Sump Overflow: \"We do not cover loss caused by water or waterborne material which backs up through sewers or drains ... regardless of the cause of the backup or overflow.\" No endorsement is on the policy, so nothing buys it back."
+      },
+      "must_not_call": "covered",
+      "bad_answer": "**Yes, this is covered.** Sewage backup from a clogged municipal line is sudden and accidental, and HO-0304 Edition 01-22 covers sudden and accidental discharge of water up to $10,000 per occurrence even without an endorsement. Pay up to $10,000 less the $1,000 deductible."
+    }
+  ]
+}

@@ -27,7 +27,16 @@ import tracing
 
 # Bump whenever PROMPT's text changes. The trace records this and a hash of the
 # template, so an answer can always be tied to the exact instructions behind it.
-PROMPT_VERSION = "claims-v1"
+# claims-v2 (week 11): added the "absence is not coverage" rule below. The
+# planted drill failure (trace c4559f34, evals/case_w11_termite_0122.json) said
+# termite damage on 01-22 was covered because 01-22's E-15 wasn't retrieved;
+# notes.md section 3 #2, #10 and #19 are the same move made by the model itself.
+# claims-v3 (week 11, never shipped v2): v2 also stopped the model applying an
+# exception written into an exclusion's own text -- golden q04 (snow-load
+# collapse, E-20) went 0/3, refusing because E-20's cross-referenced
+# "Additional Coverage -- Collapse" provision wasn't retrieved. That provision
+# is not in the corpus at all; E-20's text is the policy's only statement of it.
+PROMPT_VERSION = "claims-v3"
 
 # The "say so plainly" rule carries most of the weight here. An adjuster asking
 # about one exclusion code is not helped by a fluent paragraph about a
@@ -46,6 +55,17 @@ endorsement number, answer only from context that carries that exact identifier.
 If no passage in the context carries it, say plainly that the identifier does not \
 appear in the retrieved material, and name what was retrieved instead. Do not \
 answer from a related or adjacent provision as though it were the one asked about.
+
+Never conclude a loss is covered because no exclusion for it appears in the \
+context. The context is a few retrieved passages, not the whole policy. If the \
+exclusions section for the named form and edition is not in the context, say \
+that coverage cannot be confirmed from the retrieved material and name the \
+form, edition and exclusion that would need to be checked.
+
+That rule is about missing exclusions, not missing exceptions. When an \
+exclusion's own text says it does not apply to a cause of loss ("except ..."), \
+that is the policy's own wording: apply it and make the call, even if the \
+exclusion refers to another provision that is not in the context.
 
 Quote the provision you rely on, and name its form number, edition and code.
 
@@ -68,7 +88,7 @@ def strip_think(text):
 PROMPT_SHA256 = hashlib.sha256(PROMPT.template.encode("utf-8")).hexdigest()
 
 
-def answer(question, source="cli", request=None):
+def answer(question, source="cli", request=None, user=None):
     """Answer one question and append its trace. The path every served answer takes.
 
     The question is redacted before anything else touches it, so retrieval, the
@@ -77,23 +97,31 @@ def answer(question, source="cli", request=None):
     than through StrOutputParser so the whole message survives: raw content,
     reasoning, token usage and fingerprint all go into the trace.
     """
+    timer = tracing.Timer()
     clean, found = redact.redact(question)
+    redact_ms = timer.ms()
     trace_id = tracing.new_trace_id()
     seed = tracing.seed_for(trace_id)
     record = {
         "trace_id": trace_id,
         "ts": tracing.now_utc(),
         "source": source,
+        "user": user,
         "request": request or {},
         "app": tracing.app_version(),
+        "input_type": tracing.classify_input(clean),
         "input": {"question": clean, "redacted": redact.counts(found)},
     }
     latency = {}
+    # redact and retrieval run locally (regex, local embeddings): latency, no
+    # tokens. This path makes no tool calls; the empty span says so explicitly.
+    spans = [tracing.span("redact", redact_ms)]
     try:
         timer = tracing.Timer()
         k, candidates = config.TOP_K, config.CANDIDATE_K
         hits = retrieval.retrieve(clean, k=k, candidates=candidates)
         latency["retrieval"] = timer.ms()
+        spans.append(tracing.span("retrieval", latency["retrieval"], hits=len(hits)))
         record["retrieval"] = tracing.retrieval_block(
             hits, k, candidates, config.RETRIEVAL_MODE, config.RETRIEVAL_BACKEND,
             retrieval._cache_key(),
@@ -112,14 +140,24 @@ def answer(question, source="cli", request=None):
         message = llm.bind(seed=seed).invoke(rendered)
         latency["generation"] = timer.ms()
 
+        usage = (message.response_metadata or {}).get("token_usage") or {}
+        spans.append(tracing.span(
+            "generation", latency["generation"],
+            usage.get("prompt_tokens", 0), usage.get("completion_tokens", 0),
+        ))
+        spans.append(tracing.span("tools", 0.0, calls=0))
+
         final = strip_think(message.content)
         record["output"] = tracing.output_block(message, final)
+        record["answer_call"] = tracing.answer_call(final)
         return final
     except Exception as exc:
         record["error"] = f"{type(exc).__name__}: {exc}"
         raise
     finally:
         record["latency_ms"] = latency
+        record["spans"] = spans
+        record["cost_usd"] = round(sum(s["cost_usd"] for s in spans), 8)
         tracing.write_trace(record, pii_values=[value for _, value, _ in found])
 
 

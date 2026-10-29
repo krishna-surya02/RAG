@@ -1,0 +1,283 @@
+{
+  "label": "before",
+  "passed": 6,
+  "total": 13,
+  "rows": [
+    {
+      "id": "q01",
+      "origin": "goldenset",
+      "passed": true,
+      "reasons": [],
+      "verdict": "correct_supported",
+      "answer_call": "covered",
+      "trace_id": "796364d49e674bea9419172a4b4316d6",
+      "prompt_version": "claims-v1",
+      "retrieval_mode": "dense",
+      "context_files": [
+        "HO-0304_ed-01-22.pdf",
+        "HO-0304_ed-03-24.pdf",
+        "HO-0304_ed-02-23.pdf",
+        "HO-0304_ed-03-24.pdf",
+        "HO-0304_ed-01-22.pdf"
+      ],
+      "answer_head": "**Answer: Pay the claim.** The loss is caused by a **sudden and accidental discharge** of water from a **household appliance** (the water‑heater tank). Under HO‑0304, Edition 03‑24 the water‑backup exclusion (E‑17) contains an explicit carv",
+      "judge_rationale": "The answer correctly cites E‑17 from HO‑0304, Edition 03‑24, noting the carve‑out for sudden and accidental discharge from a household appliance and the $10,000 sublimit, which matches the gold answer’s call to pay the $8,200 loss (less deductible)."
+    },
+    {
+      "id": "q02",
+      "origin": "goldenset",
+      "passed": true,
+      "reasons": [],
+      "verdict": "right_call_wrong_support",
+      "answer_call": "no_call",
+      "trace_id": "e90263ac385c43aeaa621f766833c66a",
+      "prompt_version": "claims-v1",
+      "retrieval_mode": "dense",
+      "context_files": [
+        "Endorsement_HO-2306.pdf",
+        "Endorsement_HO-2405.pdf",
+        "Endorsement_HO-2306.pdf",
+        "HO-0304_ed-02-23.pdf",
+        "HO-0304_ed-03-24.pdf"
+      ],
+      "answer_head": "The material you provided does **not** contain the text of **Form HO‑0304, Edition 01‑22**. The only HO‑0304 forms in the retrieved material are the **Edition 02‑23** and **Edition 03‑24** versions. **What was retrieved instead** * **HO‑030",
+      "judge_rationale": "The assistant correctly denies coverage, noting that the loss is excluded under E‑17 and that no endorsement is attached. However, it bases that conclusion on the E‑17 language from Editions 02‑23 and 03‑24, which are sibling editions and are explicitly disallowed in the gold answer. The correct citation must come from Edition 01‑22, so the support is wrong."
+    },
+    {
+      "id": "q03",
+      "origin": "goldenset",
+      "passed": true,
+      "reasons": [],
+      "verdict": "correct_supported",
+      "answer_call": "other",
+      "trace_id": "422ad234d62f4788be00c69637766494",
+      "prompt_version": "claims-v1",
+      "retrieval_mode": "dense",
+      "context_files": [
+        "Endorsement_HO-2306.pdf",
+        "Endorsement_HO-2306.pdf",
+        "Endorsement_HO-2405.pdf",
+        "HO-0304_ed-03-24.pdf",
+        "Endorsement_HO-2405.pdf"
+      ],
+      "answer_head": "The material you provided shows that **Endorsement HO‑2306 is only usable with Form HO‑0304, Edition 01‑22 or Edition 02‑23**: > “This endorsement applies only while attached to Form HO‑0304, Edition 01‑22 or Edition 02‑23. It is **not comp",
+      "judge_rationale": "The answer correctly notes that Endorsement HO‑2306 only applies to HO‑0304 Editions 01‑22 or 02‑23 and is superseded by HO‑2405 on Edition 03‑24, so it cannot be attached to the policy in question. It therefore correctly concludes that the sewer‑backup loss is not covered under HO‑2306 and points to HO‑2405 as the proper endorsement for that edition. The cited passage from HO‑2306’s CONDITIONS is the accurate source for this determination."
+    },
+    {
+      "id": "q04",
+      "origin": "goldenset",
+      "passed": true,
+      "reasons": [],
+      "verdict": "correct_supported",
+      "answer_call": "covered",
+      "trace_id": "e3be6a4757b5437f8f4385f2115d682d",
+      "prompt_version": "claims-v1",
+      "retrieval_mode": "dense",
+      "context_files": [
+        "HO-0304_ed-03-24.pdf",
+        "HO-0304_ed-02-23.pdf",
+        "HO-0500_ed-01-23.pdf",
+        "HO-0304_ed-01-22.pdf",
+        "HO-0304_ed-03-24.pdf"
+      ],
+      "answer_head": "**Answer** Yes – the collapse would be covered under the **Additional Coverage — Collapse** provision. **Citation** > “E‑20 Collapse. We do not cover loss caused by collapse, **except as specifically provided under the Additional Coverage —",
+      "judge_rationale": "The answer correctly states that the collapse is covered because the policy’s E‑20 exclusion includes an exception for collapse caused by the weight of ice, snow, sleet, or rain. It cites the exact wording from HO‑0304, Edition 02‑23, confirming the correct edition and the correct exclusion code."
+    },
+    {
+      "id": "q05",
+      "origin": "goldenset",
+      "passed": false,
+      "reasons": [
+        "verdict wrong_call"
+      ],
+      "verdict": "wrong_call",
+      "answer_call": "covered",
+      "trace_id": "995795bda0434d3c84778757398446c7",
+      "prompt_version": "claims-v1",
+      "retrieval_mode": "dense",
+      "context_files": [
+        "HO-0304_ed-03-24.pdf",
+        "HO-0304_ed-02-23.pdf",
+        "HO-0304_ed-02-23.pdf",
+        "Endorsement_HO-2405.pdf",
+        "HO-0304_ed-03-24.pdf"
+      ],
+      "answer_head": "**Yes – the mold damage is covered (subject to the $10,000 sub‑limit).** The relevant exclusion in the HO‑0304, Edition 02‑23 policy states: > “**E‑10 Mold, Fungus, or Wet Rot.** We do not cover loss caused by mold, fungus, or wet rot, **ex",
+      "judge_rationale": "The assistant incorrectly asserted coverage, stating that the 02‑23 edition’s E‑10 does not require remediation within 30 days. In fact, the 02‑23 E‑10 text includes the clause “requires remediation to begin within 30 days of discovery,” which is violated at 45 days, so the loss is excluded. The assistant’s call is therefore wrong."
+    },
+    {
+      "id": "q06",
+      "origin": "goldenset",
+      "passed": true,
+      "reasons": [],
+      "verdict": "right_call_wrong_support",
+      "answer_call": "covered",
+      "trace_id": "b7a9d730a07c462499548e01defb359c",
+      "prompt_version": "claims-v1",
+      "retrieval_mode": "dense",
+      "context_files": [
+        "HO-0500_ed-01-23.pdf",
+        "HO-0304_ed-03-24.pdf",
+        "HO-0304_ed-01-22.pdf",
+        "HO-0304_ed-02-23.pdf",
+        "HO-0304_ed-03-24.pdf"
+      ],
+      "answer_head": "**Coverage** The Whitfields’ policy is the **HO‑0500 — Homeowners Broad Form, Edition 01‑23** (a named‑peril form). Section II of that form lists the perils that are covered for Coverage A (Dwelling): > “Coverage A, B, and C apply only to d",
+      "judge_rationale": "The answer correctly determined that the loss is covered under the named peril of windstorm/falling object and that the collapse exclusion does not bar coverage. However, it mistakenly cites the collapse exclusion E‑20 from the HO‑0304 form, which is not part of the HO‑0500 policy, and fails to reference the actual F‑11 Collapse exclusion that applies to HO‑0500. Thus the support is incorrect."
+    },
+    {
+      "id": "q07",
+      "origin": "goldenset",
+      "passed": false,
+      "reasons": [
+        "assertion exclusion_id_on_denial: expected 'E-10', judge saw None"
+      ],
+      "verdict": "correct_supported",
+      "answer_call": "no_call",
+      "trace_id": "845bb7cf444c469eace6ac690b2fb64e",
+      "prompt_version": "claims-v1",
+      "retrieval_mode": "dense",
+      "context_files": [
+        "HO-0304_ed-03-24.pdf",
+        "HO-0304_ed-03-24.pdf",
+        "Endorsement_HO-2405.pdf",
+        "Endorsement_HO-2306.pdf",
+        "Endorsement_HO-2306.pdf"
+      ],
+      "answer_head": "The specific exclusion **E‑10 Mold, Fungus, or Wet Rot** does **not appear** in the material that was retrieved for **Form HO‑0304, Edition 01‑22**. The only mold‑related exclusion that was retrieved is from **Form HO‑0304, Edition 03‑24**:",
+      "judge_rationale": "The answer correctly denies coverage and states no limit, matching the gold call. It notes that the mold exclusion E‑10 exists in the policy but is not retrieved for Edition 01‑22, and correctly points out that the attached endorsement HO‑2306 only covers water‑backup, not mold. No incorrect edition or unsupported citation is used as the basis for the denial."
+    },
+    {
+      "id": "q08",
+      "origin": "goldenset",
+      "passed": false,
+      "reasons": [
+        "assertion deductible_conditional: answer states 'deductible is the full $19,000', expected '$1,000'"
+      ],
+      "verdict": "correct_supported",
+      "answer_call": "other",
+      "trace_id": "5e446158ca664a1aadae6cc102d0c92a",
+      "prompt_version": "claims-v1",
+      "retrieval_mode": "dense",
+      "context_files": [
+        "Endorsement_HO-2405.pdf",
+        "HO-0304_ed-03-24.pdf",
+        "Endorsement_HO-2306.pdf",
+        "Endorsement_HO-2306.pdf",
+        "HO-0304_ed-01-22.pdf"
+      ],
+      "answer_head": "**Payment:** $19,000 (the full amount of the loss, before applying any deductible). **Why:** - The base Form HO‑0304, Edition 03‑24’s revised Exclusion E‑17 provides a **$10,000 per‑occurrence sublimit** for sudden‑and‑accidental discharge ",
+      "judge_rationale": "The answer correctly identifies that the loss is covered under the $25,000 enhanced limit of Endorsement HO‑2405 on HO‑0304, Edition 03‑24, and therefore pays the full $19,000 before the deductible, matching the gold answer."
+    },
+    {
+      "id": "q09",
+      "origin": "goldenset",
+      "passed": true,
+      "reasons": [],
+      "verdict": "correct_supported",
+      "answer_call": "other",
+      "trace_id": "95bc1be2da454c56a91d4d02888130ac",
+      "prompt_version": "claims-v1",
+      "retrieval_mode": "dense",
+      "context_files": [
+        "HO-0304_ed-03-24.pdf",
+        "HO-0304_ed-01-22.pdf",
+        "HO-0304_ed-03-24.pdf",
+        "Endorsement_HO-2306.pdf",
+        "HO-0304_ed-02-23.pdf"
+      ],
+      "answer_head": "The only exclusion that deals with water‑related loss in the newest HO‑0304 form is **Exclusion E‑17 – Water Backup and Sump Overflow** (HO‑0304, Edition 03‑24). > **“E‑17 Water Backup and Sump Overflow (Revised).** We do not cover loss cau",
+      "judge_rationale": "The assistant correctly identified that the 03‑24 edition’s E‑17 exclusion contains an exception for sudden and accidental discharge from a household appliance, so the loss is covered and no exclusion code can be cited to deny the claim."
+    },
+    {
+      "id": "q10",
+      "origin": "goldenset",
+      "passed": false,
+      "reasons": [
+        "verdict wrong_call",
+        "assertion exclusion_id_on_denial: expected 'F-3', judge saw 'E-17'"
+      ],
+      "verdict": "wrong_call",
+      "answer_call": "excluded",
+      "trace_id": "7b66fd3ab97f47a1985aa1b85644e1d1",
+      "prompt_version": "claims-v1",
+      "retrieval_mode": "dense",
+      "context_files": [
+        "HO-0304_ed-03-24.pdf",
+        "HO-0304_ed-02-23.pdf",
+        "Endorsement_HO-2405.pdf",
+        "Endorsement_HO-2306.pdf",
+        "HO-0304_ed-01-22.pdf"
+      ],
+      "answer_head": "The loss is **not covered** by the base named‑peril (HO‑0304) policy. **Why:** - **Form & Edition:** HO‑0304, Edition 03‑24 - **Exclusion Code:** **E‑17 – Water Backup and Sump Overflow (Revised)** > “We do not cover loss caused by water or",
+      "judge_rationale": "The assistant cites HO‑0304, Edition 03‑24 E‑17, but the question refers to a HO‑0500, Edition 01‑23 policy where the relevant exclusion is F‑3. The assistant’s conclusion that the loss is excluded under E‑17 is therefore based on the wrong form and wrong exclusion, leading to an incorrect denial under the wrong policy."
+    },
+    {
+      "id": "q11",
+      "origin": "goldenset",
+      "passed": false,
+      "reasons": [
+        "assertion exclusion_id_on_denial: expected 'F-1', judge saw 'E-3'"
+      ],
+      "verdict": "right_call_wrong_support",
+      "answer_call": "no_call",
+      "trace_id": "36ff06ee0cb3423c8af3c4a432af1be3",
+      "prompt_version": "claims-v1",
+      "retrieval_mode": "dense",
+      "context_files": [
+        "Endorsement_HO-2306.pdf",
+        "Endorsement_HO-2306.pdf",
+        "Endorsement_HO-2405.pdf",
+        "Endorsement_HO-2405.pdf",
+        "HO-0304_ed-03-24.pdf"
+      ],
+      "answer_head": "The material you provided does **not** contain any passage about **HO‑0500, Edition 01‑23**. The only policy forms and endorsements in the retrieved documents are Form HO‑0304 (editions 01‑22, 02‑23, 03‑24) and Endorsements HO‑2306 and HO‑2",
+      "judge_rationale": "The assistant correctly concludes the claim is denied, but it cites Exclusion E‑3 from the HO‑0304 endorsement instead of the correct F‑1 flood/surface‑water exclusion that applies to HO‑0500, Edition 01‑23. This mis‑attribution violates the gold answer’s requirement to cite the correct policy form and exclusion."
+    },
+    {
+      "id": "q12",
+      "origin": "goldenset",
+      "passed": false,
+      "reasons": [
+        "verdict wrong_call"
+      ],
+      "verdict": "wrong_call",
+      "answer_call": "other",
+      "trace_id": "9b31646088c145b0922f79e689d98d2e",
+      "prompt_version": "claims-v1",
+      "retrieval_mode": "dense",
+      "context_files": [
+        "Claim_Form.pdf",
+        "Claim_Form.pdf",
+        "Claim_Form.pdf",
+        "Claim_Form.pdf",
+        "Claim_Form.pdf"
+      ],
+      "answer_head": "**Required documentation for the “Hospitalization Expenses” line** - **Bills / receipts for the hospitalization** – the insured must attach the original medical bills (or receipts) that substantiate the amount claimed. > *“I hereby declare ",
+      "judge_rationale": "The answer adds bills/receipts and a summary of bills as required documentation, which the gold answer says are not needed. It also omits the claim form duly signed, which is part of the correct call. Thus the answer reaches a different outcome than the gold answer."
+    },
+    {
+      "id": "w11_termite_0122",
+      "origin": "evals/case_w11_termite_0122.json",
+      "passed": false,
+      "reasons": [
+        "verdict no_call",
+        "assertion exclusion_id_on_denial: expected 'E-15', judge saw None"
+      ],
+      "verdict": "no_call",
+      "answer_call": "no_call",
+      "trace_id": "a72151afa5d94544847bbe855915013d",
+      "prompt_version": "claims-v1",
+      "retrieval_mode": "dense",
+      "context_files": [
+        "Endorsement_HO-2306.pdf",
+        "HO-0304_ed-03-24.pdf",
+        "HO-0304_ed-02-23.pdf",
+        "HO-0304_ed-01-22.pdf",
+        "HO-0304_ed-03-24.pdf"
+      ],
+      "answer_head": "The material that was retrieved for **HO‑0304 Edition 01‑22** (the “HO‑0304_ed‑01‑22.pdf” file) contains only the declarations, definitions and coverage sections of the form. It does **not** include the list of exclusions, so no language ab",
+      "judge_rationale": "The assistant claims the 01‑22 edition lacks an exclusion list and therefore cannot answer, whereas the policy does contain E‑15 (insects/termite) in that edition, making the claim answerable and the correct outcome a denial."
+    }
+  ]
+}

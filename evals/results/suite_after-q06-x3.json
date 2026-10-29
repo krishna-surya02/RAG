@@ -1,0 +1,69 @@
+{
+  "label": "after-q06-x3",
+  "passed": 2,
+  "total": 3,
+  "rows": [
+    {
+      "id": "q06#1",
+      "origin": "goldenset",
+      "passed": true,
+      "reasons": [],
+      "verdict": "correct_supported",
+      "answer_call": "covered",
+      "trace_id": "5b7b166764ac4ec593725a95ba9fe00f",
+      "prompt_version": "claims-v3",
+      "retrieval_mode": "scoped",
+      "context_files": [
+        "HO-0500_ed-01-23.pdf",
+        "HO-0500_ed-01-23.pdf",
+        "HO-0500_ed-01-23.pdf",
+        "HO-0500_ed-01-23.pdf",
+        "HO-0304_ed-03-24.pdf"
+      ],
+      "answer_head": "**Yes – the loss is covered and the collapse exclusion does not bar coverage.** **Why it is covered** 1. **Windstorm is a named peril** – Section II of HO‑0500, Edition 01‑23 lists “windstorm or hail” as one of the perils that trigger cover",
+      "judge_rationale": "The answer correctly identifies windstorm as a named peril in Section II of HO‑0500 Edition 01‑23, correctly applies the exception in F‑11 that excludes collapse only when not caused by a named peril, and concludes the loss is covered. It cites the correct edition and does not misattribute the exclusion as a blanket bar."
+    },
+    {
+      "id": "q06#2",
+      "origin": "goldenset",
+      "passed": false,
+      "reasons": [
+        "verdict wrong_call"
+      ],
+      "verdict": "wrong_call",
+      "answer_call": "other",
+      "trace_id": "591691cba49541999d762c0b1ecc57d1",
+      "prompt_version": "claims-v3",
+      "retrieval_mode": "scoped",
+      "context_files": [
+        "HO-0500_ed-01-23.pdf",
+        "HO-0500_ed-01-23.pdf",
+        "HO-0500_ed-01-23.pdf",
+        "HO-0500_ed-01-23.pdf",
+        "HO-0304_ed-03-24.pdf"
+      ],
+      "answer_head": "**Coverage determination** - **Form & edition:** HO‑0500 — Homeowners Broad Form, Edition 01‑23. - **Relevant named perils (Section II):** “windstorm or hail” and “falling objects.” - **Relevant exclusion (Section III):** **F‑11 Collapse** ",
+      "judge_rationale": "The answer correctly identifies the policy form, the named perils, and that the collapse exclusion does not bar coverage, but it omits the required detail that the loss is paid less the $2,500 deductible, so it does not fully match the call of \"pay, less the $2,500 deductible.\""
+    },
+    {
+      "id": "q06#3",
+      "origin": "goldenset",
+      "passed": true,
+      "reasons": [],
+      "verdict": "correct_supported",
+      "answer_call": "covered",
+      "trace_id": "a32279e2868f4780a898996f1a996db8",
+      "prompt_version": "claims-v3",
+      "retrieval_mode": "scoped",
+      "context_files": [
+        "HO-0500_ed-01-23.pdf",
+        "HO-0500_ed-01-23.pdf",
+        "HO-0500_ed-01-23.pdf",
+        "HO-0500_ed-01-23.pdf",
+        "HO-0304_ed-03-24.pdf"
+      ],
+      "answer_head": "**Coverage:** Yes, the loss is covered under the **HO‑0500 Broad Form, Edition 01‑23**. **Why the collapse exclusion does not bar coverage** * **Named peril:** The wind that blew the tree limb down is a “windstorm” – one of the perils liste",
+      "judge_rationale": "The answer correctly identifies windstorm as a named peril in Section II of HO‑0500 Ed 01‑23 and applies the exception in F‑11 Collapse, concluding the loss is covered. It cites the correct edition and uses F‑11 appropriately, matching the gold answer’s reasoning."
+    }
+  ]
+}

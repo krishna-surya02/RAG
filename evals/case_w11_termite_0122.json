@@ -1,0 +1,32 @@
+{
+  "_about": [
+    "Week 11 drill: planted bad answer found in traces/claims_traces_w11.jsonl as trace c4559f34032c4d3281d61a7dc8b4b1aa (adj-06, 2026-10-29). It told the adjuster termite damage on HO-0304 Edition 01-22 was covered; E-15 excludes it. The 01-22 E-15 chunk was not in the dense top-5 (02-23's and 03-24's exclusion pages were), so the failure is a sibling-edition retrieval miss.",
+    "must_not_call: a 'covered' answer to this question fails deterministically, judge or no judge."
+  ],
+  "id": "w11_termite_0122",
+  "question": "HO-0304 Edition 01-22, no endorsements on file. Termite damage was found in the floor joists during a remodel. Is this covered?",
+  "kind": "exact-token",
+  "exact_tokens": [
+    "HO-0304",
+    "01-22"
+  ],
+  "gold_chunk_id": "5b377c547c028d3160cb5669787109174580cb5bc490922a2b966793d4ac25b0",
+  "gold_locator": {
+    "source_file": "HO-0304_ed-01-22.pdf",
+    "page": 1,
+    "phrase": "E-15 Birds, Vermin, Rodents, Insects. We do not cover loss caused by birds, vermin, rodents, or insects."
+  },
+  "authored": true,
+  "source_trace_id": "c4559f34032c4d3281d61a7dc8b4b1aa",
+  "gold_answer": {
+    "call": "deny — insect damage is excluded",
+    "correct_policy_form_edition": "HO-0304, Edition 01-22",
+    "correct_exclusion_or_code": "E-15",
+    "must_not_cite": [
+      "E-15, Edition 02-23",
+      "E-15, Edition 03-24"
+    ],
+    "rationale": "HO-0304 Edition 01-22, E-15 Birds, Vermin, Rodents, Insects: \"We do not cover loss caused by birds, vermin, rodents, or insects.\" No endorsement is on the policy, so nothing buys it back."
+  },
+  "must_not_call": "covered"
+}

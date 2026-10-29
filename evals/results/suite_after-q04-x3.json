@@ -1,0 +1,69 @@
+{
+  "label": "after-q04-x3",
+  "passed": 2,
+  "total": 3,
+  "rows": [
+    {
+      "id": "q04#1",
+      "origin": "goldenset",
+      "passed": true,
+      "reasons": [],
+      "verdict": "correct_supported",
+      "answer_call": "other",
+      "trace_id": "0e80d9e225844e528dd11d36581e15b2",
+      "prompt_version": "claims-v3",
+      "retrieval_mode": "scoped",
+      "context_files": [
+        "HO-0304_ed-02-23.pdf",
+        "HO-0304_ed-02-23.pdf",
+        "HO-0304_ed-02-23.pdf",
+        "HO-0304_ed-02-23.pdf",
+        "HO-0304_ed-02-23.pdf"
+      ],
+      "answer_head": "**Relevant provision** > **E‑20 Collapse** – “We do not cover loss caused by collapse, **except as specifically provided under the Additional Coverage — Collapse provision, which applies only to collapse caused by decay, insect or vermin da",
+      "judge_rationale": "The answer correctly cites E‑20 from the 02‑23 edition and identifies the snow‑weight exception that makes the collapse covered, matching the gold answer’s call. The added note about the endorsement is extraneous but does not alter the correct outcome."
+    },
+    {
+      "id": "q04#2",
+      "origin": "goldenset",
+      "passed": false,
+      "reasons": [
+        "verdict wrong_call"
+      ],
+      "verdict": "wrong_call",
+      "answer_call": "other",
+      "trace_id": "b30564be511d4883b0b32023212b5160",
+      "prompt_version": "claims-v3",
+      "retrieval_mode": "scoped",
+      "context_files": [
+        "HO-0304_ed-02-23.pdf",
+        "HO-0304_ed-02-23.pdf",
+        "HO-0304_ed-02-23.pdf",
+        "HO-0304_ed-02-23.pdf",
+        "HO-0304_ed-02-23.pdf"
+      ],
+      "answer_head": "**Relevant provision** - **Form:** HO‑0304 - **Edition:** 02‑23 - **Exclusion code:** **E‑20 – Collapse** > “We do not cover loss caused by collapse, **except** as specifically provided under the Additional Coverage — Collapse provision, **",
+      "judge_rationale": "The answer correctly cites E‑20 and notes the carve‑out for collapse caused by weight of snow, but it does not confirm that the policy includes the Additional Coverage – Collapse provision. It therefore fails to definitively state that the collapse is covered, which the gold answer requires."
+    },
+    {
+      "id": "q04#3",
+      "origin": "goldenset",
+      "passed": true,
+      "reasons": [],
+      "verdict": "correct_supported",
+      "answer_call": "other",
+      "trace_id": "610b23124ac84fde8986403c06d6a0b2",
+      "prompt_version": "claims-v3",
+      "retrieval_mode": "scoped",
+      "context_files": [
+        "HO-0304_ed-02-23.pdf",
+        "HO-0304_ed-02-23.pdf",
+        "HO-0304_ed-02-23.pdf",
+        "HO-0304_ed-02-23.pdf",
+        "HO-0304_ed-02-23.pdf"
+      ],
+      "answer_head": "**Applicable provision** - **Form:** HO‑0304 - **Edition:** 02‑23 (February 2023) - **Exclusion code:** **E‑20 Collapse** > “We do not cover loss caused by collapse, **except as specifically provided under the Additional Coverage — Collapse",
+      "judge_rationale": "The answer correctly cites E‑20 from HO‑0304, Edition 02‑23, noting the exception for collapse caused by the weight of ice, snow, sleet, or rain. It applies this to the heavy snowfall collapse and concludes the loss is covered, matching the gold answer."
+    }
+  ]
+}
