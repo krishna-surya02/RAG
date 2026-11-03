@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2024-000043",
+ "scenario": "hh_subsidence",
+ "product": "household",
+ "policy_number": "HH-2024-00065",
+ "loss_date": "2024-06-21",
+ "reported_at": "2024-06-21",
+ "fnol_text": "My name is Owen Thorne and I live at 792 Linden Lane, Clinton, NC 28363. You can reach me on (555) 421-7007 or owen.thorne@example.com. Large diagonal cracks appeared above the doors and windows at the back of the house around 21 June 2024. A surveyor thinks the clay soil has shrunk. Policy HH-2024-00065. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Thorne on (555) 421-7007 to acknowledge the claim. Owen confirmed the loss date as 21 June 2024."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 792 Linden Lane. Neighbour Anika Mensah was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0413: water line on the skirting boards"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:HH-PW §1.11",
+  "clause": "HH-PW §1.11",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "subsidence",
+   "deductible": 2500,
+   "sub_limit": null,
+   "policy_limit": 500000,
+   "source": "HH-PW §1.11"
+  },
+  "assessed_loss": 71950,
+  "amount_paid": 69450
+ },
+ "pii": {
+  "claimant_name": "Owen Thorne",
+  "address": "792 Linden Lane, Clinton, NC 28363",
+  "street": "792 Linden Lane",
+  "phone": "(555) 421-7007",
+  "email": "owen.thorne@example.com",
+  "other_people": [
+   "Anika Mensah",
+   "Noor Mbeki"
+  ],
+  "injuries": []
+ }
+}

@@ -1,0 +1,58 @@
+{
+ "claim_id": "CLM-2025-000066",
+ "scenario": "mt_collision",
+ "product": "motor",
+ "policy_number": "MT-2023-00116",
+ "loss_date": "2025-05-11",
+ "reported_at": "2025-05-14",
+ "fnol_text": "My name is Chloe Quinlan and I live at 67 Thornbury Place, Springfield, OH 45511. You can reach me on (555) 617-5383 or chloe.quinlan@example.com. I was stopped at lights on 11 May 2025 when the car behind, driven by Jordan Kaminski, went into the back of mine. Rear bumper and boot are badly damaged. Policy MT-2023-00116. I'd like to claim for the damage to my car. Please just tell me this is covered.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Quinlan on (555) 617-5383 to acknowledge the claim. Chloe confirmed the loss date as 11 May 2025."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Rosa Okafor gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Third-party driver Jordan Kaminski reports a sprained wrist and attended St. Brendan's Hospital. Chloe reports a sprained ankle."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2203: dashboard warning lights",
+  "IMG_2201: front passenger side damage",
+  "IMG_2207: vehicle on the recovery truck"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §3.1",
+  "clause": "MT-PW §3.1",
+  "endorsement_set": "MEND-2023",
+  "limits": {
+   "coverage": "own_damage",
+   "deductible": 750,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §3.1"
+  },
+  "assessed_loss": 10200,
+  "amount_paid": 9450
+ },
+ "pii": {
+  "claimant_name": "Chloe Quinlan",
+  "address": "67 Thornbury Place, Springfield, OH 45511",
+  "street": "67 Thornbury Place",
+  "phone": "(555) 617-5383",
+  "email": "chloe.quinlan@example.com",
+  "other_people": [
+   "Rosa Okafor",
+   "Jordan Kaminski"
+  ],
+  "injuries": [
+   "a sprained wrist",
+   "a sprained ankle"
+  ]
+ }
+}

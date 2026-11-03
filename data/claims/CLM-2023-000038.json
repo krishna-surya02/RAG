@@ -1,0 +1,52 @@
+{
+ "claim_id": "CLM-2023-000038",
+ "scenario": "not_in_force",
+ "product": "motor",
+ "policy_number": "MT-2023-00056",
+ "loss_date": "2023-09-30",
+ "reported_at": "2023-10-02",
+ "fnol_text": "My name is Hannah Ballard and I live at 973 Maple Road, Springfield, OH 45528. You can reach me on (555) 468-1624 or hannah.ballard@example.com. On 30 September 2023 another car pulled out of a side road and hit my front passenger side. The other driver, Declan Khan, admitted they didn't see me. Policy MT-2023-00056. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Ballard on (555) 468-1624 to acknowledge the claim. Hannah confirmed the loss date as 30 September 2023."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Hannah Jovanovic gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Third-party driver Declan Khan reports minor burns to the hand and attended County General. Hannah reports a sprained wrist."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2201: front passenger side damage",
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2203: dashboard warning lights"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "NOT_IN_FORCE",
+  "clause": null,
+  "endorsement_set": null,
+  "limits": null,
+  "assessed_loss": 14500,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Hannah Ballard",
+  "address": "973 Maple Road, Springfield, OH 45528",
+  "street": "973 Maple Road",
+  "phone": "(555) 468-1624",
+  "email": "hannah.ballard@example.com",
+  "other_people": [
+   "Hannah Jovanovic",
+   "Declan Khan"
+  ],
+  "injuries": [
+   "minor burns to the hand",
+   "a sprained wrist"
+  ]
+ }
+}

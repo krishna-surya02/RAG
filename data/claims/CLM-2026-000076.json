@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2026-000076",
+ "scenario": "hh_theft_forced",
+ "product": "household",
+ "policy_number": "HH-2023-00068",
+ "loss_date": "2026-07-28",
+ "reported_at": "2026-07-28",
+ "fnol_text": "My name is Amara Sorensen and I live at 175 Linden Drive, Greenville, SC 29659. You can reach me on (555) 354-3527 or amara.sorensen@example.com. Our house was broken into on 28 July 2026. The back door was forced and a laptop, jewellery and a television were taken. Policy HH-2023-00068. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Sorensen on (555) 354-3527 to acknowledge the claim. Amara confirmed the loss date as 28 July 2026."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 175 Linden Drive. Neighbour Arjun Gallagher was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0417: damaged furniture stacked in the garage"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:HH-PW §1.10",
+  "clause": "HH-PW §1.10",
+  "endorsement_set": "HEND-2025",
+  "limits": {
+   "coverage": "theft",
+   "deductible": 500,
+   "sub_limit": null,
+   "policy_limit": 80000,
+   "source": "HH-PW §1.10, §2.2"
+  },
+  "assessed_loss": 14200,
+  "amount_paid": 13700
+ },
+ "pii": {
+  "claimant_name": "Amara Sorensen",
+  "address": "175 Linden Drive, Greenville, SC 29659",
+  "street": "175 Linden Drive",
+  "phone": "(555) 354-3527",
+  "email": "amara.sorensen@example.com",
+  "other_people": [
+   "Arjun Gallagher",
+   "Hannah Fitzgerald"
+  ],
+  "injuries": []
+ }
+}

@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2025-000125",
+ "scenario": "mt_theft_keys",
+ "product": "motor",
+ "policy_number": "MT-2025-00134",
+ "loss_date": "2025-09-23",
+ "reported_at": "2025-09-30",
+ "fnol_text": "My name is Grace Sorensen and I live at 662 Kestrel Place, Clinton, NC 28386. You can reach me on (555) 983-8664 or grace.sorensen@example.com. I left the engine running with the keys in while I ran into the shop on 23 September 2025 and someone drove off in my car. Policy MT-2025-00134. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Sorensen on (555) 983-8664 to acknowledge the claim. Grace confirmed the loss date as 23 September 2025."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Marcus Raman gave a statement by phone."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2203: dashboard warning lights"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:MX-6",
+  "clause": "MX-6",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "theft",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §2.2"
+  },
+  "assessed_loss": 7850,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Grace Sorensen",
+  "address": "662 Kestrel Place, Clinton, NC 28386",
+  "street": "662 Kestrel Place",
+  "phone": "(555) 983-8664",
+  "email": "grace.sorensen@example.com",
+  "other_people": [
+   "Marcus Raman",
+   "Callum Nakamura"
+  ],
+  "injuries": []
+ }
+}

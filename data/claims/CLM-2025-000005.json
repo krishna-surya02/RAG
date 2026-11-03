@@ -1,0 +1,54 @@
+{
+ "claim_id": "CLM-2025-000005",
+ "scenario": "hh_surface_water_23_floodzone",
+ "product": "household",
+ "policy_number": "HH-2023-00073",
+ "loss_date": "2025-01-07",
+ "reported_at": "2025-01-16",
+ "fnol_text": "My name is Marcus Okafor and I live at 932 Hawthorn Road, Madison, WI 53782. You can reach me on (555) 358-4849 or marcus.okafor@example.com. Heavy rain all afternoon on 7 January 2025. Water pooled on the lawn and then came into the lounge at floor level. Carpets and the sofa are soaked. Policy HH-2023-00073. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Okafor on (555) 358-4849 to acknowledge the claim. Marcus confirmed the loss date as 7 January 2025."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 932 Hawthorn Road. Neighbour Amara Kaminski was present and confirmed the timeline."
+  },
+  {
+   "n": 3,
+   "text": "Marcus sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0417: damaged furniture stacked in the garage"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:HFL-23 §2.2",
+  "clause": "HFL-23 §2.2",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "flood_surface_water",
+   "deductible": 2500,
+   "sub_limit": 15000,
+   "policy_limit": 500000,
+   "source": "HFL-23 §2.2, §2.3; HSL-23 §1"
+  },
+  "assessed_loss": 21200,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Marcus Okafor",
+  "address": "932 Hawthorn Road, Madison, WI 53782",
+  "street": "932 Hawthorn Road",
+  "phone": "(555) 358-4849",
+  "email": "marcus.okafor@example.com",
+  "other_people": [
+   "Amara Kaminski",
+   "Dana McBride"
+  ],
+  "injuries": []
+ }
+}

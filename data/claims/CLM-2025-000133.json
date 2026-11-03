@@ -1,0 +1,55 @@
+{
+ "claim_id": "CLM-2025-000133",
+ "scenario": "hh_surface_water_23_floodzone",
+ "product": "household",
+ "policy_number": "HH-2025-00080",
+ "loss_date": "2025-10-10",
+ "reported_at": "2025-10-11",
+ "fnol_text": "My name is Tomas Thorne and I live at 318 Foxglove Way, Greenville, SC 29611. You can reach me on (555) 424-1912 or tomas.thorne@example.com. After the torrential rain on the night of 10 October 2025, rainwater ran off the field behind us, across the back garden and in under the patio doors. About 5 cm of water covered the kitchen and family room floors. Policy HH-2025-00080. I'd like to claim for the damage to my home. Please just tell me this is covered.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Thorne on (555) 424-1912 to acknowledge the claim. Tomas confirmed the loss date as 10 October 2025."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 318 Foxglove Way. Neighbour Esther Khan was present and confirmed the timeline."
+  },
+  {
+   "n": 3,
+   "text": "Tomas sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0413: water line on the skirting boards"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:HFL-23 §2.2",
+  "clause": "HFL-23 §2.2",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "flood_surface_water",
+   "deductible": 2500,
+   "sub_limit": 15000,
+   "policy_limit": 500000,
+   "source": "HFL-23 §2.2, §2.3; HSL-23 §1"
+  },
+  "assessed_loss": 38800,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Tomas Thorne",
+  "address": "318 Foxglove Way, Greenville, SC 29611",
+  "street": "318 Foxglove Way",
+  "phone": "(555) 424-1912",
+  "email": "tomas.thorne@example.com",
+  "other_people": [
+   "Esther Khan",
+   "Maya Fitzgerald"
+  ],
+  "injuries": []
+ }
+}

@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2026-000152",
+ "scenario": "mt_theft_forced",
+ "product": "motor",
+ "policy_number": "MT-2024-00043",
+ "loss_date": "2026-10-29",
+ "reported_at": "2026-11-01",
+ "fnol_text": "My name is Nikhil Raman and I live at 567 Sycamore Lane, Madison, WI 53730. You can reach me on (555) 927-9087 or nikhil.raman@example.com. My car was stolen from outside the house overnight on 29 October 2026. Glass from the driver's window was on the road. Policy MT-2024-00043. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Raman on (555) 927-9087 to acknowledge the claim. Nikhil confirmed the loss date as 29 October 2026."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Liam Ishikawa gave a statement by phone."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2203: dashboard warning lights",
+  "IMG_2207: vehicle on the recovery truck"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §2.2",
+  "clause": "MT-PW §2.2",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "theft",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §2.2"
+  },
+  "assessed_loss": 15350,
+  "amount_paid": 14350
+ },
+ "pii": {
+  "claimant_name": "Nikhil Raman",
+  "address": "567 Sycamore Lane, Madison, WI 53730",
+  "street": "567 Sycamore Lane",
+  "phone": "(555) 927-9087",
+  "email": "nikhil.raman@example.com",
+  "other_people": [
+   "Liam Ishikawa",
+   "Imogen Castillo"
+  ],
+  "injuries": []
+ }
+}

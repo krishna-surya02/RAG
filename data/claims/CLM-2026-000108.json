@@ -1,0 +1,55 @@
+{
+ "claim_id": "CLM-2026-000108",
+ "scenario": "mt_flood_25",
+ "product": "motor",
+ "policy_number": "MT-2023-00142",
+ "loss_date": "2026-09-14",
+ "reported_at": "2026-09-14",
+ "fnol_text": "My name is Tariq Ishikawa and I live at 514 Marigold Terrace, Milton, VT 05416. You can reach me on (555) 288-7253 or tariq.ishikawa@example.com. On 14 September 2026 flash flooding came down the street while my car was parked at home. Water got into the cabin and the engine won't start. Policy MT-2023-00142. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Ishikawa on (555) 288-7253 to acknowledge the claim. Tariq confirmed the loss date as 14 September 2026."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Rosa Novak gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Tariq sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2203: dashboard warning lights",
+  "IMG_2201: front passenger side damage",
+  "IMG_2207: vehicle on the recovery truck"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MFL-25 §2.1",
+  "clause": "MFL-25 §2.1",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "flood",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MFL-25 §2.4"
+  },
+  "assessed_loss": 6500,
+  "amount_paid": 5500
+ },
+ "pii": {
+  "claimant_name": "Tariq Ishikawa",
+  "address": "514 Marigold Terrace, Milton, VT 05416",
+  "street": "514 Marigold Terrace",
+  "phone": "(555) 288-7253",
+  "email": "tariq.ishikawa@example.com",
+  "other_people": [
+   "Rosa Novak",
+   "Nikhil Gallagher"
+  ],
+  "injuries": []
+ }
+}

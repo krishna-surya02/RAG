@@ -1,0 +1,57 @@
+{
+ "claim_id": "CLM-2025-000122",
+ "scenario": "hh_liability_injury",
+ "product": "household",
+ "policy_number": "HH-2025-00144",
+ "loss_date": "2025-09-08",
+ "reported_at": "2025-09-16",
+ "fnol_text": "My name is Samuel Oyelaran and I live at 410 Rowan Way, Salem, MA 01971. You can reach me on (555) 908-6492 or samuel.oyelaran@example.com. A delivery driver slipped on our icy front steps on 8 September 2025 and was taken to hospital. They have said they will make a claim against us. Policy HH-2025-00144. I'd like to claim for the damage to my home. I assume this is covered under my policy?",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Oyelaran on (555) 908-6492 to acknowledge the claim. Samuel confirmed the loss date as 8 September 2025."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 410 Rowan Way. Neighbour Naomi Ballard was present and confirmed the timeline."
+  },
+  {
+   "n": 3,
+   "text": "Injured party Imogen Petrov sustained a fractured left wrist and was treated at County General. Do not admit liability; refer."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0413: water line on the skirting boards"
+ ],
+ "final_decision": {
+  "outcome": "referred_liability",
+  "reason_code": "REFERRED_LIABILITY:HH-PW §3.1",
+  "clause": "HH-PW §3.1",
+  "endorsement_set": "HEND-2025",
+  "limits": {
+   "coverage": "liability",
+   "deductible": 0,
+   "sub_limit": null,
+   "policy_limit": 2000000,
+   "source": "HH-PW §3.1"
+  },
+  "assessed_loss": 30600,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Samuel Oyelaran",
+  "address": "410 Rowan Way, Salem, MA 01971",
+  "street": "410 Rowan Way",
+  "phone": "(555) 908-6492",
+  "email": "samuel.oyelaran@example.com",
+  "other_people": [
+   "Naomi Ballard",
+   "Imogen Petrov"
+  ],
+  "injuries": [
+   "a fractured left wrist"
+  ]
+ }
+}

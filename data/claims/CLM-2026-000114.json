@@ -1,0 +1,55 @@
+{
+ "claim_id": "CLM-2026-000114",
+ "scenario": "hh_surface_water_25",
+ "product": "household",
+ "policy_number": "HH-2023-00048",
+ "loss_date": "2026-09-24",
+ "reported_at": "2026-09-29",
+ "fnol_text": "My name is Nikhil Pereira and I live at 548 Cedar Road, Milton, VT 05446. You can reach me on (555) 437-3382 or nikhil.pereira@example.com. Heavy rain all afternoon on 24 September 2026. Water pooled on the lawn and then came into the lounge at floor level. Carpets and the sofa are soaked. Policy HH-2023-00048. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Pereira on (555) 437-3382 to acknowledge the claim. Nikhil confirmed the loss date as 24 September 2026."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 548 Cedar Road. Neighbour Valentina Zielinski was present and confirmed the timeline."
+  },
+  {
+   "n": 3,
+   "text": "Nikhil sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0413: water line on the skirting boards"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:HFL-25 §2.1",
+  "clause": "HFL-25 §2.1",
+  "endorsement_set": "HEND-2025",
+  "limits": {
+   "coverage": "flood_plus",
+   "deductible": 5000,
+   "sub_limit": 25000,
+   "policy_limit": 600000,
+   "source": "HFL-25 §2.2, §2.3; HSL-25 §1"
+  },
+  "assessed_loss": 39250,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Nikhil Pereira",
+  "address": "548 Cedar Road, Milton, VT 05446",
+  "street": "548 Cedar Road",
+  "phone": "(555) 437-3382",
+  "email": "nikhil.pereira@example.com",
+  "other_people": [
+   "Valentina Zielinski",
+   "Felix Ballard"
+  ],
+  "injuries": []
+ }
+}

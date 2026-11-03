@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2025-000067",
+ "scenario": "hh_escape_of_water",
+ "product": "household",
+ "policy_number": "HH-2023-00160",
+ "loss_date": "2025-05-22",
+ "reported_at": "2025-05-30",
+ "fnol_text": "My name is Viktor Santos and I live at 837 Oakridge Street, Dover, DE 19960. You can reach me on (555) 985-8956 or viktor.santos@example.com. The washing machine hose split on 22 May 2025 and flooded the utility room and hallway before we could turn off the water. Policy HH-2023-00160. I'd like to claim for the damage to my home. I assume this is covered under my policy?",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Santos on (555) 985-8956 to acknowledge the claim. Viktor confirmed the loss date as 22 May 2025."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 837 Oakridge Street. Neighbour Sofia Fitzgerald was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0417: damaged furniture stacked in the garage"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:HH-PW §1.7",
+  "clause": "HH-PW §1.7",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "escape_of_water",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 500000,
+   "source": "HH-PW §1.7"
+  },
+  "assessed_loss": 5950,
+  "amount_paid": 4950
+ },
+ "pii": {
+  "claimant_name": "Viktor Santos",
+  "address": "837 Oakridge Street, Dover, DE 19960",
+  "street": "837 Oakridge Street",
+  "phone": "(555) 985-8956",
+  "email": "viktor.santos@example.com",
+  "other_people": [
+   "Sofia Fitzgerald",
+   "Hiroshi Okafor"
+  ],
+  "injuries": []
+ }
+}

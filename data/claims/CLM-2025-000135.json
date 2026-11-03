@@ -1,0 +1,58 @@
+{
+ "claim_id": "CLM-2025-000135",
+ "scenario": "mt_collision",
+ "product": "motor",
+ "policy_number": "MT-2025-00136",
+ "loss_date": "2025-10-13",
+ "reported_at": "2025-10-20",
+ "fnol_text": "My name is Sofia Thorne and I live at 345 Ashford Lane, Salem, MA 01934. You can reach me on (555) 957-7614 or sofia.thorne@example.com. I was stopped at lights on 13 October 2025 when the car behind, driven by Ravi Santos, went into the back of mine. Rear bumper and boot are badly damaged. Policy MT-2025-00136. I'd like to claim for the damage to my car. Can you confirm I'm covered for this?",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Thorne on (555) 957-7614 to acknowledge the claim. Sofia confirmed the loss date as 13 October 2025."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Aisha Rasmussen gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Third-party driver Ravi Santos reports a sprained ankle and attended County General. Sofia reports lacerations to the forearm."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2201: front passenger side damage",
+  "IMG_2203: dashboard warning lights",
+  "IMG_2207: vehicle on the recovery truck"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §3.1",
+  "clause": "MT-PW §3.1",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "own_damage",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §3.1"
+  },
+  "assessed_loss": 3050,
+  "amount_paid": 2050
+ },
+ "pii": {
+  "claimant_name": "Sofia Thorne",
+  "address": "345 Ashford Lane, Salem, MA 01934",
+  "street": "345 Ashford Lane",
+  "phone": "(555) 957-7614",
+  "email": "sofia.thorne@example.com",
+  "other_people": [
+   "Aisha Rasmussen",
+   "Ravi Santos"
+  ],
+  "injuries": [
+   "a sprained ankle",
+   "lacerations to the forearm"
+  ]
+ }
+}

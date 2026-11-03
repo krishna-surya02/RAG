@@ -1,0 +1,53 @@
+{
+ "seed": 20261102,
+ "words_per_page": 250,
+ "pages": {
+  "household_wording.md": 29,
+  "motor_wording.md": 17,
+  "household_endorsements_2023.md": 2,
+  "household_endorsements_2025.md": 2,
+  "motor_endorsements_2023.md": 1,
+  "motor_endorsements_2025.md": 1
+ },
+ "policies": {
+  "household": 170,
+  "motor": 150
+ },
+ "claims": 500,
+ "scenarios": {
+  "hh_below_deductible": 5,
+  "hh_escape_of_water": 35,
+  "hh_gradual_leak": 20,
+  "hh_liability_injury": 8,
+  "hh_mould": 10,
+  "hh_river_23": 15,
+  "hh_settlement": 4,
+  "hh_storm_fence": 8,
+  "hh_storm_roof": 17,
+  "hh_subsidence": 6,
+  "hh_surface_water_23": 25,
+  "hh_surface_water_23_floodzone": 8,
+  "hh_surface_water_25": 25,
+  "hh_surface_water_25_floodplus": 12,
+  "hh_surface_water_aug24": 22,
+  "hh_surface_water_crossboundary": 15,
+  "hh_theft_forced": 17,
+  "hh_theft_let": 8,
+  "mt_collision": 45,
+  "mt_collision_tpft": 12,
+  "mt_dui": 6,
+  "mt_flood_23": 10,
+  "mt_flood_25": 6,
+  "mt_flood_drove_23": 4,
+  "mt_flood_drove_25": 4,
+  "mt_flood_warning_23": 8,
+  "mt_flood_warning_25": 8,
+  "mt_hail": 20,
+  "mt_mechanical": 9,
+  "mt_personal_accident": 10,
+  "mt_theft_forced": 12,
+  "mt_theft_keys": 8,
+  "mt_windscreen": 18,
+  "not_in_force": 60
+ }
+}

@@ -1,0 +1,51 @@
+{
+ "claim_id": "CLM-2026-000104",
+ "scenario": "mt_mechanical",
+ "product": "motor",
+ "policy_number": "MT-2024-00077",
+ "loss_date": "2026-09-06",
+ "reported_at": "2026-09-12",
+ "fnol_text": "My name is Ethan Ueda and I live at 540 Marigold Terrace, Madison, WI 53742. You can reach me on (555) 812-3372 or ethan.ueda@example.com. On 6 September 2026 the gearbox failed on the motorway and the garage says it needs replacing. Policy MT-2024-00077. I'd like to claim for the damage to my car. Can you confirm I'm covered for this?",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Ueda on (555) 812-3372 to acknowledge the claim. Ethan confirmed the loss date as 6 September 2026."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Callum Herrera gave a statement by phone."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2201: front passenger side damage",
+  "IMG_2203: dashboard warning lights"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:MX-4",
+  "clause": "MX-4",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "own_damage",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §3.1"
+  },
+  "assessed_loss": 5100,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Ethan Ueda",
+  "address": "540 Marigold Terrace, Madison, WI 53742",
+  "street": "540 Marigold Terrace",
+  "phone": "(555) 812-3372",
+  "email": "ethan.ueda@example.com",
+  "other_people": [
+   "Callum Herrera",
+   "Hannah Pereira"
+  ],
+  "injuries": []
+ }
+}

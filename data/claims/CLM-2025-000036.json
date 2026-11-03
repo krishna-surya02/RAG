@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2025-000036",
+ "scenario": "hh_storm_fence",
+ "product": "household",
+ "policy_number": "HH-2024-00099",
+ "loss_date": "2025-03-17",
+ "reported_at": "2025-03-18",
+ "fnol_text": "My name is Lucia Herrera and I live at 247 Briar Road, Riverton, WY 82594. You can reach me on (555) 880-8175 or lucia.herrera@example.com. The storm on 17 March 2025 blew down about 20 metres of the garden fence and a gate. Policy HH-2024-00099. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Herrera on (555) 880-8175 to acknowledge the claim. Lucia confirmed the loss date as 17 March 2025."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 247 Briar Road. Neighbour Callum Thorne was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0412: ground floor with standing water and wet carpets"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:HX-9",
+  "clause": "HX-9",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "storm",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 500000,
+   "source": "HH-PW §1.5"
+  },
+  "assessed_loss": 1600,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Lucia Herrera",
+  "address": "247 Briar Road, Riverton, WY 82594",
+  "street": "247 Briar Road",
+  "phone": "(555) 880-8175",
+  "email": "lucia.herrera@example.com",
+  "other_people": [
+   "Callum Thorne",
+   "Hannah Mensah"
+  ],
+  "injuries": []
+ }
+}

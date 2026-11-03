@@ -1,0 +1,57 @@
+{
+ "claim_id": "CLM-2025-000096",
+ "scenario": "mt_collision",
+ "product": "motor",
+ "policy_number": "MT-2025-00046",
+ "loss_date": "2025-07-10",
+ "reported_at": "2025-07-19",
+ "fnol_text": "My name is Felix Whitfield and I live at 755 Alder Lane, Milton, VT 05445. You can reach me on (555) 948-8736 or felix.whitfield@example.com. On 10 July 2025 another car pulled out of a side road and hit my front passenger side. The other driver, Valentina Wojcik, admitted they didn't see me. Policy MT-2025-00046. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Whitfield on (555) 948-8736 to acknowledge the claim. Felix confirmed the loss date as 10 July 2025."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Owen McBride gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Third-party driver Valentina Wojcik reports lacerations to the forearm and attended St. Brendan's Hospital. Felix reports bruised ribs."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2201: front passenger side damage"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §3.1",
+  "clause": "MT-PW §3.1",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "own_damage",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §3.1"
+  },
+  "assessed_loss": 20800,
+  "amount_paid": 19800
+ },
+ "pii": {
+  "claimant_name": "Felix Whitfield",
+  "address": "755 Alder Lane, Milton, VT 05445",
+  "street": "755 Alder Lane",
+  "phone": "(555) 948-8736",
+  "email": "felix.whitfield@example.com",
+  "other_people": [
+   "Owen McBride",
+   "Valentina Wojcik"
+  ],
+  "injuries": [
+   "lacerations to the forearm",
+   "bruised ribs"
+  ]
+ }
+}

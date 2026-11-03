@@ -1,0 +1,51 @@
+{
+ "claim_id": "CLM-2026-000001",
+ "scenario": "hh_mould",
+ "product": "household",
+ "policy_number": "HH-2024-00131",
+ "loss_date": "2025-12-30",
+ "reported_at": "2026-01-05",
+ "fnol_text": "My name is Kwame Ishikawa and I live at 621 Primrose Court, Ashland, OR 97575. You can reach me on (555) 521-5521 or kwame.ishikawa@example.com. After the burst pipe last month was fixed, on 30 December 2025 we found black mould inside the wall cavity behind the kitchen units. Policy HH-2024-00131. I'd like to claim for the damage to my home. Can you confirm I'm covered for this?",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Ishikawa on (555) 521-5521 to acknowledge the claim. Kwame confirmed the loss date as 30 December 2025."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 621 Primrose Court. Neighbour Leila Iyer was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0417: damaged furniture stacked in the garage"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:HX-5",
+  "clause": "HX-5",
+  "endorsement_set": "HEND-2025",
+  "limits": {
+   "coverage": "mould",
+   "deductible": 1000,
+   "sub_limit": 7500,
+   "policy_limit": 600000,
+   "source": "HX-5; HSL-25 §1"
+  },
+  "assessed_loss": 5200,
+  "amount_paid": 4200
+ },
+ "pii": {
+  "claimant_name": "Kwame Ishikawa",
+  "address": "621 Primrose Court, Ashland, OR 97575",
+  "street": "621 Primrose Court",
+  "phone": "(555) 521-5521",
+  "email": "kwame.ishikawa@example.com",
+  "other_people": [
+   "Leila Iyer",
+   "Yusuf Okafor"
+  ],
+  "injuries": []
+ }
+}

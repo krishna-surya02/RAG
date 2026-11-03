@@ -1,0 +1,55 @@
+{
+ "claim_id": "CLM-2025-000058",
+ "scenario": "mt_flood_23",
+ "product": "motor",
+ "policy_number": "MT-2025-00066",
+ "loss_date": "2025-04-29",
+ "reported_at": "2025-05-03",
+ "fnol_text": "My name is Esther Osei and I live at 528 Sycamore Road, Clinton, NC 28375. You can reach me on (555) 440-4687 or esther.osei@example.com. On 29 April 2025 flash flooding came down the street while my car was parked at home. Water got into the cabin and the engine won't start. Policy MT-2025-00066. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Osei on (555) 440-4687 to acknowledge the claim. Esther confirmed the loss date as 29 April 2025."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Felix Ueda gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Esther sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2203: dashboard warning lights",
+  "IMG_2201: front passenger side damage",
+  "IMG_2207: vehicle on the recovery truck"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MFL-23 §2.1",
+  "clause": "MFL-23 §2.1",
+  "endorsement_set": "MEND-2023",
+  "limits": {
+   "coverage": "flood",
+   "deductible": 750,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MFL-23 §2.1"
+  },
+  "assessed_loss": 16550,
+  "amount_paid": 15800
+ },
+ "pii": {
+  "claimant_name": "Esther Osei",
+  "address": "528 Sycamore Road, Clinton, NC 28375",
+  "street": "528 Sycamore Road",
+  "phone": "(555) 440-4687",
+  "email": "esther.osei@example.com",
+  "other_people": [
+   "Felix Ueda",
+   "Yusuf Ferreira"
+  ],
+  "injuries": []
+ }
+}

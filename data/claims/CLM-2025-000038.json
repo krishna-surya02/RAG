@@ -1,0 +1,57 @@
+{
+ "claim_id": "CLM-2025-000038",
+ "scenario": "mt_collision",
+ "product": "motor",
+ "policy_number": "MT-2024-00148",
+ "loss_date": "2025-03-23",
+ "reported_at": "2025-03-30",
+ "fnol_text": "My name is Lucia Wojcik and I live at 768 Thornbury Street, Greenville, SC 29688. You can reach me on (555) 874-8640 or lucia.wojcik@example.com. I was stopped at lights on 23 March 2025 when the car behind, driven by Arjun Oduya, went into the back of mine. Rear bumper and boot are badly damaged. Policy MT-2024-00148. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Wojcik on (555) 874-8640 to acknowledge the claim. Lucia confirmed the loss date as 23 March 2025."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Lucia Novak gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Third-party driver Arjun Oduya reports a mild concussion and attended Mercy General. Lucia reports minor burns to the hand."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2203: dashboard warning lights",
+  "IMG_2201: front passenger side damage"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §3.1",
+  "clause": "MT-PW §3.1",
+  "endorsement_set": "MEND-2023",
+  "limits": {
+   "coverage": "own_damage",
+   "deductible": 750,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §3.1"
+  },
+  "assessed_loss": 5700,
+  "amount_paid": 4950
+ },
+ "pii": {
+  "claimant_name": "Lucia Wojcik",
+  "address": "768 Thornbury Street, Greenville, SC 29688",
+  "street": "768 Thornbury Street",
+  "phone": "(555) 874-8640",
+  "email": "lucia.wojcik@example.com",
+  "other_people": [
+   "Lucia Novak",
+   "Arjun Oduya"
+  ],
+  "injuries": [
+   "a mild concussion",
+   "minor burns to the hand"
+  ]
+ }
+}

@@ -1,0 +1,57 @@
+{
+ "claim_id": "CLM-2025-000164",
+ "scenario": "mt_collision",
+ "product": "motor",
+ "policy_number": "MT-2024-00007",
+ "loss_date": "2025-12-06",
+ "reported_at": "2025-12-14",
+ "fnol_text": "My name is Priya Mbeki and I live at 601 Alder Road, Ashland, OR 97592. You can reach me on (555) 522-2133 or priya.mbeki@example.com. I was stopped at lights on 6 December 2025 when the car behind, driven by Kofi Mensah, went into the back of mine. Rear bumper and boot are badly damaged. Policy MT-2024-00007. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Mbeki on (555) 522-2133 to acknowledge the claim. Priya confirmed the loss date as 6 December 2025."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Naomi Castillo gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Third-party driver Kofi Mensah reports a sprained wrist and attended St. Brendan's Hospital. Priya reports whiplash."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2203: dashboard warning lights",
+  "IMG_2201: front passenger side damage"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §3.1",
+  "clause": "MT-PW §3.1",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "own_damage",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §3.1"
+  },
+  "assessed_loss": 20100,
+  "amount_paid": 19100
+ },
+ "pii": {
+  "claimant_name": "Priya Mbeki",
+  "address": "601 Alder Road, Ashland, OR 97592",
+  "street": "601 Alder Road",
+  "phone": "(555) 522-2133",
+  "email": "priya.mbeki@example.com",
+  "other_people": [
+   "Naomi Castillo",
+   "Kofi Mensah"
+  ],
+  "injuries": [
+   "a sprained wrist",
+   "whiplash"
+  ]
+ }
+}

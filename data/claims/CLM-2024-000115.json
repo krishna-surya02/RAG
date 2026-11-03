@@ -1,0 +1,54 @@
+{
+ "claim_id": "CLM-2024-000115",
+ "scenario": "mt_flood_warning_23",
+ "product": "motor",
+ "policy_number": "MT-2023-00062",
+ "loss_date": "2024-11-16",
+ "reported_at": "2024-11-21",
+ "fnol_text": "My name is Elena Abernathy and I live at 54 Ashford Place, Fairview, PA 16474. You can reach me on (555) 730-5376 or elena.abernathy@example.com. There was a flood warning for our area from the day before, but I left the car parked on the street by the river. On 16 November 2024 the water rose and the car was flooded up to the seats. Policy MT-2023-00062. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Abernathy on (555) 730-5376 to acknowledge the claim. Elena confirmed the loss date as 16 November 2024."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Amara O'Connell gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Elena sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2201: front passenger side damage",
+  "IMG_2207: vehicle on the recovery truck"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MFL-23 §2.1",
+  "clause": "MFL-23 §2.1",
+  "endorsement_set": "MEND-2023",
+  "limits": {
+   "coverage": "flood",
+   "deductible": 750,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MFL-23 §2.1"
+  },
+  "assessed_loss": 9850,
+  "amount_paid": 9100
+ },
+ "pii": {
+  "claimant_name": "Elena Abernathy",
+  "address": "54 Ashford Place, Fairview, PA 16474",
+  "street": "54 Ashford Place",
+  "phone": "(555) 730-5376",
+  "email": "elena.abernathy@example.com",
+  "other_people": [
+   "Amara O'Connell",
+   "Samuel Raman"
+  ],
+  "injuries": []
+ }
+}

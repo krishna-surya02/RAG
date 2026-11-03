@@ -1,0 +1,51 @@
+{
+ "claim_id": "CLM-2025-000030",
+ "scenario": "hh_escape_of_water",
+ "product": "household",
+ "policy_number": "HH-2023-00105",
+ "loss_date": "2025-03-09",
+ "reported_at": "2025-03-11",
+ "fnol_text": "My name is Arjun Petrov and I live at 484 Linden Close, Salem, MA 01957. You can reach me on (555) 779-1410 or arjun.petrov@example.com. The washing machine hose split on 9 March 2025 and flooded the utility room and hallway before we could turn off the water. Policy HH-2023-00105. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Petrov on (555) 779-1410 to acknowledge the claim. Arjun confirmed the loss date as 9 March 2025."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 484 Linden Close. Neighbour Chloe Ueda was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0412: ground floor with standing water and wet carpets"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:HH-PW §1.7",
+  "clause": "HH-PW §1.7",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "escape_of_water",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 500000,
+   "source": "HH-PW §1.7"
+  },
+  "assessed_loss": 16000,
+  "amount_paid": 15000
+ },
+ "pii": {
+  "claimant_name": "Arjun Petrov",
+  "address": "484 Linden Close, Salem, MA 01957",
+  "street": "484 Linden Close",
+  "phone": "(555) 779-1410",
+  "email": "arjun.petrov@example.com",
+  "other_people": [
+   "Chloe Ueda",
+   "Zara Whitlock"
+  ],
+  "injuries": []
+ }
+}

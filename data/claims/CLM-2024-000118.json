@@ -1,0 +1,55 @@
+{
+ "claim_id": "CLM-2024-000118",
+ "scenario": "hh_river_23",
+ "product": "household",
+ "policy_number": "HH-2023-00043",
+ "loss_date": "2024-12-16",
+ "reported_at": "2024-12-24",
+ "fnol_text": "My name is Liam Oduya and I live at 237 Rowan Court, Clinton, NC 28399. You can reach me on (555) 431-4162 or liam.oduya@example.com. The Stonebridge Brook burst its banks on 16 December 2024 and the water came right up the garden and into the house. The ground floor was under about 40 cm of water. Policy HH-2023-00043. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Oduya on (555) 431-4162 to acknowledge the claim. Liam confirmed the loss date as 16 December 2024."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 237 Rowan Court. Neighbour Bianca Mensah was present and confirmed the timeline."
+  },
+  {
+   "n": 3,
+   "text": "Liam sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0417: damaged furniture stacked in the garage"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:HFL-23 §2.1",
+  "clause": "HFL-23 §2.1",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "flood_surface_water",
+   "deductible": 2500,
+   "sub_limit": 15000,
+   "policy_limit": 500000,
+   "source": "HFL-23 §2.2, §2.3; HSL-23 §1"
+  },
+  "assessed_loss": 52500,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Liam Oduya",
+  "address": "237 Rowan Court, Clinton, NC 28399",
+  "street": "237 Rowan Court",
+  "phone": "(555) 431-4162",
+  "email": "liam.oduya@example.com",
+  "other_people": [
+   "Bianca Mensah",
+   "Dmitri Osei"
+  ],
+  "injuries": []
+ }
+}

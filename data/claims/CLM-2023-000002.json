@@ -1,0 +1,44 @@
+{
+ "claim_id": "CLM-2023-000002",
+ "scenario": "not_in_force",
+ "product": "motor",
+ "policy_number": "MT-2023-00091",
+ "loss_date": "2023-04-06",
+ "reported_at": "2023-04-13",
+ "fnol_text": "My name is Arjun Osei and I live at 86 Willow Lane, Springfield, OH 45528. You can reach me on (555) 575-3135 or arjun.osei@example.com. A stone thrown up by a lorry cracked my windscreen right across on 6 April 2023. Policy MT-2023-00091. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Osei on (555) 575-3135 to acknowledge the claim. Arjun confirmed the loss date as 6 April 2023."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Samuel Brennan gave a statement by phone."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2203: dashboard warning lights"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "NOT_IN_FORCE",
+  "clause": null,
+  "endorsement_set": null,
+  "limits": null,
+  "assessed_loss": 850,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Arjun Osei",
+  "address": "86 Willow Lane, Springfield, OH 45528",
+  "street": "86 Willow Lane",
+  "phone": "(555) 575-3135",
+  "email": "arjun.osei@example.com",
+  "other_people": [
+   "Samuel Brennan",
+   "Arjun Yilmaz"
+  ],
+  "injuries": []
+ }
+}

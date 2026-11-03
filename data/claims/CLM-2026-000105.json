@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2026-000105",
+ "scenario": "hh_escape_of_water",
+ "product": "household",
+ "policy_number": "HH-2025-00032",
+ "loss_date": "2026-09-11",
+ "reported_at": "2026-09-20",
+ "fnol_text": "My name is Dmitri Mensah and I live at 165 Cedar Avenue, Riverton, WY 82519. You can reach me on (555) 722-7478 or dmitri.mensah@example.com. The washing machine hose split on 11 September 2026 and flooded the utility room and hallway before we could turn off the water. Policy HH-2025-00032. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Mensah on (555) 722-7478 to acknowledge the claim. Dmitri confirmed the loss date as 11 September 2026."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 165 Cedar Avenue. Neighbour Chloe Whitlock was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0412: ground floor with standing water and wet carpets"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:HH-PW §1.7",
+  "clause": "HH-PW §1.7",
+  "endorsement_set": "HEND-2025",
+  "limits": {
+   "coverage": "escape_of_water",
+   "deductible": 1500,
+   "sub_limit": null,
+   "policy_limit": 600000,
+   "source": "HH-PW §1.7"
+  },
+  "assessed_loss": 25100,
+  "amount_paid": 23600
+ },
+ "pii": {
+  "claimant_name": "Dmitri Mensah",
+  "address": "165 Cedar Avenue, Riverton, WY 82519",
+  "street": "165 Cedar Avenue",
+  "phone": "(555) 722-7478",
+  "email": "dmitri.mensah@example.com",
+  "other_people": [
+   "Chloe Whitlock",
+   "Rafael Ueda"
+  ],
+  "injuries": []
+ }
+}

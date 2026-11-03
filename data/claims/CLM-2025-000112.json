@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2025-000112",
+ "scenario": "mt_hail",
+ "product": "motor",
+ "policy_number": "MT-2025-00095",
+ "loss_date": "2025-08-16",
+ "reported_at": "2025-08-19",
+ "fnol_text": "My name is Dana Mbeki and I live at 233 Briar Court, Dover, DE 19918. You can reach me on (555) 951-5294 or dana.mbeki@example.com. A hailstorm on 16 August 2025 left dozens of dents across the roof, bonnet and boot of my car. Policy MT-2025-00095. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Mbeki on (555) 951-5294 to acknowledge the claim. Dana confirmed the loss date as 16 August 2025."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Elena Ballard gave a statement by phone."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2201: front passenger side damage",
+  "IMG_2207: vehicle on the recovery truck"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MHA-25 §1",
+  "clause": "MHA-25 §1",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "hail",
+   "deductible": 500,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MHA-25 §1"
+  },
+  "assessed_loss": 1750,
+  "amount_paid": 1250
+ },
+ "pii": {
+  "claimant_name": "Dana Mbeki",
+  "address": "233 Briar Court, Dover, DE 19918",
+  "street": "233 Briar Court",
+  "phone": "(555) 951-5294",
+  "email": "dana.mbeki@example.com",
+  "other_people": [
+   "Elena Ballard",
+   "Aisha Castillo"
+  ],
+  "injuries": []
+ }
+}

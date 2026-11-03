@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2026-000058",
+ "scenario": "hh_theft_forced",
+ "product": "household",
+ "policy_number": "HH-2025-00070",
+ "loss_date": "2026-06-10",
+ "reported_at": "2026-06-17",
+ "fnol_text": "My name is Chloe Wojcik and I live at 17 Thornbury Court, Fairview, PA 16459. You can reach me on (555) 220-7798 or chloe.wojcik@example.com. Our house was broken into on 10 June 2026. The back door was forced and a laptop, jewellery and a television were taken. Policy HH-2025-00070. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Wojcik on (555) 220-7798 to acknowledge the claim. Chloe confirmed the loss date as 10 June 2026."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 17 Thornbury Court. Neighbour Imogen Quinlan was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0412: ground floor with standing water and wet carpets"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:HH-PW §1.10",
+  "clause": "HH-PW §1.10",
+  "endorsement_set": "HEND-2025",
+  "limits": {
+   "coverage": "theft",
+   "deductible": 500,
+   "sub_limit": null,
+   "policy_limit": 80000,
+   "source": "HH-PW §1.10, §2.2"
+  },
+  "assessed_loss": 15550,
+  "amount_paid": 15050
+ },
+ "pii": {
+  "claimant_name": "Chloe Wojcik",
+  "address": "17 Thornbury Court, Fairview, PA 16459",
+  "street": "17 Thornbury Court",
+  "phone": "(555) 220-7798",
+  "email": "chloe.wojcik@example.com",
+  "other_people": [
+   "Imogen Quinlan",
+   "Priya Oduya"
+  ],
+  "injuries": []
+ }
+}

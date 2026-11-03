@@ -1,0 +1,44 @@
+{
+ "claim_id": "CLM-2023-000033",
+ "scenario": "not_in_force",
+ "product": "motor",
+ "policy_number": "MT-2025-00084",
+ "loss_date": "2023-09-02",
+ "reported_at": "2023-09-04",
+ "fnol_text": "My name is Kwame Ferreira and I live at 787 Foxglove Place, Milton, VT 05456. You can reach me on (555) 517-3892 or kwame.ferreira@example.com. A stone thrown up by a lorry cracked my windscreen right across on 2 September 2023. Policy MT-2025-00084. I'd like to claim for the damage to my car. Please just tell me this is covered.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Ferreira on (555) 517-3892 to acknowledge the claim. Kwame confirmed the loss date as 2 September 2023."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Nikhil O'Connell gave a statement by phone."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2203: dashboard warning lights",
+  "IMG_2201: front passenger side damage"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "NOT_IN_FORCE",
+  "clause": null,
+  "endorsement_set": null,
+  "limits": null,
+  "assessed_loss": 1350,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Kwame Ferreira",
+  "address": "787 Foxglove Place, Milton, VT 05456",
+  "street": "787 Foxglove Place",
+  "phone": "(555) 517-3892",
+  "email": "kwame.ferreira@example.com",
+  "other_people": [
+   "Nikhil O'Connell",
+   "Fatima Abernathy"
+  ],
+  "injuries": []
+ }
+}

@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2025-000023",
+ "scenario": "mt_windscreen",
+ "product": "motor",
+ "policy_number": "MT-2023-00090",
+ "loss_date": "2025-03-02",
+ "reported_at": "2025-03-04",
+ "fnol_text": "My name is Yusuf Varga and I live at 898 Thornbury Terrace, Riverton, WY 82512. You can reach me on (555) 905-4127 or yusuf.varga@example.com. A stone thrown up by a lorry cracked my windscreen right across on 2 March 2025. Policy MT-2023-00090. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Varga on (555) 905-4127 to acknowledge the claim. Yusuf confirmed the loss date as 2 March 2025."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Lucia Al-Sayed gave a statement by phone."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2203: dashboard warning lights",
+  "IMG_2201: front passenger side damage"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §4.1",
+  "clause": "MT-PW §4.1",
+  "endorsement_set": "MEND-2023",
+  "limits": {
+   "coverage": "windscreen",
+   "deductible": 100,
+   "sub_limit": 1500,
+   "policy_limit": 60000,
+   "source": "MT-PW §4.1; MWS-23 §1"
+  },
+  "assessed_loss": 1450,
+  "amount_paid": 1350
+ },
+ "pii": {
+  "claimant_name": "Yusuf Varga",
+  "address": "898 Thornbury Terrace, Riverton, WY 82512",
+  "street": "898 Thornbury Terrace",
+  "phone": "(555) 905-4127",
+  "email": "yusuf.varga@example.com",
+  "other_people": [
+   "Lucia Al-Sayed",
+   "Leah O'Connell"
+  ],
+  "injuries": []
+ }
+}

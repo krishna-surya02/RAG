@@ -1,0 +1,51 @@
+{
+ "claim_id": "CLM-2024-000094",
+ "scenario": "hh_theft_forced",
+ "product": "household",
+ "policy_number": "HH-2024-00115",
+ "loss_date": "2024-09-08",
+ "reported_at": "2024-09-15",
+ "fnol_text": "My name is Anika Novak and I live at 184 Foxglove Way, Riverton, WY 82583. You can reach me on (555) 362-2687 or anika.novak@example.com. Our house was broken into on 8 September 2024. The back door was forced and a laptop, jewellery and a television were taken. Policy HH-2024-00115. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Novak on (555) 362-2687 to acknowledge the claim. Anika confirmed the loss date as 8 September 2024."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 184 Foxglove Way. Neighbour Leila Ueda was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0413: water line on the skirting boards"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:HH-PW §1.10",
+  "clause": "HH-PW §1.10",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "theft",
+   "deductible": 500,
+   "sub_limit": null,
+   "policy_limit": 75000,
+   "source": "HH-PW §1.10, §2.2"
+  },
+  "assessed_loss": 10500,
+  "amount_paid": 10000
+ },
+ "pii": {
+  "claimant_name": "Anika Novak",
+  "address": "184 Foxglove Way, Riverton, WY 82583",
+  "street": "184 Foxglove Way",
+  "phone": "(555) 362-2687",
+  "email": "anika.novak@example.com",
+  "other_people": [
+   "Leila Ueda",
+   "Jordan Achebe"
+  ],
+  "injuries": []
+ }
+}

@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2025-000150",
+ "scenario": "mt_windscreen",
+ "product": "motor",
+ "policy_number": "MT-2025-00130",
+ "loss_date": "2025-11-10",
+ "reported_at": "2025-11-10",
+ "fnol_text": "My name is Yusuf Santos and I live at 730 Marigold Place, Fairview, PA 16460. You can reach me on (555) 908-4770 or yusuf.santos@example.com. A stone thrown up by a lorry cracked my windscreen right across on 10 November 2025. Policy MT-2025-00130. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Santos on (555) 908-4770 to acknowledge the claim. Yusuf confirmed the loss date as 10 November 2025."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Marcus Herrera gave a statement by phone."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2203: dashboard warning lights"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §4.1",
+  "clause": "MT-PW §4.1",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "windscreen",
+   "deductible": 150,
+   "sub_limit": 1500,
+   "policy_limit": 60000,
+   "source": "MT-PW §4.1; MWS-25 §1"
+  },
+  "assessed_loss": 600,
+  "amount_paid": 450
+ },
+ "pii": {
+  "claimant_name": "Yusuf Santos",
+  "address": "730 Marigold Place, Fairview, PA 16460",
+  "street": "730 Marigold Place",
+  "phone": "(555) 908-4770",
+  "email": "yusuf.santos@example.com",
+  "other_people": [
+   "Marcus Herrera",
+   "Amara Brennan"
+  ],
+  "injuries": []
+ }
+}

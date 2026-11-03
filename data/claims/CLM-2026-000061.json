@@ -1,0 +1,51 @@
+{
+ "claim_id": "CLM-2026-000061",
+ "scenario": "hh_gradual_leak",
+ "product": "household",
+ "policy_number": "HH-2025-00018",
+ "loss_date": "2026-06-16",
+ "reported_at": "2026-06-25",
+ "fnol_text": "My name is Leah Haddad and I live at 515 Larkspur Street, Salem, MA 01952. You can reach me on (555) 454-8170 or leah.haddad@example.com. Damp patch on the ceiling below the bath that has been growing since the spring; on 16 June 2026 part of the plaster came down. The plumber says the waste pipe has dripped for a long time. Policy HH-2025-00018. I'd like to claim for the damage to my home. Please just tell me this is covered.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Haddad on (555) 454-8170 to acknowledge the claim. Leah confirmed the loss date as 16 June 2026."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 515 Larkspur Street. Neighbour Hannah Santos was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0413: water line on the skirting boards"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:HX-1",
+  "clause": "HX-1",
+  "endorsement_set": "HEND-2025",
+  "limits": {
+   "coverage": "escape_of_water",
+   "deductible": 1500,
+   "sub_limit": null,
+   "policy_limit": 600000,
+   "source": "HH-PW §1.7"
+  },
+  "assessed_loss": 27750,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Leah Haddad",
+  "address": "515 Larkspur Street, Salem, MA 01952",
+  "street": "515 Larkspur Street",
+  "phone": "(555) 454-8170",
+  "email": "leah.haddad@example.com",
+  "other_people": [
+   "Hannah Santos",
+   "Mei Petrov"
+  ],
+  "injuries": []
+ }
+}

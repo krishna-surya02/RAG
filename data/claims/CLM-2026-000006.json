@@ -1,0 +1,57 @@
+{
+ "claim_id": "CLM-2026-000006",
+ "scenario": "mt_collision",
+ "product": "motor",
+ "policy_number": "MT-2024-00033",
+ "loss_date": "2026-01-13",
+ "reported_at": "2026-01-16",
+ "fnol_text": "My name is Naomi Sorensen and I live at 390 Linden Close, Salem, MA 01932. You can reach me on (555) 913-7084 or naomi.sorensen@example.com. I was stopped at lights on 13 January 2026 when the car behind, driven by Elena Wojcik, went into the back of mine. Rear bumper and boot are badly damaged. Policy MT-2024-00033. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Sorensen on (555) 913-7084 to acknowledge the claim. Naomi confirmed the loss date as 13 January 2026."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Kofi Ballard gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Third-party driver Elena Wojcik reports minor burns to the hand and attended Mercy General. Naomi reports a sprained wrist."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2201: front passenger side damage"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §3.1",
+  "clause": "MT-PW §3.1",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "own_damage",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §3.1"
+  },
+  "assessed_loss": 10450,
+  "amount_paid": 9450
+ },
+ "pii": {
+  "claimant_name": "Naomi Sorensen",
+  "address": "390 Linden Close, Salem, MA 01932",
+  "street": "390 Linden Close",
+  "phone": "(555) 913-7084",
+  "email": "naomi.sorensen@example.com",
+  "other_people": [
+   "Kofi Ballard",
+   "Elena Wojcik"
+  ],
+  "injuries": [
+   "minor burns to the hand",
+   "a sprained wrist"
+  ]
+ }
+}

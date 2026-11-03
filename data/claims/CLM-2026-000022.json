@@ -1,0 +1,57 @@
+{
+ "claim_id": "CLM-2026-000022",
+ "scenario": "mt_collision",
+ "product": "motor",
+ "policy_number": "MT-2023-00014",
+ "loss_date": "2026-02-27",
+ "reported_at": "2026-02-28",
+ "fnol_text": "My name is Declan Oyelaran and I live at 469 Juniper Place, Dover, DE 19994. You can reach me on (555) 692-5450 or declan.oyelaran@example.com. On 27 February 2026 another car pulled out of a side road and hit my front passenger side. The other driver, Chloe Okafor, admitted they didn't see me. Policy MT-2023-00014. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Oyelaran on (555) 692-5450 to acknowledge the claim. Declan confirmed the loss date as 27 February 2026."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Tariq Osei gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Third-party driver Chloe Okafor reports whiplash and attended St. Brendan's Hospital. Declan reports a sprained ankle."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2201: front passenger side damage",
+  "IMG_2203: dashboard warning lights"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §3.1",
+  "clause": "MT-PW §3.1",
+  "endorsement_set": "MEND-2023",
+  "limits": {
+   "coverage": "own_damage",
+   "deductible": 750,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §3.1"
+  },
+  "assessed_loss": 14850,
+  "amount_paid": 14100
+ },
+ "pii": {
+  "claimant_name": "Declan Oyelaran",
+  "address": "469 Juniper Place, Dover, DE 19994",
+  "street": "469 Juniper Place",
+  "phone": "(555) 692-5450",
+  "email": "declan.oyelaran@example.com",
+  "other_people": [
+   "Tariq Osei",
+   "Chloe Okafor"
+  ],
+  "injuries": [
+   "whiplash",
+   "a sprained ankle"
+  ]
+ }
+}

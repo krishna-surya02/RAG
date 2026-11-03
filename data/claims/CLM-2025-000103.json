@@ -1,0 +1,55 @@
+{
+ "claim_id": "CLM-2025-000103",
+ "scenario": "mt_flood_warning_25",
+ "product": "motor",
+ "policy_number": "MT-2025-00046",
+ "loss_date": "2025-07-24",
+ "reported_at": "2025-07-28",
+ "fnol_text": "My name is Felix Whitfield and I live at 755 Alder Lane, Milton, VT 05445. You can reach me on (555) 948-8736 or felix.whitfield@example.com. There was a flood warning for our area from the day before, but I left the car parked on the street by the river. On 24 July 2025 the water rose and the car was flooded up to the seats. Policy MT-2025-00046. I'd like to claim for the damage to my car. Can you confirm I'm covered for this?",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Whitfield on (555) 948-8736 to acknowledge the claim. Felix confirmed the loss date as 24 July 2025."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Elena O'Connell gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Felix sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2203: dashboard warning lights",
+  "IMG_2201: front passenger side damage",
+  "IMG_2207: vehicle on the recovery truck"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:MFL-25 §2.2",
+  "clause": "MFL-25 §2.2",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "flood",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MFL-25 §2.4"
+  },
+  "assessed_loss": 7050,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Felix Whitfield",
+  "address": "755 Alder Lane, Milton, VT 05445",
+  "street": "755 Alder Lane",
+  "phone": "(555) 948-8736",
+  "email": "felix.whitfield@example.com",
+  "other_people": [
+   "Elena O'Connell",
+   "Tomas Al-Sayed"
+  ],
+  "injuries": []
+ }
+}

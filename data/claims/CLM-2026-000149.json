@@ -1,0 +1,54 @@
+{
+ "claim_id": "CLM-2026-000149",
+ "scenario": "mt_flood_drove_25",
+ "product": "motor",
+ "policy_number": "MT-2025-00129",
+ "loss_date": "2026-10-28",
+ "reported_at": "2026-11-01",
+ "fnol_text": "My name is Ethan Castillo and I live at 791 Thornbury Court, Riverton, WY 82573. You can reach me on (555) 833-1015 or ethan.castillo@example.com. On 28 October 2026 I tried to drive through a flooded road under the bridge. The water was deeper than I thought and the engine cut out and filled with water. Policy MT-2025-00129. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Castillo on (555) 833-1015 to acknowledge the claim. Ethan confirmed the loss date as 28 October 2026."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Leah Moreau gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Ethan sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2203: dashboard warning lights"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:MFL-25 §2.3",
+  "clause": "MFL-25 §2.3",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "flood",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MFL-25 §2.4"
+  },
+  "assessed_loss": 12400,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Ethan Castillo",
+  "address": "791 Thornbury Court, Riverton, WY 82573",
+  "street": "791 Thornbury Court",
+  "phone": "(555) 833-1015",
+  "email": "ethan.castillo@example.com",
+  "other_people": [
+   "Leah Moreau",
+   "Rosa Ballard"
+  ],
+  "injuries": []
+ }
+}

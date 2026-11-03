@@ -1,0 +1,55 @@
+{
+ "claim_id": "CLM-2025-000079",
+ "scenario": "hh_river_23",
+ "product": "household",
+ "policy_number": "HH-2025-00119",
+ "loss_date": "2025-06-12",
+ "reported_at": "2025-06-21",
+ "fnol_text": "My name is Maya Laurent and I live at 459 Primrose Lane, Fairview, PA 16447. You can reach me on (555) 550-9592 or maya.laurent@example.com. On 12 June 2025 the Millbrook River overtopped near our house after a week of storms. River water flooded the downstairs rooms and the garage. Policy HH-2025-00119. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Laurent on (555) 550-9592 to acknowledge the claim. Maya confirmed the loss date as 12 June 2025."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 459 Primrose Lane. Neighbour Lucia Oduya was present and confirmed the timeline."
+  },
+  {
+   "n": 3,
+   "text": "Maya sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0412: ground floor with standing water and wet carpets"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:HFL-23 §2.1",
+  "clause": "HFL-23 §2.1",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "flood_surface_water",
+   "deductible": 2500,
+   "sub_limit": 15000,
+   "policy_limit": 500000,
+   "source": "HFL-23 §2.2, §2.3; HSL-23 §1"
+  },
+  "assessed_loss": 75050,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Maya Laurent",
+  "address": "459 Primrose Lane, Fairview, PA 16447",
+  "street": "459 Primrose Lane",
+  "phone": "(555) 550-9592",
+  "email": "maya.laurent@example.com",
+  "other_people": [
+   "Lucia Oduya",
+   "Kwame Zielinski"
+  ],
+  "injuries": []
+ }
+}

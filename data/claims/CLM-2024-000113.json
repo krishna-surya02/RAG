@@ -1,0 +1,54 @@
+{
+ "claim_id": "CLM-2024-000113",
+ "scenario": "hh_river_23",
+ "product": "household",
+ "policy_number": "HH-2023-00014",
+ "loss_date": "2024-11-07",
+ "reported_at": "2024-11-15",
+ "fnol_text": "My name is Esther Brennan and I live at 223 Primrose Close, Springfield, OH 45521. You can reach me on (555) 907-2701 or esther.brennan@example.com. On 7 November 2024 the Fenley Creek overtopped near our house after a week of storms. River water flooded the downstairs rooms and the garage. Policy HH-2023-00014. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Brennan on (555) 907-2701 to acknowledge the claim. Esther confirmed the loss date as 7 November 2024."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 223 Primrose Close. Neighbour Anika Kowalski was present and confirmed the timeline."
+  },
+  {
+   "n": 3,
+   "text": "Esther sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0413: water line on the skirting boards"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:HFL-23 §2.1",
+  "clause": "HFL-23 §2.1",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "flood_surface_water",
+   "deductible": 2500,
+   "sub_limit": 15000,
+   "policy_limit": 500000,
+   "source": "HFL-23 §2.2, §2.3; HSL-23 §1"
+  },
+  "assessed_loss": 40600,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Esther Brennan",
+  "address": "223 Primrose Close, Springfield, OH 45521",
+  "street": "223 Primrose Close",
+  "phone": "(555) 907-2701",
+  "email": "esther.brennan@example.com",
+  "other_people": [
+   "Anika Kowalski",
+   "Marcus Fitzgerald"
+  ],
+  "injuries": []
+ }
+}

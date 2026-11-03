@@ -1,0 +1,54 @@
+{
+ "claim_id": "CLM-2025-000163",
+ "scenario": "hh_surface_water_23",
+ "product": "household",
+ "policy_number": "HH-2025-00071",
+ "loss_date": "2025-12-06",
+ "reported_at": "2025-12-14",
+ "fnol_text": "My name is Leila Zielinski and I live at 161 Linden Terrace, Riverton, WY 82521. You can reach me on (555) 943-1319 or leila.zielinski@example.com. Heavy rain all afternoon on 6 December 2025. Water pooled on the lawn and then came into the lounge at floor level. Carpets and the sofa are soaked. Policy HH-2025-00071. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Zielinski on (555) 943-1319 to acknowledge the claim. Leila confirmed the loss date as 6 December 2025."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 161 Linden Terrace. Neighbour Liam Khan was present and confirmed the timeline."
+  },
+  {
+   "n": 3,
+   "text": "Leila sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0412: ground floor with standing water and wet carpets"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID_SUBLIMIT:HFL-23 §2.2",
+  "clause": "HFL-23 §2.2",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "flood_surface_water",
+   "deductible": 2500,
+   "sub_limit": 15000,
+   "policy_limit": 500000,
+   "source": "HFL-23 §2.2, §2.3; HSL-23 §1"
+  },
+  "assessed_loss": 19650,
+  "amount_paid": 15000
+ },
+ "pii": {
+  "claimant_name": "Leila Zielinski",
+  "address": "161 Linden Terrace, Riverton, WY 82521",
+  "street": "161 Linden Terrace",
+  "phone": "(555) 943-1319",
+  "email": "leila.zielinski@example.com",
+  "other_people": [
+   "Liam Khan",
+   "Hiroshi Nguyen-Tran"
+  ],
+  "injuries": []
+ }
+}

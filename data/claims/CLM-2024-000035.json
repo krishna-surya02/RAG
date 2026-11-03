@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2024-000035",
+ "scenario": "hh_theft_forced",
+ "product": "household",
+ "policy_number": "HH-2023-00015",
+ "loss_date": "2024-05-16",
+ "reported_at": "2024-05-21",
+ "fnol_text": "My name is Lucia Khan and I live at 867 Elmstead Court, Springfield, OH 45562. You can reach me on (555) 802-3307 or lucia.khan@example.com. Our house was broken into on 16 May 2024. The back door was forced and a laptop, jewellery and a television were taken. Policy HH-2023-00015. I'd like to claim for the damage to my home. Please just tell me this is covered.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Khan on (555) 802-3307 to acknowledge the claim. Lucia confirmed the loss date as 16 May 2024."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 867 Elmstead Court. Neighbour Owen Vasquez was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0412: ground floor with standing water and wet carpets"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:HH-PW §1.10",
+  "clause": "HH-PW §1.10",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "theft",
+   "deductible": 500,
+   "sub_limit": null,
+   "policy_limit": 75000,
+   "source": "HH-PW §1.10, §2.2"
+  },
+  "assessed_loss": 10700,
+  "amount_paid": 10200
+ },
+ "pii": {
+  "claimant_name": "Lucia Khan",
+  "address": "867 Elmstead Court, Springfield, OH 45562",
+  "street": "867 Elmstead Court",
+  "phone": "(555) 802-3307",
+  "email": "lucia.khan@example.com",
+  "other_people": [
+   "Owen Vasquez",
+   "Amara Herrera"
+  ],
+  "injuries": []
+ }
+}

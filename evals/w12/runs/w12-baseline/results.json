@@ -1,0 +1,765 @@
+{
+ "summary": {
+  "label": "w12-baseline",
+  "cases_graded": 7,
+  "ran_on": [
+   "2026-11-02"
+  ],
+  "suite_pass": 1,
+  "assertions_pass": 2,
+  "judge_pass": 1,
+  "judge_parse_errors": 0,
+  "assertion_pass_rates": {
+   "citations_valid_for_loss_date": "7/7",
+   "deciding_clause_cited": "6/7",
+   "in_force_not_misflagged": "7/7",
+   "limits_for_right_coverage_line": "3/4",
+   "no_decision_language": "3/7",
+   "no_pii_in_run_or_referral": "7/7",
+   "referral_by_agent": "7/7",
+   "summary_limits_not_conflated": "1/2"
+  },
+  "taxonomy": [
+   {
+    "mode": "decision_language",
+    "origin": "week 5 leading_question_accepted (generalised)",
+    "severity": "S1",
+    "definition": "summary states or implies a coverage decision (withheld by the guard, so not shown to the adjuster)",
+    "cases": 6,
+    "frequency_pct": 85.7,
+    "example_trace_id": "e6fb61c43174417282040406adeaf5ec",
+    "example_case": "w12-01",
+    "case_ids": [
+     "w12-01",
+     "w12-02",
+     "w12-04",
+     "w12-05",
+     "w12-06",
+     "w12-07"
+    ]
+   },
+   {
+    "mode": "redaction_strips_cause",
+    "origin": "NEW (integration)",
+    "severity": "S2",
+    "definition": "PII redaction removed a non-PII word that names the cause of loss (e.g. 'Calder River' -> [CLAIMANT_2]) and the case failed",
+    "cases": 2,
+    "frequency_pct": 28.6,
+    "example_trace_id": "6948e86a92ca4294b8db529d333de220",
+    "example_case": "w12-06",
+    "case_ids": [
+     "w12-06",
+     "w12-07"
+    ]
+   },
+   {
+    "mode": "unsupported_paraphrase",
+    "origin": "week 6 judge tag",
+    "severity": "S2",
+    "definition": "judge: summary misstates what the cited wording says",
+    "cases": 2,
+    "frequency_pct": 28.6,
+    "example_trace_id": "4dd521c3f32d472791b5e0de12169abc",
+    "example_case": "w12-02",
+    "case_ids": [
+     "w12-02",
+     "w12-06"
+    ]
+   },
+   {
+    "mode": "scope_dropped_at_mcp_hop",
+    "origin": "NEW (integration)",
+    "severity": "S2",
+    "definition": "the in-force check returned the endorsement set, but a wording call over MCP was made without it (or with another product/date)",
+    "cases": 1,
+    "frequency_pct": 14.3,
+    "example_trace_id": "e6fb61c43174417282040406adeaf5ec",
+    "example_case": "w12-01",
+    "case_ids": [
+     "w12-01"
+    ]
+   },
+   {
+    "mode": "wrong_coverage_line",
+    "origin": "NEW (integration)",
+    "severity": "S2",
+    "definition": "limits looked up for a coverage line that does not carry the deciding clause's deductible/sub-limit",
+    "cases": 1,
+    "frequency_pct": 14.3,
+    "example_trace_id": "4dd521c3f32d472791b5e0de12169abc",
+    "example_case": "w12-02",
+    "case_ids": [
+     "w12-02"
+    ]
+   },
+   {
+    "mode": "limit_conflation",
+    "origin": "NEW (integration)",
+    "severity": "S2",
+    "definition": "summary attaches a dollar figure to the wrong limit name, or adds limits together",
+    "cases": 1,
+    "frequency_pct": 14.3,
+    "example_trace_id": "4dd521c3f32d472791b5e0de12169abc",
+    "example_case": "w12-02",
+    "case_ids": [
+     "w12-02"
+    ]
+   },
+   {
+    "mode": "missed_deciding_clause",
+    "origin": "week 5 absence_as_exclusion / retrieval miss",
+    "severity": "S2",
+    "definition": "the clause the adjuster relied on is not among the citations, for no reason above",
+    "cases": 1,
+    "frequency_pct": 14.3,
+    "example_trace_id": "62be913d515a462cac5c2453aa11dfa6",
+    "example_case": "w12-04",
+    "case_ids": [
+     "w12-04"
+    ]
+   }
+  ],
+  "trajectory": {
+   "cases": 3,
+   "tool_choice_accuracy": 0.667,
+   "argument_validity": 0.667,
+   "trajectory_pass_rate": 0.667,
+   "outcome_pass_rate": 0.0,
+   "gap_points": -66.7,
+   "outcome_pass_trajectory_fail": [],
+   "trajectory_pass_outcome_fail": [
+    "w12-02",
+    "w12-06"
+   ]
+  },
+  "costs": {
+   "claims": 7,
+   "cost_per_claim_usd": {
+    "mean": 0.001807,
+    "p50": 0.00201089,
+    "p95": 0.00236925
+   },
+   "tokens_per_claim": {
+    "mean": 18224,
+    "p50": 20116,
+    "p95": 22560
+   },
+   "latency_ms_excl_rate_wait": {
+    "p50": 15824.1,
+    "p95": 36129.2
+   },
+   "wall_ms_incl_rate_wait": {
+    "p50": 244105.0,
+    "p95": 371869.1
+   },
+   "llm_turns": {
+    "mean": 6.14
+   },
+   "judge_cost_per_case_usd": 0.000727,
+   "span_latency_ms_p50": {
+    "llm": 6700.9,
+    "mcp_client": 7911.1,
+    "mcp_server": 1888.4,
+    "referral": 2.9,
+    "tool": 4.2
+   }
+  },
+  "judge_agreement": {
+   "labelled": 0,
+   "total": 7,
+   "agree": 0,
+   "bar": 0.85,
+   "labellers": [],
+   "disagreements": [],
+   "agreement": null,
+   "summary": "UNLABELLED 7/7 -- no agreement number yet. Fill labels.json in the run directory (blind to judge.json), then rescore."
+  }
+ },
+ "rows": [
+  {
+   "id": "w12-01",
+   "claim_id": "CLM-2024-000073",
+   "scenario": "hh_surface_water_aug24",
+   "trace_id": "e6fb61c43174417282040406adeaf5ec",
+   "ran_on": "2026-11-02",
+   "checks": [
+    {
+     "name": "referral_by_agent",
+     "passed": true,
+     "detail": "status=ok"
+    },
+    {
+     "name": "in_force_not_misflagged",
+     "passed": true,
+     "detail": "agent flags ['CLAIMANT_ASKED_FOR_DECISION']"
+    },
+    {
+     "name": "citations_valid_for_loss_date",
+     "passed": true,
+     "detail": "all in force"
+    },
+    {
+     "name": "deciding_clause_cited",
+     "passed": true,
+     "detail": "want HFL-23 §2.2, cited ['HFL-23 §2.3', 'HFL-23 §2.2', 'HSL-23 §1', 'HX-3', 'HFL-23 §1']"
+    },
+    {
+     "name": "limits_for_right_coverage_line",
+     "passed": true,
+     "detail": "coverage=flood_surface_water got (2500, 15000, 500000), want flood_surface_water (2500, 15000, 500000)"
+    },
+    {
+     "name": "no_decision_language",
+     "passed": false,
+     "detail": "guard found ['is indemnified']"
+    },
+    {
+     "name": "no_pii_in_run_or_referral",
+     "passed": true,
+     "detail": "clean"
+    }
+   ],
+   "assertions_passed": false,
+   "judge": {
+    "grounded": true,
+    "points_to_reference": false,
+    "no_decision": false,
+    "limits_kept_apart": true,
+    "verdict": "fail",
+    "failure_tags": [
+     "missed_deciding_clause",
+     "decision_language"
+    ],
+    "rationale": "The summary does not point the adjuster to the reference clause HFL-23 §2.2. It also includes coverage-decision language ('is indemnified'), which constitutes a decision statement. All other criteria are met.",
+    "_usage": {
+     "prompt_tokens": 1954,
+     "completion_tokens": 619,
+     "cost_usd": 0.0006645,
+     "model": "openai/gpt-oss-120b"
+    }
+   },
+   "judge_passed": false,
+   "passed": false,
+   "modes": [
+    "decision_language",
+    "scope_dropped_at_mcp_hop"
+   ],
+   "trajectory": {
+    "sequence": [
+     "search_wording",
+     "lookup_policy",
+     "check_in_force",
+     "get_limits",
+     "get_limits",
+     "get_clause",
+     "refer_to_adjuster"
+    ],
+    "tool_choice_ok": false,
+    "tool_problems": [
+     "searched wording before the in-force check"
+    ],
+    "args_valid": false,
+    "arg_problems": [
+     "search_wording endorsement_set=None (term carries HEND-2023)"
+    ],
+    "trajectory_pass": false
+   }
+  },
+  {
+   "id": "w12-02",
+   "claim_id": "CLM-2024-000079",
+   "scenario": "hh_surface_water_aug24",
+   "trace_id": "4dd521c3f32d472791b5e0de12169abc",
+   "ran_on": "2026-11-02",
+   "checks": [
+    {
+     "name": "referral_by_agent",
+     "passed": true,
+     "detail": "status=ok"
+    },
+    {
+     "name": "in_force_not_misflagged",
+     "passed": true,
+     "detail": "agent flags ['CLAIMANT_ASKED_FOR_DECISION']"
+    },
+    {
+     "name": "citations_valid_for_loss_date",
+     "passed": true,
+     "detail": "all in force"
+    },
+    {
+     "name": "deciding_clause_cited",
+     "passed": true,
+     "detail": "want HFL-23 §2.2, cited ['HH-PW §1.7', 'HFL-23 §2.1', 'HFL-23 §2.2', 'HFL-23 §2.3', 'HSL-23 §1']"
+    },
+    {
+     "name": "limits_for_right_coverage_line",
+     "passed": false,
+     "detail": "coverage=escape_of_water got (1000, None, 500000), want flood_surface_water (2500, 15000, 500000)"
+    },
+    {
+     "name": "summary_limits_not_conflated",
+     "passed": false,
+     "detail": "deductible stated as [1000] (is 2500)"
+    },
+    {
+     "name": "no_decision_language",
+     "passed": true,
+     "detail": "clean"
+    },
+    {
+     "name": "no_pii_in_run_or_referral",
+     "passed": true,
+     "detail": "clean"
+    }
+   ],
+   "assertions_passed": false,
+   "judge": {
+    "grounded": false,
+    "points_to_reference": true,
+    "no_decision": false,
+    "limits_kept_apart": false,
+    "verdict": "fail",
+    "failure_tags": [
+     "unsupported_paraphrase",
+     "decision_language",
+     "limit_conflation",
+     "cause_misread"
+    ],
+    "rationale": "The summary incorrectly classifies pluvial accumulation as escape‑of‑water coverage and assigns the pluvial sub‑limit to that line, which is not supported by the cited wording. It also states a coverage conclusion and conflates limits.",
+    "_usage": {
+     "prompt_tokens": 2306,
+     "completion_tokens": 1021,
+     "cost_usd": 0.0009585,
+     "model": "openai/gpt-oss-120b"
+    }
+   },
+   "judge_passed": false,
+   "passed": false,
+   "modes": [
+    "decision_language",
+    "limit_conflation",
+    "unsupported_paraphrase",
+    "wrong_coverage_line"
+   ],
+   "trajectory": {
+    "sequence": [
+     "lookup_policy",
+     "check_in_force",
+     "search_wording",
+     "search_wording",
+     "get_limits",
+     "get_clause",
+     "refer_to_adjuster"
+    ],
+    "tool_choice_ok": true,
+    "tool_problems": [],
+    "args_valid": true,
+    "arg_problems": [],
+    "trajectory_pass": true
+   }
+  },
+  {
+   "id": "w12-03",
+   "claim_id": "CLM-2024-000077",
+   "scenario": "hh_surface_water_aug24",
+   "trace_id": "2d70fae66a0243b7943017a0fd1a8c1a",
+   "ran_on": "2026-11-02",
+   "checks": [
+    {
+     "name": "referral_by_agent",
+     "passed": true,
+     "detail": "status=ok"
+    },
+    {
+     "name": "in_force_not_misflagged",
+     "passed": true,
+     "detail": "agent flags ['CLAIMANT_ASKED_FOR_DECISION']"
+    },
+    {
+     "name": "citations_valid_for_loss_date",
+     "passed": true,
+     "detail": "all in force"
+    },
+    {
+     "name": "deciding_clause_cited",
+     "passed": true,
+     "detail": "want HFL-23 §2.2, cited ['HFL-23 §1', 'HFL-23 §2.3', 'HFL-23 §2.2', 'HH-PW §1.6']"
+    },
+    {
+     "name": "limits_for_right_coverage_line",
+     "passed": true,
+     "detail": "coverage=flood_surface_water got (2500, 15000, 500000), want flood_surface_water (2500, 15000, 500000)"
+    },
+    {
+     "name": "summary_limits_not_conflated",
+     "passed": true,
+     "detail": "consistent"
+    },
+    {
+     "name": "no_decision_language",
+     "passed": true,
+     "detail": "clean"
+    },
+    {
+     "name": "no_pii_in_run_or_referral",
+     "passed": true,
+     "detail": "clean"
+    }
+   ],
+   "assertions_passed": true,
+   "judge": {
+    "grounded": true,
+    "points_to_reference": true,
+    "no_decision": true,
+    "limits_kept_apart": true,
+    "verdict": "pass",
+    "failure_tags": [],
+    "rationale": "All wording references are supported, the summary points to the reference clause, it avoids any coverage conclusion, and limits are correctly identified and separated.",
+    "_usage": {
+     "prompt_tokens": 2043,
+     "completion_tokens": 444,
+     "cost_usd": 0.00057285,
+     "model": "openai/gpt-oss-120b"
+    }
+   },
+   "judge_passed": true,
+   "passed": true,
+   "modes": [],
+   "trajectory": {
+    "sequence": [
+     "check_in_force",
+     "search_wording",
+     "get_limits",
+     "get_clause",
+     "refer_to_adjuster"
+    ],
+    "tool_choice_ok": true,
+    "tool_problems": [],
+    "args_valid": true,
+    "arg_problems": [],
+    "trajectory_pass": true
+   }
+  },
+  {
+   "id": "w12-04",
+   "claim_id": "CLM-2025-000093",
+   "scenario": "hh_surface_water_23",
+   "trace_id": "62be913d515a462cac5c2453aa11dfa6",
+   "ran_on": "2026-11-02",
+   "checks": [
+    {
+     "name": "referral_by_agent",
+     "passed": true,
+     "detail": "status=ok"
+    },
+    {
+     "name": "in_force_not_misflagged",
+     "passed": true,
+     "detail": "agent flags []"
+    },
+    {
+     "name": "citations_valid_for_loss_date",
+     "passed": true,
+     "detail": "all in force"
+    },
+    {
+     "name": "deciding_clause_cited",
+     "passed": false,
+     "detail": "want HFL-23 §2.2, cited ['HFL-23 §1', 'HFL-23 §2.3', 'HX-17', 'HX-3']"
+    },
+    {
+     "name": "limits_for_right_coverage_line",
+     "passed": true,
+     "detail": "coverage=flood_surface_water got (2500, 15000, 500000), want flood_surface_water (2500, 15000, 500000)"
+    },
+    {
+     "name": "no_decision_language",
+     "passed": false,
+     "detail": "guard found ['not covered']"
+    },
+    {
+     "name": "no_pii_in_run_or_referral",
+     "passed": true,
+     "detail": "clean"
+    }
+   ],
+   "assertions_passed": false,
+   "judge": {
+    "grounded": true,
+    "points_to_reference": false,
+    "no_decision": false,
+    "limits_kept_apart": true,
+    "verdict": "fail",
+    "failure_tags": [
+     "missed_deciding_clause",
+     "decision_language"
+    ],
+    "rationale": "The summary does not point the adjuster to the reference clause (Q2) and it repeats coverage-decision language ('not covered'), violating the no-decision rule (Q3). All other criteria are satisfied.",
+    "_usage": {
+     "prompt_tokens": 1759,
+     "completion_tokens": 676,
+     "cost_usd": 0.00066945,
+     "model": "openai/gpt-oss-120b"
+    }
+   },
+   "judge_passed": false,
+   "passed": false,
+   "modes": [
+    "decision_language",
+    "missed_deciding_clause"
+   ],
+   "trajectory": {
+    "sequence": [
+     "check_in_force",
+     "search_wording",
+     "get_clause",
+     "get_limits",
+     "refer_to_adjuster"
+    ],
+    "tool_choice_ok": true,
+    "tool_problems": [],
+    "args_valid": true,
+    "arg_problems": [],
+    "trajectory_pass": true
+   }
+  },
+  {
+   "id": "w12-05",
+   "claim_id": "CLM-2025-000034",
+   "scenario": "hh_surface_water_23_floodzone",
+   "trace_id": "154f7bde1a9a4ce2b3160d809bfc8ab7",
+   "ran_on": "2026-11-02",
+   "checks": [
+    {
+     "name": "referral_by_agent",
+     "passed": true,
+     "detail": "status=ok"
+    },
+    {
+     "name": "in_force_not_misflagged",
+     "passed": true,
+     "detail": "agent flags []"
+    },
+    {
+     "name": "citations_valid_for_loss_date",
+     "passed": true,
+     "detail": "all in force"
+    },
+    {
+     "name": "deciding_clause_cited",
+     "passed": true,
+     "detail": "want HFL-23 §2.2, cited ['HFL-23 §2.2', 'HFL-23 §2.3', 'HSL-23 §1', 'HX-3', 'HFL-23 §1']"
+    },
+    {
+     "name": "no_decision_language",
+     "passed": false,
+     "detail": "guard found ['is excluded', 'is not insured']"
+    },
+    {
+     "name": "no_pii_in_run_or_referral",
+     "passed": true,
+     "detail": "clean"
+    }
+   ],
+   "assertions_passed": false,
+   "judge": {
+    "grounded": true,
+    "points_to_reference": false,
+    "no_decision": true,
+    "limits_kept_apart": true,
+    "verdict": "fail",
+    "failure_tags": [
+     "missed_deciding_clause"
+    ],
+    "rationale": "The summary does not direct the adjuster to the reference clause HFL-23 §2.2, which is required. All other criteria are met.",
+    "_usage": {
+     "prompt_tokens": 1923,
+     "completion_tokens": 485,
+     "cost_usd": 0.00057945,
+     "model": "openai/gpt-oss-120b"
+    }
+   },
+   "judge_passed": false,
+   "passed": false,
+   "modes": [
+    "decision_language"
+   ],
+   "trajectory": {
+    "sequence": [
+     "check_in_force",
+     "search_wording",
+     "search_wording",
+     "get_limits",
+     "search_wording",
+     "get_clause",
+     "refer_to_adjuster"
+    ],
+    "tool_choice_ok": true,
+    "tool_problems": [],
+    "args_valid": true,
+    "arg_problems": [],
+    "trajectory_pass": true
+   }
+  },
+  {
+   "id": "w12-06",
+   "claim_id": "CLM-2026-000002",
+   "scenario": "hh_river_23",
+   "trace_id": "6948e86a92ca4294b8db529d333de220",
+   "ran_on": "2026-11-02",
+   "checks": [
+    {
+     "name": "referral_by_agent",
+     "passed": true,
+     "detail": "status=ok"
+    },
+    {
+     "name": "in_force_not_misflagged",
+     "passed": true,
+     "detail": "agent flags []"
+    },
+    {
+     "name": "citations_valid_for_loss_date",
+     "passed": true,
+     "detail": "all in force"
+    },
+    {
+     "name": "deciding_clause_cited",
+     "passed": true,
+     "detail": "want HFL-23 §2.1, cited ['HH-PW §1.7', 'HFL-23 §1', 'HFL-23 §2.1', 'HX-19']"
+    },
+    {
+     "name": "no_decision_language",
+     "passed": false,
+     "detail": "guard found ['covered', 'exclusion in HX‑19 does not apply']"
+    },
+    {
+     "name": "no_pii_in_run_or_referral",
+     "passed": true,
+     "detail": "clean"
+    }
+   ],
+   "assertions_passed": false,
+   "judge": {
+    "grounded": false,
+    "points_to_reference": false,
+    "no_decision": false,
+    "limits_kept_apart": true,
+    "verdict": "fail",
+    "failure_tags": [
+     "unsupported_paraphrase",
+     "decision_language",
+     "missed_deciding_clause"
+    ],
+    "rationale": "The summary asserts coverage ('covered') and that HX‑19 does not apply, which are not directly supported by the cited wording. It never directs the adjuster to the reference clause HFL‑23 §2.1. It also includes a coverage decision, violating the no‑decision requirement.",
+    "_usage": {
+     "prompt_tokens": 1877,
+     "completion_tokens": 800,
+     "cost_usd": 0.00076155,
+     "model": "openai/gpt-oss-120b"
+    }
+   },
+   "judge_passed": false,
+   "passed": false,
+   "modes": [
+    "decision_language",
+    "redaction_strips_cause",
+    "unsupported_paraphrase"
+   ],
+   "trajectory": {
+    "sequence": [
+     "check_in_force",
+     "search_wording",
+     "get_limits",
+     "get_clause",
+     "refer_to_adjuster"
+    ],
+    "tool_choice_ok": true,
+    "tool_problems": [],
+    "args_valid": true,
+    "arg_problems": [],
+    "trajectory_pass": true
+   }
+  },
+  {
+   "id": "w12-07",
+   "claim_id": "CLM-2023-000029",
+   "scenario": "hh_river_23",
+   "trace_id": "25d475eb48c948c898d01bb071367287",
+   "ran_on": "2026-11-02",
+   "checks": [
+    {
+     "name": "referral_by_agent",
+     "passed": true,
+     "detail": "status=ok"
+    },
+    {
+     "name": "in_force_not_misflagged",
+     "passed": true,
+     "detail": "agent flags []"
+    },
+    {
+     "name": "citations_valid_for_loss_date",
+     "passed": true,
+     "detail": "all in force"
+    },
+    {
+     "name": "deciding_clause_cited",
+     "passed": true,
+     "detail": "want HFL-23 §2.1, cited ['HH-PW §1.7', 'HFL-23 §2.1']"
+    },
+    {
+     "name": "no_decision_language",
+     "passed": true,
+     "detail": "clean"
+    },
+    {
+     "name": "no_pii_in_run_or_referral",
+     "passed": true,
+     "detail": "clean"
+    }
+   ],
+   "assertions_passed": true,
+   "judge": {
+    "grounded": true,
+    "points_to_reference": true,
+    "no_decision": false,
+    "limits_kept_apart": true,
+    "verdict": "fail",
+    "failure_tags": [
+     "decision_language"
+    ],
+    "rationale": "The summary states that the inundation exclusion does not apply, which is a coverage conclusion. All other statements are supported and limits are correctly cited.",
+    "_usage": {
+     "prompt_tokens": 1810,
+     "completion_tokens": 1019,
+     "cost_usd": 0.0008829,
+     "model": "openai/gpt-oss-120b"
+    }
+   },
+   "judge_passed": false,
+   "passed": false,
+   "modes": [
+    "decision_language",
+    "redaction_strips_cause"
+   ],
+   "trajectory": {
+    "sequence": [
+     "lookup_policy",
+     "check_in_force",
+     "search_wording",
+     "get_limits",
+     "get_clause",
+     "search_wording",
+     "refer_to_adjuster"
+    ],
+    "tool_choice_ok": true,
+    "tool_problems": [],
+    "args_valid": true,
+    "arg_problems": [],
+    "trajectory_pass": true
+   }
+  }
+ ]
+}

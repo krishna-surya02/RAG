@@ -1,0 +1,54 @@
+{
+ "claim_id": "CLM-2024-000085",
+ "scenario": "hh_surface_water_aug24",
+ "product": "household",
+ "policy_number": "HH-2024-00164",
+ "loss_date": "2024-08-16",
+ "reported_at": "2024-08-18",
+ "fnol_text": "My name is Leila Laurent and I live at 732 Larkspur Way, Madison, WI 53745. You can reach me on (555) 292-2862 or leila.laurent@example.com. Heavy rain all afternoon on 16 August 2024. Water pooled on the lawn and then came into the lounge at floor level. Carpets and the sofa are soaked. Policy HH-2024-00164. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Laurent on (555) 292-2862 to acknowledge the claim. Leila confirmed the loss date as 16 August 2024."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 732 Larkspur Way. Neighbour Ethan Sorensen was present and confirmed the timeline."
+  },
+  {
+   "n": 3,
+   "text": "Leila sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0417: damaged furniture stacked in the garage"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID_SUBLIMIT:HFL-23 §2.2",
+  "clause": "HFL-23 §2.2",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "flood_surface_water",
+   "deductible": 2500,
+   "sub_limit": 15000,
+   "policy_limit": 500000,
+   "source": "HFL-23 §2.2, §2.3; HSL-23 §1"
+  },
+  "assessed_loss": 27550,
+  "amount_paid": 15000
+ },
+ "pii": {
+  "claimant_name": "Leila Laurent",
+  "address": "732 Larkspur Way, Madison, WI 53745",
+  "street": "732 Larkspur Way",
+  "phone": "(555) 292-2862",
+  "email": "leila.laurent@example.com",
+  "other_people": [
+   "Ethan Sorensen",
+   "Kofi Lindqvist"
+  ],
+  "injuries": []
+ }
+}

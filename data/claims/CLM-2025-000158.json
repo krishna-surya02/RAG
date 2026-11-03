@@ -1,0 +1,54 @@
+{
+ "claim_id": "CLM-2025-000158",
+ "scenario": "hh_surface_water_25",
+ "product": "household",
+ "policy_number": "HH-2024-00035",
+ "loss_date": "2025-12-01",
+ "reported_at": "2025-12-07",
+ "fnol_text": "My name is Dmitri Fitzgerald and I live at 627 Maple Way, Greenville, SC 29623. You can reach me on (555) 918-9090 or dmitri.fitzgerald@example.com. We had a cloudburst on 1 December 2025. The drains in the street could not cope and surface water from the road came up the drive and into the ground floor through the front door. Policy HH-2024-00035. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Fitzgerald on (555) 918-9090 to acknowledge the claim. Dmitri confirmed the loss date as 1 December 2025."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 627 Maple Way. Neighbour Olusegun Varga was present and confirmed the timeline."
+  },
+  {
+   "n": 3,
+   "text": "Dmitri sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0413: water line on the skirting boards"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:HFL-25 §2.1",
+  "clause": "HFL-25 §2.1",
+  "endorsement_set": "HEND-2025",
+  "limits": {
+   "coverage": "flood_plus",
+   "deductible": 5000,
+   "sub_limit": 25000,
+   "policy_limit": 600000,
+   "source": "HFL-25 §2.2, §2.3; HSL-25 §1"
+  },
+  "assessed_loss": 26350,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Dmitri Fitzgerald",
+  "address": "627 Maple Way, Greenville, SC 29623",
+  "street": "627 Maple Way",
+  "phone": "(555) 918-9090",
+  "email": "dmitri.fitzgerald@example.com",
+  "other_people": [
+   "Olusegun Varga",
+   "Dana Yilmaz"
+  ],
+  "injuries": []
+ }
+}

@@ -1,0 +1,57 @@
+{
+ "claim_id": "CLM-2025-000134",
+ "scenario": "mt_collision",
+ "product": "motor",
+ "policy_number": "MT-2024-00099",
+ "loss_date": "2025-10-10",
+ "reported_at": "2025-10-13",
+ "fnol_text": "My name is Mateo Novak and I live at 99 Foxglove Close, Salem, MA 01944. You can reach me on (555) 444-9749 or mateo.novak@example.com. I was stopped at lights on 10 October 2025 when the car behind, driven by Ethan Raman, went into the back of mine. Rear bumper and boot are badly damaged. Policy MT-2024-00099. I'd like to claim for the damage to my car. Please just tell me this is covered.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Novak on (555) 444-9749 to acknowledge the claim. Mateo confirmed the loss date as 10 October 2025."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Tomas Vasquez gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Third-party driver Ethan Raman reports minor burns to the hand and attended Mercy General. Mateo reports lacerations to the forearm."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2203: dashboard warning lights",
+  "IMG_2201: front passenger side damage"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §3.1",
+  "clause": "MT-PW §3.1",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "own_damage",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §3.1"
+  },
+  "assessed_loss": 2200,
+  "amount_paid": 1200
+ },
+ "pii": {
+  "claimant_name": "Mateo Novak",
+  "address": "99 Foxglove Close, Salem, MA 01944",
+  "street": "99 Foxglove Close",
+  "phone": "(555) 444-9749",
+  "email": "mateo.novak@example.com",
+  "other_people": [
+   "Tomas Vasquez",
+   "Ethan Raman"
+  ],
+  "injuries": [
+   "minor burns to the hand",
+   "lacerations to the forearm"
+  ]
+ }
+}

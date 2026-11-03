@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2023-000031",
+ "scenario": "hh_escape_of_water",
+ "product": "household",
+ "policy_number": "HH-2023-00132",
+ "loss_date": "2023-08-23",
+ "reported_at": "2023-08-27",
+ "fnol_text": "My name is Tariq Pereira and I live at 100 Oakridge Avenue, Madison, WI 53796. You can reach me on (555) 649-4999 or tariq.pereira@example.com. The washing machine hose split on 23 August 2023 and flooded the utility room and hallway before we could turn off the water. Policy HH-2023-00132. I'd like to claim for the damage to my home. Am I insured for this or not?",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Pereira on (555) 649-4999 to acknowledge the claim. Tariq confirmed the loss date as 23 August 2023."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 100 Oakridge Avenue. Neighbour Rosa Petrov was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0417: damaged furniture stacked in the garage"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:HH-PW §1.7",
+  "clause": "HH-PW §1.7",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "escape_of_water",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 500000,
+   "source": "HH-PW §1.7"
+  },
+  "assessed_loss": 26300,
+  "amount_paid": 25300
+ },
+ "pii": {
+  "claimant_name": "Tariq Pereira",
+  "address": "100 Oakridge Avenue, Madison, WI 53796",
+  "street": "100 Oakridge Avenue",
+  "phone": "(555) 649-4999",
+  "email": "tariq.pereira@example.com",
+  "other_people": [
+   "Rosa Petrov",
+   "Valentina Okafor"
+  ],
+  "injuries": []
+ }
+}

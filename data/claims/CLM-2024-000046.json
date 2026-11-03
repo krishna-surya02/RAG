@@ -1,0 +1,57 @@
+{
+ "claim_id": "CLM-2024-000046",
+ "scenario": "hh_liability_injury",
+ "product": "household",
+ "policy_number": "HH-2024-00141",
+ "loss_date": "2024-06-29",
+ "reported_at": "2024-06-29",
+ "fnol_text": "My name is Dmitri Mbeki and I live at 343 Alder Close, Madison, WI 53769. You can reach me on (555) 444-2982 or dmitri.mbeki@example.com. A delivery driver slipped on our icy front steps on 29 June 2024 and was taken to hospital. They have said they will make a claim against us. Policy HH-2024-00141. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Mbeki on (555) 444-2982 to acknowledge the claim. Dmitri confirmed the loss date as 29 June 2024."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 343 Alder Close. Neighbour Samuel Petrov was present and confirmed the timeline."
+  },
+  {
+   "n": 3,
+   "text": "Injured party Chloe Ferreira sustained a broken collarbone and was treated at Mercy General. Do not admit liability; refer."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0413: water line on the skirting boards"
+ ],
+ "final_decision": {
+  "outcome": "referred_liability",
+  "reason_code": "REFERRED_LIABILITY:HH-PW §3.1",
+  "clause": "HH-PW §3.1",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "liability",
+   "deductible": 0,
+   "sub_limit": null,
+   "policy_limit": 2000000,
+   "source": "HH-PW §3.1"
+  },
+  "assessed_loss": 52750,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Dmitri Mbeki",
+  "address": "343 Alder Close, Madison, WI 53769",
+  "street": "343 Alder Close",
+  "phone": "(555) 444-2982",
+  "email": "dmitri.mbeki@example.com",
+  "other_people": [
+   "Samuel Petrov",
+   "Chloe Ferreira"
+  ],
+  "injuries": [
+   "a broken collarbone"
+  ]
+ }
+}

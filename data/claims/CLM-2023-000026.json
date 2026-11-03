@@ -1,0 +1,58 @@
+{
+ "claim_id": "CLM-2023-000026",
+ "scenario": "mt_collision_tpft",
+ "product": "motor",
+ "policy_number": "MT-2023-00064",
+ "loss_date": "2023-07-26",
+ "reported_at": "2023-08-03",
+ "fnol_text": "My name is Dana Fitzgerald and I live at 405 Marigold Close, Greenville, SC 29617. You can reach me on (555) 469-7547 or dana.fitzgerald@example.com. I was stopped at lights on 26 July 2023 when the car behind, driven by Arjun Khan, went into the back of mine. Rear bumper and boot are badly damaged. Policy MT-2023-00064. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Fitzgerald on (555) 469-7547 to acknowledge the claim. Dana confirmed the loss date as 26 July 2023."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Esther Raman gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Third-party driver Arjun Khan reports lower back strain and attended County General. Dana reports minor burns to the hand."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2203: dashboard warning lights",
+  "IMG_2201: front passenger side damage",
+  "IMG_2207: vehicle on the recovery truck"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:MT-PW §1.2",
+  "clause": "MT-PW §1.2",
+  "endorsement_set": "MEND-2023",
+  "limits": {
+   "coverage": "own_damage",
+   "deductible": 750,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §3.1"
+  },
+  "assessed_loss": 16700,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Dana Fitzgerald",
+  "address": "405 Marigold Close, Greenville, SC 29617",
+  "street": "405 Marigold Close",
+  "phone": "(555) 469-7547",
+  "email": "dana.fitzgerald@example.com",
+  "other_people": [
+   "Esther Raman",
+   "Arjun Khan"
+  ],
+  "injuries": [
+   "lower back strain",
+   "minor burns to the hand"
+  ]
+ }
+}

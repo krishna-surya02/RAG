@@ -1,0 +1,51 @@
+{
+ "claim_id": "CLM-2026-000053",
+ "scenario": "mt_hail",
+ "product": "motor",
+ "policy_number": "MT-2024-00115",
+ "loss_date": "2026-05-30",
+ "reported_at": "2026-06-03",
+ "fnol_text": "My name is Ines Iyer and I live at 785 Elmstead Close, Fairview, PA 16453. You can reach me on (555) 840-7764 or ines.iyer@example.com. A hailstorm on 30 May 2026 left dozens of dents across the roof, bonnet and boot of my car. Policy MT-2024-00115. I'd like to claim for the damage to my car. I assume this is covered under my policy?",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Iyer on (555) 840-7764 to acknowledge the claim. Ines confirmed the loss date as 30 May 2026."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Felix McBride gave a statement by phone."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2203: dashboard warning lights",
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2201: front passenger side damage"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MHA-25 §1",
+  "clause": "MHA-25 §1",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "hail",
+   "deductible": 500,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MHA-25 §1"
+  },
+  "assessed_loss": 1550,
+  "amount_paid": 1050
+ },
+ "pii": {
+  "claimant_name": "Ines Iyer",
+  "address": "785 Elmstead Close, Fairview, PA 16453",
+  "street": "785 Elmstead Close",
+  "phone": "(555) 840-7764",
+  "email": "ines.iyer@example.com",
+  "other_people": [
+   "Felix McBride",
+   "Tomas Gallagher"
+  ],
+  "injuries": []
+ }
+}

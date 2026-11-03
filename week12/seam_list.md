@@ -1,0 +1,26 @@
+# Seam list (Tuesday). DRAFT, raw
+
+> **DRAFT for the author to review.** This was written while building the integration, from the seams actually hit, in the order they were hit. The brief wants it *unedited*, so this is the raw list: it has not been tidied into a narrative. Edit it to match your own experience before handing it in, or replace it.
+
+1. **The corpus doesn't exist.** The brief's motor wording, 2023 and 2025 endorsement sets, 500 claims, limits table and in-force dates aren't in the repo. The PDFs carry no effective dates at all, so "in force on the loss date" had nothing to join on. Generated (`w12/corpus_gen.py`).
+2. **Endorsement set ≠ calendar date.** The set comes from the policy *term*, not the loss date: a term incepting 2025-01 keeps the 2023 set for a 2025-06 loss. So "scope by product + date", as the brief phrases the MCP tool, is not enough on its own. The tool takes `endorsement_set` and says when it fell back to the calendar.
+3. **Week 11's `scoped` retrieval backfills from what it filtered out.** That is fine for editions, but here a backfill would be exactly the 2025 wording on a 2024 loss. New `retrieve_in_force` never backfills.
+4. **Redaction eats the cause of loss.** "the Calder River burst its banks" → "the [CLAIMANT_2] burst its banks". Run-of-capitals name detection hits every named river, and river vs rainfall is what separates HFL-23 §2.1 from §2.2. It happens in all 15 river claims.
+5. **Notes redacted one at a time leak first names.** "Amara confirmed the date" has no trigger word. Fixed with `redact.redact_many` (one document per claim).
+6. **`redact.py` only knew names and claim numbers.** Addresses, phones, emails and injuries were all new. "Linden Drive" also reads as Firstname Lastname unless addresses go first.
+7. **Trace ids were minted after the run, per component.** rag, the agent, the MCP agent and the orchestrator each made their own. Nothing could follow a claim across a hop.
+8. **`rag.answer()` returns a bare string.** The trace id and citations stayed inside it. Added `answer_claim()` returning a dict.
+9. **`tracing.cost_usd` priced every span at 120b rates.** The agent runs on 20b, so cost was overstated about 2x. Fixed with a per-model price table.
+10. **Sync vs async.** The Week 7 loop is sync and the Week 9 MCP client is async. Ported the loop to async rather than wrapping the client.
+11. **Tool argument names disagree.** Week 7 tools take `claim_id`, Week 9 MCP tools take `claim_number`.
+12. **MCP subprocesses get a minimal environment.** `W12_TRACE_DIR` didn't reach the server, so server spans went to the wrong file. Passed explicitly. The server's stderr (sentence-transformers INFO lines, progress bars) also landed in the agent's terminal.
+13. **Tokens.** The first live claim cost 26k tokens against a 200k/day quota: tool schemas plus every old search result re-sent every turn. That was before compaction, ingress FNOL and batched clause fetches.
+14. **The guard vs quoting.** The wording itself says "Flood damage is not insured". The guard has to let quotes through and still catch "the loss is indemnified" and "so the exclusion does not apply". The first live run produced both; neither matched the first regex.
+15. **The judge needed the limits row.** Without it, it called a correct $500,000 policy limit "unsupported" because no clause repeats the table.
+16. **My own assertion false-failed.** "The deductible is $2,500, the sub-limit is $15,000" was read as a $2,500 sub-limit by the first, looser regex.
+17. **Week 7's `check_policy_exclusions` answers "not excluded" for any combination it has no rule for.** Unusable under the compliance rule, so not reused.
+18. **Claim ids match `redact.py`'s claim-number pattern,** so they turn into `[CLAIM_NO_1]` in free text. Policy numbers (`HH-2023-00068`) don't. Both are kept as operational ids in structured fields, a choice the reviewer should challenge.
+19. **gpt-oss writes clause refs with non-breaking hyphens** ("HFL‑23", U+2011). Exact-string matching of refs in the RAG answer found none, so every citation silently disappeared. Normalised in `rag.answer_claim`. The same risk applies to any ref the agent types rather than copies.
+20. **The RAG `ask` path has no agent to reformulate the query.** With the claimant's own words, the date-scoped context held no flood endorsement at all, and the model answered from base-wording perils. Weakness #1, seen on the path that doesn't have the agent's second chance.
+21. **A malformed tool call from the model crashed the whole eval.** In baseline case w12-08, gpt-oss emitted the tool name `refer_to_adjuster<|channel|>commentary` (harmony channel tokens leaking into the name). Groq returned 400 `tool_use_failed`, and nothing in the Week 7 loop shape caught it: no referral for that claim, and the run died. Fixed by resampling on tool_use_failed and ending any other API error as `model_error`, still referred. The same summary also said "the loss falls under the flood exclusion", which the guard did not yet catch.
+22. **Async clients across event loops.** Every claim ran in its own `asyncio.run`, and ChatGroq's async httpx clients were garbage-collected after their loop closed, which printed tracebacks between cases. The model is now called through the sync client in a thread.

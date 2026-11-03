@@ -1,0 +1,54 @@
+{
+ "claim_id": "CLM-2025-000121",
+ "scenario": "mt_flood_23",
+ "product": "motor",
+ "policy_number": "MT-2024-00019",
+ "loss_date": "2025-09-07",
+ "reported_at": "2025-09-15",
+ "fnol_text": "My name is Yusuf O'Connell and I live at 709 Elmstead Drive, Greenville, SC 29615. You can reach me on (555) 590-3985 or yusuf.oconnell@example.com. On 7 September 2025 flash flooding came down the street while my car was parked at home. Water got into the cabin and the engine won't start. Policy MT-2024-00019. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr O'Connell on (555) 590-3985 to acknowledge the claim. Yusuf confirmed the loss date as 7 September 2025."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Imogen Iyer gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Yusuf sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2203: dashboard warning lights"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MFL-23 §2.1",
+  "clause": "MFL-23 §2.1",
+  "endorsement_set": "MEND-2023",
+  "limits": {
+   "coverage": "flood",
+   "deductible": 750,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MFL-23 §2.1"
+  },
+  "assessed_loss": 6350,
+  "amount_paid": 5600
+ },
+ "pii": {
+  "claimant_name": "Yusuf O'Connell",
+  "address": "709 Elmstead Drive, Greenville, SC 29615",
+  "street": "709 Elmstead Drive",
+  "phone": "(555) 590-3985",
+  "email": "yusuf.oconnell@example.com",
+  "other_people": [
+   "Imogen Iyer",
+   "Elena Mensah"
+  ],
+  "injuries": []
+ }
+}

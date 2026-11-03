@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2025-000028",
+ "scenario": "mt_hail",
+ "product": "motor",
+ "policy_number": "MT-2023-00093",
+ "loss_date": "2025-03-06",
+ "reported_at": "2025-03-14",
+ "fnol_text": "My name is Elena Vasquez and I live at 926 Primrose Terrace, Springfield, OH 45553. You can reach me on (555) 904-3823 or elena.vasquez@example.com. A hailstorm on 6 March 2025 left dozens of dents across the roof, bonnet and boot of my car. Policy MT-2023-00093. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Vasquez on (555) 904-3823 to acknowledge the claim. Elena confirmed the loss date as 6 March 2025."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Owen Santos gave a statement by phone."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2201: front passenger side damage",
+  "IMG_2203: dashboard warning lights"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §3.2",
+  "clause": "MT-PW §3.2",
+  "endorsement_set": "MEND-2023",
+  "limits": {
+   "coverage": "hail",
+   "deductible": 750,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §3.2"
+  },
+  "assessed_loss": 5350,
+  "amount_paid": 4600
+ },
+ "pii": {
+  "claimant_name": "Elena Vasquez",
+  "address": "926 Primrose Terrace, Springfield, OH 45553",
+  "street": "926 Primrose Terrace",
+  "phone": "(555) 904-3823",
+  "email": "elena.vasquez@example.com",
+  "other_people": [
+   "Owen Santos",
+   "Viktor Mensah"
+  ],
+  "injuries": []
+ }
+}

@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2026-000111",
+ "scenario": "hh_subsidence",
+ "product": "household",
+ "policy_number": "HH-2024-00039",
+ "loss_date": "2026-09-20",
+ "reported_at": "2026-09-20",
+ "fnol_text": "My name is Maya Moreau and I live at 224 Marigold Court, Milton, VT 05443. You can reach me on (555) 643-7741 or maya.moreau@example.com. Large diagonal cracks appeared above the doors and windows at the back of the house around 20 September 2026. A surveyor thinks the clay soil has shrunk. Policy HH-2024-00039. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Moreau on (555) 643-7741 to acknowledge the claim. Maya confirmed the loss date as 20 September 2026."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 224 Marigold Court. Neighbour Dmitri Ishikawa was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0413: water line on the skirting boards"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:HH-PW §1.11",
+  "clause": "HH-PW §1.11",
+  "endorsement_set": "HEND-2025",
+  "limits": {
+   "coverage": "subsidence",
+   "deductible": 2500,
+   "sub_limit": null,
+   "policy_limit": 600000,
+   "source": "HH-PW §1.11"
+  },
+  "assessed_loss": 48050,
+  "amount_paid": 45550
+ },
+ "pii": {
+  "claimant_name": "Maya Moreau",
+  "address": "224 Marigold Court, Milton, VT 05443",
+  "street": "224 Marigold Court",
+  "phone": "(555) 643-7741",
+  "email": "maya.moreau@example.com",
+  "other_people": [
+   "Dmitri Ishikawa",
+   "Fatima Iyer"
+  ],
+  "injuries": []
+ }
+}

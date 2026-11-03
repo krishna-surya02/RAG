@@ -1,0 +1,45 @@
+{
+ "claim_id": "CLM-2023-000001",
+ "scenario": "not_in_force",
+ "product": "household",
+ "policy_number": "HH-2023-00105",
+ "loss_date": "2023-04-04",
+ "reported_at": "2023-04-08",
+ "fnol_text": "My name is Arjun Petrov and I live at 484 Linden Close, Salem, MA 01957. You can reach me on (555) 779-1410 or arjun.petrov@example.com. During the storm on 4 April 2023 high winds ripped tiles off the roof and rain came into the loft and the back bedroom. Policy HH-2023-00105. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Petrov on (555) 779-1410 to acknowledge the claim. Arjun confirmed the loss date as 4 April 2023."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 484 Linden Close. Neighbour Olusegun Vasquez was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0413: water line on the skirting boards"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "NOT_IN_FORCE",
+  "clause": null,
+  "endorsement_set": null,
+  "limits": null,
+  "assessed_loss": 4650,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Arjun Petrov",
+  "address": "484 Linden Close, Salem, MA 01957",
+  "street": "484 Linden Close",
+  "phone": "(555) 779-1410",
+  "email": "arjun.petrov@example.com",
+  "other_people": [
+   "Olusegun Vasquez",
+   "Amara Gallagher"
+  ],
+  "injuries": []
+ }
+}

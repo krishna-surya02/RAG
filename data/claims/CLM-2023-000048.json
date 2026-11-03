@@ -1,0 +1,54 @@
+{
+ "claim_id": "CLM-2023-000048",
+ "scenario": "hh_surface_water_23",
+ "product": "household",
+ "policy_number": "HH-2023-00142",
+ "loss_date": "2023-11-14",
+ "reported_at": "2023-11-22",
+ "fnol_text": "My name is Aisha Khan and I live at 111 Foxglove Close, Greenville, SC 29650. You can reach me on (555) 650-6595 or aisha.khan@example.com. We had a cloudburst on 14 November 2023. The drains in the street could not cope and surface water from the road came up the drive and into the ground floor through the front door. Policy HH-2023-00142. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Khan on (555) 650-6595 to acknowledge the claim. Aisha confirmed the loss date as 14 November 2023."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 111 Foxglove Close. Neighbour Nikhil Quinlan was present and confirmed the timeline."
+  },
+  {
+   "n": 3,
+   "text": "Aisha sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0413: water line on the skirting boards"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:HFL-23 §2.2",
+  "clause": "HFL-23 §2.2",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "flood_surface_water",
+   "deductible": 2500,
+   "sub_limit": 15000,
+   "policy_limit": 500000,
+   "source": "HFL-23 §2.2, §2.3; HSL-23 §1"
+  },
+  "assessed_loss": 13100,
+  "amount_paid": 10600
+ },
+ "pii": {
+  "claimant_name": "Aisha Khan",
+  "address": "111 Foxglove Close, Greenville, SC 29650",
+  "street": "111 Foxglove Close",
+  "phone": "(555) 650-6595",
+  "email": "aisha.khan@example.com",
+  "other_people": [
+   "Nikhil Quinlan",
+   "Mateo Abernathy"
+  ],
+  "injuries": []
+ }
+}

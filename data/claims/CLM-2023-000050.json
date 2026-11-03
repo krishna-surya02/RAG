@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2023-000050",
+ "scenario": "mt_theft_forced",
+ "product": "motor",
+ "policy_number": "MT-2023-00028",
+ "loss_date": "2023-11-27",
+ "reported_at": "2023-11-28",
+ "fnol_text": "My name is Aisha Delgado and I live at 218 Rowan Court, Greenville, SC 29653. You can reach me on (555) 739-6804 or aisha.delgado@example.com. My car was stolen from outside the house overnight on 27 November 2023. Glass from the driver's window was on the road. Policy MT-2023-00028. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Delgado on (555) 739-6804 to acknowledge the claim. Aisha confirmed the loss date as 27 November 2023."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Callum Ueda gave a statement by phone."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2201: front passenger side damage",
+  "IMG_2203: dashboard warning lights"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §2.2",
+  "clause": "MT-PW §2.2",
+  "endorsement_set": "MEND-2023",
+  "limits": {
+   "coverage": "theft",
+   "deductible": 750,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §2.2"
+  },
+  "assessed_loss": 7500,
+  "amount_paid": 6750
+ },
+ "pii": {
+  "claimant_name": "Aisha Delgado",
+  "address": "218 Rowan Court, Greenville, SC 29653",
+  "street": "218 Rowan Court",
+  "phone": "(555) 739-6804",
+  "email": "aisha.delgado@example.com",
+  "other_people": [
+   "Callum Ueda",
+   "Mateo McBride"
+  ],
+  "injuries": []
+ }
+}

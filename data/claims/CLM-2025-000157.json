@@ -1,0 +1,57 @@
+{
+ "claim_id": "CLM-2025-000157",
+ "scenario": "mt_collision",
+ "product": "motor",
+ "policy_number": "MT-2025-00106",
+ "loss_date": "2025-11-27",
+ "reported_at": "2025-12-04",
+ "fnol_text": "My name is Olusegun Wojcik and I live at 532 Kestrel Court, Springfield, OH 45575. You can reach me on (555) 473-6762 or olusegun.wojcik@example.com. I was stopped at lights on 27 November 2025 when the car behind, driven by Tariq Okafor, went into the back of mine. Rear bumper and boot are badly damaged. Policy MT-2025-00106. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Wojcik on (555) 473-6762 to acknowledge the claim. Olusegun confirmed the loss date as 27 November 2025."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Lucia Varga gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Third-party driver Tariq Okafor reports lacerations to the forearm and attended County General. Olusegun reports bruised ribs."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2203: dashboard warning lights"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §3.1",
+  "clause": "MT-PW §3.1",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "own_damage",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §3.1"
+  },
+  "assessed_loss": 6750,
+  "amount_paid": 5750
+ },
+ "pii": {
+  "claimant_name": "Olusegun Wojcik",
+  "address": "532 Kestrel Court, Springfield, OH 45575",
+  "street": "532 Kestrel Court",
+  "phone": "(555) 473-6762",
+  "email": "olusegun.wojcik@example.com",
+  "other_people": [
+   "Lucia Varga",
+   "Tariq Okafor"
+  ],
+  "injuries": [
+   "lacerations to the forearm",
+   "bruised ribs"
+  ]
+ }
+}

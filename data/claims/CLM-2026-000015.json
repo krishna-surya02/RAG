@@ -1,0 +1,51 @@
+{
+ "claim_id": "CLM-2026-000015",
+ "scenario": "mt_theft_forced",
+ "product": "motor",
+ "policy_number": "MT-2025-00013",
+ "loss_date": "2026-02-11",
+ "reported_at": "2026-02-14",
+ "fnol_text": "My name is Noor Laurent and I live at 558 Foxglove Place, Ashland, OR 97552. You can reach me on (555) 553-2071 or noor.laurent@example.com. My car was stolen from outside the house overnight on 11 February 2026. Glass from the driver's window was on the road. Policy MT-2025-00013. I'd like to claim for the damage to my car. I assume this is covered under my policy?",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Laurent on (555) 553-2071 to acknowledge the claim. Noor confirmed the loss date as 11 February 2026."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Rafael Kowalski gave a statement by phone."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2203: dashboard warning lights",
+  "IMG_2201: front passenger side damage",
+  "IMG_2207: vehicle on the recovery truck"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §2.2",
+  "clause": "MT-PW §2.2",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "theft",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §2.2"
+  },
+  "assessed_loss": 11300,
+  "amount_paid": 10300
+ },
+ "pii": {
+  "claimant_name": "Noor Laurent",
+  "address": "558 Foxglove Place, Ashland, OR 97552",
+  "street": "558 Foxglove Place",
+  "phone": "(555) 553-2071",
+  "email": "noor.laurent@example.com",
+  "other_people": [
+   "Rafael Kowalski",
+   "Kwame Achebe"
+  ],
+  "injuries": []
+ }
+}

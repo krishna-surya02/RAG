@@ -1,0 +1,58 @@
+{
+ "claim_id": "CLM-2024-000060",
+ "scenario": "mt_collision_tpft",
+ "product": "motor",
+ "policy_number": "MT-2024-00083",
+ "loss_date": "2024-08-03",
+ "reported_at": "2024-08-06",
+ "fnol_text": "My name is Anika Al-Sayed and I live at 50 Ashford Street, Clinton, NC 28387. You can reach me on (555) 745-2564 or anika.alsayed@example.com. I was stopped at lights on 3 August 2024 when the car behind, driven by Mei Jovanovic, went into the back of mine. Rear bumper and boot are badly damaged. Policy MT-2024-00083. I'd like to claim for the damage to my car. Am I insured for this or not?",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Al-Sayed on (555) 745-2564 to acknowledge the claim. Anika confirmed the loss date as 3 August 2024."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Bianca Rasmussen gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Third-party driver Mei Jovanovic reports lacerations to the forearm and attended St. Brendan's Hospital. Anika reports minor burns to the hand."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2203: dashboard warning lights",
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2201: front passenger side damage"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:MT-PW §1.2",
+  "clause": "MT-PW §1.2",
+  "endorsement_set": "MEND-2023",
+  "limits": {
+   "coverage": "own_damage",
+   "deductible": 750,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §3.1"
+  },
+  "assessed_loss": 8250,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Anika Al-Sayed",
+  "address": "50 Ashford Street, Clinton, NC 28387",
+  "street": "50 Ashford Street",
+  "phone": "(555) 745-2564",
+  "email": "anika.alsayed@example.com",
+  "other_people": [
+   "Bianca Rasmussen",
+   "Mei Jovanovic"
+  ],
+  "injuries": [
+   "lacerations to the forearm",
+   "minor burns to the hand"
+  ]
+ }
+}

@@ -1,0 +1,51 @@
+{
+ "claim_id": "CLM-2026-000059",
+ "scenario": "mt_theft_keys",
+ "product": "motor",
+ "policy_number": "MT-2025-00030",
+ "loss_date": "2026-06-13",
+ "reported_at": "2026-06-15",
+ "fnol_text": "My name is Priya Santos and I live at 686 Larkspur Court, Riverton, WY 82595. You can reach me on (555) 918-6425 or priya.santos@example.com. I left the engine running with the keys in while I ran into the shop on 13 June 2026 and someone drove off in my car. Policy MT-2025-00030. I'd like to claim for the damage to my car. Am I insured for this or not?",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Santos on (555) 918-6425 to acknowledge the claim. Priya confirmed the loss date as 13 June 2026."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Valentina Rasmussen gave a statement by phone."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2201: front passenger side damage",
+  "IMG_2203: dashboard warning lights"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:MX-6",
+  "clause": "MX-6",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "theft",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §2.2"
+  },
+  "assessed_loss": 17850,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Priya Santos",
+  "address": "686 Larkspur Court, Riverton, WY 82595",
+  "street": "686 Larkspur Court",
+  "phone": "(555) 918-6425",
+  "email": "priya.santos@example.com",
+  "other_people": [
+   "Valentina Rasmussen",
+   "Grace Delgado"
+  ],
+  "injuries": []
+ }
+}

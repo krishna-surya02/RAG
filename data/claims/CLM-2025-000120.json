@@ -1,0 +1,54 @@
+{
+ "claim_id": "CLM-2025-000120",
+ "scenario": "mt_flood_23",
+ "product": "motor",
+ "policy_number": "MT-2025-00044",
+ "loss_date": "2025-09-04",
+ "reported_at": "2025-09-13",
+ "fnol_text": "My name is Dana Quinlan and I live at 788 Cedar Lane, Dover, DE 19984. You can reach me on (555) 325-3876 or dana.quinlan@example.com. On 4 September 2025 flash flooding came down the street while my car was parked at home. Water got into the cabin and the engine won't start. Policy MT-2025-00044. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Quinlan on (555) 325-3876 to acknowledge the claim. Dana confirmed the loss date as 4 September 2025."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Aisha Laurent gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Dana sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2203: dashboard warning lights",
+  "IMG_2201: front passenger side damage"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MFL-23 §2.1",
+  "clause": "MFL-23 §2.1",
+  "endorsement_set": "MEND-2023",
+  "limits": {
+   "coverage": "flood",
+   "deductible": 750,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MFL-23 §2.1"
+  },
+  "assessed_loss": 17250,
+  "amount_paid": 16500
+ },
+ "pii": {
+  "claimant_name": "Dana Quinlan",
+  "address": "788 Cedar Lane, Dover, DE 19984",
+  "street": "788 Cedar Lane",
+  "phone": "(555) 325-3876",
+  "email": "dana.quinlan@example.com",
+  "other_people": [
+   "Aisha Laurent",
+   "Nikhil Mbeki"
+  ],
+  "injuries": []
+ }
+}

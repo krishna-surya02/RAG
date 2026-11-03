@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2026-000078",
+ "scenario": "mt_hail",
+ "product": "motor",
+ "policy_number": "MT-2023-00122",
+ "loss_date": "2026-07-30",
+ "reported_at": "2026-08-04",
+ "fnol_text": "My name is Anika Yilmaz and I live at 353 Juniper Drive, Dover, DE 19923. You can reach me on (555) 482-3585 or anika.yilmaz@example.com. A hailstorm on 30 July 2026 left dozens of dents across the roof, bonnet and boot of my car. Policy MT-2023-00122. I'd like to claim for the damage to my car. Please just tell me this is covered.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Yilmaz on (555) 482-3585 to acknowledge the claim. Anika confirmed the loss date as 30 July 2026."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Marcus Moreau gave a statement by phone."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2201: front passenger side damage",
+  "IMG_2203: dashboard warning lights"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MHA-25 §1",
+  "clause": "MHA-25 §1",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "hail",
+   "deductible": 500,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MHA-25 §1"
+  },
+  "assessed_loss": 1450,
+  "amount_paid": 950
+ },
+ "pii": {
+  "claimant_name": "Anika Yilmaz",
+  "address": "353 Juniper Drive, Dover, DE 19923",
+  "street": "353 Juniper Drive",
+  "phone": "(555) 482-3585",
+  "email": "anika.yilmaz@example.com",
+  "other_people": [
+   "Marcus Moreau",
+   "Aisha Ballard"
+  ],
+  "injuries": []
+ }
+}

@@ -1,0 +1,51 @@
+{
+ "claim_id": "CLM-2026-000021",
+ "scenario": "hh_gradual_leak",
+ "product": "household",
+ "policy_number": "HH-2025-00079",
+ "loss_date": "2026-02-26",
+ "reported_at": "2026-03-06",
+ "fnol_text": "My name is Grace Jovanovic and I live at 238 Oakridge Drive, Springfield, OH 45581. You can reach me on (555) 603-1061 or grace.jovanovic@example.com. Damp patch on the ceiling below the bath that has been growing since the spring; on 26 February 2026 part of the plaster came down. The plumber says the waste pipe has dripped for a long time. Policy HH-2025-00079. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Jovanovic on (555) 603-1061 to acknowledge the claim. Grace confirmed the loss date as 26 February 2026."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 238 Oakridge Drive. Neighbour Leah Wojcik was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0417: damaged furniture stacked in the garage"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:HX-1",
+  "clause": "HX-1",
+  "endorsement_set": "HEND-2025",
+  "limits": {
+   "coverage": "escape_of_water",
+   "deductible": 1500,
+   "sub_limit": null,
+   "policy_limit": 600000,
+   "source": "HH-PW §1.7"
+  },
+  "assessed_loss": 20900,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Grace Jovanovic",
+  "address": "238 Oakridge Drive, Springfield, OH 45581",
+  "street": "238 Oakridge Drive",
+  "phone": "(555) 603-1061",
+  "email": "grace.jovanovic@example.com",
+  "other_people": [
+   "Leah Wojcik",
+   "Anika Moreau"
+  ],
+  "injuries": []
+ }
+}

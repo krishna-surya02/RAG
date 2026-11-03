@@ -1,0 +1,51 @@
+{
+ "claim_id": "CLM-2026-000037",
+ "scenario": "hh_storm_roof",
+ "product": "household",
+ "policy_number": "HH-2023-00075",
+ "loss_date": "2026-04-26",
+ "reported_at": "2026-05-04",
+ "fnol_text": "My name is Gabriel Ballard and I live at 767 Marigold Street, Salem, MA 01922. You can reach me on (555) 241-6910 or gabriel.ballard@example.com. During the storm on 26 April 2026 high winds ripped tiles off the roof and rain came into the loft and the back bedroom. Policy HH-2023-00075. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Ballard on (555) 241-6910 to acknowledge the claim. Gabriel confirmed the loss date as 26 April 2026."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 767 Marigold Street. Neighbour Viktor Whitfield was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0413: water line on the skirting boards"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:HH-PW §1.5",
+  "clause": "HH-PW §1.5",
+  "endorsement_set": "HEND-2025",
+  "limits": {
+   "coverage": "storm",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 600000,
+   "source": "HH-PW §1.5"
+  },
+  "assessed_loss": 13850,
+  "amount_paid": 12850
+ },
+ "pii": {
+  "claimant_name": "Gabriel Ballard",
+  "address": "767 Marigold Street, Salem, MA 01922",
+  "street": "767 Marigold Street",
+  "phone": "(555) 241-6910",
+  "email": "gabriel.ballard@example.com",
+  "other_people": [
+   "Viktor Whitfield",
+   "Olusegun Ueda"
+  ],
+  "injuries": []
+ }
+}

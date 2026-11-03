@@ -1,0 +1,44 @@
+{
+ "claim_id": "CLM-2024-000027",
+ "scenario": "not_in_force",
+ "product": "household",
+ "policy_number": "HH-2025-00098",
+ "loss_date": "2024-04-17",
+ "reported_at": "2024-04-24",
+ "fnol_text": "My name is Ines Lindqvist and I live at 694 Sycamore Close, Springfield, OH 45557. You can reach me on (555) 432-4175 or ines.lindqvist@example.com. On 17 April 2024 a pipe under the upstairs bathroom burst while we were out and water came through the kitchen ceiling. Policy HH-2025-00098. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Lindqvist on (555) 432-4175 to acknowledge the claim. Ines confirmed the loss date as 17 April 2024."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 694 Sycamore Close. Neighbour Grace Castillo was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0413: water line on the skirting boards"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "NOT_IN_FORCE",
+  "clause": null,
+  "endorsement_set": null,
+  "limits": null,
+  "assessed_loss": 24200,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Ines Lindqvist",
+  "address": "694 Sycamore Close, Springfield, OH 45557",
+  "street": "694 Sycamore Close",
+  "phone": "(555) 432-4175",
+  "email": "ines.lindqvist@example.com",
+  "other_people": [
+   "Grace Castillo",
+   "Hannah Novak"
+  ],
+  "injuries": []
+ }
+}

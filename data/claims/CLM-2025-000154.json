@@ -1,0 +1,55 @@
+{
+ "claim_id": "CLM-2025-000154",
+ "scenario": "mt_flood_warning_25",
+ "product": "motor",
+ "policy_number": "MT-2024-00088",
+ "loss_date": "2025-11-19",
+ "reported_at": "2025-11-26",
+ "fnol_text": "My name is Hannah Oyelaran and I live at 550 Kestrel Close, Clinton, NC 28390. You can reach me on (555) 488-3560 or hannah.oyelaran@example.com. There was a flood warning for our area from the day before, but I left the car parked on the street by the river. On 19 November 2025 the water rose and the car was flooded up to the seats. Policy MT-2024-00088. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Oyelaran on (555) 488-3560 to acknowledge the claim. Hannah confirmed the loss date as 19 November 2025."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Arjun Ishikawa gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Hannah sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2201: front passenger side damage",
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2203: dashboard warning lights"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:MFL-25 §2.2",
+  "clause": "MFL-25 §2.2",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "flood",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MFL-25 §2.4"
+  },
+  "assessed_loss": 14900,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Hannah Oyelaran",
+  "address": "550 Kestrel Close, Clinton, NC 28390",
+  "street": "550 Kestrel Close",
+  "phone": "(555) 488-3560",
+  "email": "hannah.oyelaran@example.com",
+  "other_people": [
+   "Arjun Ishikawa",
+   "Esther Jovanovic"
+  ],
+  "injuries": []
+ }
+}

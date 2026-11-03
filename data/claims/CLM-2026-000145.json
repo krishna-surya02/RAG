@@ -1,0 +1,56 @@
+{
+ "claim_id": "CLM-2026-000145",
+ "scenario": "mt_collision_tpft",
+ "product": "motor",
+ "policy_number": "MT-2024-00127",
+ "loss_date": "2026-10-26",
+ "reported_at": "2026-11-01",
+ "fnol_text": "My name is Sofia Achebe and I live at 571 Larkspur Street, Riverton, WY 82570. You can reach me on (555) 221-1789 or sofia.achebe@example.com. On 26 October 2026 another car pulled out of a side road and hit my front passenger side. The other driver, Yusuf Oyelaran, admitted they didn't see me. Policy MT-2024-00127. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Achebe on (555) 221-1789 to acknowledge the claim. Sofia confirmed the loss date as 26 October 2026."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Rosa Santos gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Third-party driver Yusuf Oyelaran reports lower back strain and attended Riverside Medical Center. Sofia reports lower back strain."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2201: front passenger side damage",
+  "IMG_2207: vehicle on the recovery truck"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:MT-PW §1.2",
+  "clause": "MT-PW §1.2",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "own_damage",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §3.1"
+  },
+  "assessed_loss": 13950,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Sofia Achebe",
+  "address": "571 Larkspur Street, Riverton, WY 82570",
+  "street": "571 Larkspur Street",
+  "phone": "(555) 221-1789",
+  "email": "sofia.achebe@example.com",
+  "other_people": [
+   "Rosa Santos",
+   "Yusuf Oyelaran"
+  ],
+  "injuries": [
+   "lower back strain"
+  ]
+ }
+}

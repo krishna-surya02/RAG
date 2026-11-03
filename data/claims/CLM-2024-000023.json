@@ -1,0 +1,54 @@
+{
+ "claim_id": "CLM-2024-000023",
+ "scenario": "mt_flood_23",
+ "product": "motor",
+ "policy_number": "MT-2023-00122",
+ "loss_date": "2024-04-07",
+ "reported_at": "2024-04-14",
+ "fnol_text": "My name is Anika Yilmaz and I live at 353 Juniper Drive, Dover, DE 19923. You can reach me on (555) 482-3585 or anika.yilmaz@example.com. On 7 April 2024 flash flooding came down the street while my car was parked at home. Water got into the cabin and the engine won't start. Policy MT-2023-00122. I'd like to claim for the damage to my car. Am I insured for this or not?",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Yilmaz on (555) 482-3585 to acknowledge the claim. Anika confirmed the loss date as 7 April 2024."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Nikhil Wojcik gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Anika sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2201: front passenger side damage"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MFL-23 §2.1",
+  "clause": "MFL-23 §2.1",
+  "endorsement_set": "MEND-2023",
+  "limits": {
+   "coverage": "flood",
+   "deductible": 750,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MFL-23 §2.1"
+  },
+  "assessed_loss": 11100,
+  "amount_paid": 10350
+ },
+ "pii": {
+  "claimant_name": "Anika Yilmaz",
+  "address": "353 Juniper Drive, Dover, DE 19923",
+  "street": "353 Juniper Drive",
+  "phone": "(555) 482-3585",
+  "email": "anika.yilmaz@example.com",
+  "other_people": [
+   "Nikhil Wojcik",
+   "Marcus Oyelaran"
+  ],
+  "injuries": []
+ }
+}

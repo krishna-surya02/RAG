@@ -1,0 +1,45 @@
+{
+ "claim_id": "CLM-2024-000047",
+ "scenario": "not_in_force",
+ "product": "motor",
+ "policy_number": "MT-2024-00145",
+ "loss_date": "2024-07-02",
+ "reported_at": "2024-07-10",
+ "fnol_text": "My name is Tomas Kaminski and I live at 767 Elmstead Way, Clinton, NC 28352. You can reach me on (555) 675-6461 or tomas.kaminski@example.com. A stone thrown up by a lorry cracked my windscreen right across on 2 July 2024. Policy MT-2024-00145. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Kaminski on (555) 675-6461 to acknowledge the claim. Tomas confirmed the loss date as 2 July 2024."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Viktor Castillo gave a statement by phone."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2201: front passenger side damage",
+  "IMG_2203: dashboard warning lights",
+  "IMG_2207: vehicle on the recovery truck"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "NOT_IN_FORCE",
+  "clause": null,
+  "endorsement_set": null,
+  "limits": null,
+  "assessed_loss": 1350,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Tomas Kaminski",
+  "address": "767 Elmstead Way, Clinton, NC 28352",
+  "street": "767 Elmstead Way",
+  "phone": "(555) 675-6461",
+  "email": "tomas.kaminski@example.com",
+  "other_people": [
+   "Viktor Castillo",
+   "Rafael Kaminski"
+  ],
+  "injuries": []
+ }
+}

@@ -1,0 +1,54 @@
+{
+ "claim_id": "CLM-2026-000080",
+ "scenario": "mt_flood_warning_25",
+ "product": "motor",
+ "policy_number": "MT-2025-00040",
+ "loss_date": "2026-08-02",
+ "reported_at": "2026-08-10",
+ "fnol_text": "My name is Ingrid Nguyen-Tran and I live at 638 Primrose Drive, Riverton, WY 82572. You can reach me on (555) 906-9168 or ingrid.nguyentran@example.com. There was a flood warning for our area from the day before, but I left the car parked on the street by the river. On 2 August 2026 the water rose and the car was flooded up to the seats. Policy MT-2025-00040. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Nguyen-Tran on (555) 906-9168 to acknowledge the claim. Ingrid confirmed the loss date as 2 August 2026."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Zara Gallagher gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Ingrid sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2201: front passenger side damage",
+  "IMG_2203: dashboard warning lights"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:MFL-25 §2.2",
+  "clause": "MFL-25 §2.2",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "flood",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MFL-25 §2.4"
+  },
+  "assessed_loss": 19500,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Ingrid Nguyen-Tran",
+  "address": "638 Primrose Drive, Riverton, WY 82572",
+  "street": "638 Primrose Drive",
+  "phone": "(555) 906-9168",
+  "email": "ingrid.nguyentran@example.com",
+  "other_people": [
+   "Zara Gallagher",
+   "Priya Abernathy"
+  ],
+  "injuries": []
+ }
+}

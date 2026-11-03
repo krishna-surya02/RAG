@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2025-000080",
+ "scenario": "hh_escape_of_water",
+ "product": "household",
+ "policy_number": "HH-2024-00045",
+ "loss_date": "2025-06-13",
+ "reported_at": "2025-06-15",
+ "fnol_text": "My name is Zara Rasmussen and I live at 716 Ashford Avenue, Fairview, PA 16474. You can reach me on (555) 722-2276 or zara.rasmussen@example.com. On 13 June 2025 a pipe under the upstairs bathroom burst while we were out and water came through the kitchen ceiling. Policy HH-2024-00045. I'd like to claim for the damage to my home. Am I insured for this or not?",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Rasmussen on (555) 722-2276 to acknowledge the claim. Zara confirmed the loss date as 13 June 2025."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 716 Ashford Avenue. Neighbour Maya Herrera was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0413: water line on the skirting boards"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:HH-PW §1.7",
+  "clause": "HH-PW §1.7",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "escape_of_water",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 500000,
+   "source": "HH-PW §1.7"
+  },
+  "assessed_loss": 8050,
+  "amount_paid": 7050
+ },
+ "pii": {
+  "claimant_name": "Zara Rasmussen",
+  "address": "716 Ashford Avenue, Fairview, PA 16474",
+  "street": "716 Ashford Avenue",
+  "phone": "(555) 722-2276",
+  "email": "zara.rasmussen@example.com",
+  "other_people": [
+   "Maya Herrera",
+   "Grace Brennan"
+  ],
+  "injuries": []
+ }
+}

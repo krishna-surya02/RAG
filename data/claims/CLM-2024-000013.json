@@ -1,0 +1,55 @@
+{
+ "claim_id": "CLM-2024-000013",
+ "scenario": "hh_surface_water_23",
+ "product": "household",
+ "policy_number": "HH-2023-00145",
+ "loss_date": "2024-02-19",
+ "reported_at": "2024-02-24",
+ "fnol_text": "My name is Dmitri Al-Sayed and I live at 824 Juniper Way, Ashland, OR 97548. You can reach me on (555) 764-1688 or dmitri.alsayed@example.com. After the torrential rain on the night of 19 February 2024, rainwater ran off the field behind us, across the back garden and in under the patio doors. About 5 cm of water covered the kitchen and family room floors. Policy HH-2023-00145. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Al-Sayed on (555) 764-1688 to acknowledge the claim. Dmitri confirmed the loss date as 19 February 2024."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 824 Juniper Way. Neighbour Samuel Whitlock was present and confirmed the timeline."
+  },
+  {
+   "n": 3,
+   "text": "Dmitri sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0412: ground floor with standing water and wet carpets"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:HFL-23 §2.2",
+  "clause": "HFL-23 §2.2",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "flood_surface_water",
+   "deductible": 2500,
+   "sub_limit": 15000,
+   "policy_limit": 500000,
+   "source": "HFL-23 §2.2, §2.3; HSL-23 §1"
+  },
+  "assessed_loss": 7000,
+  "amount_paid": 4500
+ },
+ "pii": {
+  "claimant_name": "Dmitri Al-Sayed",
+  "address": "824 Juniper Way, Ashland, OR 97548",
+  "street": "824 Juniper Way",
+  "phone": "(555) 764-1688",
+  "email": "dmitri.alsayed@example.com",
+  "other_people": [
+   "Samuel Whitlock",
+   "Rafael Nakamura"
+  ],
+  "injuries": []
+ }
+}

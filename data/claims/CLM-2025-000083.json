@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2025-000083",
+ "scenario": "hh_below_deductible",
+ "product": "household",
+ "policy_number": "HH-2024-00163",
+ "loss_date": "2025-06-20",
+ "reported_at": "2025-06-21",
+ "fnol_text": "My name is Ravi Varga and I live at 265 Briar Terrace, Fairview, PA 16423. You can reach me on (555) 472-2274 or ravi.varga@example.com. On 20 June 2025 the dishwasher leaked suddenly and stained a small area of the kitchen floor. Policy HH-2024-00163. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Varga on (555) 472-2274 to acknowledge the claim. Ravi confirmed the loss date as 20 June 2025."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 265 Briar Terrace. Neighbour Priya Okafor was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0413: water line on the skirting boards"
+ ],
+ "final_decision": {
+  "outcome": "no_payment",
+  "reason_code": "BELOW_DEDUCTIBLE:HH-PW §1.7",
+  "clause": "HH-PW §1.7",
+  "endorsement_set": "HEND-2025",
+  "limits": {
+   "coverage": "escape_of_water",
+   "deductible": 1500,
+   "sub_limit": null,
+   "policy_limit": 600000,
+   "source": "HH-PW §1.7"
+  },
+  "assessed_loss": 800,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Ravi Varga",
+  "address": "265 Briar Terrace, Fairview, PA 16423",
+  "street": "265 Briar Terrace",
+  "phone": "(555) 472-2274",
+  "email": "ravi.varga@example.com",
+  "other_people": [
+   "Priya Okafor",
+   "Rosa Whitlock"
+  ],
+  "injuries": []
+ }
+}

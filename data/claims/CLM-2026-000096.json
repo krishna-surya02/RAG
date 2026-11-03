@@ -1,0 +1,58 @@
+{
+ "claim_id": "CLM-2026-000096",
+ "scenario": "mt_collision",
+ "product": "motor",
+ "policy_number": "MT-2025-00084",
+ "loss_date": "2026-08-31",
+ "reported_at": "2026-09-08",
+ "fnol_text": "My name is Kwame Ferreira and I live at 787 Foxglove Place, Milton, VT 05456. You can reach me on (555) 517-3892 or kwame.ferreira@example.com. On 31 August 2026 another car pulled out of a side road and hit my front passenger side. The other driver, Yusuf Whitfield, admitted they didn't see me. Policy MT-2025-00084. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Ferreira on (555) 517-3892 to acknowledge the claim. Kwame confirmed the loss date as 31 August 2026."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Jordan Yilmaz gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Third-party driver Yusuf Whitfield reports whiplash and attended St. Brendan's Hospital. Kwame reports lacerations to the forearm."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2203: dashboard warning lights",
+  "IMG_2201: front passenger side damage",
+  "IMG_2207: vehicle on the recovery truck"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §3.1",
+  "clause": "MT-PW §3.1",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "own_damage",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §3.1"
+  },
+  "assessed_loss": 21950,
+  "amount_paid": 20950
+ },
+ "pii": {
+  "claimant_name": "Kwame Ferreira",
+  "address": "787 Foxglove Place, Milton, VT 05456",
+  "street": "787 Foxglove Place",
+  "phone": "(555) 517-3892",
+  "email": "kwame.ferreira@example.com",
+  "other_people": [
+   "Jordan Yilmaz",
+   "Yusuf Whitfield"
+  ],
+  "injuries": [
+   "whiplash",
+   "lacerations to the forearm"
+  ]
+ }
+}

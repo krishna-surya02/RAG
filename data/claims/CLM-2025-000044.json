@@ -1,0 +1,55 @@
+{
+ "claim_id": "CLM-2025-000044",
+ "scenario": "hh_surface_water_23",
+ "product": "household",
+ "policy_number": "HH-2024-00135",
+ "loss_date": "2025-04-04",
+ "reported_at": "2025-04-12",
+ "fnol_text": "My name is Leila Pereira and I live at 929 Sycamore Drive, Ashland, OR 97528. You can reach me on (555) 771-6331 or leila.pereira@example.com. Heavy rain all afternoon on 4 April 2025. Water pooled on the lawn and then came into the lounge at floor level. Carpets and the sofa are soaked. Policy HH-2024-00135. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Pereira on (555) 771-6331 to acknowledge the claim. Leila confirmed the loss date as 4 April 2025."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 929 Sycamore Drive. Neighbour Felix Quinlan was present and confirmed the timeline."
+  },
+  {
+   "n": 3,
+   "text": "Leila sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0413: water line on the skirting boards"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:HFL-23 §2.2",
+  "clause": "HFL-23 §2.2",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "flood_surface_water",
+   "deductible": 2500,
+   "sub_limit": 15000,
+   "policy_limit": 500000,
+   "source": "HFL-23 §2.2, §2.3; HSL-23 §1"
+  },
+  "assessed_loss": 9350,
+  "amount_paid": 6850
+ },
+ "pii": {
+  "claimant_name": "Leila Pereira",
+  "address": "929 Sycamore Drive, Ashland, OR 97528",
+  "street": "929 Sycamore Drive",
+  "phone": "(555) 771-6331",
+  "email": "leila.pereira@example.com",
+  "other_people": [
+   "Felix Quinlan",
+   "Ravi Whitfield"
+  ],
+  "injuries": []
+ }
+}

@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2025-000156",
+ "scenario": "hh_escape_of_water",
+ "product": "household",
+ "policy_number": "HH-2025-00108",
+ "loss_date": "2025-11-26",
+ "reported_at": "2025-11-28",
+ "fnol_text": "My name is Ravi Gallagher and I live at 233 Sycamore Drive, Salem, MA 01957. You can reach me on (555) 967-7770 or ravi.gallagher@example.com. On 26 November 2025 a pipe under the upstairs bathroom burst while we were out and water came through the kitchen ceiling. Policy HH-2025-00108. I'd like to claim for the damage to my home. Can you confirm I'm covered for this?",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Gallagher on (555) 967-7770 to acknowledge the claim. Ravi confirmed the loss date as 26 November 2025."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 233 Sycamore Drive. Neighbour Callum Haddad was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0413: water line on the skirting boards"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:HH-PW §1.7",
+  "clause": "HH-PW §1.7",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "escape_of_water",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 500000,
+   "source": "HH-PW §1.7"
+  },
+  "assessed_loss": 24100,
+  "amount_paid": 23100
+ },
+ "pii": {
+  "claimant_name": "Ravi Gallagher",
+  "address": "233 Sycamore Drive, Salem, MA 01957",
+  "street": "233 Sycamore Drive",
+  "phone": "(555) 967-7770",
+  "email": "ravi.gallagher@example.com",
+  "other_people": [
+   "Callum Haddad",
+   "Arjun Ueda"
+  ],
+  "injuries": []
+ }
+}

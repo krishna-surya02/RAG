@@ -1,0 +1,51 @@
+{
+ "claim_id": "CLM-2025-000006",
+ "scenario": "hh_gradual_leak",
+ "product": "household",
+ "policy_number": "HH-2024-00036",
+ "loss_date": "2025-01-09",
+ "reported_at": "2025-01-14",
+ "fnol_text": "My name is Viktor Yilmaz and I live at 924 Linden Lane, Madison, WI 53723. You can reach me on (555) 892-9737 or viktor.yilmaz@example.com. Damp patch on the ceiling below the bath that has been growing since the spring; on 9 January 2025 part of the plaster came down. The plumber says the waste pipe has dripped for a long time. Policy HH-2024-00036. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Yilmaz on (555) 892-9737 to acknowledge the claim. Viktor confirmed the loss date as 9 January 2025."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 924 Linden Lane. Neighbour Rafael Delgado was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0412: ground floor with standing water and wet carpets"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:HX-1",
+  "clause": "HX-1",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "escape_of_water",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 500000,
+   "source": "HH-PW §1.7"
+  },
+  "assessed_loss": 20900,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Viktor Yilmaz",
+  "address": "924 Linden Lane, Madison, WI 53723",
+  "street": "924 Linden Lane",
+  "phone": "(555) 892-9737",
+  "email": "viktor.yilmaz@example.com",
+  "other_people": [
+   "Rafael Delgado",
+   "Callum Vasquez"
+  ],
+  "injuries": []
+ }
+}

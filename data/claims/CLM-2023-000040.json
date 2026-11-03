@@ -1,0 +1,44 @@
+{
+ "claim_id": "CLM-2023-000040",
+ "scenario": "not_in_force",
+ "product": "household",
+ "policy_number": "HH-2025-00118",
+ "loss_date": "2023-10-09",
+ "reported_at": "2023-10-12",
+ "fnol_text": "My name is Grace Thorne and I live at 561 Sycamore Drive, Madison, WI 53782. You can reach me on (555) 953-8676 or grace.thorne@example.com. Our house was broken into on 9 October 2023. The back door was forced and a laptop, jewellery and a television were taken. Policy HH-2025-00118. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Thorne on (555) 953-8676 to acknowledge the claim. Grace confirmed the loss date as 9 October 2023."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 561 Sycamore Drive. Neighbour Fatima Delgado was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0417: damaged furniture stacked in the garage"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "NOT_IN_FORCE",
+  "clause": null,
+  "endorsement_set": null,
+  "limits": null,
+  "assessed_loss": 7700,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Grace Thorne",
+  "address": "561 Sycamore Drive, Madison, WI 53782",
+  "street": "561 Sycamore Drive",
+  "phone": "(555) 953-8676",
+  "email": "grace.thorne@example.com",
+  "other_people": [
+   "Fatima Delgado",
+   "Ingrid Whitlock"
+  ],
+  "injuries": []
+ }
+}

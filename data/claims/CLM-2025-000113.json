@@ -1,0 +1,57 @@
+{
+ "claim_id": "CLM-2025-000113",
+ "scenario": "mt_collision_tpft",
+ "product": "motor",
+ "policy_number": "MT-2025-00070",
+ "loss_date": "2025-08-18",
+ "reported_at": "2025-08-21",
+ "fnol_text": "My name is Leila Varga and I live at 968 Rowan Street, Milton, VT 05479. You can reach me on (555) 858-8586 or leila.varga@example.com. I was stopped at lights on 18 August 2025 when the car behind, driven by Leah Mbeki, went into the back of mine. Rear bumper and boot are badly damaged. Policy MT-2025-00070. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Varga on (555) 858-8586 to acknowledge the claim. Leila confirmed the loss date as 18 August 2025."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Amara Oduya gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Third-party driver Leah Mbeki reports a sprained wrist and attended St. Brendan's Hospital. Leila reports bruised ribs."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2201: front passenger side damage"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:MT-PW §1.2",
+  "clause": "MT-PW §1.2",
+  "endorsement_set": "MEND-2023",
+  "limits": {
+   "coverage": "own_damage",
+   "deductible": 750,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §3.1"
+  },
+  "assessed_loss": 18950,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Leila Varga",
+  "address": "968 Rowan Street, Milton, VT 05479",
+  "street": "968 Rowan Street",
+  "phone": "(555) 858-8586",
+  "email": "leila.varga@example.com",
+  "other_people": [
+   "Amara Oduya",
+   "Leah Mbeki"
+  ],
+  "injuries": [
+   "a sprained wrist",
+   "bruised ribs"
+  ]
+ }
+}

@@ -1,0 +1,45 @@
+{
+ "claim_id": "CLM-2023-000006",
+ "scenario": "not_in_force",
+ "product": "household",
+ "policy_number": "HH-2024-00094",
+ "loss_date": "2023-04-21",
+ "reported_at": "2023-04-30",
+ "fnol_text": "My name is Hiroshi Laurent and I live at 295 Oakridge Drive, Greenville, SC 29679. You can reach me on (555) 213-6033 or hiroshi.laurent@example.com. During the storm on 21 April 2023 high winds ripped tiles off the roof and rain came into the loft and the back bedroom. Policy HH-2024-00094. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Laurent on (555) 213-6033 to acknowledge the claim. Hiroshi confirmed the loss date as 21 April 2023."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 295 Oakridge Drive. Neighbour Valentina Achebe was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0417: damaged furniture stacked in the garage"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "NOT_IN_FORCE",
+  "clause": null,
+  "endorsement_set": null,
+  "limits": null,
+  "assessed_loss": 23150,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Hiroshi Laurent",
+  "address": "295 Oakridge Drive, Greenville, SC 29679",
+  "street": "295 Oakridge Drive",
+  "phone": "(555) 213-6033",
+  "email": "hiroshi.laurent@example.com",
+  "other_people": [
+   "Valentina Achebe",
+   "Rosa Zielinski"
+  ],
+  "injuries": []
+ }
+}

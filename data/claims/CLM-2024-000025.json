@@ -1,0 +1,44 @@
+{
+ "claim_id": "CLM-2024-000025",
+ "scenario": "not_in_force",
+ "product": "motor",
+ "policy_number": "MT-2025-00110",
+ "loss_date": "2024-04-07",
+ "reported_at": "2024-04-07",
+ "fnol_text": "My name is Kwame Mensah and I live at 303 Primrose Drive, Riverton, WY 82552. You can reach me on (555) 922-1753 or kwame.mensah@example.com. A stone thrown up by a lorry cracked my windscreen right across on 7 April 2024. Policy MT-2025-00110. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Mensah on (555) 922-1753 to acknowledge the claim. Kwame confirmed the loss date as 7 April 2024."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Gabriel Lindqvist gave a statement by phone."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2203: dashboard warning lights",
+  "IMG_2201: front passenger side damage"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "NOT_IN_FORCE",
+  "clause": null,
+  "endorsement_set": null,
+  "limits": null,
+  "assessed_loss": 800,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Kwame Mensah",
+  "address": "303 Primrose Drive, Riverton, WY 82552",
+  "street": "303 Primrose Drive",
+  "phone": "(555) 922-1753",
+  "email": "kwame.mensah@example.com",
+  "other_people": [
+   "Gabriel Lindqvist",
+   "Aisha Ishikawa"
+  ],
+  "injuries": []
+ }
+}

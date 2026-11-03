@@ -1,0 +1,51 @@
+{
+ "claim_id": "CLM-2026-000092",
+ "scenario": "mt_windscreen",
+ "product": "motor",
+ "policy_number": "MT-2024-00126",
+ "loss_date": "2026-08-26",
+ "reported_at": "2026-09-03",
+ "fnol_text": "My name is Aisha Santos and I live at 785 Juniper Lane, Ashland, OR 97540. You can reach me on (555) 388-7496 or aisha.santos@example.com. A stone thrown up by a lorry cracked my windscreen right across on 26 August 2026. Policy MT-2024-00126. I'd like to claim for the damage to my car. Please just tell me this is covered.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Santos on (555) 388-7496 to acknowledge the claim. Aisha confirmed the loss date as 26 August 2026."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Amara Mensah gave a statement by phone."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2203: dashboard warning lights",
+  "IMG_2201: front passenger side damage"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §4.1",
+  "clause": "MT-PW §4.1",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "windscreen",
+   "deductible": 150,
+   "sub_limit": 1500,
+   "policy_limit": 60000,
+   "source": "MT-PW §4.1; MWS-25 §1"
+  },
+  "assessed_loss": 250,
+  "amount_paid": 100
+ },
+ "pii": {
+  "claimant_name": "Aisha Santos",
+  "address": "785 Juniper Lane, Ashland, OR 97540",
+  "street": "785 Juniper Lane",
+  "phone": "(555) 388-7496",
+  "email": "aisha.santos@example.com",
+  "other_people": [
+   "Amara Mensah",
+   "Jordan Lindqvist"
+  ],
+  "injuries": []
+ }
+}

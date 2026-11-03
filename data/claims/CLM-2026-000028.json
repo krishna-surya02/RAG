@@ -1,0 +1,58 @@
+{
+ "claim_id": "CLM-2026-000028",
+ "scenario": "mt_collision",
+ "product": "motor",
+ "policy_number": "MT-2023-00128",
+ "loss_date": "2026-03-27",
+ "reported_at": "2026-03-29",
+ "fnol_text": "My name is Marcus Ishikawa and I live at 777 Alder Road, Milton, VT 05436. You can reach me on (555) 945-7867 or marcus.ishikawa@example.com. On 27 March 2026 another car pulled out of a side road and hit my front passenger side. The other driver, Nikhil Ferreira, admitted they didn't see me. Policy MT-2023-00128. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Ishikawa on (555) 945-7867 to acknowledge the claim. Marcus confirmed the loss date as 27 March 2026."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Ravi Mensah gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Third-party driver Nikhil Ferreira reports lower back strain and attended County General. Marcus reports whiplash."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2201: front passenger side damage",
+  "IMG_2203: dashboard warning lights",
+  "IMG_2207: vehicle on the recovery truck"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §3.1",
+  "clause": "MT-PW §3.1",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "own_damage",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §3.1"
+  },
+  "assessed_loss": 5950,
+  "amount_paid": 4950
+ },
+ "pii": {
+  "claimant_name": "Marcus Ishikawa",
+  "address": "777 Alder Road, Milton, VT 05436",
+  "street": "777 Alder Road",
+  "phone": "(555) 945-7867",
+  "email": "marcus.ishikawa@example.com",
+  "other_people": [
+   "Ravi Mensah",
+   "Nikhil Ferreira"
+  ],
+  "injuries": [
+   "lower back strain",
+   "whiplash"
+  ]
+ }
+}

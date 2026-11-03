@@ -1,0 +1,45 @@
+{
+ "claim_id": "CLM-2025-000146",
+ "scenario": "not_in_force",
+ "product": "motor",
+ "policy_number": "MT-2023-00015",
+ "loss_date": "2025-11-02",
+ "reported_at": "2025-11-08",
+ "fnol_text": "My name is Rafael Wojcik and I live at 492 Marigold Drive, Riverton, WY 82525. You can reach me on (555) 628-9370 or rafael.wojcik@example.com. A stone thrown up by a lorry cracked my windscreen right across on 2 November 2025. Policy MT-2023-00015. I'd like to claim for the damage to my car. Can you confirm I'm covered for this?",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Wojcik on (555) 628-9370 to acknowledge the claim. Rafael confirmed the loss date as 2 November 2025."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Amara Lindqvist gave a statement by phone."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2203: dashboard warning lights",
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2201: front passenger side damage"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "NOT_IN_FORCE",
+  "clause": null,
+  "endorsement_set": null,
+  "limits": null,
+  "assessed_loss": 1750,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Rafael Wojcik",
+  "address": "492 Marigold Drive, Riverton, WY 82525",
+  "street": "492 Marigold Drive",
+  "phone": "(555) 628-9370",
+  "email": "rafael.wojcik@example.com",
+  "other_people": [
+   "Amara Lindqvist",
+   "Amara McBride"
+  ],
+  "injuries": []
+ }
+}

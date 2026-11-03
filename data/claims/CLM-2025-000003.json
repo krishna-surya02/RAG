@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2025-000003",
+ "scenario": "hh_escape_of_water",
+ "product": "household",
+ "policy_number": "HH-2023-00014",
+ "loss_date": "2025-01-04",
+ "reported_at": "2025-01-12",
+ "fnol_text": "My name is Esther Brennan and I live at 223 Primrose Close, Springfield, OH 45521. You can reach me on (555) 907-2701 or esther.brennan@example.com. On 4 January 2025 a pipe under the upstairs bathroom burst while we were out and water came through the kitchen ceiling. Policy HH-2023-00014. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Brennan on (555) 907-2701 to acknowledge the claim. Esther confirmed the loss date as 4 January 2025."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 223 Primrose Close. Neighbour Esther Abernathy was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0417: damaged furniture stacked in the garage"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:HH-PW §1.7",
+  "clause": "HH-PW §1.7",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "escape_of_water",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 500000,
+   "source": "HH-PW §1.7"
+  },
+  "assessed_loss": 19700,
+  "amount_paid": 18700
+ },
+ "pii": {
+  "claimant_name": "Esther Brennan",
+  "address": "223 Primrose Close, Springfield, OH 45521",
+  "street": "223 Primrose Close",
+  "phone": "(555) 907-2701",
+  "email": "esther.brennan@example.com",
+  "other_people": [
+   "Esther Abernathy",
+   "Lucia Whitfield"
+  ],
+  "injuries": []
+ }
+}

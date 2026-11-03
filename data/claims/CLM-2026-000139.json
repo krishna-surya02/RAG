@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2026-000139",
+ "scenario": "mt_windscreen",
+ "product": "motor",
+ "policy_number": "MT-2023-00103",
+ "loss_date": "2026-10-20",
+ "reported_at": "2026-10-28",
+ "fnol_text": "My name is Samuel Okafor and I live at 892 Maple Court, Clinton, NC 28329. You can reach me on (555) 971-7147 or samuel.okafor@example.com. A stone thrown up by a lorry cracked my windscreen right across on 20 October 2026. Policy MT-2023-00103. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Okafor on (555) 971-7147 to acknowledge the claim. Samuel confirmed the loss date as 20 October 2026."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Ingrid Achebe gave a statement by phone."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2201: front passenger side damage",
+  "IMG_2207: vehicle on the recovery truck"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §4.1",
+  "clause": "MT-PW §4.1",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "windscreen",
+   "deductible": 150,
+   "sub_limit": 1500,
+   "policy_limit": 60000,
+   "source": "MT-PW §4.1; MWS-25 §1"
+  },
+  "assessed_loss": 350,
+  "amount_paid": 200
+ },
+ "pii": {
+  "claimant_name": "Samuel Okafor",
+  "address": "892 Maple Court, Clinton, NC 28329",
+  "street": "892 Maple Court",
+  "phone": "(555) 971-7147",
+  "email": "samuel.okafor@example.com",
+  "other_people": [
+   "Ingrid Achebe",
+   "Jordan Pereira"
+  ],
+  "injuries": []
+ }
+}

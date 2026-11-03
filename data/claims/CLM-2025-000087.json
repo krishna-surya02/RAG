@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2025-000087",
+ "scenario": "hh_storm_fence",
+ "product": "household",
+ "policy_number": "HH-2024-00134",
+ "loss_date": "2025-06-27",
+ "reported_at": "2025-07-06",
+ "fnol_text": "My name is Declan Novak and I live at 730 Cedar Terrace, Milton, VT 05437. You can reach me on (555) 989-7615 or declan.novak@example.com. The storm on 27 June 2025 blew down about 20 metres of the garden fence and a gate. Policy HH-2024-00134. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Novak on (555) 989-7615 to acknowledge the claim. Declan confirmed the loss date as 27 June 2025."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 730 Cedar Terrace. Neighbour Tariq Brennan was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0412: ground floor with standing water and wet carpets"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:HX-9",
+  "clause": "HX-9",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "storm",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 500000,
+   "source": "HH-PW §1.5"
+  },
+  "assessed_loss": 3250,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Declan Novak",
+  "address": "730 Cedar Terrace, Milton, VT 05437",
+  "street": "730 Cedar Terrace",
+  "phone": "(555) 989-7615",
+  "email": "declan.novak@example.com",
+  "other_people": [
+   "Tariq Brennan",
+   "Valentina Gallagher"
+  ],
+  "injuries": []
+ }
+}

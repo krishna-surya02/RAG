@@ -1,0 +1,51 @@
+{
+ "claim_id": "CLM-2026-000088",
+ "scenario": "mt_theft_keys",
+ "product": "motor",
+ "policy_number": "MT-2024-00120",
+ "loss_date": "2026-08-11",
+ "reported_at": "2026-08-13",
+ "fnol_text": "My name is Maya Quinlan and I live at 389 Cedar Close, Riverton, WY 82574. You can reach me on (555) 919-8072 or maya.quinlan@example.com. I left the engine running with the keys in while I ran into the shop on 11 August 2026 and someone drove off in my car. Policy MT-2024-00120. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Quinlan on (555) 919-8072 to acknowledge the claim. Maya confirmed the loss date as 11 August 2026."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Elena Kowalski gave a statement by phone."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2203: dashboard warning lights",
+  "IMG_2201: front passenger side damage"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:MX-6",
+  "clause": "MX-6",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "theft",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §2.2"
+  },
+  "assessed_loss": 5200,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Maya Quinlan",
+  "address": "389 Cedar Close, Riverton, WY 82574",
+  "street": "389 Cedar Close",
+  "phone": "(555) 919-8072",
+  "email": "maya.quinlan@example.com",
+  "other_people": [
+   "Elena Kowalski",
+   "Rosa Delgado"
+  ],
+  "injuries": []
+ }
+}

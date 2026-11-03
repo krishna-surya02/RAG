@@ -1,0 +1,54 @@
+{
+ "claim_id": "CLM-2026-000153",
+ "scenario": "hh_surface_water_25",
+ "product": "household",
+ "policy_number": "HH-2024-00107",
+ "loss_date": "2026-10-30",
+ "reported_at": "2026-11-01",
+ "fnol_text": "My name is Aisha Kaminski and I live at 208 Kestrel Road, Fairview, PA 16412. You can reach me on (555) 793-1711 or aisha.kaminski@example.com. After the torrential rain on the night of 30 October 2026, rainwater ran off the field behind us, across the back garden and in under the patio doors. About 5 cm of water covered the kitchen and family room floors. Policy HH-2024-00107. I'd like to claim for the damage to my home. Am I insured for this or not?",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Kaminski on (555) 793-1711 to acknowledge the claim. Aisha confirmed the loss date as 30 October 2026."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 208 Kestrel Road. Neighbour Zara Wojcik was present and confirmed the timeline."
+  },
+  {
+   "n": 3,
+   "text": "Aisha sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0417: damaged furniture stacked in the garage"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:HFL-25 §2.1",
+  "clause": "HFL-25 §2.1",
+  "endorsement_set": "HEND-2025",
+  "limits": {
+   "coverage": "flood_plus",
+   "deductible": 5000,
+   "sub_limit": 25000,
+   "policy_limit": 600000,
+   "source": "HFL-25 §2.2, §2.3; HSL-25 §1"
+  },
+  "assessed_loss": 9850,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Aisha Kaminski",
+  "address": "208 Kestrel Road, Fairview, PA 16412",
+  "street": "208 Kestrel Road",
+  "phone": "(555) 793-1711",
+  "email": "aisha.kaminski@example.com",
+  "other_people": [
+   "Zara Wojcik",
+   "Aisha Zielinski"
+  ],
+  "injuries": []
+ }
+}

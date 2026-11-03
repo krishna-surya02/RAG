@@ -1,0 +1,307 @@
+[
+ {
+  "sent": {
+   "jsonrpc": "2.0",
+   "method": "initialize",
+   "params": {
+    "protocolVersion": "2025-11-25",
+    "capabilities": {},
+    "clientInfo": {
+     "name": "fresh-eyes-reviewer",
+     "version": "0"
+    }
+   },
+   "id": 1
+  },
+  "status": 200,
+  "got": {
+   "jsonrpc": "2.0",
+   "id": 1,
+   "result": {
+    "capabilities": {
+     "prompts": {
+      "listChanged": false
+     },
+     "resources": {
+      "listChanged": false,
+      "subscribe": false
+     },
+     "tools": {
+      "listChanged": false
+     }
+    },
+    "instructions": "Search the household and motor policy wordings as they stood on a loss date. Every tool needs product ('household' or 'motor') and loss_date (YYYY-MM-DD). Results are wording only -- they are not coverage decisions.",
+    "protocolVersion": "2025-11-25",
+    "serverInfo": {
+     "name": "policy-wording",
+     "version": ""
+    }
+   }
+  }
+ },
+ {
+  "sent": {
+   "jsonrpc": "2.0",
+   "method": "notifications/initialized"
+  },
+  "status": 202,
+  "got": null
+ },
+ {
+  "sent": {
+   "jsonrpc": "2.0",
+   "method": "tools/list",
+   "params": {},
+   "id": 2
+  },
+  "status": 200,
+  "got": {
+   "jsonrpc": "2.0",
+   "id": 2,
+   "result": {
+    "tools": [
+     {
+      "description": "Search policy wording in force on a loss date (product 'household'|'motor',\n    loss_date YYYY-MM-DD). Pass endorsement_set from the policy's in-force check\n    (e.g. 'HEND-2023'); without it the set is picked by calendar date, which is wrong\n    for terms that started before 2025-04-01. Each hit carries a citation naming\n    clause, endorsement version and loss date. k = 1-8 clauses.",
+      "inputSchema": {
+       "properties": {
+        "query": {
+         "title": "Query",
+         "type": "string"
+        },
+        "product": {
+         "title": "Product",
+         "type": "string"
+        },
+        "loss_date": {
+         "title": "Loss Date",
+         "type": "string"
+        },
+        "endorsement_set": {
+         "anyOf": [
+          {
+           "type": "string"
+          },
+          {
+           "type": "null"
+          }
+         ],
+         "default": null,
+         "title": "Endorsement Set"
+        },
+        "k": {
+         "default": 4,
+         "title": "K",
+         "type": "integer"
+        }
+       },
+       "required": [
+        "query",
+        "product",
+        "loss_date"
+       ],
+       "type": "object",
+       "title": "search_wordingArguments"
+      },
+      "name": "search_wording",
+      "outputSchema": {
+       "properties": {
+        "result": {
+         "title": "Result",
+         "type": "string"
+        }
+       },
+       "required": [
+        "result"
+       ],
+       "type": "object",
+       "title": "search_wordingOutput"
+      }
+     },
+     {
+      "description": "Full text of clauses (e.g. ['HFL-23 §2.2', 'HX-17']) as in force on the loss\n    date; several per call. Wording not in force for that loss is refused. Same\n    product / loss_date / endorsement_set rules as search_wording.",
+      "inputSchema": {
+       "properties": {
+        "refs": {
+         "items": {
+          "type": "string"
+         },
+         "title": "Refs",
+         "type": "array"
+        },
+        "product": {
+         "title": "Product",
+         "type": "string"
+        },
+        "loss_date": {
+         "title": "Loss Date",
+         "type": "string"
+        },
+        "endorsement_set": {
+         "anyOf": [
+          {
+           "type": "string"
+          },
+          {
+           "type": "null"
+          }
+         ],
+         "default": null,
+         "title": "Endorsement Set"
+        }
+       },
+       "required": [
+        "refs",
+        "product",
+        "loss_date"
+       ],
+       "type": "object",
+       "title": "get_clauseArguments"
+      },
+      "name": "get_clause",
+      "outputSchema": {
+       "properties": {
+        "result": {
+         "title": "Result",
+         "type": "string"
+        }
+       },
+       "required": [
+        "result"
+       ],
+       "type": "object",
+       "title": "get_clauseOutput"
+      }
+     },
+     {
+      "description": "Wording and endorsement-set versions for a product, with effective windows\n    (which new/renewing terms received each set).",
+      "inputSchema": {
+       "properties": {
+        "product": {
+         "title": "Product",
+         "type": "string"
+        }
+       },
+       "required": [
+        "product"
+       ],
+       "type": "object",
+       "title": "list_versionsArguments"
+      },
+      "name": "list_versions",
+      "outputSchema": {
+       "properties": {
+        "result": {
+         "title": "Result",
+         "type": "string"
+        }
+       },
+       "required": [
+        "result"
+       ],
+       "type": "object",
+       "title": "list_versionsOutput"
+      }
+     }
+    ]
+   }
+  }
+ },
+ {
+  "sent": {
+   "jsonrpc": "2.0",
+   "method": "tools/call",
+   "params": {
+    "name": "search_wording",
+    "arguments": {
+     "query": "surface water from heavy rain came into the kitchen",
+     "product": "household",
+     "loss_date": "2024-08-14"
+    }
+   },
+   "id": 3
+  },
+  "status": 200,
+  "got": {
+   "jsonrpc": "2.0",
+   "id": 3,
+   "result": {
+    "content": [
+     {
+      "text": "{\"trace_id\": \"e96d2dbc30fd450ea4f380267f64d3a3\", \"resolution\": {\"product\": \"household\", \"loss_date\": \"2024-08-14\", \"endorsement_set\": \"HEND-2023\", \"endorsement_set_version\": \"v2023.1\", \"base_wording\": \"HH-PW\", \"resolved_by\": \"calendar_date\", \"same_product_chunks_filtered_out_above_cut\": 3, \"warning\": \"endorsement set chosen by calendar date, not by the policy term; a term that started before 2025-04-01 keeps the 2023 set -- pass endorsement_set from the in-force check to be sure\"}, \"hits\": [{\"ref\": \"HX-17\", \"title\": \"Groundwater and water table\", \"score\": 0.567, \"citation\": \"[HX-17 — Groundwater and water table](data/wordings/household_wording.md#hx-17) · HEND-2023 v2023.1 · p.25 · resolved for loss date 2024-08-14 (calendar date)\", \"href\": \"data/wordings/household_wording.md#hx-17\", \"endorsement_version\": \"HEND-2023 v2023.1\", \"text\": \"We do not cover loss or damage caused by water rising from the water table or groundwater percolating through floors or basement walls, whether or not following rainfall. This exclusion applies in addition to, and is not overridden by, any flood endorsement.\"}, {\"ref\": \"HH-PW §1.7\", \"title\": \"Escape of water\", \"score\": 0.551, \"citation\": \"[HH-PW §1.7 — Escape of water](data/wordings/household_wording.md#hh-pw-1-7) · HEND-2023 v2023.1 · p.9 · resolved for loss date 2024-08-14 (calendar date)\", \"href\": \"data/wordings/household_wording.md#hh-pw-1-7\", \"endorsement_version\": \"HEND-2023 v2023.1\", \"text\": \"**What is covered.** Loss or damage to the buildings caused by escape of water from any fixed water installation, domestic appliance, water tank, waterbed or aquarium, including the cost of removing and replacing any part of the buildings necessary to find the source of the escape (see Extension 1.14 Trace and access).\\n\\n**What is not covered.**\\n- the cost of repairing the installation or appliance from which the water escaped, unless the damage was caused by frost\\n- damage caused by continuous o…\"}, {\"ref\": \"HH-PW §1.5\", \"title\": \"Storm\", \"score\": 0.55, \"citation\": \"[HH-PW §1.5 — Storm](data/wordings/household_wording.md#hh-pw-1-5) · HEND-2023 v2023.1 · p.8 · resolved for loss date 2024-08-14 (calendar date)\", \"href\": \"data/wordings/household_wording.md#hh-pw-1-5\", \"endorsement_version\": \"HEND-2023 v2023.1\", \"text\": \"**What is covered.** Loss or damage to the buildings caused by storm, as defined. We will not consider a claim for storm unless there is evidence of a storm in your area on or around the date of the loss.\\n\\n**What is not covered.**\\n- damage to gates, fences and hedges (see Exclusion HX-9)\\n- damage caused by rising groundwater (see Exclusion HX-17)\\n- damage which happens gradually, or is attributable to wear and tear\\n- water entering the home at ground level from outside -- this is governed by the…\"}, {\"ref\": \"HFL-23 §1\", \"title\": \"Definitions\", \"score\": 0.544, \"citation\": \"[HFL-23 §1 — Definitions](data/wordings/household_endorsements_2023.md#hfl-23-1) · HFL-23 v2023.1 · p.1 · resolved for loss date 2024-08-14 (calendar date)\", \"href\": \"data/wordings/household_endorsements_2023.md#hfl-23-1\", \"endorsement_version\": \"HFL-23 v2023.1\", \"text\": \"For the purposes of this endorsement: \\\"Inundation\\\" means the covering of normally dry land by water escaping from the normal confines of any natural or artificial watercourse, lake, reservoir, canal or dam, or by the sea or tidal water, including storm surge. \\\"Pluvial accumulation\\\" means water arising from precipitation which accumulates upon or flows across the surface of the ground before entering a drainage system or watercourse, and which enters the Home at or above ground level.\"}]}",
+      "type": "text"
+     }
+    ],
+    "isError": false,
+    "structuredContent": {
+     "result": "{\"trace_id\": \"e96d2dbc30fd450ea4f380267f64d3a3\", \"resolution\": {\"product\": \"household\", \"loss_date\": \"2024-08-14\", \"endorsement_set\": \"HEND-2023\", \"endorsement_set_version\": \"v2023.1\", \"base_wording\": \"HH-PW\", \"resolved_by\": \"calendar_date\", \"same_product_chunks_filtered_out_above_cut\": 3, \"warning\": \"endorsement set chosen by calendar date, not by the policy term; a term that started before 2025-04-01 keeps the 2023 set -- pass endorsement_set from the in-force check to be sure\"}, \"hits\": [{\"ref\": \"HX-17\", \"title\": \"Groundwater and water table\", \"score\": 0.567, \"citation\": \"[HX-17 — Groundwater and water table](data/wordings/household_wording.md#hx-17) · HEND-2023 v2023.1 · p.25 · resolved for loss date 2024-08-14 (calendar date)\", \"href\": \"data/wordings/household_wording.md#hx-17\", \"endorsement_version\": \"HEND-2023 v2023.1\", \"text\": \"We do not cover loss or damage caused by water rising from the water table or groundwater percolating through floors or basement walls, whether or not following rainfall. This exclusion applies in addition to, and is not overridden by, any flood endorsement.\"}, {\"ref\": \"HH-PW §1.7\", \"title\": \"Escape of water\", \"score\": 0.551, \"citation\": \"[HH-PW §1.7 — Escape of water](data/wordings/household_wording.md#hh-pw-1-7) · HEND-2023 v2023.1 · p.9 · resolved for loss date 2024-08-14 (calendar date)\", \"href\": \"data/wordings/household_wording.md#hh-pw-1-7\", \"endorsement_version\": \"HEND-2023 v2023.1\", \"text\": \"**What is covered.** Loss or damage to the buildings caused by escape of water from any fixed water installation, domestic appliance, water tank, waterbed or aquarium, including the cost of removing and replacing any part of the buildings necessary to find the source of the escape (see Extension 1.14 Trace and access).\\n\\n**What is not covered.**\\n- the cost of repairing the installation or appliance from which the water escaped, unless the damage was caused by frost\\n- damage caused by continuous o…\"}, {\"ref\": \"HH-PW §1.5\", \"title\": \"Storm\", \"score\": 0.55, \"citation\": \"[HH-PW §1.5 — Storm](data/wordings/household_wording.md#hh-pw-1-5) · HEND-2023 v2023.1 · p.8 · resolved for loss date 2024-08-14 (calendar date)\", \"href\": \"data/wordings/household_wording.md#hh-pw-1-5\", \"endorsement_version\": \"HEND-2023 v2023.1\", \"text\": \"**What is covered.** Loss or damage to the buildings caused by storm, as defined. We will not consider a claim for storm unless there is evidence of a storm in your area on or around the date of the loss.\\n\\n**What is not covered.**\\n- damage to gates, fences and hedges (see Exclusion HX-9)\\n- damage caused by rising groundwater (see Exclusion HX-17)\\n- damage which happens gradually, or is attributable to wear and tear\\n- water entering the home at ground level from outside -- this is governed by the…\"}, {\"ref\": \"HFL-23 §1\", \"title\": \"Definitions\", \"score\": 0.544, \"citation\": \"[HFL-23 §1 — Definitions](data/wordings/household_endorsements_2023.md#hfl-23-1) · HFL-23 v2023.1 · p.1 · resolved for loss date 2024-08-14 (calendar date)\", \"href\": \"data/wordings/household_endorsements_2023.md#hfl-23-1\", \"endorsement_version\": \"HFL-23 v2023.1\", \"text\": \"For the purposes of this endorsement: \\\"Inundation\\\" means the covering of normally dry land by water escaping from the normal confines of any natural or artificial watercourse, lake, reservoir, canal or dam, or by the sea or tidal water, including storm surge. \\\"Pluvial accumulation\\\" means water arising from precipitation which accumulates upon or flows across the surface of the ground before entering a drainage system or watercourse, and which enters the Home at or above ground level.\"}]}"
+    }
+   }
+  }
+ },
+ {
+  "sent": {
+   "jsonrpc": "2.0",
+   "method": "tools/call",
+   "params": {
+    "name": "get_clause",
+    "arguments": {
+     "refs": [
+      "HFL-25 §2.1"
+     ],
+     "product": "household",
+     "loss_date": "2024-08-14"
+    }
+   },
+   "id": 4
+  },
+  "status": 200,
+  "got": {
+   "jsonrpc": "2.0",
+   "id": 4,
+   "result": {
+    "content": [
+     {
+      "text": "{\"trace_id\": \"5ba40e6840294f90bff33ebe55eeb8ec\", \"endorsement_set\": \"HEND-2023\", \"resolved_by\": \"calendar_date\", \"clauses\": [{\"ref\": \"HFL-25 §2.1\", \"in_force\": false, \"problems\": [\"HFL-25 §2.1 is in HEND-2025 v2025.1, but the term covering 2024-08-14 carries HEND-2023; that wording was not in force for this loss\"]}]}",
+      "type": "text"
+     }
+    ],
+    "isError": false,
+    "structuredContent": {
+     "result": "{\"trace_id\": \"5ba40e6840294f90bff33ebe55eeb8ec\", \"endorsement_set\": \"HEND-2023\", \"resolved_by\": \"calendar_date\", \"clauses\": [{\"ref\": \"HFL-25 §2.1\", \"in_force\": false, \"problems\": [\"HFL-25 §2.1 is in HEND-2025 v2025.1, but the term covering 2024-08-14 carries HEND-2023; that wording was not in force for this loss\"]}]}"
+    }
+   }
+  }
+ },
+ {
+  "sent": {
+   "jsonrpc": "2.0",
+   "method": "tools/call",
+   "params": {
+    "name": "search_wording",
+    "arguments": {
+     "query": "flood",
+     "product": "boats",
+     "loss_date": "yesterday"
+    }
+   },
+   "id": 5
+  },
+  "status": 200,
+  "got": {
+   "jsonrpc": "2.0",
+   "id": 5,
+   "result": {
+    "content": [
+     {
+      "text": "{\"error\": \"product must be one of ['household', 'motor'], got 'boats'\", \"trace_id\": \"b20be83432994f43b7387922edc5939a\"}",
+      "type": "text"
+     }
+    ],
+    "isError": false,
+    "structuredContent": {
+     "result": "{\"error\": \"product must be one of ['household', 'motor'], got 'boats'\", \"trace_id\": \"b20be83432994f43b7387922edc5939a\"}"
+    }
+   }
+  }
+ }
+]

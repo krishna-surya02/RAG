@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2024-000044",
+ "scenario": "hh_gradual_leak",
+ "product": "household",
+ "policy_number": "HH-2023-00028",
+ "loss_date": "2024-06-25",
+ "reported_at": "2024-06-26",
+ "fnol_text": "My name is Callum Sorensen and I live at 21 Elmstead Drive, Salem, MA 01969. You can reach me on (555) 573-8954 or callum.sorensen@example.com. We noticed on 25 June 2024 that the floor around the shower is soft. A plumber says the seal has been leaking slowly for months and the joists are rotten. Policy HH-2023-00028. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Sorensen on (555) 573-8954 to acknowledge the claim. Callum confirmed the loss date as 25 June 2024."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 21 Elmstead Drive. Neighbour Ethan Okafor was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0412: ground floor with standing water and wet carpets"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:HX-1",
+  "clause": "HX-1",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "escape_of_water",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 500000,
+   "source": "HH-PW §1.7"
+  },
+  "assessed_loss": 25950,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Callum Sorensen",
+  "address": "21 Elmstead Drive, Salem, MA 01969",
+  "street": "21 Elmstead Drive",
+  "phone": "(555) 573-8954",
+  "email": "callum.sorensen@example.com",
+  "other_people": [
+   "Ethan Okafor",
+   "Grace Takahashi"
+  ],
+  "injuries": []
+ }
+}

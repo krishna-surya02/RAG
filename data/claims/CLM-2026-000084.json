@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2026-000084",
+ "scenario": "hh_storm_fence",
+ "product": "household",
+ "policy_number": "HH-2025-00076",
+ "loss_date": "2026-08-07",
+ "reported_at": "2026-08-09",
+ "fnol_text": "My name is Ingrid Moreau and I live at 197 Larkspur Way, Springfield, OH 45559. You can reach me on (555) 967-2021 or ingrid.moreau@example.com. The storm on 7 August 2026 blew down about 20 metres of the garden fence and a gate. Policy HH-2025-00076. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Moreau on (555) 967-2021 to acknowledge the claim. Ingrid confirmed the loss date as 7 August 2026."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 197 Larkspur Way. Neighbour Yusuf Oduya was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0413: water line on the skirting boards"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:HX-9",
+  "clause": "HX-9",
+  "endorsement_set": "HEND-2025",
+  "limits": {
+   "coverage": "storm",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 600000,
+   "source": "HH-PW §1.5"
+  },
+  "assessed_loss": 4100,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Ingrid Moreau",
+  "address": "197 Larkspur Way, Springfield, OH 45559",
+  "street": "197 Larkspur Way",
+  "phone": "(555) 967-2021",
+  "email": "ingrid.moreau@example.com",
+  "other_people": [
+   "Yusuf Oduya",
+   "Leah Kowalski"
+  ],
+  "injuries": []
+ }
+}

@@ -1,0 +1,51 @@
+{
+ "claim_id": "CLM-2024-000056",
+ "scenario": "mt_windscreen",
+ "product": "motor",
+ "policy_number": "MT-2023-00011",
+ "loss_date": "2024-07-23",
+ "reported_at": "2024-07-28",
+ "fnol_text": "My name is Samuel Herrera and I live at 480 Willow Place, Dover, DE 19920. You can reach me on (555) 860-7310 or samuel.herrera@example.com. A stone thrown up by a lorry cracked my windscreen right across on 23 July 2024. Policy MT-2023-00011. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Herrera on (555) 860-7310 to acknowledge the claim. Samuel confirmed the loss date as 23 July 2024."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Sofia Rasmussen gave a statement by phone."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2203: dashboard warning lights",
+  "IMG_2201: front passenger side damage"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §4.1",
+  "clause": "MT-PW §4.1",
+  "endorsement_set": "MEND-2023",
+  "limits": {
+   "coverage": "windscreen",
+   "deductible": 100,
+   "sub_limit": 1500,
+   "policy_limit": 60000,
+   "source": "MT-PW §4.1; MWS-23 §1"
+  },
+  "assessed_loss": 1100,
+  "amount_paid": 1000
+ },
+ "pii": {
+  "claimant_name": "Samuel Herrera",
+  "address": "480 Willow Place, Dover, DE 19920",
+  "street": "480 Willow Place",
+  "phone": "(555) 860-7310",
+  "email": "samuel.herrera@example.com",
+  "other_people": [
+   "Sofia Rasmussen",
+   "Leah Laurent"
+  ],
+  "injuries": []
+ }
+}

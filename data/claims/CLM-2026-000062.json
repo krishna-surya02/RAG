@@ -1,0 +1,55 @@
+{
+ "claim_id": "CLM-2026-000062",
+ "scenario": "mt_flood_warning_25",
+ "product": "motor",
+ "policy_number": "MT-2024-00108",
+ "loss_date": "2026-06-16",
+ "reported_at": "2026-06-19",
+ "fnol_text": "My name is Sofia Ballard and I live at 701 Linden Drive, Milton, VT 05468. You can reach me on (555) 866-2075 or sofia.ballard@example.com. There was a flood warning for our area from the day before, but I left the car parked on the street by the river. On 16 June 2026 the water rose and the car was flooded up to the seats. Policy MT-2024-00108. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Ballard on (555) 866-2075 to acknowledge the claim. Sofia confirmed the loss date as 16 June 2026."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Ingrid Sorensen gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Sofia sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2201: front passenger side damage",
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2203: dashboard warning lights"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:MFL-25 §2.2",
+  "clause": "MFL-25 §2.2",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "flood",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MFL-25 §2.4"
+  },
+  "assessed_loss": 13950,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Sofia Ballard",
+  "address": "701 Linden Drive, Milton, VT 05468",
+  "street": "701 Linden Drive",
+  "phone": "(555) 866-2075",
+  "email": "sofia.ballard@example.com",
+  "other_people": [
+   "Ingrid Sorensen",
+   "Aisha Pereira"
+  ],
+  "injuries": []
+ }
+}

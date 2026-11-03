@@ -1,0 +1,54 @@
+{
+ "claim_id": "CLM-2025-000035",
+ "scenario": "hh_river_23",
+ "product": "household",
+ "policy_number": "HH-2023-00159",
+ "loss_date": "2025-03-17",
+ "reported_at": "2025-03-20",
+ "fnol_text": "My name is Naomi Ishikawa and I live at 536 Juniper Road, Greenville, SC 29617. You can reach me on (555) 626-6502 or naomi.ishikawa@example.com. The Ashwater River burst its banks on 17 March 2025 and the water came right up the garden and into the house. The ground floor was under about 40 cm of water. Policy HH-2023-00159. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Ishikawa on (555) 626-6502 to acknowledge the claim. Naomi confirmed the loss date as 17 March 2025."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 536 Juniper Road. Neighbour Leah Fitzgerald was present and confirmed the timeline."
+  },
+  {
+   "n": 3,
+   "text": "Naomi sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0412: ground floor with standing water and wet carpets"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:HFL-23 §2.1",
+  "clause": "HFL-23 §2.1",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "flood_surface_water",
+   "deductible": 2500,
+   "sub_limit": 15000,
+   "policy_limit": 500000,
+   "source": "HFL-23 §2.2, §2.3; HSL-23 §1"
+  },
+  "assessed_loss": 64150,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Naomi Ishikawa",
+  "address": "536 Juniper Road, Greenville, SC 29617",
+  "street": "536 Juniper Road",
+  "phone": "(555) 626-6502",
+  "email": "naomi.ishikawa@example.com",
+  "other_people": [
+   "Leah Fitzgerald",
+   "Kwame Osei"
+  ],
+  "injuries": []
+ }
+}

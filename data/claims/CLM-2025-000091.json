@@ -1,0 +1,51 @@
+{
+ "claim_id": "CLM-2025-000091",
+ "scenario": "hh_escape_of_water",
+ "product": "household",
+ "policy_number": "HH-2024-00162",
+ "loss_date": "2025-07-09",
+ "reported_at": "2025-07-10",
+ "fnol_text": "My name is Anika Fitzgerald and I live at 266 Maple Close, Ashland, OR 97559. You can reach me on (555) 680-5773 or anika.fitzgerald@example.com. The washing machine hose split on 9 July 2025 and flooded the utility room and hallway before we could turn off the water. Policy HH-2024-00162. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Fitzgerald on (555) 680-5773 to acknowledge the claim. Anika confirmed the loss date as 9 July 2025."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 266 Maple Close. Neighbour Dmitri Santos was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0417: damaged furniture stacked in the garage"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:HH-PW §1.7",
+  "clause": "HH-PW §1.7",
+  "endorsement_set": "HEND-2025",
+  "limits": {
+   "coverage": "escape_of_water",
+   "deductible": 1500,
+   "sub_limit": null,
+   "policy_limit": 600000,
+   "source": "HH-PW §1.7"
+  },
+  "assessed_loss": 17700,
+  "amount_paid": 16200
+ },
+ "pii": {
+  "claimant_name": "Anika Fitzgerald",
+  "address": "266 Maple Close, Ashland, OR 97559",
+  "street": "266 Maple Close",
+  "phone": "(555) 680-5773",
+  "email": "anika.fitzgerald@example.com",
+  "other_people": [
+   "Dmitri Santos",
+   "Kwame Takahashi"
+  ],
+  "injuries": []
+ }
+}

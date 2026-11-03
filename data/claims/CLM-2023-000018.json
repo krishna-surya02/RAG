@@ -1,0 +1,52 @@
+{
+ "claim_id": "CLM-2023-000018",
+ "scenario": "not_in_force",
+ "product": "motor",
+ "policy_number": "MT-2023-00038",
+ "loss_date": "2023-06-13",
+ "reported_at": "2023-06-20",
+ "fnol_text": "My name is Chloe Petrov and I live at 800 Hawthorn Way, Fairview, PA 16499. You can reach me on (555) 216-6734 or chloe.petrov@example.com. On 13 June 2023 another car pulled out of a side road and hit my front passenger side. The other driver, Kofi Varga, admitted they didn't see me. Policy MT-2023-00038. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Petrov on (555) 216-6734 to acknowledge the claim. Chloe confirmed the loss date as 13 June 2023."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Chloe Brennan gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Third-party driver Kofi Varga reports a sprained ankle and attended Mercy General. Chloe reports a mild concussion."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2201: front passenger side damage",
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2203: dashboard warning lights"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "NOT_IN_FORCE",
+  "clause": null,
+  "endorsement_set": null,
+  "limits": null,
+  "assessed_loss": 5400,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Chloe Petrov",
+  "address": "800 Hawthorn Way, Fairview, PA 16499",
+  "street": "800 Hawthorn Way",
+  "phone": "(555) 216-6734",
+  "email": "chloe.petrov@example.com",
+  "other_people": [
+   "Chloe Brennan",
+   "Kofi Varga"
+  ],
+  "injuries": [
+   "a sprained ankle",
+   "a mild concussion"
+  ]
+ }
+}

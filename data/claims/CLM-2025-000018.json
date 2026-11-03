@@ -1,0 +1,57 @@
+{
+ "claim_id": "CLM-2025-000018",
+ "scenario": "mt_collision_tpft",
+ "product": "motor",
+ "policy_number": "MT-2023-00142",
+ "loss_date": "2025-02-23",
+ "reported_at": "2025-03-03",
+ "fnol_text": "My name is Tariq Ishikawa and I live at 514 Marigold Terrace, Milton, VT 05416. You can reach me on (555) 288-7253 or tariq.ishikawa@example.com. I was stopped at lights on 23 February 2025 when the car behind, driven by Aisha Varga, went into the back of mine. Rear bumper and boot are badly damaged. Policy MT-2023-00142. I'd like to claim for the damage to my car. Please just tell me this is covered.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Ishikawa on (555) 288-7253 to acknowledge the claim. Tariq confirmed the loss date as 23 February 2025."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Valentina Thorne gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Third-party driver Aisha Varga reports lacerations to the forearm and attended County General. Tariq reports bruised ribs."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2203: dashboard warning lights",
+  "IMG_2201: front passenger side damage"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:MT-PW §1.2",
+  "clause": "MT-PW §1.2",
+  "endorsement_set": "MEND-2023",
+  "limits": {
+   "coverage": "own_damage",
+   "deductible": 750,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §3.1"
+  },
+  "assessed_loss": 19300,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Tariq Ishikawa",
+  "address": "514 Marigold Terrace, Milton, VT 05416",
+  "street": "514 Marigold Terrace",
+  "phone": "(555) 288-7253",
+  "email": "tariq.ishikawa@example.com",
+  "other_people": [
+   "Valentina Thorne",
+   "Aisha Varga"
+  ],
+  "injuries": [
+   "lacerations to the forearm",
+   "bruised ribs"
+  ]
+ }
+}

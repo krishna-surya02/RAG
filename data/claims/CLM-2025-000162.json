@@ -1,0 +1,56 @@
+{
+ "claim_id": "CLM-2025-000162",
+ "scenario": "hh_liability_injury",
+ "product": "household",
+ "policy_number": "HH-2023-00109",
+ "loss_date": "2025-12-06",
+ "reported_at": "2025-12-07",
+ "fnol_text": "My name is Dmitri Raman and I live at 340 Linden Court, Ashland, OR 97577. You can reach me on (555) 915-9778 or dmitri.raman@example.com. A delivery driver slipped on our icy front steps on 6 December 2025 and was taken to hospital. They have said they will make a claim against us. Policy HH-2023-00109. I'd like to claim for the damage to my home. Can you confirm I'm covered for this?",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Raman on (555) 915-9778 to acknowledge the claim. Dmitri confirmed the loss date as 6 December 2025."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 340 Linden Court. Neighbour Sofia Gallagher was present and confirmed the timeline."
+  },
+  {
+   "n": 3,
+   "text": "Injured party Aisha Fitzgerald sustained minor burns to the hand and was treated at County General. Do not admit liability; refer."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0417: damaged furniture stacked in the garage"
+ ],
+ "final_decision": {
+  "outcome": "referred_liability",
+  "reason_code": "REFERRED_LIABILITY:HH-PW §3.1",
+  "clause": "HH-PW §3.1",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "liability",
+   "deductible": 0,
+   "sub_limit": null,
+   "policy_limit": 2000000,
+   "source": "HH-PW §3.1"
+  },
+  "assessed_loss": 22950,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Dmitri Raman",
+  "address": "340 Linden Court, Ashland, OR 97577",
+  "street": "340 Linden Court",
+  "phone": "(555) 915-9778",
+  "email": "dmitri.raman@example.com",
+  "other_people": [
+   "Sofia Gallagher",
+   "Aisha Fitzgerald"
+  ],
+  "injuries": [
+   "minor burns to the hand"
+  ]
+ }
+}

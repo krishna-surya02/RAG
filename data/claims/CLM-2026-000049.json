@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2026-000049",
+ "scenario": "hh_theft_let",
+ "product": "household",
+ "policy_number": "HH-2024-00065",
+ "loss_date": "2026-05-25",
+ "reported_at": "2026-05-28",
+ "fnol_text": "My name is Owen Thorne and I live at 792 Linden Lane, Clinton, NC 28363. You can reach me on (555) 421-7007 or owen.thorne@example.com. I rent the spare room to a lodger. On 25 May 2026 I found my camera equipment and some cash missing. There is no sign of a break-in. Policy HH-2024-00065. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Thorne on (555) 421-7007 to acknowledge the claim. Owen confirmed the loss date as 25 May 2026."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 792 Linden Lane. Neighbour Lucia Ballard was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0417: damaged furniture stacked in the garage"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:HX-15",
+  "clause": "HX-15",
+  "endorsement_set": "HEND-2025",
+  "limits": {
+   "coverage": "theft",
+   "deductible": 500,
+   "sub_limit": null,
+   "policy_limit": 80000,
+   "source": "HH-PW §1.10, §2.2"
+  },
+  "assessed_loss": 3650,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Owen Thorne",
+  "address": "792 Linden Lane, Clinton, NC 28363",
+  "street": "792 Linden Lane",
+  "phone": "(555) 421-7007",
+  "email": "owen.thorne@example.com",
+  "other_people": [
+   "Lucia Ballard",
+   "Leah Abernathy"
+  ],
+  "injuries": []
+ }
+}

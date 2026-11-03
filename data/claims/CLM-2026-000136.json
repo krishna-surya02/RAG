@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2026-000136",
+ "scenario": "hh_escape_of_water",
+ "product": "household",
+ "policy_number": "HH-2025-00130",
+ "loss_date": "2026-10-18",
+ "reported_at": "2026-10-24",
+ "fnol_text": "My name is Maya Ueda and I live at 867 Marigold Drive, Dover, DE 19931. You can reach me on (555) 941-3042 or maya.ueda@example.com. The washing machine hose split on 18 October 2026 and flooded the utility room and hallway before we could turn off the water. Policy HH-2025-00130. I'd like to claim for the damage to my home. Please just tell me this is covered.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Ueda on (555) 941-3042 to acknowledge the claim. Maya confirmed the loss date as 18 October 2026."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 867 Marigold Drive. Neighbour Hiroshi McBride was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0417: damaged furniture stacked in the garage"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:HH-PW §1.7",
+  "clause": "HH-PW §1.7",
+  "endorsement_set": "HEND-2025",
+  "limits": {
+   "coverage": "escape_of_water",
+   "deductible": 1500,
+   "sub_limit": null,
+   "policy_limit": 600000,
+   "source": "HH-PW §1.7"
+  },
+  "assessed_loss": 7200,
+  "amount_paid": 5700
+ },
+ "pii": {
+  "claimant_name": "Maya Ueda",
+  "address": "867 Marigold Drive, Dover, DE 19931",
+  "street": "867 Marigold Drive",
+  "phone": "(555) 941-3042",
+  "email": "maya.ueda@example.com",
+  "other_people": [
+   "Hiroshi McBride",
+   "Marcus Rasmussen"
+  ],
+  "injuries": []
+ }
+}

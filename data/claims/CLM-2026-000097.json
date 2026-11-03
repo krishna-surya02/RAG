@@ -1,0 +1,57 @@
+{
+ "claim_id": "CLM-2026-000097",
+ "scenario": "mt_collision",
+ "product": "motor",
+ "policy_number": "MT-2025-00106",
+ "loss_date": "2026-08-31",
+ "reported_at": "2026-09-02",
+ "fnol_text": "My name is Olusegun Wojcik and I live at 532 Kestrel Court, Springfield, OH 45575. You can reach me on (555) 473-6762 or olusegun.wojcik@example.com. On 31 August 2026 another car pulled out of a side road and hit my front passenger side. The other driver, Imogen Delgado, admitted they didn't see me. Policy MT-2025-00106. I'd like to claim for the damage to my car. Am I insured for this or not?",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Wojcik on (555) 473-6762 to acknowledge the claim. Olusegun confirmed the loss date as 31 August 2026."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Rafael Santos gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Third-party driver Imogen Delgado reports whiplash and attended St. Brendan's Hospital. Olusegun reports lacerations to the forearm."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2201: front passenger side damage"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §3.1",
+  "clause": "MT-PW §3.1",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "own_damage",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §3.1"
+  },
+  "assessed_loss": 9550,
+  "amount_paid": 8550
+ },
+ "pii": {
+  "claimant_name": "Olusegun Wojcik",
+  "address": "532 Kestrel Court, Springfield, OH 45575",
+  "street": "532 Kestrel Court",
+  "phone": "(555) 473-6762",
+  "email": "olusegun.wojcik@example.com",
+  "other_people": [
+   "Rafael Santos",
+   "Imogen Delgado"
+  ],
+  "injuries": [
+   "whiplash",
+   "lacerations to the forearm"
+  ]
+ }
+}

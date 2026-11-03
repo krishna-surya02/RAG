@@ -1,0 +1,51 @@
+{
+ "claim_id": "CLM-2024-000100",
+ "scenario": "mt_theft_forced",
+ "product": "motor",
+ "policy_number": "MT-2023-00062",
+ "loss_date": "2024-09-26",
+ "reported_at": "2024-09-28",
+ "fnol_text": "My name is Elena Abernathy and I live at 54 Ashford Place, Fairview, PA 16474. You can reach me on (555) 730-5376 or elena.abernathy@example.com. My car was stolen from outside the house overnight on 26 September 2024. Glass from the driver's window was on the road. Policy MT-2023-00062. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Abernathy on (555) 730-5376 to acknowledge the claim. Elena confirmed the loss date as 26 September 2024."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Kwame Gallagher gave a statement by phone."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2201: front passenger side damage",
+  "IMG_2203: dashboard warning lights"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §2.2",
+  "clause": "MT-PW §2.2",
+  "endorsement_set": "MEND-2023",
+  "limits": {
+   "coverage": "theft",
+   "deductible": 750,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §2.2"
+  },
+  "assessed_loss": 9900,
+  "amount_paid": 9150
+ },
+ "pii": {
+  "claimant_name": "Elena Abernathy",
+  "address": "54 Ashford Place, Fairview, PA 16474",
+  "street": "54 Ashford Place",
+  "phone": "(555) 730-5376",
+  "email": "elena.abernathy@example.com",
+  "other_people": [
+   "Kwame Gallagher",
+   "Viktor Gallagher"
+  ],
+  "injuries": []
+ }
+}

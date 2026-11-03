@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2026-000046",
+ "scenario": "hh_gradual_leak",
+ "product": "household",
+ "policy_number": "HH-2024-00031",
+ "loss_date": "2026-05-18",
+ "reported_at": "2026-05-26",
+ "fnol_text": "My name is Jordan Ferreira and I live at 592 Alder Way, Clinton, NC 28322. You can reach me on (555) 278-2711 or jordan.ferreira@example.com. Damp patch on the ceiling below the bath that has been growing since the spring; on 18 May 2026 part of the plaster came down. The plumber says the waste pipe has dripped for a long time. Policy HH-2024-00031. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Ferreira on (555) 278-2711 to acknowledge the claim. Jordan confirmed the loss date as 18 May 2026."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 592 Alder Way. Neighbour Kofi Quinlan was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0417: damaged furniture stacked in the garage"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:HX-1",
+  "clause": "HX-1",
+  "endorsement_set": "HEND-2025",
+  "limits": {
+   "coverage": "escape_of_water",
+   "deductible": 1500,
+   "sub_limit": null,
+   "policy_limit": 600000,
+   "source": "HH-PW §1.7"
+  },
+  "assessed_loss": 37800,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Jordan Ferreira",
+  "address": "592 Alder Way, Clinton, NC 28322",
+  "street": "592 Alder Way",
+  "phone": "(555) 278-2711",
+  "email": "jordan.ferreira@example.com",
+  "other_people": [
+   "Kofi Quinlan",
+   "Aisha Kowalski"
+  ],
+  "injuries": []
+ }
+}

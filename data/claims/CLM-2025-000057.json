@@ -1,0 +1,54 @@
+{
+ "claim_id": "CLM-2025-000057",
+ "scenario": "hh_surface_water_23_floodzone",
+ "product": "household",
+ "policy_number": "HH-2024-00156",
+ "loss_date": "2025-04-25",
+ "reported_at": "2025-05-04",
+ "fnol_text": "My name is Felix Laurent and I live at 500 Hawthorn Drive, Dover, DE 19984. You can reach me on (555) 645-1734 or felix.laurent@example.com. After the torrential rain on the night of 25 April 2025, rainwater ran off the field behind us, across the back garden and in under the patio doors. About 5 cm of water covered the kitchen and family room floors. Policy HH-2024-00156. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Laurent on (555) 645-1734 to acknowledge the claim. Felix confirmed the loss date as 25 April 2025."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 500 Hawthorn Drive. Neighbour Mateo Moreau was present and confirmed the timeline."
+  },
+  {
+   "n": 3,
+   "text": "Felix sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0417: damaged furniture stacked in the garage"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:HFL-23 §2.2",
+  "clause": "HFL-23 §2.2",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "flood_surface_water",
+   "deductible": 2500,
+   "sub_limit": 15000,
+   "policy_limit": 500000,
+   "source": "HFL-23 §2.2, §2.3; HSL-23 §1"
+  },
+  "assessed_loss": 22800,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Felix Laurent",
+  "address": "500 Hawthorn Drive, Dover, DE 19984",
+  "street": "500 Hawthorn Drive",
+  "phone": "(555) 645-1734",
+  "email": "felix.laurent@example.com",
+  "other_people": [
+   "Mateo Moreau",
+   "Ethan Zielinski"
+  ],
+  "injuries": []
+ }
+}

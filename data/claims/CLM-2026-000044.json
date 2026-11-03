@@ -1,0 +1,55 @@
+{
+ "claim_id": "CLM-2026-000044",
+ "scenario": "hh_surface_water_25_floodplus",
+ "product": "household",
+ "policy_number": "HH-2023-00075",
+ "loss_date": "2026-05-10",
+ "reported_at": "2026-05-13",
+ "fnol_text": "My name is Gabriel Ballard and I live at 767 Marigold Street, Salem, MA 01922. You can reach me on (555) 241-6910 or gabriel.ballard@example.com. Heavy rain all afternoon on 10 May 2026. Water pooled on the lawn and then came into the lounge at floor level. Carpets and the sofa are soaked. Policy HH-2023-00075. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Ballard on (555) 241-6910 to acknowledge the claim. Gabriel confirmed the loss date as 10 May 2026."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 767 Marigold Street. Neighbour Viktor Novak was present and confirmed the timeline."
+  },
+  {
+   "n": 3,
+   "text": "Gabriel sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0417: damaged furniture stacked in the garage"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:HFL-25 §2.2",
+  "clause": "HFL-25 §2.2",
+  "endorsement_set": "HEND-2025",
+  "limits": {
+   "coverage": "flood_plus",
+   "deductible": 5000,
+   "sub_limit": 25000,
+   "policy_limit": 600000,
+   "source": "HFL-25 §2.2, §2.3; HSL-25 §1"
+  },
+  "assessed_loss": 24250,
+  "amount_paid": 19250
+ },
+ "pii": {
+  "claimant_name": "Gabriel Ballard",
+  "address": "767 Marigold Street, Salem, MA 01922",
+  "street": "767 Marigold Street",
+  "phone": "(555) 241-6910",
+  "email": "gabriel.ballard@example.com",
+  "other_people": [
+   "Viktor Novak",
+   "Gabriel Nakamura"
+  ],
+  "injuries": []
+ }
+}

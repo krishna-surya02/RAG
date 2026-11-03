@@ -1,0 +1,58 @@
+{
+ "claim_id": "CLM-2026-000087",
+ "scenario": "mt_collision",
+ "product": "motor",
+ "policy_number": "MT-2023-00026",
+ "loss_date": "2026-08-10",
+ "reported_at": "2026-08-11",
+ "fnol_text": "My name is Owen Quinlan and I live at 775 Rowan Way, Clinton, NC 28325. You can reach me on (555) 503-3652 or owen.quinlan@example.com. On 10 August 2026 another car pulled out of a side road and hit my front passenger side. The other driver, Lucia Zielinski, admitted they didn't see me. Policy MT-2023-00026. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Quinlan on (555) 503-3652 to acknowledge the claim. Owen confirmed the loss date as 10 August 2026."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Dmitri Vasquez gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Third-party driver Lucia Zielinski reports lower back strain and attended Mercy General. Owen reports a sprained ankle."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2201: front passenger side damage",
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2203: dashboard warning lights"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §3.1",
+  "clause": "MT-PW §3.1",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "own_damage",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §3.1"
+  },
+  "assessed_loss": 8300,
+  "amount_paid": 7300
+ },
+ "pii": {
+  "claimant_name": "Owen Quinlan",
+  "address": "775 Rowan Way, Clinton, NC 28325",
+  "street": "775 Rowan Way",
+  "phone": "(555) 503-3652",
+  "email": "owen.quinlan@example.com",
+  "other_people": [
+   "Dmitri Vasquez",
+   "Lucia Zielinski"
+  ],
+  "injuries": [
+   "lower back strain",
+   "a sprained ankle"
+  ]
+ }
+}

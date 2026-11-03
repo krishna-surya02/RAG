@@ -1,0 +1,58 @@
+{
+ "claim_id": "CLM-2024-000119",
+ "scenario": "mt_collision_tpft",
+ "product": "motor",
+ "policy_number": "MT-2024-00043",
+ "loss_date": "2024-12-23",
+ "reported_at": "2024-12-25",
+ "fnol_text": "My name is Nikhil Raman and I live at 567 Sycamore Lane, Madison, WI 53730. You can reach me on (555) 927-9087 or nikhil.raman@example.com. I was stopped at lights on 23 December 2024 when the car behind, driven by Ethan Kaminski, went into the back of mine. Rear bumper and boot are badly damaged. Policy MT-2024-00043. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Raman on (555) 927-9087 to acknowledge the claim. Nikhil confirmed the loss date as 23 December 2024."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Mateo Sorensen gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Third-party driver Ethan Kaminski reports bruised ribs and attended Mercy General. Nikhil reports lower back strain."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2203: dashboard warning lights",
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2201: front passenger side damage"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:MT-PW §1.2",
+  "clause": "MT-PW §1.2",
+  "endorsement_set": "MEND-2023",
+  "limits": {
+   "coverage": "own_damage",
+   "deductible": 750,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §3.1"
+  },
+  "assessed_loss": 17650,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Nikhil Raman",
+  "address": "567 Sycamore Lane, Madison, WI 53730",
+  "street": "567 Sycamore Lane",
+  "phone": "(555) 927-9087",
+  "email": "nikhil.raman@example.com",
+  "other_people": [
+   "Mateo Sorensen",
+   "Ethan Kaminski"
+  ],
+  "injuries": [
+   "bruised ribs",
+   "lower back strain"
+  ]
+ }
+}

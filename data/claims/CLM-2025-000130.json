@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2025-000130",
+ "scenario": "hh_gradual_leak",
+ "product": "household",
+ "policy_number": "HH-2023-00110",
+ "loss_date": "2025-10-04",
+ "reported_at": "2025-10-13",
+ "fnol_text": "My name is Dana Moreau and I live at 10 Maple Court, Madison, WI 53792. You can reach me on (555) 238-1815 or dana.moreau@example.com. We noticed on 4 October 2025 that the floor around the shower is soft. A plumber says the seal has been leaking slowly for months and the joists are rotten. Policy HH-2023-00110. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Moreau on (555) 238-1815 to acknowledge the claim. Dana confirmed the loss date as 4 October 2025."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 10 Maple Court. Neighbour Yusuf Haddad was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0413: water line on the skirting boards"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:HX-1",
+  "clause": "HX-1",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "escape_of_water",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 500000,
+   "source": "HH-PW §1.7"
+  },
+  "assessed_loss": 4750,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Dana Moreau",
+  "address": "10 Maple Court, Madison, WI 53792",
+  "street": "10 Maple Court",
+  "phone": "(555) 238-1815",
+  "email": "dana.moreau@example.com",
+  "other_people": [
+   "Yusuf Haddad",
+   "Leah Rasmussen"
+  ],
+  "injuries": []
+ }
+}

@@ -1,0 +1,51 @@
+{
+ "claim_id": "CLM-2023-000030",
+ "scenario": "not_in_force",
+ "product": "motor",
+ "policy_number": "MT-2023-00076",
+ "loss_date": "2023-08-16",
+ "reported_at": "2023-08-18",
+ "fnol_text": "My name is Viktor Kaminski and I live at 980 Willow Lane, Clinton, NC 28338. You can reach me on (555) 699-7070 or viktor.kaminski@example.com. On 16 August 2023 another car pulled out of a side road and hit my front passenger side. The other driver, Dana Iyer, admitted they didn't see me. Policy MT-2023-00076. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Kaminski on (555) 699-7070 to acknowledge the claim. Viktor confirmed the loss date as 16 August 2023."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Hiroshi Kaminski gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Third-party driver Dana Iyer reports a sprained ankle and attended County General. Viktor reports a mild concussion."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2203: dashboard warning lights",
+  "IMG_2201: front passenger side damage"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "NOT_IN_FORCE",
+  "clause": null,
+  "endorsement_set": null,
+  "limits": null,
+  "assessed_loss": 3500,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Viktor Kaminski",
+  "address": "980 Willow Lane, Clinton, NC 28338",
+  "street": "980 Willow Lane",
+  "phone": "(555) 699-7070",
+  "email": "viktor.kaminski@example.com",
+  "other_people": [
+   "Hiroshi Kaminski",
+   "Dana Iyer"
+  ],
+  "injuries": [
+   "a sprained ankle",
+   "a mild concussion"
+  ]
+ }
+}

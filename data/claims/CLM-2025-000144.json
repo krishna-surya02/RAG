@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2025-000144",
+ "scenario": "mt_hail",
+ "product": "motor",
+ "policy_number": "MT-2024-00139",
+ "loss_date": "2025-10-29",
+ "reported_at": "2025-11-01",
+ "fnol_text": "My name is Bianca Al-Sayed and I live at 567 Maple Road, Milton, VT 05478. You can reach me on (555) 889-5373 or bianca.alsayed@example.com. A hailstorm on 29 October 2025 left dozens of dents across the roof, bonnet and boot of my car. Policy MT-2024-00139. I'd like to claim for the damage to my car. I assume this is covered under my policy?",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Al-Sayed on (555) 889-5373 to acknowledge the claim. Bianca confirmed the loss date as 29 October 2025."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Felix Iyer gave a statement by phone."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2203: dashboard warning lights",
+  "IMG_2207: vehicle on the recovery truck"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §3.2",
+  "clause": "MT-PW §3.2",
+  "endorsement_set": "MEND-2023",
+  "limits": {
+   "coverage": "hail",
+   "deductible": 750,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §3.2"
+  },
+  "assessed_loss": 2100,
+  "amount_paid": 1350
+ },
+ "pii": {
+  "claimant_name": "Bianca Al-Sayed",
+  "address": "567 Maple Road, Milton, VT 05478",
+  "street": "567 Maple Road",
+  "phone": "(555) 889-5373",
+  "email": "bianca.alsayed@example.com",
+  "other_people": [
+   "Felix Iyer",
+   "Maya Yilmaz"
+  ],
+  "injuries": []
+ }
+}

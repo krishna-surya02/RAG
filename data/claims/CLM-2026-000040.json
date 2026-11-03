@@ -1,0 +1,54 @@
+{
+ "claim_id": "CLM-2026-000040",
+ "scenario": "hh_surface_water_25_floodplus",
+ "product": "household",
+ "policy_number": "HH-2024-00059",
+ "loss_date": "2026-05-02",
+ "reported_at": "2026-05-03",
+ "fnol_text": "My name is Mateo Al-Sayed and I live at 735 Oakridge Close, Ashland, OR 97530. You can reach me on (555) 973-3558 or mateo.alsayed@example.com. After the torrential rain on the night of 2 May 2026, rainwater ran off the field behind us, across the back garden and in under the patio doors. About 5 cm of water covered the kitchen and family room floors. Policy HH-2024-00059. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Al-Sayed on (555) 973-3558 to acknowledge the claim. Mateo confirmed the loss date as 2 May 2026."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 735 Oakridge Close. Neighbour Rafael Quinlan was present and confirmed the timeline."
+  },
+  {
+   "n": 3,
+   "text": "Mateo sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0412: ground floor with standing water and wet carpets"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:HFL-25 §2.2",
+  "clause": "HFL-25 §2.2",
+  "endorsement_set": "HEND-2025",
+  "limits": {
+   "coverage": "flood_plus",
+   "deductible": 5000,
+   "sub_limit": 25000,
+   "policy_limit": 600000,
+   "source": "HFL-25 §2.2, §2.3; HSL-25 §1"
+  },
+  "assessed_loss": 29800,
+  "amount_paid": 24800
+ },
+ "pii": {
+  "claimant_name": "Mateo Al-Sayed",
+  "address": "735 Oakridge Close, Ashland, OR 97530",
+  "street": "735 Oakridge Close",
+  "phone": "(555) 973-3558",
+  "email": "mateo.alsayed@example.com",
+  "other_people": [
+   "Rafael Quinlan",
+   "Chloe Gallagher"
+  ],
+  "injuries": []
+ }
+}

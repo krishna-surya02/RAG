@@ -1,0 +1,54 @@
+{
+ "claim_id": "CLM-2025-000001",
+ "scenario": "mt_flood_warning_23",
+ "product": "motor",
+ "policy_number": "MT-2023-00089",
+ "loss_date": "2024-12-29",
+ "reported_at": "2025-01-02",
+ "fnol_text": "My name is Hannah Chukwu and I live at 605 Sycamore Drive, Clinton, NC 28310. You can reach me on (555) 546-9583 or hannah.chukwu@example.com. There was a flood warning for our area from the day before, but I left the car parked on the street by the river. On 29 December 2024 the water rose and the car was flooded up to the seats. Policy MT-2023-00089. I'd like to claim for the damage to my car. Please just tell me this is covered.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Chukwu on (555) 546-9583 to acknowledge the claim. Hannah confirmed the loss date as 29 December 2024."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Mateo Haddad gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Hannah sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2201: front passenger side damage",
+  "IMG_2203: dashboard warning lights"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MFL-23 §2.1",
+  "clause": "MFL-23 §2.1",
+  "endorsement_set": "MEND-2023",
+  "limits": {
+   "coverage": "flood",
+   "deductible": 750,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MFL-23 §2.1"
+  },
+  "assessed_loss": 10950,
+  "amount_paid": 10200
+ },
+ "pii": {
+  "claimant_name": "Hannah Chukwu",
+  "address": "605 Sycamore Drive, Clinton, NC 28310",
+  "street": "605 Sycamore Drive",
+  "phone": "(555) 546-9583",
+  "email": "hannah.chukwu@example.com",
+  "other_people": [
+   "Mateo Haddad",
+   "Kwame Herrera"
+  ],
+  "injuries": []
+ }
+}

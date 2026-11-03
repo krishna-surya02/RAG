@@ -1,0 +1,55 @@
+{
+ "claim_id": "CLM-2026-000093",
+ "scenario": "hh_surface_water_25_floodplus",
+ "product": "household",
+ "policy_number": "HH-2023-00140",
+ "loss_date": "2026-08-29",
+ "reported_at": "2026-09-02",
+ "fnol_text": "My name is Hiroshi Osei and I live at 192 Heather Lane, Greenville, SC 29658. You can reach me on (555) 577-5378 or hiroshi.osei@example.com. We had a cloudburst on 29 August 2026. The drains in the street could not cope and surface water from the road came up the drive and into the ground floor through the front door. Policy HH-2023-00140. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Osei on (555) 577-5378 to acknowledge the claim. Hiroshi confirmed the loss date as 29 August 2026."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 192 Heather Lane. Neighbour Aisha Herrera was present and confirmed the timeline."
+  },
+  {
+   "n": 3,
+   "text": "Hiroshi sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0412: ground floor with standing water and wet carpets"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID_SUBLIMIT:HFL-25 §2.2",
+  "clause": "HFL-25 §2.2",
+  "endorsement_set": "HEND-2025",
+  "limits": {
+   "coverage": "flood_plus",
+   "deductible": 5000,
+   "sub_limit": 25000,
+   "policy_limit": 600000,
+   "source": "HFL-25 §2.2, §2.3; HSL-25 §1"
+  },
+  "assessed_loss": 47300,
+  "amount_paid": 25000
+ },
+ "pii": {
+  "claimant_name": "Hiroshi Osei",
+  "address": "192 Heather Lane, Greenville, SC 29658",
+  "street": "192 Heather Lane",
+  "phone": "(555) 577-5378",
+  "email": "hiroshi.osei@example.com",
+  "other_people": [
+   "Aisha Herrera",
+   "Rosa Herrera"
+  ],
+  "injuries": []
+ }
+}

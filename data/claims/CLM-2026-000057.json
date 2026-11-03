@@ -1,0 +1,58 @@
+{
+ "claim_id": "CLM-2026-000057",
+ "scenario": "mt_collision_tpft",
+ "product": "motor",
+ "policy_number": "MT-2023-00093",
+ "loss_date": "2026-06-07",
+ "reported_at": "2026-06-15",
+ "fnol_text": "My name is Elena Vasquez and I live at 926 Primrose Terrace, Springfield, OH 45553. You can reach me on (555) 904-3823 or elena.vasquez@example.com. On 7 June 2026 another car pulled out of a side road and hit my front passenger side. The other driver, Dmitri Whitlock, admitted they didn't see me. Policy MT-2023-00093. I'd like to claim for the damage to my car. Am I insured for this or not?",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Vasquez on (555) 904-3823 to acknowledge the claim. Elena confirmed the loss date as 7 June 2026."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Fatima Novak gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Third-party driver Dmitri Whitlock reports bruised ribs and attended Mercy General. Elena reports a sprained wrist."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2203: dashboard warning lights",
+  "IMG_2201: front passenger side damage"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:MT-PW §1.2",
+  "clause": "MT-PW §1.2",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "own_damage",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §3.1"
+  },
+  "assessed_loss": 12750,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Elena Vasquez",
+  "address": "926 Primrose Terrace, Springfield, OH 45553",
+  "street": "926 Primrose Terrace",
+  "phone": "(555) 904-3823",
+  "email": "elena.vasquez@example.com",
+  "other_people": [
+   "Fatima Novak",
+   "Dmitri Whitlock"
+  ],
+  "injuries": [
+   "bruised ribs",
+   "a sprained wrist"
+  ]
+ }
+}

@@ -1,0 +1,57 @@
+{
+ "claim_id": "CLM-2025-000042",
+ "scenario": "mt_collision",
+ "product": "motor",
+ "policy_number": "MT-2023-00103",
+ "loss_date": "2025-03-30",
+ "reported_at": "2025-04-06",
+ "fnol_text": "My name is Samuel Okafor and I live at 892 Maple Court, Clinton, NC 28329. You can reach me on (555) 971-7147 or samuel.okafor@example.com. On 30 March 2025 another car pulled out of a side road and hit my front passenger side. The other driver, Ethan Jovanovic, admitted they didn't see me. Policy MT-2023-00103. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Okafor on (555) 971-7147 to acknowledge the claim. Samuel confirmed the loss date as 30 March 2025."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Lucia Okafor gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Third-party driver Ethan Jovanovic reports minor burns to the hand and attended Mercy General. Samuel reports lower back strain."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2201: front passenger side damage"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §3.1",
+  "clause": "MT-PW §3.1",
+  "endorsement_set": "MEND-2023",
+  "limits": {
+   "coverage": "own_damage",
+   "deductible": 750,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §3.1"
+  },
+  "assessed_loss": 21900,
+  "amount_paid": 21150
+ },
+ "pii": {
+  "claimant_name": "Samuel Okafor",
+  "address": "892 Maple Court, Clinton, NC 28329",
+  "street": "892 Maple Court",
+  "phone": "(555) 971-7147",
+  "email": "samuel.okafor@example.com",
+  "other_people": [
+   "Lucia Okafor",
+   "Ethan Jovanovic"
+  ],
+  "injuries": [
+   "minor burns to the hand",
+   "lower back strain"
+  ]
+ }
+}

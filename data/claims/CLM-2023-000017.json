@@ -1,0 +1,44 @@
+{
+ "claim_id": "CLM-2023-000017",
+ "scenario": "not_in_force",
+ "product": "household",
+ "policy_number": "HH-2024-00107",
+ "loss_date": "2023-06-06",
+ "reported_at": "2023-06-13",
+ "fnol_text": "My name is Aisha Kaminski and I live at 208 Kestrel Road, Fairview, PA 16412. You can reach me on (555) 793-1711 or aisha.kaminski@example.com. The washing machine hose split on 6 June 2023 and flooded the utility room and hallway before we could turn off the water. Policy HH-2024-00107. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Kaminski on (555) 793-1711 to acknowledge the claim. Aisha confirmed the loss date as 6 June 2023."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 208 Kestrel Road. Neighbour Leah Al-Sayed was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0417: damaged furniture stacked in the garage"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "NOT_IN_FORCE",
+  "clause": null,
+  "endorsement_set": null,
+  "limits": null,
+  "assessed_loss": 16000,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Aisha Kaminski",
+  "address": "208 Kestrel Road, Fairview, PA 16412",
+  "street": "208 Kestrel Road",
+  "phone": "(555) 793-1711",
+  "email": "aisha.kaminski@example.com",
+  "other_people": [
+   "Leah Al-Sayed",
+   "Ines Santos"
+  ],
+  "injuries": []
+ }
+}

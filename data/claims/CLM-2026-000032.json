@@ -1,0 +1,54 @@
+{
+ "claim_id": "CLM-2026-000032",
+ "scenario": "mt_flood_drove_25",
+ "product": "motor",
+ "policy_number": "MT-2024-00108",
+ "loss_date": "2026-04-13",
+ "reported_at": "2026-04-16",
+ "fnol_text": "My name is Sofia Ballard and I live at 701 Linden Drive, Milton, VT 05468. You can reach me on (555) 866-2075 or sofia.ballard@example.com. On 13 April 2026 I tried to drive through a flooded road under the bridge. The water was deeper than I thought and the engine cut out and filled with water. Policy MT-2024-00108. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Ballard on (555) 866-2075 to acknowledge the claim. Sofia confirmed the loss date as 13 April 2026."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Leah Whitfield gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Sofia sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2203: dashboard warning lights",
+  "IMG_2207: vehicle on the recovery truck"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:MFL-25 §2.3",
+  "clause": "MFL-25 §2.3",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "flood",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MFL-25 §2.4"
+  },
+  "assessed_loss": 26050,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Sofia Ballard",
+  "address": "701 Linden Drive, Milton, VT 05468",
+  "street": "701 Linden Drive",
+  "phone": "(555) 866-2075",
+  "email": "sofia.ballard@example.com",
+  "other_people": [
+   "Leah Whitfield",
+   "Bianca Ferreira"
+  ],
+  "injuries": []
+ }
+}

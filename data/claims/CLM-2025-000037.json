@@ -1,0 +1,55 @@
+{
+ "claim_id": "CLM-2025-000037",
+ "scenario": "hh_surface_water_23",
+ "product": "household",
+ "policy_number": "HH-2024-00099",
+ "loss_date": "2025-03-18",
+ "reported_at": "2025-03-21",
+ "fnol_text": "My name is Lucia Herrera and I live at 247 Briar Road, Riverton, WY 82594. You can reach me on (555) 880-8175 or lucia.herrera@example.com. We had a cloudburst on 18 March 2025. The drains in the street could not cope and surface water from the road came up the drive and into the ground floor through the front door. Policy HH-2024-00099. I'd like to claim for the damage to my home. Please just tell me this is covered.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Herrera on (555) 880-8175 to acknowledge the claim. Lucia confirmed the loss date as 18 March 2025."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 247 Briar Road. Neighbour Imogen Thorne was present and confirmed the timeline."
+  },
+  {
+   "n": 3,
+   "text": "Lucia sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0413: water line on the skirting boards"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID_SUBLIMIT:HFL-23 §2.2",
+  "clause": "HFL-23 §2.2",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "flood_surface_water",
+   "deductible": 2500,
+   "sub_limit": 15000,
+   "policy_limit": 500000,
+   "source": "HFL-23 §2.2, §2.3; HSL-23 §1"
+  },
+  "assessed_loss": 23000,
+  "amount_paid": 15000
+ },
+ "pii": {
+  "claimant_name": "Lucia Herrera",
+  "address": "247 Briar Road, Riverton, WY 82594",
+  "street": "247 Briar Road",
+  "phone": "(555) 880-8175",
+  "email": "lucia.herrera@example.com",
+  "other_people": [
+   "Imogen Thorne",
+   "Rosa Achebe"
+  ],
+  "injuries": []
+ }
+}

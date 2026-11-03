@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2023-000041",
+ "scenario": "hh_theft_forced",
+ "product": "household",
+ "policy_number": "HH-2023-00166",
+ "loss_date": "2023-10-15",
+ "reported_at": "2023-10-17",
+ "fnol_text": "My name is Leila Santos and I live at 638 Kestrel Street, Milton, VT 05463. You can reach me on (555) 888-3125 or leila.santos@example.com. Our house was broken into on 15 October 2023. The back door was forced and a laptop, jewellery and a television were taken. Policy HH-2023-00166. I'd like to claim for the damage to my home. Am I insured for this or not?",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Santos on (555) 888-3125 to acknowledge the claim. Leila confirmed the loss date as 15 October 2023."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 638 Kestrel Street. Neighbour Ingrid Takahashi was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0412: ground floor with standing water and wet carpets"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:HH-PW §1.10",
+  "clause": "HH-PW §1.10",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "theft",
+   "deductible": 500,
+   "sub_limit": null,
+   "policy_limit": 75000,
+   "source": "HH-PW §1.10, §2.2"
+  },
+  "assessed_loss": 15950,
+  "amount_paid": 15450
+ },
+ "pii": {
+  "claimant_name": "Leila Santos",
+  "address": "638 Kestrel Street, Milton, VT 05463",
+  "street": "638 Kestrel Street",
+  "phone": "(555) 888-3125",
+  "email": "leila.santos@example.com",
+  "other_people": [
+   "Ingrid Takahashi",
+   "Ethan Abernathy"
+  ],
+  "injuries": []
+ }
+}

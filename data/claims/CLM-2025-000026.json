@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2025-000026",
+ "scenario": "mt_hail",
+ "product": "motor",
+ "policy_number": "MT-2024-00124",
+ "loss_date": "2025-03-05",
+ "reported_at": "2025-03-10",
+ "fnol_text": "My name is Fatima Oduya and I live at 753 Larkspur Place, Clinton, NC 28344. You can reach me on (555) 876-2836 or fatima.oduya@example.com. A hailstorm on 5 March 2025 left dozens of dents across the roof, bonnet and boot of my car. Policy MT-2024-00124. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Oduya on (555) 876-2836 to acknowledge the claim. Fatima confirmed the loss date as 5 March 2025."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Dmitri Yilmaz gave a statement by phone."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2201: front passenger side damage",
+  "IMG_2203: dashboard warning lights"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §3.2",
+  "clause": "MT-PW §3.2",
+  "endorsement_set": "MEND-2023",
+  "limits": {
+   "coverage": "hail",
+   "deductible": 750,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §3.2"
+  },
+  "assessed_loss": 7950,
+  "amount_paid": 7200
+ },
+ "pii": {
+  "claimant_name": "Fatima Oduya",
+  "address": "753 Larkspur Place, Clinton, NC 28344",
+  "street": "753 Larkspur Place",
+  "phone": "(555) 876-2836",
+  "email": "fatima.oduya@example.com",
+  "other_people": [
+   "Dmitri Yilmaz",
+   "Chloe McBride"
+  ],
+  "injuries": []
+ }
+}

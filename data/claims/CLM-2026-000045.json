@@ -1,0 +1,57 @@
+{
+ "claim_id": "CLM-2026-000045",
+ "scenario": "mt_collision",
+ "product": "motor",
+ "policy_number": "MT-2024-00077",
+ "loss_date": "2026-05-10",
+ "reported_at": "2026-05-14",
+ "fnol_text": "My name is Ethan Ueda and I live at 540 Marigold Terrace, Madison, WI 53742. You can reach me on (555) 812-3372 or ethan.ueda@example.com. On 10 May 2026 another car pulled out of a side road and hit my front passenger side. The other driver, Arjun Varga, admitted they didn't see me. Policy MT-2024-00077. I'd like to claim for the damage to my car. Am I insured for this or not?",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Ueda on (555) 812-3372 to acknowledge the claim. Ethan confirmed the loss date as 10 May 2026."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Liam Ballard gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Third-party driver Arjun Varga reports a mild concussion and attended County General. Ethan reports whiplash."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2201: front passenger side damage",
+  "IMG_2207: vehicle on the recovery truck"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §3.1",
+  "clause": "MT-PW §3.1",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "own_damage",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §3.1"
+  },
+  "assessed_loss": 3800,
+  "amount_paid": 2800
+ },
+ "pii": {
+  "claimant_name": "Ethan Ueda",
+  "address": "540 Marigold Terrace, Madison, WI 53742",
+  "street": "540 Marigold Terrace",
+  "phone": "(555) 812-3372",
+  "email": "ethan.ueda@example.com",
+  "other_people": [
+   "Liam Ballard",
+   "Arjun Varga"
+  ],
+  "injuries": [
+   "a mild concussion",
+   "whiplash"
+  ]
+ }
+}

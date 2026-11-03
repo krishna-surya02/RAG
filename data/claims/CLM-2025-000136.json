@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2025-000136",
+ "scenario": "hh_below_deductible",
+ "product": "household",
+ "policy_number": "HH-2024-00020",
+ "loss_date": "2025-10-15",
+ "reported_at": "2025-10-21",
+ "fnol_text": "My name is Mateo Jovanovic and I live at 319 Cedar Street, Clinton, NC 28383. You can reach me on (555) 723-4820 or mateo.jovanovic@example.com. On 15 October 2025 the dishwasher leaked suddenly and stained a small area of the kitchen floor. Policy HH-2024-00020. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Jovanovic on (555) 723-4820 to acknowledge the claim. Mateo confirmed the loss date as 15 October 2025."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 319 Cedar Street. Neighbour Samuel Haddad was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0412: ground floor with standing water and wet carpets"
+ ],
+ "final_decision": {
+  "outcome": "no_payment",
+  "reason_code": "BELOW_DEDUCTIBLE:HH-PW §1.7",
+  "clause": "HH-PW §1.7",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "escape_of_water",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 500000,
+   "source": "HH-PW §1.7"
+  },
+  "assessed_loss": 500,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Mateo Jovanovic",
+  "address": "319 Cedar Street, Clinton, NC 28383",
+  "street": "319 Cedar Street",
+  "phone": "(555) 723-4820",
+  "email": "mateo.jovanovic@example.com",
+  "other_people": [
+   "Samuel Haddad",
+   "Arjun Mensah"
+  ],
+  "injuries": []
+ }
+}

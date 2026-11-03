@@ -1,0 +1,58 @@
+{
+ "claim_id": "CLM-2026-000050",
+ "scenario": "mt_collision_tpft",
+ "product": "motor",
+ "policy_number": "MT-2024-00148",
+ "loss_date": "2026-05-26",
+ "reported_at": "2026-05-31",
+ "fnol_text": "My name is Lucia Wojcik and I live at 768 Thornbury Street, Greenville, SC 29688. You can reach me on (555) 874-8640 or lucia.wojcik@example.com. I was stopped at lights on 26 May 2026 when the car behind, driven by Gabriel McBride, went into the back of mine. Rear bumper and boot are badly damaged. Policy MT-2024-00148. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Wojcik on (555) 874-8640 to acknowledge the claim. Lucia confirmed the loss date as 26 May 2026."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Yusuf Ballard gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Third-party driver Gabriel McBride reports bruised ribs and attended Riverside Medical Center. Lucia reports lacerations to the forearm."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2201: front passenger side damage",
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2203: dashboard warning lights"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:MT-PW §1.2",
+  "clause": "MT-PW §1.2",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "own_damage",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §3.1"
+  },
+  "assessed_loss": 7400,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Lucia Wojcik",
+  "address": "768 Thornbury Street, Greenville, SC 29688",
+  "street": "768 Thornbury Street",
+  "phone": "(555) 874-8640",
+  "email": "lucia.wojcik@example.com",
+  "other_people": [
+   "Yusuf Ballard",
+   "Gabriel McBride"
+  ],
+  "injuries": [
+   "bruised ribs",
+   "lacerations to the forearm"
+  ]
+ }
+}

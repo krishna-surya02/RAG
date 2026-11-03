@@ -65,6 +65,15 @@ MAX_RETRIES = _int_env("MAX_RETRIES", 2)
 PRICE_INPUT_PER_M = float(os.getenv("PRICE_INPUT_PER_M", 0.15))
 PRICE_OUTPUT_PER_M = float(os.getenv("PRICE_OUTPUT_PER_M", 0.60))
 
+# Per-model pricing, $ per 1M (input, output). Week 12 runs three roles on two
+# models (agent on 20b, RAG answers and judge on 120b), and costing every span
+# at CHAT_MODEL's price over-counted the agent ~2x. Sources: console.groq.com
+# model pages, 120b checked 2026-10-27, 20b checked 2026-09-28.
+PRICES = {
+    "openai/gpt-oss-120b": (PRICE_INPUT_PER_M, PRICE_OUTPUT_PER_M),
+    "openai/gpt-oss-20b": (0.075, 0.30),
+}
+
 # --- Embeddings (local) ----------------------------------------------------
 # EMBED_DIM must match the model's output width. It is baked into the
 # langchain_pg_embedding "vector(N)" column when that table is first created,

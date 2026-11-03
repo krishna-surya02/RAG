@@ -1,0 +1,44 @@
+{
+ "claim_id": "CLM-2023-000010",
+ "scenario": "not_in_force",
+ "product": "household",
+ "policy_number": "HH-2023-00042",
+ "loss_date": "2023-05-03",
+ "reported_at": "2023-05-10",
+ "fnol_text": "My name is Gabriel Oduya and I live at 774 Primrose Place, Greenville, SC 29644. You can reach me on (555) 477-1941 or gabriel.oduya@example.com. On 3 May 2023 a pipe under the upstairs bathroom burst while we were out and water came through the kitchen ceiling. Policy HH-2023-00042. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Oduya on (555) 477-1941 to acknowledge the claim. Gabriel confirmed the loss date as 3 May 2023."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 774 Primrose Place. Neighbour Valentina Sorensen was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0412: ground floor with standing water and wet carpets"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "NOT_IN_FORCE",
+  "clause": null,
+  "endorsement_set": null,
+  "limits": null,
+  "assessed_loss": 9400,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Gabriel Oduya",
+  "address": "774 Primrose Place, Greenville, SC 29644",
+  "street": "774 Primrose Place",
+  "phone": "(555) 477-1941",
+  "email": "gabriel.oduya@example.com",
+  "other_people": [
+   "Valentina Sorensen",
+   "Rosa Al-Sayed"
+  ],
+  "injuries": []
+ }
+}

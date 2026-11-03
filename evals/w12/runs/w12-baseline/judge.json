@@ -1,0 +1,126 @@
+{
+ "e6fb61c43174417282040406adeaf5ec": {
+  "grounded": true,
+  "points_to_reference": false,
+  "no_decision": false,
+  "limits_kept_apart": true,
+  "verdict": "fail",
+  "failure_tags": [
+   "missed_deciding_clause",
+   "decision_language"
+  ],
+  "rationale": "The summary does not point the adjuster to the reference clause HFL-23 §2.2. It also includes coverage-decision language ('is indemnified'), which constitutes a decision statement. All other criteria are met.",
+  "_usage": {
+   "prompt_tokens": 1954,
+   "completion_tokens": 619,
+   "cost_usd": 0.0006645,
+   "model": "openai/gpt-oss-120b"
+  }
+ },
+ "4dd521c3f32d472791b5e0de12169abc": {
+  "grounded": false,
+  "points_to_reference": true,
+  "no_decision": false,
+  "limits_kept_apart": false,
+  "verdict": "fail",
+  "failure_tags": [
+   "unsupported_paraphrase",
+   "decision_language",
+   "limit_conflation",
+   "cause_misread"
+  ],
+  "rationale": "The summary incorrectly classifies pluvial accumulation as escape‑of‑water coverage and assigns the pluvial sub‑limit to that line, which is not supported by the cited wording. It also states a coverage conclusion and conflates limits.",
+  "_usage": {
+   "prompt_tokens": 2306,
+   "completion_tokens": 1021,
+   "cost_usd": 0.0009585,
+   "model": "openai/gpt-oss-120b"
+  }
+ },
+ "2d70fae66a0243b7943017a0fd1a8c1a": {
+  "grounded": true,
+  "points_to_reference": true,
+  "no_decision": true,
+  "limits_kept_apart": true,
+  "verdict": "pass",
+  "failure_tags": [],
+  "rationale": "All wording references are supported, the summary points to the reference clause, it avoids any coverage conclusion, and limits are correctly identified and separated.",
+  "_usage": {
+   "prompt_tokens": 2043,
+   "completion_tokens": 444,
+   "cost_usd": 0.00057285,
+   "model": "openai/gpt-oss-120b"
+  }
+ },
+ "62be913d515a462cac5c2453aa11dfa6": {
+  "grounded": true,
+  "points_to_reference": false,
+  "no_decision": false,
+  "limits_kept_apart": true,
+  "verdict": "fail",
+  "failure_tags": [
+   "missed_deciding_clause",
+   "decision_language"
+  ],
+  "rationale": "The summary does not point the adjuster to the reference clause (Q2) and it repeats coverage-decision language ('not covered'), violating the no-decision rule (Q3). All other criteria are satisfied.",
+  "_usage": {
+   "prompt_tokens": 1759,
+   "completion_tokens": 676,
+   "cost_usd": 0.00066945,
+   "model": "openai/gpt-oss-120b"
+  }
+ },
+ "154f7bde1a9a4ce2b3160d809bfc8ab7": {
+  "grounded": true,
+  "points_to_reference": false,
+  "no_decision": true,
+  "limits_kept_apart": true,
+  "verdict": "fail",
+  "failure_tags": [
+   "missed_deciding_clause"
+  ],
+  "rationale": "The summary does not direct the adjuster to the reference clause HFL-23 §2.2, which is required. All other criteria are met.",
+  "_usage": {
+   "prompt_tokens": 1923,
+   "completion_tokens": 485,
+   "cost_usd": 0.00057945,
+   "model": "openai/gpt-oss-120b"
+  }
+ },
+ "6948e86a92ca4294b8db529d333de220": {
+  "grounded": false,
+  "points_to_reference": false,
+  "no_decision": false,
+  "limits_kept_apart": true,
+  "verdict": "fail",
+  "failure_tags": [
+   "unsupported_paraphrase",
+   "decision_language",
+   "missed_deciding_clause"
+  ],
+  "rationale": "The summary asserts coverage ('covered') and that HX‑19 does not apply, which are not directly supported by the cited wording. It never directs the adjuster to the reference clause HFL‑23 §2.1. It also includes a coverage decision, violating the no‑decision requirement.",
+  "_usage": {
+   "prompt_tokens": 1877,
+   "completion_tokens": 800,
+   "cost_usd": 0.00076155,
+   "model": "openai/gpt-oss-120b"
+  }
+ },
+ "25d475eb48c948c898d01bb071367287": {
+  "grounded": true,
+  "points_to_reference": true,
+  "no_decision": false,
+  "limits_kept_apart": true,
+  "verdict": "fail",
+  "failure_tags": [
+   "decision_language"
+  ],
+  "rationale": "The summary states that the inundation exclusion does not apply, which is a coverage conclusion. All other statements are supported and limits are correctly cited.",
+  "_usage": {
+   "prompt_tokens": 1810,
+   "completion_tokens": 1019,
+   "cost_usd": 0.0008829,
+   "model": "openai/gpt-oss-120b"
+  }
+ }
+}

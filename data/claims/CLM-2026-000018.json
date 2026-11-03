@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2026-000018",
+ "scenario": "hh_gradual_leak",
+ "product": "household",
+ "policy_number": "HH-2024-00045",
+ "loss_date": "2026-02-17",
+ "reported_at": "2026-02-20",
+ "fnol_text": "My name is Zara Rasmussen and I live at 716 Ashford Avenue, Fairview, PA 16474. You can reach me on (555) 722-2276 or zara.rasmussen@example.com. We noticed on 17 February 2026 that the floor around the shower is soft. A plumber says the seal has been leaking slowly for months and the joists are rotten. Policy HH-2024-00045. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Rasmussen on (555) 722-2276 to acknowledge the claim. Zara confirmed the loss date as 17 February 2026."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 716 Ashford Avenue. Neighbour Ines Zielinski was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0417: damaged furniture stacked in the garage"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:HX-1",
+  "clause": "HX-1",
+  "endorsement_set": "HEND-2025",
+  "limits": {
+   "coverage": "escape_of_water",
+   "deductible": 1500,
+   "sub_limit": null,
+   "policy_limit": 600000,
+   "source": "HH-PW §1.7"
+  },
+  "assessed_loss": 10900,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Zara Rasmussen",
+  "address": "716 Ashford Avenue, Fairview, PA 16474",
+  "street": "716 Ashford Avenue",
+  "phone": "(555) 722-2276",
+  "email": "zara.rasmussen@example.com",
+  "other_people": [
+   "Ines Zielinski",
+   "Ethan Laurent"
+  ],
+  "injuries": []
+ }
+}

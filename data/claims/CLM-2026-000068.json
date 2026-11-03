@@ -1,0 +1,55 @@
+{
+ "claim_id": "CLM-2026-000068",
+ "scenario": "hh_surface_water_25",
+ "product": "household",
+ "policy_number": "HH-2024-00031",
+ "loss_date": "2026-07-07",
+ "reported_at": "2026-07-10",
+ "fnol_text": "My name is Jordan Ferreira and I live at 592 Alder Way, Clinton, NC 28322. You can reach me on (555) 278-2711 or jordan.ferreira@example.com. After the torrential rain on the night of 7 July 2026, rainwater ran off the field behind us, across the back garden and in under the patio doors. About 5 cm of water covered the kitchen and family room floors. Policy HH-2024-00031. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Ferreira on (555) 278-2711 to acknowledge the claim. Jordan confirmed the loss date as 7 July 2026."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 592 Alder Way. Neighbour Valentina Mensah was present and confirmed the timeline."
+  },
+  {
+   "n": 3,
+   "text": "Jordan sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0412: ground floor with standing water and wet carpets"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:HFL-25 §2.1",
+  "clause": "HFL-25 §2.1",
+  "endorsement_set": "HEND-2025",
+  "limits": {
+   "coverage": "flood_plus",
+   "deductible": 5000,
+   "sub_limit": 25000,
+   "policy_limit": 600000,
+   "source": "HFL-25 §2.2, §2.3; HSL-25 §1"
+  },
+  "assessed_loss": 9400,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Jordan Ferreira",
+  "address": "592 Alder Way, Clinton, NC 28322",
+  "street": "592 Alder Way",
+  "phone": "(555) 278-2711",
+  "email": "jordan.ferreira@example.com",
+  "other_people": [
+   "Valentina Mensah",
+   "Dana Castillo"
+  ],
+  "injuries": []
+ }
+}

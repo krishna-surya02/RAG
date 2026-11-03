@@ -1,0 +1,44 @@
+{
+ "claim_id": "CLM-2025-000017",
+ "scenario": "not_in_force",
+ "product": "household",
+ "policy_number": "HH-2025-00144",
+ "loss_date": "2025-02-22",
+ "reported_at": "2025-02-23",
+ "fnol_text": "My name is Samuel Oyelaran and I live at 410 Rowan Way, Salem, MA 01971. You can reach me on (555) 908-6492 or samuel.oyelaran@example.com. Our house was broken into on 22 February 2025. The back door was forced and a laptop, jewellery and a television were taken. Policy HH-2025-00144. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Oyelaran on (555) 908-6492 to acknowledge the claim. Samuel confirmed the loss date as 22 February 2025."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 410 Rowan Way. Neighbour Tariq Takahashi was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0413: water line on the skirting boards"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "NOT_IN_FORCE",
+  "clause": null,
+  "endorsement_set": null,
+  "limits": null,
+  "assessed_loss": 1800,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Samuel Oyelaran",
+  "address": "410 Rowan Way, Salem, MA 01971",
+  "street": "410 Rowan Way",
+  "phone": "(555) 908-6492",
+  "email": "samuel.oyelaran@example.com",
+  "other_people": [
+   "Tariq Takahashi",
+   "Nikhil Jovanovic"
+  ],
+  "injuries": []
+ }
+}

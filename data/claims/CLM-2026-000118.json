@@ -1,0 +1,54 @@
+{
+ "claim_id": "CLM-2026-000118",
+ "scenario": "mt_flood_warning_25",
+ "product": "motor",
+ "policy_number": "MT-2023-00026",
+ "loss_date": "2026-09-29",
+ "reported_at": "2026-10-03",
+ "fnol_text": "My name is Owen Quinlan and I live at 775 Rowan Way, Clinton, NC 28325. You can reach me on (555) 503-3652 or owen.quinlan@example.com. There was a flood warning for our area from the day before, but I left the car parked on the street by the river. On 29 September 2026 the water rose and the car was flooded up to the seats. Policy MT-2023-00026. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Quinlan on (555) 503-3652 to acknowledge the claim. Owen confirmed the loss date as 29 September 2026."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Owen O'Connell gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Owen sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2201: front passenger side damage",
+  "IMG_2207: vehicle on the recovery truck"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:MFL-25 §2.2",
+  "clause": "MFL-25 §2.2",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "flood",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MFL-25 §2.4"
+  },
+  "assessed_loss": 17200,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Owen Quinlan",
+  "address": "775 Rowan Way, Clinton, NC 28325",
+  "street": "775 Rowan Way",
+  "phone": "(555) 503-3652",
+  "email": "owen.quinlan@example.com",
+  "other_people": [
+   "Owen O'Connell",
+   "Elena Al-Sayed"
+  ],
+  "injuries": []
+ }
+}

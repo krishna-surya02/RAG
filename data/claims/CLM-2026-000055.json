@@ -1,0 +1,57 @@
+{
+ "claim_id": "CLM-2026-000055",
+ "scenario": "mt_collision",
+ "product": "motor",
+ "policy_number": "MT-2025-00150",
+ "loss_date": "2026-06-05",
+ "reported_at": "2026-06-11",
+ "fnol_text": "My name is Tomas Petrov and I live at 905 Heather Place, Greenville, SC 29636. You can reach me on (555) 520-8822 or tomas.petrov@example.com. On 5 June 2026 another car pulled out of a side road and hit my front passenger side. The other driver, Ingrid Raman, admitted they didn't see me. Policy MT-2025-00150. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Petrov on (555) 520-8822 to acknowledge the claim. Tomas confirmed the loss date as 5 June 2026."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Lucia Achebe gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Third-party driver Ingrid Raman reports whiplash and attended Riverside Medical Center. Tomas reports a sprained ankle."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2201: front passenger side damage",
+  "IMG_2207: vehicle on the recovery truck"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §3.1",
+  "clause": "MT-PW §3.1",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "own_damage",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §3.1"
+  },
+  "assessed_loss": 10000,
+  "amount_paid": 9000
+ },
+ "pii": {
+  "claimant_name": "Tomas Petrov",
+  "address": "905 Heather Place, Greenville, SC 29636",
+  "street": "905 Heather Place",
+  "phone": "(555) 520-8822",
+  "email": "tomas.petrov@example.com",
+  "other_people": [
+   "Lucia Achebe",
+   "Ingrid Raman"
+  ],
+  "injuries": [
+   "whiplash",
+   "a sprained ankle"
+  ]
+ }
+}

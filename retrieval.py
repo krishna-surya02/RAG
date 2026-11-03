@@ -43,9 +43,9 @@ class Hit:
     why it is here: the score that ranked it, and, for fused rankings, the rank
     each contributing ranker gave it."""
 
-    __slots__ = ("chunk_id", "text", "source_file", "page", "score", "rank", "components")
+    __slots__ = ("chunk_id", "text", "source_file", "page", "score", "rank", "components", "meta")
 
-    def __init__(self, chunk_id, text, source_file, page, score, rank=0, components=None):
+    def __init__(self, chunk_id, text, source_file, page, score, rank=0, components=None, meta=None):
         self.chunk_id = chunk_id
         self.text = text
         self.source_file = source_file
@@ -53,6 +53,9 @@ class Hit:
         self.score = score
         self.rank = rank
         self.components = components or {}
+        # Week 12: clause ref, document, version and effective window for
+        # wording hits. None for the week 3-11 PDF corpus.
+        self.meta = meta
 
     @property
     def short_id(self):
@@ -384,6 +387,80 @@ def retrieve(query, k=None, candidates=None, mode=None, backend=None):
 
     hits = rank_fn(query, k, candidates, _backend(backend))
     return hits[:k]
+
+
+# --- Week 12: wording in force on the loss date -------------------------------
+
+
+def retrieve_in_force(query, product, loss_date, endorsement_set=None, k=None):
+    """Rank wording clauses, keeping only documents in force for this loss.
+
+    Filtering happens before the top-k cut and is never topped up from what it
+    dropped -- unlike _rank_scoped, which backfills so the model always gets k
+    chunks. Here a backfilled chunk would be the 2025 flood wording on a 2024
+    loss, which is the client's live wound. Fewer chunks is the safe failure.
+
+    The endorsement set should come from the policy term covering the loss date
+    (store.in_force). Without one, it falls back to the set new terms received
+    on that calendar date and says so in the resolution, because the two differ
+    for any term that incepted before 1 April 2025 and had its loss after.
+    Returns (hits, resolution).
+    """
+    import datetime as dt
+
+    from w12 import store, wording_index
+
+    k = config.TOP_K if k is None else k
+    day = dt.date.fromisoformat(str(loss_date))
+    resolved_by = "policy_term" if endorsement_set else "calendar_date"
+    eset = endorsement_set or store.set_by_calendar(product, day)
+    allowed = store.doc_ids_in_force(product, eset) if eset else set()
+
+    def live(r):
+        return (r["doc_id"] in allowed
+                and dt.date.fromisoformat(r["effective_from"]) <= day
+                and (r["kind"] == "endorsement_set" or r["effective_to"] is None
+                     or day <= dt.date.fromisoformat(r["effective_to"])))
+
+    index = wording_index.build(quiet=True)
+    scores = index.scores(query)
+    order = np.argsort(-scores)
+    ranked, dropped = [], 0
+    for i in order:
+        r = index.records[i]
+        if not live(r):
+            dropped += 1 if r["product"] == product else 0
+            continue
+        ranked.append(i)
+
+    # Endorsement quota. The base wording hands flood (and other perils) to the
+    # endorsement set (HX-3), so a context with no endorsement clause at all is
+    # incomplete by the policy's own terms. Baseline case w12-04 cited HFL-23
+    # §1 and §2.3 but never §2.2: claimant phrasing ("rainwater ran across the
+    # garden") ranks base-wording perils above the legal-register carve-back.
+    # When none of the top k is from the in-force set, its best two take the
+    # last two slots. Still nothing from outside the in-force documents.
+    top = ranked[:k]
+    if eset and k >= 3 and not any(index.records[i]["doc_id"] == eset for i in top):
+        reserve = [i for i in ranked if index.records[i]["doc_id"] == eset][:2]
+        top = top[:k - len(reserve)] + reserve
+    hits = [Hit(index.records[i]["chunk_id"], index.records[i]["text"], index.records[i]["source_file"],
+                index.records[i]["page"], float(scores[i]), rank=n,
+                meta={key: index.records[i][key] for key in (
+                    "ref", "title", "anchor", "doc_id", "kind", "version", "file",
+                    "effective_from", "effective_to")})
+            for n, i in enumerate(top, start=1)]
+    resolution = {
+        "product": product, "loss_date": day.isoformat(), "endorsement_set": eset,
+        "endorsement_set_version": store.doc(eset)["version"] if eset else None,
+        "base_wording": store.base_wording(product), "resolved_by": resolved_by,
+        "same_product_chunks_filtered_out_above_cut": dropped,
+    }
+    if resolved_by == "calendar_date":
+        resolution["warning"] = ("endorsement set chosen by calendar date, not by the policy term; "
+                                 "a term that started before 2025-04-01 keeps the 2023 set -- pass "
+                                 "endorsement_set from the in-force check to be sure")
+    return hits, resolution
 
 
 def format_hits(hits):

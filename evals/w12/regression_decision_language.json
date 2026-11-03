@@ -1,0 +1,52 @@
+{
+ "_about": "Frozen failures replayed against the guard: zero API calls.",
+ "items": [
+  {
+   "trace_id": "e6fb61c43174417282040406adeaf5ec",
+   "claim_id": "CLM-2024-000073",
+   "run": "w12-baseline",
+   "guard_at_run_time": [
+    "is indemnified"
+   ],
+   "judge_rationale": "The summary does not point the adjuster to the reference clause HFL-23 §2.2. It also includes coverage-decision language ('is indemnified'), which constitutes a decision statement. All other criteria are met.",
+   "summary": "Claimant reports water pooling on lawn and entering lounge floor level on 16 Aug 2024, soaking carpets and sofa. Policy HH-2023-00011 is in force on the loss date under endorsement set HEND-2023 (term 2023-09-10 to 2024-09-09). The loss is not in a designated flood zone. The relevant wording: \n- HX-3 establishes that flood, inundation and surface water are governed solely by the flood endorsement in the endorsement set for the period of insurance (HFL-23 for this term). \n- HFL-23 §2.2 defines pluvial accumulation and provides that loss caused directly by pluvial accumulation entering the home is indemnified, subject to the Pluvial Accumulation Sub-limit and the Flood Deductible. \n- HFL-23 §2.3 sets the Flood Deductible at $2,500, applied in place of the Buildings or Contents deductible. \n- HSL-23 §1 specifies the Pluvial Accumulation Sub-limit of $15,000 per event. \n- The policy limit for flood surface water is $500,000. \nDeductible: $2,500; Sub-limit: $15,000; Policy limit: $500,000. No coverage decision is provided; the adjuster should review these clauses and limits in context of the loss."
+  },
+  {
+   "trace_id": "4dd521c3f32d472791b5e0de12169abc",
+   "claim_id": "CLM-2024-000079",
+   "run": "w12-baseline",
+   "guard_at_run_time": [],
+   "judge_rationale": "The summary incorrectly classifies pluvial accumulation as escape‑of‑water coverage and assigns the pluvial sub‑limit to that line, which is not supported by the cited wording. It also states a coverage conclusion and conflates limits.",
+   "summary": "Policy HH-2024-00013 was in force on the loss date 2024‑08‑16 under endorsement set HEND‑2023. The loss was caused by rainwater runoff (pluvial accumulation) entering the home, which falls under the escape‑of‑water coverage. The relevant wording is:\n• HH‑PW §1.7 – defines escape of water and the basic coverage.\n• HFL‑23 §2.1 – excludes inundation.\n• HFL‑23 §2.2 – provides limited indemnity for pluvial accumulation, subject to the sub‑limit and flood deductible.\n• HFL‑23 §2.3 – specifies a $2,500 flood deductible that applies in place of the standard buildings/contents deductible for pluvial claims.\n• HSL‑23 §1 – sets the $15,000 sub‑limit for pluvial accumulation per event.\nThe limits for the escape‑of‑water line are: deductible $1,000 (per get_limits), sub‑limit $15,000, policy limit $500,000. The claimant’s question about coverage is noted; no decision is made here."
+  },
+  {
+   "trace_id": "62be913d515a462cac5c2453aa11dfa6",
+   "claim_id": "CLM-2025-000093",
+   "run": "w12-baseline",
+   "guard_at_run_time": [
+    "not covered"
+   ],
+   "judge_rationale": "The summary does not point the adjuster to the reference clause (Q2) and it repeats coverage-decision language ('not covered'), violating the no-decision rule (Q3). All other criteria are satisfied.",
+   "summary": "Policy HH-2025-00071 was in force on the loss date of 2025‑07‑10 under the HEND‑2023 endorsement set. The loss involves rainwater running off the field behind the home, across the back garden and under the patio doors, covering kitchen and family room floors – a scenario described as \"Pluvial accumulation\" in the policy definitions (HFL‑23 §1). The relevant flood endorsement (HFL‑23) applies, providing a Flood Deductible of $2,500 (HFL‑23 §2.3). After the deductible, the loss is subject to a Pluvial Accumulation Sub‑limit of $15,000 and a policy limit of $500,000 (HFL‑23 §2.3; HSL‑23 §1). The policy excludes damage caused by water rising from the water table or groundwater (HX‑17). The flood endorsement governs this loss, and the loss is not covered under any other section of the wording if the endorsement does not provide cover (HX‑3)."
+  },
+  {
+   "trace_id": "6948e86a92ca4294b8db529d333de220",
+   "claim_id": "CLM-2026-000002",
+   "run": "w12-baseline",
+   "guard_at_run_time": [
+    "covered",
+    "exclusion in HX‑19 does not apply"
+   ],
+   "judge_rationale": "The summary asserts coverage ('covered') and that HX‑19 does not apply, which are not directly supported by the cited wording. It never directs the adjuster to the reference clause HFL‑23 §2.1. It also includes a coverage decision, violating the no‑decision requirement.",
+   "summary": "Policy HH-2024-00065 was in force on 31 Dec 2025 under endorsement set HEND‑2023. The loss was caused by a burst water installation that caused water to escape into the home, which falls under the escape‑of‑water coverage in HH‑PW §1.7. The clause states that loss or damage to buildings caused by escape of water is covered, subject to the deductible of £1,000 and the policy limit of £500,000. The exclusion for inundation in HFL‑23 §2.1 applies only to water covering normally dry land from a natural or artificial watercourse, lake, reservoir, canal, dam, sea or tidal water, which does not apply to a burst pipe. The unoccupancy exclusion in HX‑19 does not apply because the home was occupied. The relevant coverage line is escape_of_water, with deductible £1,000, no sub‑limit, and policy limit £500,000. The adjuster should review the loss details against the wording in the cited clauses."
+  },
+  {
+   "trace_id": "25d475eb48c948c898d01bb071367287",
+   "claim_id": "CLM-2023-000029",
+   "run": "w12-baseline",
+   "guard_at_run_time": [],
+   "judge_rationale": "The summary states that the inundation exclusion does not apply, which is a coverage conclusion. All other statements are supported and limits are correctly cited.",
+   "summary": "Policy HH-2023-00103 was in force on the loss date 2023-08-14 under endorsement set HEND-2023. The loss was caused by a burst water installation, which falls under the definition of escape of water. Clause HH‑PW §1.7 provides coverage for escape of water damage to the buildings, subject to the deductible and policy limit. Clause HFL‑23 §2.1 excludes coverage for inundation, which does not apply here as the water source was a fixed installation, not a natural or artificial watercourse. The deductible for escape of water is £1,000 and the policy limit for buildings is £500,000. No sub‑limit applies. The adjuster should verify the loss details, confirm the water source, and apply the deductible and limit as per the wording."
+  }
+ ]
+}

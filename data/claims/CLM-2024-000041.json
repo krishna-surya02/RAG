@@ -1,0 +1,51 @@
+{
+ "claim_id": "CLM-2024-000041",
+ "scenario": "hh_escape_of_water",
+ "product": "household",
+ "policy_number": "HH-2023-00028",
+ "loss_date": "2024-06-12",
+ "reported_at": "2024-06-19",
+ "fnol_text": "My name is Callum Sorensen and I live at 21 Elmstead Drive, Salem, MA 01969. You can reach me on (555) 573-8954 or callum.sorensen@example.com. On 12 June 2024 a pipe under the upstairs bathroom burst while we were out and water came through the kitchen ceiling. Policy HH-2023-00028. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Sorensen on (555) 573-8954 to acknowledge the claim. Callum confirmed the loss date as 12 June 2024."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 21 Elmstead Drive. Neighbour Rosa Nakamura was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0417: damaged furniture stacked in the garage"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:HH-PW §1.7",
+  "clause": "HH-PW §1.7",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "escape_of_water",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 500000,
+   "source": "HH-PW §1.7"
+  },
+  "assessed_loss": 15400,
+  "amount_paid": 14400
+ },
+ "pii": {
+  "claimant_name": "Callum Sorensen",
+  "address": "21 Elmstead Drive, Salem, MA 01969",
+  "street": "21 Elmstead Drive",
+  "phone": "(555) 573-8954",
+  "email": "callum.sorensen@example.com",
+  "other_people": [
+   "Rosa Nakamura",
+   "Felix Castillo"
+  ],
+  "injuries": []
+ }
+}

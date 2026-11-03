@@ -1,0 +1,55 @@
+{
+ "claim_id": "CLM-2024-000062",
+ "scenario": "hh_surface_water_23_floodzone",
+ "product": "household",
+ "policy_number": "HH-2024-00138",
+ "loss_date": "2024-08-07",
+ "reported_at": "2024-08-09",
+ "fnol_text": "My name is Amara Khan and I live at 596 Briar Court, Greenville, SC 29612. You can reach me on (555) 566-6887 or amara.khan@example.com. After the torrential rain on the night of 7 August 2024, rainwater ran off the field behind us, across the back garden and in under the patio doors. About 5 cm of water covered the kitchen and family room floors. Policy HH-2024-00138. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Khan on (555) 566-6887 to acknowledge the claim. Amara confirmed the loss date as 7 August 2024."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 596 Briar Court. Neighbour Gabriel Zielinski was present and confirmed the timeline."
+  },
+  {
+   "n": 3,
+   "text": "Amara sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0413: water line on the skirting boards"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:HFL-23 §2.2",
+  "clause": "HFL-23 §2.2",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "flood_surface_water",
+   "deductible": 2500,
+   "sub_limit": 15000,
+   "policy_limit": 500000,
+   "source": "HFL-23 §2.2, §2.3; HSL-23 §1"
+  },
+  "assessed_loss": 37750,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Amara Khan",
+  "address": "596 Briar Court, Greenville, SC 29612",
+  "street": "596 Briar Court",
+  "phone": "(555) 566-6887",
+  "email": "amara.khan@example.com",
+  "other_people": [
+   "Gabriel Zielinski",
+   "Marcus Whitfield"
+  ],
+  "injuries": []
+ }
+}

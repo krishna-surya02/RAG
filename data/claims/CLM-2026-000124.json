@@ -1,0 +1,55 @@
+{
+ "claim_id": "CLM-2026-000124",
+ "scenario": "hh_surface_water_25",
+ "product": "household",
+ "policy_number": "HH-2023-00037",
+ "loss_date": "2026-10-07",
+ "reported_at": "2026-10-16",
+ "fnol_text": "My name is Felix Ishikawa and I live at 202 Rowan Road, Springfield, OH 45599. You can reach me on (555) 737-7286 or felix.ishikawa@example.com. We had a cloudburst on 7 October 2026. The drains in the street could not cope and surface water from the road came up the drive and into the ground floor through the front door. Policy HH-2023-00037. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Ishikawa on (555) 737-7286 to acknowledge the claim. Felix confirmed the loss date as 7 October 2026."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 202 Rowan Road. Neighbour Callum Al-Sayed was present and confirmed the timeline."
+  },
+  {
+   "n": 3,
+   "text": "Felix sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0417: damaged furniture stacked in the garage"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:HFL-25 §2.1",
+  "clause": "HFL-25 §2.1",
+  "endorsement_set": "HEND-2025",
+  "limits": {
+   "coverage": "flood_plus",
+   "deductible": 5000,
+   "sub_limit": 25000,
+   "policy_limit": 600000,
+   "source": "HFL-25 §2.2, §2.3; HSL-25 §1"
+  },
+  "assessed_loss": 28450,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Felix Ishikawa",
+  "address": "202 Rowan Road, Springfield, OH 45599",
+  "street": "202 Rowan Road",
+  "phone": "(555) 737-7286",
+  "email": "felix.ishikawa@example.com",
+  "other_people": [
+   "Callum Al-Sayed",
+   "Marcus Abernathy"
+  ],
+  "injuries": []
+ }
+}

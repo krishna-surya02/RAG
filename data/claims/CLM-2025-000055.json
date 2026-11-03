@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2025-000055",
+ "scenario": "hh_escape_of_water",
+ "product": "household",
+ "policy_number": "HH-2024-00033",
+ "loss_date": "2025-04-23",
+ "reported_at": "2025-04-24",
+ "fnol_text": "My name is Elena Oduya and I live at 407 Sycamore Avenue, Springfield, OH 45559. You can reach me on (555) 649-6472 or elena.oduya@example.com. The washing machine hose split on 23 April 2025 and flooded the utility room and hallway before we could turn off the water. Policy HH-2024-00033. I'd like to claim for the damage to my home. Am I insured for this or not?",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Oduya on (555) 649-6472 to acknowledge the claim. Elena confirmed the loss date as 23 April 2025."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 407 Sycamore Avenue. Neighbour Fatima O'Connell was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0417: damaged furniture stacked in the garage"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:HH-PW §1.7",
+  "clause": "HH-PW §1.7",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "escape_of_water",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 500000,
+   "source": "HH-PW §1.7"
+  },
+  "assessed_loss": 30000,
+  "amount_paid": 29000
+ },
+ "pii": {
+  "claimant_name": "Elena Oduya",
+  "address": "407 Sycamore Avenue, Springfield, OH 45559",
+  "street": "407 Sycamore Avenue",
+  "phone": "(555) 649-6472",
+  "email": "elena.oduya@example.com",
+  "other_people": [
+   "Fatima O'Connell",
+   "Viktor O'Connell"
+  ],
+  "injuries": []
+ }
+}

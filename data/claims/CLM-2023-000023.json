@@ -1,0 +1,58 @@
+{
+ "claim_id": "CLM-2023-000023",
+ "scenario": "mt_collision",
+ "product": "motor",
+ "policy_number": "MT-2023-00142",
+ "loss_date": "2023-07-07",
+ "reported_at": "2023-07-10",
+ "fnol_text": "My name is Tariq Ishikawa and I live at 514 Marigold Terrace, Milton, VT 05416. You can reach me on (555) 288-7253 or tariq.ishikawa@example.com. I was stopped at lights on 7 July 2023 when the car behind, driven by Rafael Iyer, went into the back of mine. Rear bumper and boot are badly damaged. Policy MT-2023-00142. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Ishikawa on (555) 288-7253 to acknowledge the claim. Tariq confirmed the loss date as 7 July 2023."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Grace Gallagher gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Third-party driver Rafael Iyer reports a mild concussion and attended County General. Tariq reports whiplash."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2203: dashboard warning lights",
+  "IMG_2201: front passenger side damage",
+  "IMG_2207: vehicle on the recovery truck"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §3.1",
+  "clause": "MT-PW §3.1",
+  "endorsement_set": "MEND-2023",
+  "limits": {
+   "coverage": "own_damage",
+   "deductible": 750,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §3.1"
+  },
+  "assessed_loss": 2500,
+  "amount_paid": 1750
+ },
+ "pii": {
+  "claimant_name": "Tariq Ishikawa",
+  "address": "514 Marigold Terrace, Milton, VT 05416",
+  "street": "514 Marigold Terrace",
+  "phone": "(555) 288-7253",
+  "email": "tariq.ishikawa@example.com",
+  "other_people": [
+   "Grace Gallagher",
+   "Rafael Iyer"
+  ],
+  "injuries": [
+   "a mild concussion",
+   "whiplash"
+  ]
+ }
+}

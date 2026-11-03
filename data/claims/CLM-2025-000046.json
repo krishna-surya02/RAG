@@ -1,0 +1,54 @@
+{
+ "claim_id": "CLM-2025-000046",
+ "scenario": "hh_river_23",
+ "product": "household",
+ "policy_number": "HH-2025-00021",
+ "loss_date": "2025-04-09",
+ "reported_at": "2025-04-16",
+ "fnol_text": "My name is Chloe Santos and I live at 542 Willow Way, Dover, DE 19993. You can reach me on (555) 938-6557 or chloe.santos@example.com. On 9 April 2025 the Calder River overtopped near our house after a week of storms. River water flooded the downstairs rooms and the garage. Policy HH-2025-00021. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Santos on (555) 938-6557 to acknowledge the claim. Chloe confirmed the loss date as 9 April 2025."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 542 Willow Way. Neighbour Leila Khan was present and confirmed the timeline."
+  },
+  {
+   "n": 3,
+   "text": "Chloe sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0417: damaged furniture stacked in the garage"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:HFL-23 §2.1",
+  "clause": "HFL-23 §2.1",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "flood_surface_water",
+   "deductible": 2500,
+   "sub_limit": 15000,
+   "policy_limit": 500000,
+   "source": "HFL-23 §2.2, §2.3; HSL-23 §1"
+  },
+  "assessed_loss": 33550,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Chloe Santos",
+  "address": "542 Willow Way, Dover, DE 19993",
+  "street": "542 Willow Way",
+  "phone": "(555) 938-6557",
+  "email": "chloe.santos@example.com",
+  "other_people": [
+   "Leila Khan",
+   "Marcus Takahashi"
+  ],
+  "injuries": []
+ }
+}

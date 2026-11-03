@@ -1,0 +1,51 @@
+{
+ "claim_id": "CLM-2025-000109",
+ "scenario": "hh_storm_roof",
+ "product": "household",
+ "policy_number": "HH-2024-00030",
+ "loss_date": "2025-08-13",
+ "reported_at": "2025-08-19",
+ "fnol_text": "My name is Lucia Santos and I live at 373 Foxglove Court, Madison, WI 53729. You can reach me on (555) 211-5724 or lucia.santos@example.com. During the storm on 13 August 2025 high winds ripped tiles off the roof and rain came into the loft and the back bedroom. Policy HH-2024-00030. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Santos on (555) 211-5724 to acknowledge the claim. Lucia confirmed the loss date as 13 August 2025."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 373 Foxglove Court. Neighbour Declan Al-Sayed was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0413: water line on the skirting boards"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:HH-PW §1.5",
+  "clause": "HH-PW §1.5",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "storm",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 500000,
+   "source": "HH-PW §1.5"
+  },
+  "assessed_loss": 13200,
+  "amount_paid": 12200
+ },
+ "pii": {
+  "claimant_name": "Lucia Santos",
+  "address": "373 Foxglove Court, Madison, WI 53729",
+  "street": "373 Foxglove Court",
+  "phone": "(555) 211-5724",
+  "email": "lucia.santos@example.com",
+  "other_people": [
+   "Declan Al-Sayed",
+   "Leah Jovanovic"
+  ],
+  "injuries": []
+ }
+}

@@ -1,0 +1,54 @@
+{
+ "claim_id": "CLM-2025-000165",
+ "scenario": "hh_surface_water_23",
+ "product": "household",
+ "policy_number": "HH-2024-00065",
+ "loss_date": "2025-12-14",
+ "reported_at": "2025-12-19",
+ "fnol_text": "My name is Owen Thorne and I live at 792 Linden Lane, Clinton, NC 28363. You can reach me on (555) 421-7007 or owen.thorne@example.com. After the torrential rain on the night of 14 December 2025, rainwater ran off the field behind us, across the back garden and in under the patio doors. About 5 cm of water covered the kitchen and family room floors. Policy HH-2024-00065. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Thorne on (555) 421-7007 to acknowledge the claim. Owen confirmed the loss date as 14 December 2025."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 792 Linden Lane. Neighbour Viktor Abernathy was present and confirmed the timeline."
+  },
+  {
+   "n": 3,
+   "text": "Owen sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0417: damaged furniture stacked in the garage"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID_SUBLIMIT:HFL-23 §2.2",
+  "clause": "HFL-23 §2.2",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "flood_surface_water",
+   "deductible": 2500,
+   "sub_limit": 15000,
+   "policy_limit": 500000,
+   "source": "HFL-23 §2.2, §2.3; HSL-23 §1"
+  },
+  "assessed_loss": 22200,
+  "amount_paid": 15000
+ },
+ "pii": {
+  "claimant_name": "Owen Thorne",
+  "address": "792 Linden Lane, Clinton, NC 28363",
+  "street": "792 Linden Lane",
+  "phone": "(555) 421-7007",
+  "email": "owen.thorne@example.com",
+  "other_people": [
+   "Viktor Abernathy",
+   "Jordan Laurent"
+  ],
+  "injuries": []
+ }
+}

@@ -1,0 +1,51 @@
+{
+ "claim_id": "CLM-2024-000048",
+ "scenario": "mt_hail",
+ "product": "motor",
+ "policy_number": "MT-2023-00056",
+ "loss_date": "2024-07-03",
+ "reported_at": "2024-07-06",
+ "fnol_text": "My name is Hannah Ballard and I live at 973 Maple Road, Springfield, OH 45528. You can reach me on (555) 468-1624 or hannah.ballard@example.com. A hailstorm on 3 July 2024 left dozens of dents across the roof, bonnet and boot of my car. Policy MT-2023-00056. I'd like to claim for the damage to my car. Am I insured for this or not?",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Ballard on (555) 468-1624 to acknowledge the claim. Hannah confirmed the loss date as 3 July 2024."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Imogen O'Connell gave a statement by phone."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2201: front passenger side damage",
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2203: dashboard warning lights"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §3.2",
+  "clause": "MT-PW §3.2",
+  "endorsement_set": "MEND-2023",
+  "limits": {
+   "coverage": "hail",
+   "deductible": 750,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §3.2"
+  },
+  "assessed_loss": 4100,
+  "amount_paid": 3350
+ },
+ "pii": {
+  "claimant_name": "Hannah Ballard",
+  "address": "973 Maple Road, Springfield, OH 45528",
+  "street": "973 Maple Road",
+  "phone": "(555) 468-1624",
+  "email": "hannah.ballard@example.com",
+  "other_people": [
+   "Imogen O'Connell",
+   "Jordan Castillo"
+  ],
+  "injuries": []
+ }
+}

@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2026-000075",
+ "scenario": "hh_storm_roof",
+ "product": "household",
+ "policy_number": "HH-2025-00070",
+ "loss_date": "2026-07-28",
+ "reported_at": "2026-08-06",
+ "fnol_text": "My name is Chloe Wojcik and I live at 17 Thornbury Court, Fairview, PA 16459. You can reach me on (555) 220-7798 or chloe.wojcik@example.com. During the storm on 28 July 2026 high winds ripped tiles off the roof and rain came into the loft and the back bedroom. Policy HH-2025-00070. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Wojcik on (555) 220-7798 to acknowledge the claim. Chloe confirmed the loss date as 28 July 2026."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 17 Thornbury Court. Neighbour Noor Ferreira was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0417: damaged furniture stacked in the garage"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:HH-PW §1.5",
+  "clause": "HH-PW §1.5",
+  "endorsement_set": "HEND-2025",
+  "limits": {
+   "coverage": "storm",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 600000,
+   "source": "HH-PW §1.5"
+  },
+  "assessed_loss": 8950,
+  "amount_paid": 7950
+ },
+ "pii": {
+  "claimant_name": "Chloe Wojcik",
+  "address": "17 Thornbury Court, Fairview, PA 16459",
+  "street": "17 Thornbury Court",
+  "phone": "(555) 220-7798",
+  "email": "chloe.wojcik@example.com",
+  "other_people": [
+   "Noor Ferreira",
+   "Bianca Kowalski"
+  ],
+  "injuries": []
+ }
+}

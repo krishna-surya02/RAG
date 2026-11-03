@@ -1,0 +1,13 @@
+{
+  "_about": "Servers the week-12 agent discovers tools from at startup. ${PYTHON} is replaced with the running interpreter and ${ROOT} with the repo root, so the config works from any clone and any venv.",
+  "servers": {
+    "policy-wording": {
+      "command": "${PYTHON}",
+      "args": ["${ROOT}/w12/mcp_wording_server.py"]
+    },
+    "claims-files": {
+      "command": "${PYTHON}",
+      "args": ["${ROOT}/w12/mcp_claims_server.py"]
+    }
+  }
+}

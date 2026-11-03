@@ -1,0 +1,57 @@
+{
+ "claim_id": "CLM-2025-000040",
+ "scenario": "mt_collision",
+ "product": "motor",
+ "policy_number": "MT-2023-00079",
+ "loss_date": "2025-03-24",
+ "reported_at": "2025-03-27",
+ "fnol_text": "My name is Tomas Ishikawa and I live at 850 Foxglove Close, Madison, WI 53726. You can reach me on (555) 238-1819 or tomas.ishikawa@example.com. I was stopped at lights on 24 March 2025 when the car behind, driven by Ines Whitfield, went into the back of mine. Rear bumper and boot are badly damaged. Policy MT-2023-00079. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Ishikawa on (555) 238-1819 to acknowledge the claim. Tomas confirmed the loss date as 24 March 2025."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Tariq Lindqvist gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Third-party driver Ines Whitfield reports bruised ribs and attended Riverside Medical Center. Tomas reports lower back strain."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2203: dashboard warning lights"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §3.1",
+  "clause": "MT-PW §3.1",
+  "endorsement_set": "MEND-2023",
+  "limits": {
+   "coverage": "own_damage",
+   "deductible": 750,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §3.1"
+  },
+  "assessed_loss": 8500,
+  "amount_paid": 7750
+ },
+ "pii": {
+  "claimant_name": "Tomas Ishikawa",
+  "address": "850 Foxglove Close, Madison, WI 53726",
+  "street": "850 Foxglove Close",
+  "phone": "(555) 238-1819",
+  "email": "tomas.ishikawa@example.com",
+  "other_people": [
+   "Tariq Lindqvist",
+   "Ines Whitfield"
+  ],
+  "injuries": [
+   "bruised ribs",
+   "lower back strain"
+  ]
+ }
+}

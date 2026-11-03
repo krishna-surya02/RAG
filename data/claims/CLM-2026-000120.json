@@ -1,0 +1,51 @@
+{
+ "claim_id": "CLM-2026-000120",
+ "scenario": "hh_storm_roof",
+ "product": "household",
+ "policy_number": "HH-2023-00064",
+ "loss_date": "2026-10-05",
+ "reported_at": "2026-10-05",
+ "fnol_text": "My name is Jordan Herrera and I live at 137 Alder Way, Madison, WI 53774. You can reach me on (555) 593-3647 or jordan.herrera@example.com. During the storm on 5 October 2026 high winds ripped tiles off the roof and rain came into the loft and the back bedroom. Policy HH-2023-00064. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Herrera on (555) 593-3647 to acknowledge the claim. Jordan confirmed the loss date as 5 October 2026."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 137 Alder Way. Neighbour Aisha Brennan was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0413: water line on the skirting boards"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:HH-PW §1.5",
+  "clause": "HH-PW §1.5",
+  "endorsement_set": "HEND-2025",
+  "limits": {
+   "coverage": "storm",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 600000,
+   "source": "HH-PW §1.5"
+  },
+  "assessed_loss": 23000,
+  "amount_paid": 22000
+ },
+ "pii": {
+  "claimant_name": "Jordan Herrera",
+  "address": "137 Alder Way, Madison, WI 53774",
+  "street": "137 Alder Way",
+  "phone": "(555) 593-3647",
+  "email": "jordan.herrera@example.com",
+  "other_people": [
+   "Aisha Brennan",
+   "Declan Castillo"
+  ],
+  "injuries": []
+ }
+}

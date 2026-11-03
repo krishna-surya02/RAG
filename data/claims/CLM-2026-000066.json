@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2026-000066",
+ "scenario": "hh_storm_roof",
+ "product": "household",
+ "policy_number": "HH-2025-00093",
+ "loss_date": "2026-07-03",
+ "reported_at": "2026-07-09",
+ "fnol_text": "My name is Maya Kowalski and I live at 181 Linden Street, Fairview, PA 16498. You can reach me on (555) 350-9297 or maya.kowalski@example.com. During the storm on 3 July 2026 high winds ripped tiles off the roof and rain came into the loft and the back bedroom. Policy HH-2025-00093. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Kowalski on (555) 350-9297 to acknowledge the claim. Maya confirmed the loss date as 3 July 2026."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 181 Linden Street. Neighbour Gabriel Pereira was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0412: ground floor with standing water and wet carpets"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:HH-PW §1.5",
+  "clause": "HH-PW §1.5",
+  "endorsement_set": "HEND-2025",
+  "limits": {
+   "coverage": "storm",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 600000,
+   "source": "HH-PW §1.5"
+  },
+  "assessed_loss": 17950,
+  "amount_paid": 16950
+ },
+ "pii": {
+  "claimant_name": "Maya Kowalski",
+  "address": "181 Linden Street, Fairview, PA 16498",
+  "street": "181 Linden Street",
+  "phone": "(555) 350-9297",
+  "email": "maya.kowalski@example.com",
+  "other_people": [
+   "Gabriel Pereira",
+   "Imogen Oyelaran"
+  ],
+  "injuries": []
+ }
+}

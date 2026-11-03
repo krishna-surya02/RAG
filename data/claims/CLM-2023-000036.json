@@ -1,0 +1,55 @@
+{
+ "claim_id": "CLM-2023-000036",
+ "scenario": "mt_flood_drove_23",
+ "product": "motor",
+ "policy_number": "MT-2023-00080",
+ "loss_date": "2023-09-20",
+ "reported_at": "2023-09-28",
+ "fnol_text": "My name is Esther Haddad and I live at 307 Cedar Terrace, Clinton, NC 28346. You can reach me on (555) 714-2353 or esther.haddad@example.com. On 20 September 2023 I tried to drive through a flooded road under the bridge. The water was deeper than I thought and the engine cut out and filled with water. Policy MT-2023-00080. I'd like to claim for the damage to my car. I assume this is covered under my policy?",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Haddad on (555) 714-2353 to acknowledge the claim. Esther confirmed the loss date as 20 September 2023."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Ingrid Gallagher gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Esther sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2203: dashboard warning lights",
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2201: front passenger side damage"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:MFL-23 §2.2",
+  "clause": "MFL-23 §2.2",
+  "endorsement_set": "MEND-2023",
+  "limits": {
+   "coverage": "flood",
+   "deductible": 750,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MFL-23 §2.1"
+  },
+  "assessed_loss": 20250,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Esther Haddad",
+  "address": "307 Cedar Terrace, Clinton, NC 28346",
+  "street": "307 Cedar Terrace",
+  "phone": "(555) 714-2353",
+  "email": "esther.haddad@example.com",
+  "other_people": [
+   "Ingrid Gallagher",
+   "Ethan Quinlan"
+  ],
+  "injuries": []
+ }
+}

@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2026-000081",
+ "scenario": "hh_escape_of_water",
+ "product": "household",
+ "policy_number": "HH-2024-00035",
+ "loss_date": "2026-08-03",
+ "reported_at": "2026-08-06",
+ "fnol_text": "My name is Dmitri Fitzgerald and I live at 627 Maple Way, Greenville, SC 29623. You can reach me on (555) 918-9090 or dmitri.fitzgerald@example.com. The washing machine hose split on 3 August 2026 and flooded the utility room and hallway before we could turn off the water. Policy HH-2024-00035. I'd like to claim for the damage to my home. Am I insured for this or not?",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Fitzgerald on (555) 918-9090 to acknowledge the claim. Dmitri confirmed the loss date as 3 August 2026."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 627 Maple Way. Neighbour Hiroshi Pereira was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0412: ground floor with standing water and wet carpets"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:HH-PW §1.7",
+  "clause": "HH-PW §1.7",
+  "endorsement_set": "HEND-2025",
+  "limits": {
+   "coverage": "escape_of_water",
+   "deductible": 1500,
+   "sub_limit": null,
+   "policy_limit": 600000,
+   "source": "HH-PW §1.7"
+  },
+  "assessed_loss": 27600,
+  "amount_paid": 26100
+ },
+ "pii": {
+  "claimant_name": "Dmitri Fitzgerald",
+  "address": "627 Maple Way, Greenville, SC 29623",
+  "street": "627 Maple Way",
+  "phone": "(555) 918-9090",
+  "email": "dmitri.fitzgerald@example.com",
+  "other_people": [
+   "Hiroshi Pereira",
+   "Amara Chukwu"
+  ],
+  "injuries": []
+ }
+}

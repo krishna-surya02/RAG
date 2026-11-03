@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2025-000140",
+ "scenario": "hh_gradual_leak",
+ "product": "household",
+ "policy_number": "HH-2023-00037",
+ "loss_date": "2025-10-22",
+ "reported_at": "2025-10-25",
+ "fnol_text": "My name is Felix Ishikawa and I live at 202 Rowan Road, Springfield, OH 45599. You can reach me on (555) 737-7286 or felix.ishikawa@example.com. Damp patch on the ceiling below the bath that has been growing since the spring; on 22 October 2025 part of the plaster came down. The plumber says the waste pipe has dripped for a long time. Policy HH-2023-00037. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Ishikawa on (555) 737-7286 to acknowledge the claim. Felix confirmed the loss date as 22 October 2025."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 202 Rowan Road. Neighbour Callum Iyer was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0413: water line on the skirting boards"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:HX-1",
+  "clause": "HX-1",
+  "endorsement_set": "HEND-2025",
+  "limits": {
+   "coverage": "escape_of_water",
+   "deductible": 1500,
+   "sub_limit": null,
+   "policy_limit": 600000,
+   "source": "HH-PW §1.7"
+  },
+  "assessed_loss": 11150,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Felix Ishikawa",
+  "address": "202 Rowan Road, Springfield, OH 45599",
+  "street": "202 Rowan Road",
+  "phone": "(555) 737-7286",
+  "email": "felix.ishikawa@example.com",
+  "other_people": [
+   "Callum Iyer",
+   "Kofi Nakamura"
+  ],
+  "injuries": []
+ }
+}

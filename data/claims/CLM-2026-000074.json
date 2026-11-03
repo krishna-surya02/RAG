@@ -1,0 +1,55 @@
+{
+ "claim_id": "CLM-2026-000074",
+ "scenario": "mt_flood_25",
+ "product": "motor",
+ "policy_number": "MT-2025-00013",
+ "loss_date": "2026-07-26",
+ "reported_at": "2026-07-26",
+ "fnol_text": "My name is Noor Laurent and I live at 558 Foxglove Place, Ashland, OR 97552. You can reach me on (555) 553-2071 or noor.laurent@example.com. On 26 July 2026 flash flooding came down the street while my car was parked at home. Water got into the cabin and the engine won't start. Policy MT-2025-00013. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Laurent on (555) 553-2071 to acknowledge the claim. Noor confirmed the loss date as 26 July 2026."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Owen Khan gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Noor sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2201: front passenger side damage",
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2203: dashboard warning lights"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MFL-25 §2.1",
+  "clause": "MFL-25 §2.1",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "flood",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MFL-25 §2.4"
+  },
+  "assessed_loss": 29700,
+  "amount_paid": 28700
+ },
+ "pii": {
+  "claimant_name": "Noor Laurent",
+  "address": "558 Foxglove Place, Ashland, OR 97552",
+  "street": "558 Foxglove Place",
+  "phone": "(555) 553-2071",
+  "email": "noor.laurent@example.com",
+  "other_people": [
+   "Owen Khan",
+   "Ravi Castillo"
+  ],
+  "injuries": []
+ }
+}

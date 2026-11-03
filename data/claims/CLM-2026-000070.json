@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2026-000070",
+ "scenario": "hh_storm_fence",
+ "product": "household",
+ "policy_number": "HH-2024-00062",
+ "loss_date": "2026-07-16",
+ "reported_at": "2026-07-17",
+ "fnol_text": "My name is Leila Takahashi and I live at 435 Linden Avenue, Madison, WI 53718. You can reach me on (555) 230-6038 or leila.takahashi@example.com. The storm on 16 July 2026 blew down about 20 metres of the garden fence and a gate. Policy HH-2024-00062. I'd like to claim for the damage to my home. Please just tell me this is covered.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Takahashi on (555) 230-6038 to acknowledge the claim. Leila confirmed the loss date as 16 July 2026."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 435 Linden Avenue. Neighbour Ines Al-Sayed was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0417: damaged furniture stacked in the garage"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:HX-9",
+  "clause": "HX-9",
+  "endorsement_set": "HEND-2025",
+  "limits": {
+   "coverage": "storm",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 600000,
+   "source": "HH-PW §1.5"
+  },
+  "assessed_loss": 3050,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Leila Takahashi",
+  "address": "435 Linden Avenue, Madison, WI 53718",
+  "street": "435 Linden Avenue",
+  "phone": "(555) 230-6038",
+  "email": "leila.takahashi@example.com",
+  "other_people": [
+   "Ines Al-Sayed",
+   "Amara Novak"
+  ],
+  "injuries": []
+ }
+}

@@ -1,0 +1,52 @@
+{
+ "claim_id": "CLM-2023-000014",
+ "scenario": "not_in_force",
+ "product": "motor",
+ "policy_number": "MT-2023-00080",
+ "loss_date": "2023-05-23",
+ "reported_at": "2023-05-31",
+ "fnol_text": "My name is Esther Haddad and I live at 307 Cedar Terrace, Clinton, NC 28346. You can reach me on (555) 714-2353 or esther.haddad@example.com. I was stopped at lights on 23 May 2023 when the car behind, driven by Liam Petrov, went into the back of mine. Rear bumper and boot are badly damaged. Policy MT-2023-00080. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Haddad on (555) 714-2353 to acknowledge the claim. Esther confirmed the loss date as 23 May 2023."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Grace McBride gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Third-party driver Liam Petrov reports lower back strain and attended Mercy General. Esther reports a sprained ankle."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2203: dashboard warning lights",
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2201: front passenger side damage"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "NOT_IN_FORCE",
+  "clause": null,
+  "endorsement_set": null,
+  "limits": null,
+  "assessed_loss": 9150,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Esther Haddad",
+  "address": "307 Cedar Terrace, Clinton, NC 28346",
+  "street": "307 Cedar Terrace",
+  "phone": "(555) 714-2353",
+  "email": "esther.haddad@example.com",
+  "other_people": [
+   "Grace McBride",
+   "Liam Petrov"
+  ],
+  "injuries": [
+   "lower back strain",
+   "a sprained ankle"
+  ]
+ }
+}

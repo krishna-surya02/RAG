@@ -1,0 +1,45 @@
+{
+ "claim_id": "CLM-2025-000063",
+ "scenario": "not_in_force",
+ "product": "household",
+ "policy_number": "HH-2024-00136",
+ "loss_date": "2025-05-07",
+ "reported_at": "2025-05-09",
+ "fnol_text": "My name is Priya Quinlan and I live at 258 Marigold Close, Riverton, WY 82510. You can reach me on (555) 562-4578 or priya.quinlan@example.com. Our house was broken into on 7 May 2025. The back door was forced and a laptop, jewellery and a television were taken. Policy HH-2024-00136. I'd like to claim for the damage to my home. I assume this is covered under my policy?",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Quinlan on (555) 562-4578 to acknowledge the claim. Priya confirmed the loss date as 7 May 2025."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 258 Marigold Close. Neighbour Hannah Quinlan was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0413: water line on the skirting boards"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "NOT_IN_FORCE",
+  "clause": null,
+  "endorsement_set": null,
+  "limits": null,
+  "assessed_loss": 12350,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Priya Quinlan",
+  "address": "258 Marigold Close, Riverton, WY 82510",
+  "street": "258 Marigold Close",
+  "phone": "(555) 562-4578",
+  "email": "priya.quinlan@example.com",
+  "other_people": [
+   "Hannah Quinlan",
+   "Imogen Oduya"
+  ],
+  "injuries": []
+ }
+}

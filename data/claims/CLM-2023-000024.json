@@ -1,0 +1,45 @@
+{
+ "claim_id": "CLM-2023-000024",
+ "scenario": "not_in_force",
+ "product": "motor",
+ "policy_number": "MT-2024-00047",
+ "loss_date": "2023-07-11",
+ "reported_at": "2023-07-15",
+ "fnol_text": "My name is Mei Takahashi and I live at 104 Sycamore Terrace, Greenville, SC 29623. You can reach me on (555) 270-3789 or mei.takahashi@example.com. My car was stolen from outside the house overnight on 11 July 2023. Glass from the driver's window was on the road. Policy MT-2024-00047. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Takahashi on (555) 270-3789 to acknowledge the claim. Mei confirmed the loss date as 11 July 2023."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Ravi Kowalski gave a statement by phone."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2203: dashboard warning lights",
+  "IMG_2201: front passenger side damage"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "NOT_IN_FORCE",
+  "clause": null,
+  "endorsement_set": null,
+  "limits": null,
+  "assessed_loss": 5150,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Mei Takahashi",
+  "address": "104 Sycamore Terrace, Greenville, SC 29623",
+  "street": "104 Sycamore Terrace",
+  "phone": "(555) 270-3789",
+  "email": "mei.takahashi@example.com",
+  "other_people": [
+   "Ravi Kowalski",
+   "Bianca Nakamura"
+  ],
+  "injuries": []
+ }
+}

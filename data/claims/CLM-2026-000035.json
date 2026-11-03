@@ -1,0 +1,51 @@
+{
+ "claim_id": "CLM-2026-000035",
+ "scenario": "hh_storm_roof",
+ "product": "household",
+ "policy_number": "HH-2024-00016",
+ "loss_date": "2026-04-20",
+ "reported_at": "2026-04-20",
+ "fnol_text": "My name is Marcus Delgado and I live at 915 Briar Lane, Greenville, SC 29655. You can reach me on (555) 346-8232 or marcus.delgado@example.com. During the storm on 20 April 2026 high winds ripped tiles off the roof and rain came into the loft and the back bedroom. Policy HH-2024-00016. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Delgado on (555) 346-8232 to acknowledge the claim. Marcus confirmed the loss date as 20 April 2026."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 915 Briar Lane. Neighbour Hannah Oduya was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0417: damaged furniture stacked in the garage"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:HH-PW §1.5",
+  "clause": "HH-PW §1.5",
+  "endorsement_set": "HEND-2025",
+  "limits": {
+   "coverage": "storm",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 600000,
+   "source": "HH-PW §1.5"
+  },
+  "assessed_loss": 2600,
+  "amount_paid": 1600
+ },
+ "pii": {
+  "claimant_name": "Marcus Delgado",
+  "address": "915 Briar Lane, Greenville, SC 29655",
+  "street": "915 Briar Lane",
+  "phone": "(555) 346-8232",
+  "email": "marcus.delgado@example.com",
+  "other_people": [
+   "Hannah Oduya",
+   "Esther Nakamura"
+  ],
+  "injuries": []
+ }
+}

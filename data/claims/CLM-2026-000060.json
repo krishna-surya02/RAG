@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2026-000060",
+ "scenario": "hh_mould",
+ "product": "household",
+ "policy_number": "HH-2025-00070",
+ "loss_date": "2026-06-15",
+ "reported_at": "2026-06-16",
+ "fnol_text": "My name is Chloe Wojcik and I live at 17 Thornbury Court, Fairview, PA 16459. You can reach me on (555) 220-7798 or chloe.wojcik@example.com. After the burst pipe last month was fixed, on 15 June 2026 we found black mould inside the wall cavity behind the kitchen units. Policy HH-2025-00070. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Wojcik on (555) 220-7798 to acknowledge the claim. Chloe confirmed the loss date as 15 June 2026."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 17 Thornbury Court. Neighbour Hannah Haddad was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0417: damaged furniture stacked in the garage"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID_SUBLIMIT:HX-5",
+  "clause": "HX-5",
+  "endorsement_set": "HEND-2025",
+  "limits": {
+   "coverage": "mould",
+   "deductible": 1000,
+   "sub_limit": 7500,
+   "policy_limit": 600000,
+   "source": "HX-5; HSL-25 §1"
+  },
+  "assessed_loss": 17550,
+  "amount_paid": 7500
+ },
+ "pii": {
+  "claimant_name": "Chloe Wojcik",
+  "address": "17 Thornbury Court, Fairview, PA 16459",
+  "street": "17 Thornbury Court",
+  "phone": "(555) 220-7798",
+  "email": "chloe.wojcik@example.com",
+  "other_people": [
+   "Hannah Haddad",
+   "Gabriel Varga"
+  ],
+  "injuries": []
+ }
+}

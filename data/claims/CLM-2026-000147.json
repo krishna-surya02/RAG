@@ -1,0 +1,51 @@
+{
+ "claim_id": "CLM-2026-000147",
+ "scenario": "hh_escape_of_water",
+ "product": "household",
+ "policy_number": "HH-2023-00085",
+ "loss_date": "2026-10-28",
+ "reported_at": "2026-11-01",
+ "fnol_text": "My name is Rosa Castillo and I live at 896 Ashford Close, Madison, WI 53740. You can reach me on (555) 282-7450 or rosa.castillo@example.com. The washing machine hose split on 28 October 2026 and flooded the utility room and hallway before we could turn off the water. Policy HH-2023-00085. I'd like to claim for the damage to my home. I assume this is covered under my policy?",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Castillo on (555) 282-7450 to acknowledge the claim. Rosa confirmed the loss date as 28 October 2026."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 896 Ashford Close. Neighbour Lucia Whitlock was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0412: ground floor with standing water and wet carpets"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:HH-PW §1.7",
+  "clause": "HH-PW §1.7",
+  "endorsement_set": "HEND-2025",
+  "limits": {
+   "coverage": "escape_of_water",
+   "deductible": 1500,
+   "sub_limit": null,
+   "policy_limit": 600000,
+   "source": "HH-PW §1.7"
+  },
+  "assessed_loss": 2750,
+  "amount_paid": 1250
+ },
+ "pii": {
+  "claimant_name": "Rosa Castillo",
+  "address": "896 Ashford Close, Madison, WI 53740",
+  "street": "896 Ashford Close",
+  "phone": "(555) 282-7450",
+  "email": "rosa.castillo@example.com",
+  "other_people": [
+   "Lucia Whitlock",
+   "Maya Vasquez"
+  ],
+  "injuries": []
+ }
+}

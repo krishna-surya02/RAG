@@ -1,0 +1,45 @@
+{
+ "claim_id": "CLM-2024-000030",
+ "scenario": "not_in_force",
+ "product": "motor",
+ "policy_number": "MT-2024-00098",
+ "loss_date": "2024-04-28",
+ "reported_at": "2024-04-29",
+ "fnol_text": "My name is Naomi Zielinski and I live at 197 Thornbury Way, Ashland, OR 97583. You can reach me on (555) 477-6364 or naomi.zielinski@example.com. My car was stolen from outside the house overnight on 28 April 2024. Glass from the driver's window was on the road. Policy MT-2024-00098. I'd like to claim for the damage to my car. Can you confirm I'm covered for this?",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Zielinski on (555) 477-6364 to acknowledge the claim. Naomi confirmed the loss date as 28 April 2024."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Gabriel Novak gave a statement by phone."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2201: front passenger side damage",
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2203: dashboard warning lights"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "NOT_IN_FORCE",
+  "clause": null,
+  "endorsement_set": null,
+  "limits": null,
+  "assessed_loss": 3800,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Naomi Zielinski",
+  "address": "197 Thornbury Way, Ashland, OR 97583",
+  "street": "197 Thornbury Way",
+  "phone": "(555) 477-6364",
+  "email": "naomi.zielinski@example.com",
+  "other_people": [
+   "Gabriel Novak",
+   "Jordan Petrov"
+  ],
+  "injuries": []
+ }
+}

@@ -1,0 +1,55 @@
+{
+ "claim_id": "CLM-2025-000054",
+ "scenario": "hh_surface_water_23",
+ "product": "household",
+ "policy_number": "HH-2024-00045",
+ "loss_date": "2025-04-22",
+ "reported_at": "2025-04-22",
+ "fnol_text": "My name is Zara Rasmussen and I live at 716 Ashford Avenue, Fairview, PA 16474. You can reach me on (555) 722-2276 or zara.rasmussen@example.com. After the torrential rain on the night of 22 April 2025, rainwater ran off the field behind us, across the back garden and in under the patio doors. About 5 cm of water covered the kitchen and family room floors. Policy HH-2024-00045. I'd like to claim for the damage to my home. Am I insured for this or not?",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Rasmussen on (555) 722-2276 to acknowledge the claim. Zara confirmed the loss date as 22 April 2025."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 716 Ashford Avenue. Neighbour Anika Whitlock was present and confirmed the timeline."
+  },
+  {
+   "n": 3,
+   "text": "Zara sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0412: ground floor with standing water and wet carpets"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID_SUBLIMIT:HFL-23 §2.2",
+  "clause": "HFL-23 §2.2",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "flood_surface_water",
+   "deductible": 2500,
+   "sub_limit": 15000,
+   "policy_limit": 500000,
+   "source": "HFL-23 §2.2, §2.3; HSL-23 §1"
+  },
+  "assessed_loss": 36300,
+  "amount_paid": 15000
+ },
+ "pii": {
+  "claimant_name": "Zara Rasmussen",
+  "address": "716 Ashford Avenue, Fairview, PA 16474",
+  "street": "716 Ashford Avenue",
+  "phone": "(555) 722-2276",
+  "email": "zara.rasmussen@example.com",
+  "other_people": [
+   "Anika Whitlock",
+   "Tomas Nguyen-Tran"
+  ],
+  "injuries": []
+ }
+}

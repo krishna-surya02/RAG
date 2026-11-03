@@ -1,0 +1,57 @@
+{
+ "claim_id": "CLM-2024-000016",
+ "scenario": "hh_liability_injury",
+ "product": "household",
+ "policy_number": "HH-2023-00078",
+ "loss_date": "2024-02-24",
+ "reported_at": "2024-02-25",
+ "fnol_text": "My name is Ethan Thorne and I live at 875 Heather Close, Springfield, OH 45597. You can reach me on (555) 208-6710 or ethan.thorne@example.com. A delivery driver slipped on our icy front steps on 24 February 2024 and was taken to hospital. They have said they will make a claim against us. Policy HH-2023-00078. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Thorne on (555) 208-6710 to acknowledge the claim. Ethan confirmed the loss date as 24 February 2024."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 875 Heather Close. Neighbour Naomi Lindqvist was present and confirmed the timeline."
+  },
+  {
+   "n": 3,
+   "text": "Injured party Priya Brennan sustained whiplash and was treated at St. Brendan's Hospital. Do not admit liability; refer."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0413: water line on the skirting boards"
+ ],
+ "final_decision": {
+  "outcome": "referred_liability",
+  "reason_code": "REFERRED_LIABILITY:HH-PW §3.1",
+  "clause": "HH-PW §3.1",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "liability",
+   "deductible": 0,
+   "sub_limit": null,
+   "policy_limit": 2000000,
+   "source": "HH-PW §3.1"
+  },
+  "assessed_loss": 20250,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Ethan Thorne",
+  "address": "875 Heather Close, Springfield, OH 45597",
+  "street": "875 Heather Close",
+  "phone": "(555) 208-6710",
+  "email": "ethan.thorne@example.com",
+  "other_people": [
+   "Naomi Lindqvist",
+   "Priya Brennan"
+  ],
+  "injuries": [
+   "whiplash"
+  ]
+ }
+}

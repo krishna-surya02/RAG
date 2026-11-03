@@ -1,0 +1,54 @@
+{
+ "claim_id": "CLM-2025-000084",
+ "scenario": "hh_surface_water_crossboundary",
+ "product": "household",
+ "policy_number": "HH-2023-00109",
+ "loss_date": "2025-06-20",
+ "reported_at": "2025-06-22",
+ "fnol_text": "My name is Dmitri Raman and I live at 340 Linden Court, Ashland, OR 97577. You can reach me on (555) 915-9778 or dmitri.raman@example.com. Heavy rain all afternoon on 20 June 2025. Water pooled on the lawn and then came into the lounge at floor level. Carpets and the sofa are soaked. Policy HH-2023-00109. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Raman on (555) 915-9778 to acknowledge the claim. Dmitri confirmed the loss date as 20 June 2025."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 340 Linden Court. Neighbour Hiroshi Wojcik was present and confirmed the timeline."
+  },
+  {
+   "n": 3,
+   "text": "Dmitri sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0417: damaged furniture stacked in the garage"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID_SUBLIMIT:HFL-23 §2.2",
+  "clause": "HFL-23 §2.2",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "flood_surface_water",
+   "deductible": 2500,
+   "sub_limit": 15000,
+   "policy_limit": 500000,
+   "source": "HFL-23 §2.2, §2.3; HSL-23 §1"
+  },
+  "assessed_loss": 40550,
+  "amount_paid": 15000
+ },
+ "pii": {
+  "claimant_name": "Dmitri Raman",
+  "address": "340 Linden Court, Ashland, OR 97577",
+  "street": "340 Linden Court",
+  "phone": "(555) 915-9778",
+  "email": "dmitri.raman@example.com",
+  "other_people": [
+   "Hiroshi Wojcik",
+   "Kwame Whitlock"
+  ],
+  "injuries": []
+ }
+}

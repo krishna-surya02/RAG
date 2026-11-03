@@ -1,0 +1,55 @@
+{
+ "claim_id": "CLM-2025-000045",
+ "scenario": "mt_flood_drove_23",
+ "product": "motor",
+ "policy_number": "MT-2024-00078",
+ "loss_date": "2025-04-04",
+ "reported_at": "2025-04-06",
+ "fnol_text": "My name is Tariq Iyer and I live at 70 Thornbury Court, Clinton, NC 28318. You can reach me on (555) 334-5287 or tariq.iyer@example.com. On 4 April 2025 I tried to drive through a flooded road under the bridge. The water was deeper than I thought and the engine cut out and filled with water. Policy MT-2024-00078. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Iyer on (555) 334-5287 to acknowledge the claim. Tariq confirmed the loss date as 4 April 2025."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Ingrid Thorne gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Tariq sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2201: front passenger side damage",
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2203: dashboard warning lights"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:MFL-23 §2.2",
+  "clause": "MFL-23 §2.2",
+  "endorsement_set": "MEND-2023",
+  "limits": {
+   "coverage": "flood",
+   "deductible": 750,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MFL-23 §2.1"
+  },
+  "assessed_loss": 20100,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Tariq Iyer",
+  "address": "70 Thornbury Court, Clinton, NC 28318",
+  "street": "70 Thornbury Court",
+  "phone": "(555) 334-5287",
+  "email": "tariq.iyer@example.com",
+  "other_people": [
+   "Ingrid Thorne",
+   "Felix Ferreira"
+  ],
+  "injuries": []
+ }
+}

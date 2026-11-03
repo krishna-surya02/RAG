@@ -1,0 +1,45 @@
+{
+ "claim_id": "CLM-2025-000010",
+ "scenario": "not_in_force",
+ "product": "household",
+ "policy_number": "HH-2025-00032",
+ "loss_date": "2025-01-21",
+ "reported_at": "2025-01-28",
+ "fnol_text": "My name is Dmitri Mensah and I live at 165 Cedar Avenue, Riverton, WY 82519. You can reach me on (555) 722-7478 or dmitri.mensah@example.com. During the storm on 21 January 2025 high winds ripped tiles off the roof and rain came into the loft and the back bedroom. Policy HH-2025-00032. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Mensah on (555) 722-7478 to acknowledge the claim. Dmitri confirmed the loss date as 21 January 2025."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 165 Cedar Avenue. Neighbour Kofi Kaminski was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0417: damaged furniture stacked in the garage"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "NOT_IN_FORCE",
+  "clause": null,
+  "endorsement_set": null,
+  "limits": null,
+  "assessed_loss": 24000,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Dmitri Mensah",
+  "address": "165 Cedar Avenue, Riverton, WY 82519",
+  "street": "165 Cedar Avenue",
+  "phone": "(555) 722-7478",
+  "email": "dmitri.mensah@example.com",
+  "other_people": [
+   "Kofi Kaminski",
+   "Amara Delgado"
+  ],
+  "injuries": []
+ }
+}

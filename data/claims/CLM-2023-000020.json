@@ -1,0 +1,51 @@
+{
+ "claim_id": "CLM-2023-000020",
+ "scenario": "mt_hail",
+ "product": "motor",
+ "policy_number": "MT-2023-00146",
+ "loss_date": "2023-06-18",
+ "reported_at": "2023-06-19",
+ "fnol_text": "My name is Priya O'Connell and I live at 141 Kestrel Avenue, Ashland, OR 97539. You can reach me on (555) 480-2550 or priya.oconnell@example.com. A hailstorm on 18 June 2023 left dozens of dents across the roof, bonnet and boot of my car. Policy MT-2023-00146. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr O'Connell on (555) 480-2550 to acknowledge the claim. Priya confirmed the loss date as 18 June 2023."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Elena Thorne gave a statement by phone."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2201: front passenger side damage",
+  "IMG_2203: dashboard warning lights"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §3.2",
+  "clause": "MT-PW §3.2",
+  "endorsement_set": "MEND-2023",
+  "limits": {
+   "coverage": "hail",
+   "deductible": 750,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §3.2"
+  },
+  "assessed_loss": 5550,
+  "amount_paid": 4800
+ },
+ "pii": {
+  "claimant_name": "Priya O'Connell",
+  "address": "141 Kestrel Avenue, Ashland, OR 97539",
+  "street": "141 Kestrel Avenue",
+  "phone": "(555) 480-2550",
+  "email": "priya.oconnell@example.com",
+  "other_people": [
+   "Elena Thorne",
+   "Grace Al-Sayed"
+  ],
+  "injuries": []
+ }
+}

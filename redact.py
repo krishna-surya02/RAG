@@ -1,4 +1,4 @@
-"""Strip claimant names and claim numbers out of an adjuster's question.
+"""Strip claimant names, claim numbers, contact details and injuries out of text.
 
     python redact.py --selftest
     python redact.py "Claimant Priya Raman, claim CLM-2026-004512: is the sump covered?"
@@ -34,6 +34,34 @@ CLAIM_NUMBER_RES = [
     re.compile(r"\b[A-Z]{2,4}-?\d{6,}\b"),
     re.compile(r"\b\d{2}-\d{5,}\b"),
 ]
+
+# --- Contact details and injuries (week 12) -----------------------------------
+# Week 12's claim files carry what week 5's questions never did: addresses,
+# phone numbers, emails and injury descriptions in FNOL text and adjuster
+# notes. Addresses go before names, or "Linden Drive" reads as Firstname
+# Lastname and the house number is left behind.
+_STREET_SUFFIX = (r"(?:Road|Rd|Street|St|Avenue|Ave|Lane|Ln|Drive|Dr|Close|Court|Ct|Way|Place|Pl"
+                  r"|Terrace|Boulevard|Blvd|Crescent)")
+ADDRESS_RE = re.compile(
+    rf"\b\d{{1,5}}\s+(?:[A-Z][a-z]+\s+){{1,3}}{_STREET_SUFFIX}\b\.?"
+    r"(?:,\s*[A-Z][a-z]+(?:\s[A-Z][a-z]+)*)?(?:,\s*[A-Z]{2}\s+\d{5}(?:-\d{4})?)?"
+)
+PHONE_RE = re.compile(r"(?:\(\d{3}\)\s?|\b\d{3}[\s.-])\d{3}[\s.-]\d{4}\b")
+EMAIL_RE = re.compile(r"\b[\w.+-]+@[\w-]+(?:\.[\w-]+)+\b")
+# Specific injury descriptions, not the word "injury": "bodily injury" is a
+# defined term in every wording and must survive.
+_BODY = r"(?:wrist|ankle|arm|leg|ribs?|collarbone|pelvis|tibia|hip|nose|jaw|finger|hand|foot|knee|shoulder)"
+INJURY_RE = re.compile(
+    r"\b(?:an?\s+)?(?:(?:mild|minor|severe|serious)\s+)?(?:"
+    r"whiplash|concussion"
+    rf"|(?:fractured|broken|sprained|bruised|dislocated)\s+(?:(?:left|right)\s+)?{_BODY}"
+    r"|lacerations?(?:\s+to\s+the\s+\w+)?|(?:lower\s+)?back\s+strain|burns\s+to\s+the\s+\w+"
+    r"|head\s+injury|permanent\s+loss\s+of\s+sight(?:\s+in\s+the\s+(?:left|right)\s+eye)?"
+    rf"|loss\s+of\s+the\s+(?:left|right)\s+{_BODY}(?:\s+below\s+the\s+\w+)?)",
+    re.I,
+)
+CONTACT_PATTERNS = [("email", EMAIL_RE, "EMAIL"), ("address", ADDRESS_RE, "ADDRESS"),
+                    ("phone", PHONE_RE, "PHONE"), ("injury", INJURY_RE, "INJURY")]
 
 # --- Claimant names ----------------------------------------------------------
 _CAP = r"(?:[A-Z]['’])?[A-Z][a-zà-ÿ]+(?:[A-Z][a-zà-ÿ]+)?(?:-[A-Z][a-zà-ÿ]+)?"
@@ -71,8 +99,17 @@ STOPWORDS = {
 }
 
 
+# Week 12: "the Calder River burst its banks" became "the [CLAIMANT_2] burst its
+# banks", and the agent read a river flood as a burst pipe (baseline w12-06/07).
+# A capitalised run ending in a water-body noun is a place, never a person.
+PLACE_NOUNS = {"river", "creek", "brook", "stream", "lake", "canal", "reservoir", "bay", "estuary", "beck", "burn"}
+
+
 def _is_name(candidate):
-    return all(token.lower() not in STOPWORDS for token in candidate.split())
+    tokens = candidate.split()
+    if tokens and tokens[-1].lower().rstrip("'’s") in PLACE_NOUNS:
+        return False
+    return all(token.lower() not in STOPWORDS for token in tokens)
 
 
 def _strip_stopwords(candidate):
@@ -120,6 +157,13 @@ def redact(text):
         clean = clean.replace(number, placeholder)
         found.append(("claim_number", number, placeholder))
 
+    for kind, pattern, tag in CONTACT_PATTERNS:
+        values = sorted({m.group(0) for m in pattern.finditer(clean)}, key=len, reverse=True)
+        for index, value in enumerate(values, start=1):
+            placeholder = f"[{tag}_{index}]" if kind != "injury" else "[INJURY]"
+            clean = clean.replace(value, placeholder)
+            found.append((kind, value, placeholder))
+
     names = _find_names(clean)
     # A full name mentioned once is usually mentioned again by first or last
     # name alone. Those later mentions carry no trigger, so propagate each
@@ -140,12 +184,21 @@ def redact(text):
     return clean, found
 
 
+SEPARATOR = "\n\u241e\n"  # record separator; never in claim text
+
+
+def redact_many(texts):
+    """Redact several texts from one claim as one document, so a name found in
+    the FNOL is also removed where a later note uses only the first name
+    ("Amara confirmed the date"). Redacting each note alone misses those."""
+    clean, found = redact(SEPARATOR.join(texts))
+    return clean.split(SEPARATOR), found
+
+
 def counts(found):
     """What the trace may keep: how many distinct things of each kind were removed."""
-    return {
-        "claimant_name": len({p for kind, _, p in found if kind == "claimant_name"}),
-        "claim_number": len({p for kind, _, p in found if kind == "claim_number"}),
-    }
+    kinds = ("claimant_name", "claim_number", "email", "address", "phone", "injury")
+    return {k: len({v for kind, v, _ in found if kind == k}) for k in kinds}
 
 
 # --- Self-test ---------------------------------------------------------------
@@ -158,6 +211,11 @@ MUST_REDACT = [
     ("Adjusting for Tomás Herrera — Mr. Herrera's roof caved in.", ["Tomás", "Herrera"]),
     ("Policyholder Grace Nguyen-Tran reports a burst pipe.", ["Grace", "Nguyen-Tran"]),
     ("This is for Jordan McBride, CLM-2025-118273.", ["Jordan", "McBride", "CLM-2025-118273"]),
+    ("My name is Amara Sorensen and I live at 175 Linden Drive, Greenville, SC 29659. You can reach me on (555) 354-3527 or amara.sorensen@example.com.",
+     ["Amara", "Sorensen", "175 Linden Drive", "Greenville, SC 29659", "(555) 354-3527", "amara.sorensen@example.com"]),
+    ("Third-party driver Leila Mensah reports whiplash and attended Mercy General.", ["Leila", "Mensah", "whiplash"]),
+    ("Injured party sustained a fractured left wrist and minor burns to the hand.", ["fractured left wrist", "burns to the hand"]),
+    ("Site visit to 88 Kestrel Close. Medical report confirms permanent loss of sight in the right eye.", ["88 Kestrel Close", "loss of sight"]),
 ]
 
 MUST_NOT_REDACT = [
@@ -168,6 +226,10 @@ MUST_NOT_REDACT = [
     "The estimate is $18,500 and the deductible is $1,000.",
     "What documents go with the Mediclaim / Health Insurance claim form?",
     "Named Insured is on the Declarations page; Section III lists the exclusions.",
+    "Does Section 3.1 cover bodily injury to a visitor under HH-PW, policy HH-2023-00068?",
+    "The flood deductible is $2,500 and the sub-limit is $15,000 under HFL-23 §2.2.",
+    "Loss date 14 August 2024; hail dented the bonnet. Policy MT-2024-00012, MEND-2023.",
+    "The Calder River burst its banks and Stonebridge Brook overtopped near the house.",
 ]
 
 

@@ -1,0 +1,55 @@
+{
+ "claim_id": "CLM-2026-000131",
+ "scenario": "mt_flood_warning_25",
+ "product": "motor",
+ "policy_number": "MT-2025-00129",
+ "loss_date": "2026-10-14",
+ "reported_at": "2026-10-22",
+ "fnol_text": "My name is Ethan Castillo and I live at 791 Thornbury Court, Riverton, WY 82573. You can reach me on (555) 833-1015 or ethan.castillo@example.com. There was a flood warning for our area from the day before, but I left the car parked on the street by the river. On 14 October 2026 the water rose and the car was flooded up to the seats. Policy MT-2025-00129. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Castillo on (555) 833-1015 to acknowledge the claim. Ethan confirmed the loss date as 14 October 2026."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Liam Fitzgerald gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Ethan sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2201: front passenger side damage",
+  "IMG_2203: dashboard warning lights",
+  "IMG_2207: vehicle on the recovery truck"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:MFL-25 §2.2",
+  "clause": "MFL-25 §2.2",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "flood",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MFL-25 §2.4"
+  },
+  "assessed_loss": 23500,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Ethan Castillo",
+  "address": "791 Thornbury Court, Riverton, WY 82573",
+  "street": "791 Thornbury Court",
+  "phone": "(555) 833-1015",
+  "email": "ethan.castillo@example.com",
+  "other_people": [
+   "Liam Fitzgerald",
+   "Samuel Vasquez"
+  ],
+  "injuries": []
+ }
+}

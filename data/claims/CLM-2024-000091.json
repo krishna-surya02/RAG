@@ -1,0 +1,44 @@
+{
+ "claim_id": "CLM-2024-000091",
+ "scenario": "not_in_force",
+ "product": "motor",
+ "policy_number": "MT-2025-00070",
+ "loss_date": "2024-09-03",
+ "reported_at": "2024-09-09",
+ "fnol_text": "My name is Leila Varga and I live at 968 Rowan Street, Milton, VT 05479. You can reach me on (555) 858-8586 or leila.varga@example.com. My car was stolen from outside the house overnight on 3 September 2024. Glass from the driver's window was on the road. Policy MT-2025-00070. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Varga on (555) 858-8586 to acknowledge the claim. Leila confirmed the loss date as 3 September 2024."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Nikhil Haddad gave a statement by phone."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2203: dashboard warning lights",
+  "IMG_2201: front passenger side damage"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "NOT_IN_FORCE",
+  "clause": null,
+  "endorsement_set": null,
+  "limits": null,
+  "assessed_loss": 10950,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Leila Varga",
+  "address": "968 Rowan Street, Milton, VT 05479",
+  "street": "968 Rowan Street",
+  "phone": "(555) 858-8586",
+  "email": "leila.varga@example.com",
+  "other_people": [
+   "Nikhil Haddad",
+   "Chloe Al-Sayed"
+  ],
+  "injuries": []
+ }
+}

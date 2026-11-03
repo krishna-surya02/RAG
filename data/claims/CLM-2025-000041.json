@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2025-000041",
+ "scenario": "hh_subsidence",
+ "product": "household",
+ "policy_number": "HH-2025-00126",
+ "loss_date": "2025-03-29",
+ "reported_at": "2025-03-31",
+ "fnol_text": "My name is Ethan Whitlock and I live at 690 Linden Way, Clinton, NC 28340. You can reach me on (555) 205-5781 or ethan.whitlock@example.com. Large diagonal cracks appeared above the doors and windows at the back of the house around 29 March 2025. A surveyor thinks the clay soil has shrunk. Policy HH-2025-00126. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Whitlock on (555) 205-5781 to acknowledge the claim. Ethan confirmed the loss date as 29 March 2025."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 690 Linden Way. Neighbour Kofi Moreau was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0417: damaged furniture stacked in the garage"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:HH-PW §1.11",
+  "clause": "HH-PW §1.11",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "subsidence",
+   "deductible": 2500,
+   "sub_limit": null,
+   "policy_limit": 500000,
+   "source": "HH-PW §1.11"
+  },
+  "assessed_loss": 19700,
+  "amount_paid": 17200
+ },
+ "pii": {
+  "claimant_name": "Ethan Whitlock",
+  "address": "690 Linden Way, Clinton, NC 28340",
+  "street": "690 Linden Way",
+  "phone": "(555) 205-5781",
+  "email": "ethan.whitlock@example.com",
+  "other_people": [
+   "Kofi Moreau",
+   "Marcus Lindqvist"
+  ],
+  "injuries": []
+ }
+}

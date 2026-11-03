@@ -1,0 +1,55 @@
+{
+ "claim_id": "CLM-2026-000110",
+ "scenario": "hh_surface_water_25_floodplus",
+ "product": "household",
+ "policy_number": "HH-2024-00131",
+ "loss_date": "2026-09-17",
+ "reported_at": "2026-09-25",
+ "fnol_text": "My name is Kwame Ishikawa and I live at 621 Primrose Court, Ashland, OR 97575. You can reach me on (555) 521-5521 or kwame.ishikawa@example.com. After the torrential rain on the night of 17 September 2026, rainwater ran off the field behind us, across the back garden and in under the patio doors. About 5 cm of water covered the kitchen and family room floors. Policy HH-2024-00131. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Ishikawa on (555) 521-5521 to acknowledge the claim. Kwame confirmed the loss date as 17 September 2026."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 621 Primrose Court. Neighbour Jordan Wojcik was present and confirmed the timeline."
+  },
+  {
+   "n": 3,
+   "text": "Kwame sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0412: ground floor with standing water and wet carpets"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:HFL-25 §2.2",
+  "clause": "HFL-25 §2.2",
+  "endorsement_set": "HEND-2025",
+  "limits": {
+   "coverage": "flood_plus",
+   "deductible": 5000,
+   "sub_limit": 25000,
+   "policy_limit": 600000,
+   "source": "HFL-25 §2.2, §2.3; HSL-25 §1"
+  },
+  "assessed_loss": 27000,
+  "amount_paid": 22000
+ },
+ "pii": {
+  "claimant_name": "Kwame Ishikawa",
+  "address": "621 Primrose Court, Ashland, OR 97575",
+  "street": "621 Primrose Court",
+  "phone": "(555) 521-5521",
+  "email": "kwame.ishikawa@example.com",
+  "other_people": [
+   "Jordan Wojcik",
+   "Elena Brennan"
+  ],
+  "injuries": []
+ }
+}

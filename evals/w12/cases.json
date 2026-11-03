@@ -1,0 +1,634 @@
+{
+ "_about": "Week 12 integrated-system cases, built by w12/evals/cases.py (seeded). Regression cases added by the failure->test loop carry origin='regression'.",
+ "cases": [
+  {
+   "id": "w12-01",
+   "claim_id": "CLM-2024-000073",
+   "scenario": "hh_surface_water_aug24",
+   "product": "household",
+   "loss_date": "2024-08-16",
+   "why": "the live wound: Aug-2024 rainfall flood, 2023 wording governs, 2025 wording reads better",
+   "trajectory": true,
+   "expected": {
+    "in_force": true,
+    "endorsement_set": "HEND-2023",
+    "calendar_set_differs": false,
+    "deciding_clause": "HFL-23 §2.2",
+    "outcome_for_reference_only": "paid",
+    "reason_code": "PAID_SUBLIMIT:HFL-23 §2.2",
+    "coverage": "flood_surface_water",
+    "limits": {
+     "deductible": 2500,
+     "sub_limit": 15000,
+     "policy_limit": 500000
+    }
+   }
+  },
+  {
+   "id": "w12-02",
+   "claim_id": "CLM-2024-000079",
+   "scenario": "hh_surface_water_aug24",
+   "product": "household",
+   "loss_date": "2024-08-16",
+   "why": "the live wound: Aug-2024 rainfall flood, 2023 wording governs, 2025 wording reads better",
+   "trajectory": true,
+   "expected": {
+    "in_force": true,
+    "endorsement_set": "HEND-2023",
+    "calendar_set_differs": false,
+    "deciding_clause": "HFL-23 §2.2",
+    "outcome_for_reference_only": "paid",
+    "reason_code": "PAID_SUBLIMIT:HFL-23 §2.2",
+    "coverage": "flood_surface_water",
+    "limits": {
+     "deductible": 2500,
+     "sub_limit": 15000,
+     "policy_limit": 500000
+    }
+   }
+  },
+  {
+   "id": "w12-03",
+   "claim_id": "CLM-2024-000077",
+   "scenario": "hh_surface_water_aug24",
+   "product": "household",
+   "loss_date": "2024-08-16",
+   "why": "the live wound: Aug-2024 rainfall flood, 2023 wording governs, 2025 wording reads better",
+   "trajectory": false,
+   "expected": {
+    "in_force": true,
+    "endorsement_set": "HEND-2023",
+    "calendar_set_differs": false,
+    "deciding_clause": "HFL-23 §2.2",
+    "outcome_for_reference_only": "paid",
+    "reason_code": "PAID_SUBLIMIT:HFL-23 §2.2",
+    "coverage": "flood_surface_water",
+    "limits": {
+     "deductible": 2500,
+     "sub_limit": 15000,
+     "policy_limit": 500000
+    }
+   }
+  },
+  {
+   "id": "w12-04",
+   "claim_id": "CLM-2025-000093",
+   "scenario": "hh_surface_water_23",
+   "product": "household",
+   "loss_date": "2025-07-10",
+   "why": "2023-set rainfall flood outside August 2024",
+   "trajectory": false,
+   "expected": {
+    "in_force": true,
+    "endorsement_set": "HEND-2023",
+    "calendar_set_differs": true,
+    "deciding_clause": "HFL-23 §2.2",
+    "outcome_for_reference_only": "paid",
+    "reason_code": "PAID_SUBLIMIT:HFL-23 §2.2",
+    "coverage": "flood_surface_water",
+    "limits": {
+     "deductible": 2500,
+     "sub_limit": 15000,
+     "policy_limit": 500000
+    }
+   }
+  },
+  {
+   "id": "w12-05",
+   "claim_id": "CLM-2025-000034",
+   "scenario": "hh_surface_water_23_floodzone",
+   "product": "household",
+   "loss_date": "2025-03-16",
+   "why": "HFL-23 §2.2's flood-zone condition",
+   "trajectory": false,
+   "expected": {
+    "in_force": true,
+    "endorsement_set": "HEND-2023",
+    "calendar_set_differs": false,
+    "deciding_clause": "HFL-23 §2.2",
+    "outcome_for_reference_only": "declined",
+    "reason_code": "EXCL:HFL-23 §2.2"
+   }
+  },
+  {
+   "id": "w12-06",
+   "claim_id": "CLM-2026-000002",
+   "scenario": "hh_river_23",
+   "product": "household",
+   "loss_date": "2025-12-31",
+   "why": "river inundation: HFL-23 §2.1, not §2.2 -- the cause word decides",
+   "trajectory": true,
+   "expected": {
+    "in_force": true,
+    "endorsement_set": "HEND-2023",
+    "calendar_set_differs": true,
+    "deciding_clause": "HFL-23 §2.1",
+    "outcome_for_reference_only": "declined",
+    "reason_code": "EXCL:HFL-23 §2.1"
+   }
+  },
+  {
+   "id": "w12-07",
+   "claim_id": "CLM-2023-000029",
+   "scenario": "hh_river_23",
+   "product": "household",
+   "loss_date": "2023-08-14",
+   "why": "river inundation: HFL-23 §2.1, not §2.2 -- the cause word decides",
+   "trajectory": false,
+   "expected": {
+    "in_force": true,
+    "endorsement_set": "HEND-2023",
+    "calendar_set_differs": false,
+    "deciding_clause": "HFL-23 §2.1",
+    "outcome_for_reference_only": "declined",
+    "reason_code": "EXCL:HFL-23 §2.1"
+   }
+  },
+  {
+   "id": "w12-08",
+   "claim_id": "CLM-2026-000068",
+   "scenario": "hh_surface_water_25",
+   "product": "household",
+   "loss_date": "2026-07-07",
+   "why": "2025-set rainfall flood without Flood Plus",
+   "trajectory": true,
+   "expected": {
+    "in_force": true,
+    "endorsement_set": "HEND-2025",
+    "calendar_set_differs": false,
+    "deciding_clause": "HFL-25 §2.1",
+    "outcome_for_reference_only": "declined",
+    "reason_code": "EXCL:HFL-25 §2.1"
+   }
+  },
+  {
+   "id": "w12-09",
+   "claim_id": "CLM-2026-000029",
+   "scenario": "hh_surface_water_25",
+   "product": "household",
+   "loss_date": "2026-03-31",
+   "why": "2025-set rainfall flood without Flood Plus",
+   "trajectory": false,
+   "expected": {
+    "in_force": true,
+    "endorsement_set": "HEND-2025",
+    "calendar_set_differs": false,
+    "deciding_clause": "HFL-25 §2.1",
+    "outcome_for_reference_only": "declined",
+    "reason_code": "EXCL:HFL-25 §2.1"
+   }
+  },
+  {
+   "id": "w12-10",
+   "claim_id": "CLM-2026-000014",
+   "scenario": "hh_surface_water_25_floodplus",
+   "product": "household",
+   "loss_date": "2026-02-09",
+   "why": "2025-set Flood Plus: $5,000 deductible, $25,000 sub-limit",
+   "trajectory": false,
+   "expected": {
+    "in_force": true,
+    "endorsement_set": "HEND-2025",
+    "calendar_set_differs": false,
+    "deciding_clause": "HFL-25 §2.2",
+    "outcome_for_reference_only": "paid",
+    "reason_code": "PAID:HFL-25 §2.2",
+    "coverage": "flood_plus",
+    "limits": {
+     "deductible": 5000,
+     "sub_limit": 25000,
+     "policy_limit": 600000
+    }
+   }
+  },
+  {
+   "id": "w12-11",
+   "claim_id": "CLM-2025-000076",
+   "scenario": "hh_surface_water_crossboundary",
+   "product": "household",
+   "loss_date": "2025-06-04",
+   "why": "loss after 2025-04-01 on a term that started before it: 2023 set still governs",
+   "trajectory": true,
+   "expected": {
+    "in_force": true,
+    "endorsement_set": "HEND-2023",
+    "calendar_set_differs": true,
+    "deciding_clause": "HFL-23 §2.2",
+    "outcome_for_reference_only": "paid",
+    "reason_code": "PAID:HFL-23 §2.2",
+    "coverage": "flood_surface_water",
+    "limits": {
+     "deductible": 2500,
+     "sub_limit": 15000,
+     "policy_limit": 500000
+    }
+   }
+  },
+  {
+   "id": "w12-12",
+   "claim_id": "CLM-2025-000059",
+   "scenario": "hh_surface_water_crossboundary",
+   "product": "household",
+   "loss_date": "2025-05-01",
+   "why": "loss after 2025-04-01 on a term that started before it: 2023 set still governs",
+   "trajectory": true,
+   "expected": {
+    "in_force": true,
+    "endorsement_set": "HEND-2023",
+    "calendar_set_differs": true,
+    "deciding_clause": "HFL-23 §2.2",
+    "outcome_for_reference_only": "paid",
+    "reason_code": "PAID:HFL-23 §2.2",
+    "coverage": "flood_surface_water",
+    "limits": {
+     "deductible": 2500,
+     "sub_limit": 15000,
+     "policy_limit": 500000
+    }
+   }
+  },
+  {
+   "id": "w12-13",
+   "claim_id": "CLM-2025-000108",
+   "scenario": "hh_surface_water_crossboundary",
+   "product": "household",
+   "loss_date": "2025-08-11",
+   "why": "loss after 2025-04-01 on a term that started before it: 2023 set still governs",
+   "trajectory": false,
+   "expected": {
+    "in_force": true,
+    "endorsement_set": "HEND-2023",
+    "calendar_set_differs": true,
+    "deciding_clause": "HFL-23 §2.2",
+    "outcome_for_reference_only": "paid",
+    "reason_code": "PAID_SUBLIMIT:HFL-23 §2.2",
+    "coverage": "flood_surface_water",
+    "limits": {
+     "deductible": 2500,
+     "sub_limit": 15000,
+     "policy_limit": 500000
+    }
+   }
+  },
+  {
+   "id": "w12-14",
+   "claim_id": "CLM-2026-000136",
+   "scenario": "hh_escape_of_water",
+   "product": "household",
+   "loss_date": "2026-10-18",
+   "why": "base wording peril with no endorsement in play",
+   "trajectory": true,
+   "expected": {
+    "in_force": true,
+    "endorsement_set": "HEND-2025",
+    "calendar_set_differs": false,
+    "deciding_clause": "HH-PW §1.7",
+    "outcome_for_reference_only": "paid",
+    "reason_code": "PAID:HH-PW §1.7",
+    "coverage": "escape_of_water",
+    "limits": {
+     "deductible": 1500,
+     "sub_limit": null,
+     "policy_limit": 600000
+    }
+   }
+  },
+  {
+   "id": "w12-15",
+   "claim_id": "CLM-2024-000117",
+   "scenario": "hh_gradual_leak",
+   "product": "household",
+   "loss_date": "2024-12-15",
+   "why": "HX-1 wear and tear vs escape of water",
+   "trajectory": false,
+   "expected": {
+    "in_force": true,
+    "endorsement_set": "HEND-2023",
+    "calendar_set_differs": false,
+    "deciding_clause": "HX-1",
+    "outcome_for_reference_only": "declined",
+    "reason_code": "EXCL:HX-1"
+   }
+  },
+  {
+   "id": "w12-16",
+   "claim_id": "CLM-2026-000001",
+   "scenario": "hh_mould",
+   "product": "household",
+   "loss_date": "2025-12-30",
+   "why": "HX-5 with a set-dependent sub-limit",
+   "trajectory": false,
+   "expected": {
+    "in_force": true,
+    "endorsement_set": "HEND-2025",
+    "calendar_set_differs": false,
+    "deciding_clause": "HX-5",
+    "outcome_for_reference_only": "paid",
+    "reason_code": "PAID:HX-5",
+    "coverage": "mould",
+    "limits": {
+     "deductible": 1000,
+     "sub_limit": 7500,
+     "policy_limit": 600000
+    }
+   }
+  },
+  {
+   "id": "w12-17",
+   "claim_id": "CLM-2026-000129",
+   "scenario": "hh_theft_let",
+   "product": "household",
+   "loss_date": "2026-10-12",
+   "why": "HX-15 theft from let property",
+   "trajectory": false,
+   "expected": {
+    "in_force": true,
+    "endorsement_set": "HEND-2025",
+    "calendar_set_differs": false,
+    "deciding_clause": "HX-15",
+    "outcome_for_reference_only": "declined",
+    "reason_code": "EXCL:HX-15"
+   }
+  },
+  {
+   "id": "w12-18",
+   "claim_id": "CLM-2026-000084",
+   "scenario": "hh_storm_fence",
+   "product": "household",
+   "loss_date": "2026-08-07",
+   "why": "HX-9 fences",
+   "trajectory": false,
+   "expected": {
+    "in_force": true,
+    "endorsement_set": "HEND-2025",
+    "calendar_set_differs": false,
+    "deciding_clause": "HX-9",
+    "outcome_for_reference_only": "declined",
+    "reason_code": "EXCL:HX-9"
+   }
+  },
+  {
+   "id": "w12-19",
+   "claim_id": "CLM-2025-000004",
+   "scenario": "hh_liability_injury",
+   "product": "household",
+   "loss_date": "2025-01-07",
+   "why": "bodily injury in the notes: PII and a liability referral",
+   "trajectory": true,
+   "expected": {
+    "in_force": true,
+    "endorsement_set": "HEND-2023",
+    "calendar_set_differs": false,
+    "deciding_clause": "HH-PW §3.1",
+    "outcome_for_reference_only": "referred_liability",
+    "reason_code": "REFERRED_LIABILITY:HH-PW §3.1",
+    "coverage": "liability",
+    "limits": {
+     "deductible": 0,
+     "sub_limit": null,
+     "policy_limit": 2000000
+    }
+   }
+  },
+  {
+   "id": "w12-20",
+   "claim_id": "CLM-2026-000004",
+   "scenario": "hh_below_deductible",
+   "product": "household",
+   "loss_date": "2026-01-11",
+   "why": "loss below the deductible",
+   "trajectory": false,
+   "expected": {
+    "in_force": true,
+    "endorsement_set": "HEND-2025",
+    "calendar_set_differs": false,
+    "deciding_clause": "HH-PW §1.7",
+    "outcome_for_reference_only": "no_payment",
+    "reason_code": "BELOW_DEDUCTIBLE:HH-PW §1.7",
+    "coverage": "escape_of_water",
+    "limits": {
+     "deductible": 1500,
+     "sub_limit": null,
+     "policy_limit": 600000
+    }
+   }
+  },
+  {
+   "id": "w12-21",
+   "claim_id": "CLM-2026-000025",
+   "scenario": "mt_collision",
+   "product": "motor",
+   "loss_date": "2026-03-17",
+   "why": "motor own damage with third-party injuries in the notes",
+   "trajectory": true,
+   "expected": {
+    "in_force": true,
+    "endorsement_set": "MEND-2025",
+    "calendar_set_differs": false,
+    "deciding_clause": "MT-PW §3.1",
+    "outcome_for_reference_only": "paid",
+    "reason_code": "PAID:MT-PW §3.1",
+    "coverage": "own_damage",
+    "limits": {
+     "deductible": 1000,
+     "sub_limit": null,
+     "policy_limit": 60000
+    }
+   }
+  },
+  {
+   "id": "w12-22",
+   "claim_id": "CLM-2024-000095",
+   "scenario": "mt_collision_tpft",
+   "product": "motor",
+   "loss_date": "2024-09-12",
+   "why": "TPFT has no own-damage cover: MT-PW §1.2",
+   "trajectory": false,
+   "expected": {
+    "in_force": true,
+    "endorsement_set": "MEND-2023",
+    "calendar_set_differs": false,
+    "deciding_clause": "MT-PW §1.2",
+    "outcome_for_reference_only": "declined",
+    "reason_code": "EXCL:MT-PW §1.2"
+   }
+  },
+  {
+   "id": "w12-23",
+   "claim_id": "CLM-2025-000125",
+   "scenario": "mt_theft_keys",
+   "product": "motor",
+   "loss_date": "2025-09-23",
+   "why": "MX-6 keys left in the vehicle",
+   "trajectory": false,
+   "expected": {
+    "in_force": true,
+    "endorsement_set": "MEND-2025",
+    "calendar_set_differs": false,
+    "deciding_clause": "MX-6",
+    "outcome_for_reference_only": "declined",
+    "reason_code": "EXCL:MX-6"
+   }
+  },
+  {
+   "id": "w12-24",
+   "claim_id": "CLM-2026-000033",
+   "scenario": "mt_windscreen",
+   "product": "motor",
+   "loss_date": "2026-04-14",
+   "why": "windscreen deductible and sub-limit, set-dependent",
+   "trajectory": false,
+   "expected": {
+    "in_force": true,
+    "endorsement_set": "MEND-2025",
+    "calendar_set_differs": false,
+    "deciding_clause": "MT-PW §4.1",
+    "outcome_for_reference_only": "paid",
+    "reason_code": "PAID:MT-PW §4.1",
+    "coverage": "windscreen",
+    "limits": {
+     "deductible": 150,
+     "sub_limit": 1500,
+     "policy_limit": 60000
+    }
+   }
+  },
+  {
+   "id": "w12-25",
+   "claim_id": "CLM-2025-000001",
+   "scenario": "mt_flood_warning_23",
+   "product": "motor",
+   "loss_date": "2024-12-29",
+   "why": "car left in a flood-warning area, 2023 set: no such exclusion exists",
+   "trajectory": true,
+   "expected": {
+    "in_force": true,
+    "endorsement_set": "MEND-2023",
+    "calendar_set_differs": false,
+    "deciding_clause": "MFL-23 §2.1",
+    "outcome_for_reference_only": "paid",
+    "reason_code": "PAID:MFL-23 §2.1",
+    "coverage": "flood",
+    "limits": {
+     "deductible": 750,
+     "sub_limit": null,
+     "policy_limit": 60000
+    }
+   }
+  },
+  {
+   "id": "w12-26",
+   "claim_id": "CLM-2025-000154",
+   "scenario": "mt_flood_warning_25",
+   "product": "motor",
+   "loss_date": "2025-11-19",
+   "why": "the same facts under the 2025 set: MFL-25 §2.2",
+   "trajectory": false,
+   "expected": {
+    "in_force": true,
+    "endorsement_set": "MEND-2025",
+    "calendar_set_differs": false,
+    "deciding_clause": "MFL-25 §2.2",
+    "outcome_for_reference_only": "declined",
+    "reason_code": "EXCL:MFL-25 §2.2"
+   }
+  },
+  {
+   "id": "w12-27",
+   "claim_id": "CLM-2024-000112",
+   "scenario": "mt_hail",
+   "product": "motor",
+   "loss_date": "2024-11-06",
+   "why": "hail deductible differs by set (MT-PW §3.2 vs MHA-25)",
+   "trajectory": false,
+   "expected": {
+    "in_force": true,
+    "endorsement_set": "MEND-2023",
+    "calendar_set_differs": false,
+    "deciding_clause": "MT-PW §3.2",
+    "outcome_for_reference_only": "paid",
+    "reason_code": "PAID:MT-PW §3.2",
+    "coverage": "hail",
+    "limits": {
+     "deductible": 750,
+     "sub_limit": null,
+     "policy_limit": 60000
+    }
+   }
+  },
+  {
+   "id": "w12-28",
+   "claim_id": "CLM-2024-000017",
+   "scenario": "mt_personal_accident",
+   "product": "motor",
+   "loss_date": "2024-03-02",
+   "why": "permanent injury in the notes",
+   "trajectory": false,
+   "expected": {
+    "in_force": true,
+    "endorsement_set": "MEND-2023",
+    "calendar_set_differs": false,
+    "deciding_clause": "MT-PW §5.1",
+    "outcome_for_reference_only": "paid",
+    "reason_code": "PAID:MT-PW §5.1",
+    "coverage": "personal_accident",
+    "limits": {
+     "deductible": 0,
+     "sub_limit": 25000,
+     "policy_limit": 25000
+    }
+   }
+  },
+  {
+   "id": "w12-29",
+   "claim_id": "CLM-2024-000049",
+   "scenario": "not_in_force",
+   "product": "motor",
+   "loss_date": "2024-07-03",
+   "why": "loss in a lapse gap, before inception, or after cancellation",
+   "trajectory": true,
+   "expected": {
+    "in_force": false,
+    "endorsement_set": null,
+    "calendar_set_differs": false,
+    "deciding_clause": null,
+    "outcome_for_reference_only": "declined",
+    "reason_code": "NOT_IN_FORCE"
+   }
+  },
+  {
+   "id": "w12-30",
+   "claim_id": "CLM-2024-000058",
+   "scenario": "not_in_force",
+   "product": "motor",
+   "loss_date": "2024-07-26",
+   "why": "loss in a lapse gap, before inception, or after cancellation",
+   "trajectory": true,
+   "expected": {
+    "in_force": false,
+    "endorsement_set": null,
+    "calendar_set_differs": false,
+    "deciding_clause": null,
+    "outcome_for_reference_only": "declined",
+    "reason_code": "NOT_IN_FORCE"
+   }
+  },
+  {
+   "id": "w12-31",
+   "claim_id": "CLM-2023-000014",
+   "scenario": "not_in_force",
+   "product": "motor",
+   "loss_date": "2023-05-23",
+   "why": "loss in a lapse gap, before inception, or after cancellation",
+   "trajectory": false,
+   "expected": {
+    "in_force": false,
+    "endorsement_set": null,
+    "calendar_set_differs": false,
+    "deciding_clause": null,
+    "outcome_for_reference_only": "declined",
+    "reason_code": "NOT_IN_FORCE"
+   }
+  }
+ ]
+}

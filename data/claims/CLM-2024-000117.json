@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2024-000117",
+ "scenario": "hh_gradual_leak",
+ "product": "household",
+ "policy_number": "HH-2024-00127",
+ "loss_date": "2024-12-15",
+ "reported_at": "2024-12-17",
+ "fnol_text": "My name is Arjun Iyer and I live at 550 Alder Court, Greenville, SC 29676. You can reach me on (555) 725-8123 or arjun.iyer@example.com. Damp patch on the ceiling below the bath that has been growing since the spring; on 15 December 2024 part of the plaster came down. The plumber says the waste pipe has dripped for a long time. Policy HH-2024-00127. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Iyer on (555) 725-8123 to acknowledge the claim. Arjun confirmed the loss date as 15 December 2024."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 550 Alder Court. Neighbour Callum Wojcik was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0413: water line on the skirting boards"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:HX-1",
+  "clause": "HX-1",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "escape_of_water",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 500000,
+   "source": "HH-PW §1.7"
+  },
+  "assessed_loss": 13800,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Arjun Iyer",
+  "address": "550 Alder Court, Greenville, SC 29676",
+  "street": "550 Alder Court",
+  "phone": "(555) 725-8123",
+  "email": "arjun.iyer@example.com",
+  "other_people": [
+   "Callum Wojcik",
+   "Callum Zielinski"
+  ],
+  "injuries": []
+ }
+}

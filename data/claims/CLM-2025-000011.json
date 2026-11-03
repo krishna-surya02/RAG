@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2025-000011",
+ "scenario": "hh_storm_roof",
+ "product": "household",
+ "policy_number": "HH-2024-00049",
+ "loss_date": "2025-02-03",
+ "reported_at": "2025-02-09",
+ "fnol_text": "My name is Olusegun Fitzgerald and I live at 796 Cedar Street, Clinton, NC 28375. You can reach me on (555) 771-6110 or olusegun.fitzgerald@example.com. During the storm on 3 February 2025 high winds ripped tiles off the roof and rain came into the loft and the back bedroom. Policy HH-2024-00049. I'd like to claim for the damage to my home. Please just tell me this is covered.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Fitzgerald on (555) 771-6110 to acknowledge the claim. Olusegun confirmed the loss date as 3 February 2025."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 796 Cedar Street. Neighbour Ingrid Chukwu was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0413: water line on the skirting boards"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:HH-PW §1.5",
+  "clause": "HH-PW §1.5",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "storm",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 500000,
+   "source": "HH-PW §1.5"
+  },
+  "assessed_loss": 17700,
+  "amount_paid": 16700
+ },
+ "pii": {
+  "claimant_name": "Olusegun Fitzgerald",
+  "address": "796 Cedar Street, Clinton, NC 28375",
+  "street": "796 Cedar Street",
+  "phone": "(555) 771-6110",
+  "email": "olusegun.fitzgerald@example.com",
+  "other_people": [
+   "Ingrid Chukwu",
+   "Yusuf Novak"
+  ],
+  "injuries": []
+ }
+}

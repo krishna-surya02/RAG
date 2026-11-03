@@ -1,0 +1,51 @@
+{
+ "claim_id": "CLM-2023-000044",
+ "scenario": "mt_dui",
+ "product": "motor",
+ "policy_number": "MT-2023-00011",
+ "loss_date": "2023-10-23",
+ "reported_at": "2023-10-25",
+ "fnol_text": "My name is Samuel Herrera and I live at 480 Willow Place, Dover, DE 19920. You can reach me on (555) 860-7310 or samuel.herrera@example.com. I hit a lamp post on the way home from a party on 23 October 2023. The police breathalysed me at the scene. Policy MT-2023-00011. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Herrera on (555) 860-7310 to acknowledge the claim. Samuel confirmed the loss date as 23 October 2023."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Zara Okafor gave a statement by phone."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2201: front passenger side damage",
+  "IMG_2203: dashboard warning lights",
+  "IMG_2207: vehicle on the recovery truck"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:MX-2",
+  "clause": "MX-2",
+  "endorsement_set": "MEND-2023",
+  "limits": {
+   "coverage": "own_damage",
+   "deductible": 750,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §3.1"
+  },
+  "assessed_loss": 18350,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Samuel Herrera",
+  "address": "480 Willow Place, Dover, DE 19920",
+  "street": "480 Willow Place",
+  "phone": "(555) 860-7310",
+  "email": "samuel.herrera@example.com",
+  "other_people": [
+   "Zara Okafor",
+   "Declan Whitfield"
+  ],
+  "injuries": []
+ }
+}

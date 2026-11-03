@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2024-000019",
+ "scenario": "mt_windscreen",
+ "product": "motor",
+ "policy_number": "MT-2023-00122",
+ "loss_date": "2024-03-09",
+ "reported_at": "2024-03-09",
+ "fnol_text": "My name is Anika Yilmaz and I live at 353 Juniper Drive, Dover, DE 19923. You can reach me on (555) 482-3585 or anika.yilmaz@example.com. A stone thrown up by a lorry cracked my windscreen right across on 9 March 2024. Policy MT-2023-00122. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Yilmaz on (555) 482-3585 to acknowledge the claim. Anika confirmed the loss date as 9 March 2024."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Marcus Kaminski gave a statement by phone."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2201: front passenger side damage"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §4.1",
+  "clause": "MT-PW §4.1",
+  "endorsement_set": "MEND-2023",
+  "limits": {
+   "coverage": "windscreen",
+   "deductible": 100,
+   "sub_limit": 1500,
+   "policy_limit": 60000,
+   "source": "MT-PW §4.1; MWS-23 §1"
+  },
+  "assessed_loss": 750,
+  "amount_paid": 650
+ },
+ "pii": {
+  "claimant_name": "Anika Yilmaz",
+  "address": "353 Juniper Drive, Dover, DE 19923",
+  "street": "353 Juniper Drive",
+  "phone": "(555) 482-3585",
+  "email": "anika.yilmaz@example.com",
+  "other_people": [
+   "Marcus Kaminski",
+   "Felix Nguyen-Tran"
+  ],
+  "injuries": []
+ }
+}

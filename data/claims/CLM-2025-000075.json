@@ -1,0 +1,55 @@
+{
+ "claim_id": "CLM-2025-000075",
+ "scenario": "hh_river_23",
+ "product": "household",
+ "policy_number": "HH-2024-00141",
+ "loss_date": "2025-06-03",
+ "reported_at": "2025-06-12",
+ "fnol_text": "My name is Dmitri Mbeki and I live at 343 Alder Close, Madison, WI 53769. You can reach me on (555) 444-2982 or dmitri.mbeki@example.com. On 3 June 2025 the Millbrook River overtopped near our house after a week of storms. River water flooded the downstairs rooms and the garage. Policy HH-2024-00141. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Mbeki on (555) 444-2982 to acknowledge the claim. Dmitri confirmed the loss date as 3 June 2025."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 343 Alder Close. Neighbour Anika Pereira was present and confirmed the timeline."
+  },
+  {
+   "n": 3,
+   "text": "Dmitri sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0417: damaged furniture stacked in the garage"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:HFL-23 §2.1",
+  "clause": "HFL-23 §2.1",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "flood_surface_water",
+   "deductible": 2500,
+   "sub_limit": 15000,
+   "policy_limit": 500000,
+   "source": "HFL-23 §2.2, §2.3; HSL-23 §1"
+  },
+  "assessed_loss": 50500,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Dmitri Mbeki",
+  "address": "343 Alder Close, Madison, WI 53769",
+  "street": "343 Alder Close",
+  "phone": "(555) 444-2982",
+  "email": "dmitri.mbeki@example.com",
+  "other_people": [
+   "Anika Pereira",
+   "Declan Varga"
+  ],
+  "injuries": []
+ }
+}

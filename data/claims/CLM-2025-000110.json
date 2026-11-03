@@ -1,0 +1,51 @@
+{
+ "claim_id": "CLM-2025-000110",
+ "scenario": "mt_hail",
+ "product": "motor",
+ "policy_number": "MT-2023-00100",
+ "loss_date": "2025-08-14",
+ "reported_at": "2025-08-16",
+ "fnol_text": "My name is Fatima Jovanovic and I live at 696 Sycamore Place, Greenville, SC 29650. You can reach me on (555) 595-7059 or fatima.jovanovic@example.com. A hailstorm on 14 August 2025 left dozens of dents across the roof, bonnet and boot of my car. Policy MT-2023-00100. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Jovanovic on (555) 595-7059 to acknowledge the claim. Fatima confirmed the loss date as 14 August 2025."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Imogen Ballard gave a statement by phone."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2203: dashboard warning lights",
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2201: front passenger side damage"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MHA-25 §1",
+  "clause": "MHA-25 §1",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "hail",
+   "deductible": 500,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MHA-25 §1"
+  },
+  "assessed_loss": 6700,
+  "amount_paid": 6200
+ },
+ "pii": {
+  "claimant_name": "Fatima Jovanovic",
+  "address": "696 Sycamore Place, Greenville, SC 29650",
+  "street": "696 Sycamore Place",
+  "phone": "(555) 595-7059",
+  "email": "fatima.jovanovic@example.com",
+  "other_people": [
+   "Imogen Ballard",
+   "Valentina Moreau"
+  ],
+  "injuries": []
+ }
+}

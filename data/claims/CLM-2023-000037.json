@@ -1,0 +1,44 @@
+{
+ "claim_id": "CLM-2023-000037",
+ "scenario": "not_in_force",
+ "product": "motor",
+ "policy_number": "MT-2024-00019",
+ "loss_date": "2023-09-21",
+ "reported_at": "2023-09-22",
+ "fnol_text": "My name is Yusuf O'Connell and I live at 709 Elmstead Drive, Greenville, SC 29615. You can reach me on (555) 590-3985 or yusuf.oconnell@example.com. My car was stolen from outside the house overnight on 21 September 2023. Glass from the driver's window was on the road. Policy MT-2024-00019. I'd like to claim for the damage to my car. Please just tell me this is covered.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs O'Connell on (555) 590-3985 to acknowledge the claim. Yusuf confirmed the loss date as 21 September 2023."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Hiroshi Lindqvist gave a statement by phone."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2203: dashboard warning lights"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "NOT_IN_FORCE",
+  "clause": null,
+  "endorsement_set": null,
+  "limits": null,
+  "assessed_loss": 2900,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Yusuf O'Connell",
+  "address": "709 Elmstead Drive, Greenville, SC 29615",
+  "street": "709 Elmstead Drive",
+  "phone": "(555) 590-3985",
+  "email": "yusuf.oconnell@example.com",
+  "other_people": [
+   "Hiroshi Lindqvist",
+   "Tomas Mensah"
+  ],
+  "injuries": []
+ }
+}

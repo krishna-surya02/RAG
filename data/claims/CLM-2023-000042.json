@@ -1,0 +1,44 @@
+{
+ "claim_id": "CLM-2023-000042",
+ "scenario": "not_in_force",
+ "product": "motor",
+ "policy_number": "MT-2024-00008",
+ "loss_date": "2023-10-22",
+ "reported_at": "2023-10-22",
+ "fnol_text": "My name is Jordan Takahashi and I live at 766 Kestrel Avenue, Greenville, SC 29639. You can reach me on (555) 826-9063 or jordan.takahashi@example.com. My car was stolen from outside the house overnight on 22 October 2023. Glass from the driver's window was on the road. Policy MT-2024-00008. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Takahashi on (555) 826-9063 to acknowledge the claim. Jordan confirmed the loss date as 22 October 2023."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Ingrid Nakamura gave a statement by phone."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2203: dashboard warning lights",
+  "IMG_2207: vehicle on the recovery truck"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "NOT_IN_FORCE",
+  "clause": null,
+  "endorsement_set": null,
+  "limits": null,
+  "assessed_loss": 3150,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Jordan Takahashi",
+  "address": "766 Kestrel Avenue, Greenville, SC 29639",
+  "street": "766 Kestrel Avenue",
+  "phone": "(555) 826-9063",
+  "email": "jordan.takahashi@example.com",
+  "other_people": [
+   "Ingrid Nakamura",
+   "Ravi Thorne"
+  ],
+  "injuries": []
+ }
+}

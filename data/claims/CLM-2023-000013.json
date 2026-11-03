@@ -1,0 +1,44 @@
+{
+ "claim_id": "CLM-2023-000013",
+ "scenario": "not_in_force",
+ "product": "household",
+ "policy_number": "HH-2024-00031",
+ "loss_date": "2023-05-19",
+ "reported_at": "2023-05-20",
+ "fnol_text": "My name is Jordan Ferreira and I live at 592 Alder Way, Clinton, NC 28322. You can reach me on (555) 278-2711 or jordan.ferreira@example.com. The washing machine hose split on 19 May 2023 and flooded the utility room and hallway before we could turn off the water. Policy HH-2024-00031. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Ferreira on (555) 278-2711 to acknowledge the claim. Jordan confirmed the loss date as 19 May 2023."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 592 Alder Way. Neighbour Rosa Jovanovic was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0412: ground floor with standing water and wet carpets"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "NOT_IN_FORCE",
+  "clause": null,
+  "endorsement_set": null,
+  "limits": null,
+  "assessed_loss": 3750,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Jordan Ferreira",
+  "address": "592 Alder Way, Clinton, NC 28322",
+  "street": "592 Alder Way",
+  "phone": "(555) 278-2711",
+  "email": "jordan.ferreira@example.com",
+  "other_people": [
+   "Rosa Jovanovic",
+   "Ravi Zielinski"
+  ],
+  "injuries": []
+ }
+}

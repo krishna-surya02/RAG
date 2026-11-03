@@ -1,0 +1,57 @@
+{
+ "claim_id": "CLM-2023-000049",
+ "scenario": "mt_collision",
+ "product": "motor",
+ "policy_number": "MT-2023-00015",
+ "loss_date": "2023-11-16",
+ "reported_at": "2023-11-16",
+ "fnol_text": "My name is Rafael Wojcik and I live at 492 Marigold Drive, Riverton, WY 82525. You can reach me on (555) 628-9370 or rafael.wojcik@example.com. On 16 November 2023 another car pulled out of a side road and hit my front passenger side. The other driver, Hiroshi Whitlock, admitted they didn't see me. Policy MT-2023-00015. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Wojcik on (555) 628-9370 to acknowledge the claim. Rafael confirmed the loss date as 16 November 2023."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Naomi Novak gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Third-party driver Hiroshi Whitlock reports a mild concussion and attended Riverside Medical Center. Rafael reports lacerations to the forearm."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2203: dashboard warning lights"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §3.1",
+  "clause": "MT-PW §3.1",
+  "endorsement_set": "MEND-2023",
+  "limits": {
+   "coverage": "own_damage",
+   "deductible": 750,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §3.1"
+  },
+  "assessed_loss": 4750,
+  "amount_paid": 4000
+ },
+ "pii": {
+  "claimant_name": "Rafael Wojcik",
+  "address": "492 Marigold Drive, Riverton, WY 82525",
+  "street": "492 Marigold Drive",
+  "phone": "(555) 628-9370",
+  "email": "rafael.wojcik@example.com",
+  "other_people": [
+   "Naomi Novak",
+   "Hiroshi Whitlock"
+  ],
+  "injuries": [
+   "a mild concussion",
+   "lacerations to the forearm"
+  ]
+ }
+}

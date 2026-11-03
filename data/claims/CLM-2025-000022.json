@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2025-000022",
+ "scenario": "mt_dui",
+ "product": "motor",
+ "policy_number": "MT-2023-00026",
+ "loss_date": "2025-03-01",
+ "reported_at": "2025-03-06",
+ "fnol_text": "My name is Owen Quinlan and I live at 775 Rowan Way, Clinton, NC 28325. You can reach me on (555) 503-3652 or owen.quinlan@example.com. I hit a lamp post on the way home from a party on 1 March 2025. The police breathalysed me at the scene. Policy MT-2023-00026. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Quinlan on (555) 503-3652 to acknowledge the claim. Owen confirmed the loss date as 1 March 2025."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Liam Quinlan gave a statement by phone."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2203: dashboard warning lights"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:MX-2",
+  "clause": "MX-2",
+  "endorsement_set": "MEND-2023",
+  "limits": {
+   "coverage": "own_damage",
+   "deductible": 750,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §3.1"
+  },
+  "assessed_loss": 11250,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Owen Quinlan",
+  "address": "775 Rowan Way, Clinton, NC 28325",
+  "street": "775 Rowan Way",
+  "phone": "(555) 503-3652",
+  "email": "owen.quinlan@example.com",
+  "other_people": [
+   "Liam Quinlan",
+   "Naomi Kaminski"
+  ],
+  "injuries": []
+ }
+}

@@ -1,0 +1,51 @@
+{
+ "claim_id": "CLM-2026-000085",
+ "scenario": "hh_gradual_leak",
+ "product": "household",
+ "policy_number": "HH-2025-00032",
+ "loss_date": "2026-08-09",
+ "reported_at": "2026-08-17",
+ "fnol_text": "My name is Dmitri Mensah and I live at 165 Cedar Avenue, Riverton, WY 82519. You can reach me on (555) 722-7478 or dmitri.mensah@example.com. We noticed on 9 August 2026 that the floor around the shower is soft. A plumber says the seal has been leaking slowly for months and the joists are rotten. Policy HH-2025-00032. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Mensah on (555) 722-7478 to acknowledge the claim. Dmitri confirmed the loss date as 9 August 2026."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 165 Cedar Avenue. Neighbour Mateo O'Connell was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0413: water line on the skirting boards"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:HX-1",
+  "clause": "HX-1",
+  "endorsement_set": "HEND-2025",
+  "limits": {
+   "coverage": "escape_of_water",
+   "deductible": 1500,
+   "sub_limit": null,
+   "policy_limit": 600000,
+   "source": "HH-PW §1.7"
+  },
+  "assessed_loss": 36750,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Dmitri Mensah",
+  "address": "165 Cedar Avenue, Riverton, WY 82519",
+  "street": "165 Cedar Avenue",
+  "phone": "(555) 722-7478",
+  "email": "dmitri.mensah@example.com",
+  "other_people": [
+   "Mateo O'Connell",
+   "Priya Yilmaz"
+  ],
+  "injuries": []
+ }
+}

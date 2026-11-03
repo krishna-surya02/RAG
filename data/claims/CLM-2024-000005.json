@@ -1,0 +1,56 @@
+{
+ "claim_id": "CLM-2024-000005",
+ "scenario": "mt_personal_accident",
+ "product": "motor",
+ "policy_number": "MT-2023-00104",
+ "loss_date": "2024-01-10",
+ "reported_at": "2024-01-12",
+ "fnol_text": "My name is Fatima Nakamura and I live at 235 Oakridge Street, Dover, DE 19964. You can reach me on (555) 863-3216 or fatima.nakamura@example.com. I was badly hurt when my car left the road on 10 January 2024. I suffered loss of the left hand below the wrist. Policy MT-2023-00104. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Nakamura on (555) 863-3216 to acknowledge the claim. Fatima confirmed the loss date as 10 January 2024."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Naomi Takahashi gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Medical report from County General confirms loss of the left hand below the wrist. Fatima is still off work."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2201: front passenger side damage",
+  "IMG_2203: dashboard warning lights"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §5.1",
+  "clause": "MT-PW §5.1",
+  "endorsement_set": "MEND-2023",
+  "limits": {
+   "coverage": "personal_accident",
+   "deductible": 0,
+   "sub_limit": 25000,
+   "policy_limit": 25000,
+   "source": "MT-PW §5.1; MPA-23 §1"
+  },
+  "assessed_loss": 25000,
+  "amount_paid": 25000
+ },
+ "pii": {
+  "claimant_name": "Fatima Nakamura",
+  "address": "235 Oakridge Street, Dover, DE 19964",
+  "street": "235 Oakridge Street",
+  "phone": "(555) 863-3216",
+  "email": "fatima.nakamura@example.com",
+  "other_people": [
+   "Naomi Takahashi",
+   "Esther Santos"
+  ],
+  "injuries": [
+   "loss of the left hand below the wrist"
+  ]
+ }
+}

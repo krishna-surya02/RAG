@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2026-000039",
+ "scenario": "hh_escape_of_water",
+ "product": "household",
+ "policy_number": "HH-2023-00048",
+ "loss_date": "2026-04-28",
+ "reported_at": "2026-05-01",
+ "fnol_text": "My name is Nikhil Pereira and I live at 548 Cedar Road, Milton, VT 05446. You can reach me on (555) 437-3382 or nikhil.pereira@example.com. On 28 April 2026 a pipe under the upstairs bathroom burst while we were out and water came through the kitchen ceiling. Policy HH-2023-00048. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Pereira on (555) 437-3382 to acknowledge the claim. Nikhil confirmed the loss date as 28 April 2026."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 548 Cedar Road. Neighbour Felix Gallagher was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0413: water line on the skirting boards"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:HH-PW §1.7",
+  "clause": "HH-PW §1.7",
+  "endorsement_set": "HEND-2025",
+  "limits": {
+   "coverage": "escape_of_water",
+   "deductible": 1500,
+   "sub_limit": null,
+   "policy_limit": 600000,
+   "source": "HH-PW §1.7"
+  },
+  "assessed_loss": 19200,
+  "amount_paid": 17700
+ },
+ "pii": {
+  "claimant_name": "Nikhil Pereira",
+  "address": "548 Cedar Road, Milton, VT 05446",
+  "street": "548 Cedar Road",
+  "phone": "(555) 437-3382",
+  "email": "nikhil.pereira@example.com",
+  "other_people": [
+   "Felix Gallagher",
+   "Imogen Fitzgerald"
+  ],
+  "injuries": []
+ }
+}

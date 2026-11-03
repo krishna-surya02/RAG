@@ -1,0 +1,51 @@
+{
+ "claim_id": "CLM-2025-000119",
+ "scenario": "hh_escape_of_water",
+ "product": "household",
+ "policy_number": "HH-2025-00157",
+ "loss_date": "2025-09-04",
+ "reported_at": "2025-09-12",
+ "fnol_text": "My name is Elena Gallagher and I live at 941 Larkspur Road, Dover, DE 19966. You can reach me on (555) 236-6815 or elena.gallagher@example.com. On 4 September 2025 a pipe under the upstairs bathroom burst while we were out and water came through the kitchen ceiling. Policy HH-2025-00157. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Gallagher on (555) 236-6815 to acknowledge the claim. Elena confirmed the loss date as 4 September 2025."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 941 Larkspur Road. Neighbour Liam Al-Sayed was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0413: water line on the skirting boards"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:HH-PW §1.7",
+  "clause": "HH-PW §1.7",
+  "endorsement_set": "HEND-2025",
+  "limits": {
+   "coverage": "escape_of_water",
+   "deductible": 1500,
+   "sub_limit": null,
+   "policy_limit": 600000,
+   "source": "HH-PW §1.7"
+  },
+  "assessed_loss": 12000,
+  "amount_paid": 10500
+ },
+ "pii": {
+  "claimant_name": "Elena Gallagher",
+  "address": "941 Larkspur Road, Dover, DE 19966",
+  "street": "941 Larkspur Road",
+  "phone": "(555) 236-6815",
+  "email": "elena.gallagher@example.com",
+  "other_people": [
+   "Liam Al-Sayed",
+   "Anika McBride"
+  ],
+  "injuries": []
+ }
+}

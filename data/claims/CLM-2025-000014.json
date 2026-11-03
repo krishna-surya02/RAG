@@ -1,0 +1,51 @@
+{
+ "claim_id": "CLM-2025-000014",
+ "scenario": "hh_escape_of_water",
+ "product": "household",
+ "policy_number": "HH-2023-00043",
+ "loss_date": "2025-02-15",
+ "reported_at": "2025-02-19",
+ "fnol_text": "My name is Liam Oduya and I live at 237 Rowan Court, Clinton, NC 28399. You can reach me on (555) 431-4162 or liam.oduya@example.com. On 15 February 2025 a pipe under the upstairs bathroom burst while we were out and water came through the kitchen ceiling. Policy HH-2023-00043. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Oduya on (555) 431-4162 to acknowledge the claim. Liam confirmed the loss date as 15 February 2025."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 237 Rowan Court. Neighbour Kwame Sorensen was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0413: water line on the skirting boards"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:HH-PW §1.7",
+  "clause": "HH-PW §1.7",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "escape_of_water",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 500000,
+   "source": "HH-PW §1.7"
+  },
+  "assessed_loss": 3050,
+  "amount_paid": 2050
+ },
+ "pii": {
+  "claimant_name": "Liam Oduya",
+  "address": "237 Rowan Court, Clinton, NC 28399",
+  "street": "237 Rowan Court",
+  "phone": "(555) 431-4162",
+  "email": "liam.oduya@example.com",
+  "other_people": [
+   "Kwame Sorensen",
+   "Nikhil Oduya"
+  ],
+  "injuries": []
+ }
+}

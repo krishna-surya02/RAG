@@ -1,0 +1,56 @@
+{
+ "claim_id": "CLM-2026-000083",
+ "scenario": "mt_collision",
+ "product": "motor",
+ "policy_number": "MT-2024-00094",
+ "loss_date": "2026-08-06",
+ "reported_at": "2026-08-15",
+ "fnol_text": "My name is Aisha Mbeki and I live at 510 Hawthorn Court, Springfield, OH 45574. You can reach me on (555) 831-7510 or aisha.mbeki@example.com. On 6 August 2026 another car pulled out of a side road and hit my front passenger side. The other driver, Aisha Haddad, admitted they didn't see me. Policy MT-2024-00094. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Mbeki on (555) 831-7510 to acknowledge the claim. Aisha confirmed the loss date as 6 August 2026."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Declan Takahashi gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Third-party driver Aisha Haddad reports a mild concussion and attended County General. Aisha reports a mild concussion."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2201: front passenger side damage",
+  "IMG_2203: dashboard warning lights"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §3.1",
+  "clause": "MT-PW §3.1",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "own_damage",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §3.1"
+  },
+  "assessed_loss": 6200,
+  "amount_paid": 5200
+ },
+ "pii": {
+  "claimant_name": "Aisha Mbeki",
+  "address": "510 Hawthorn Court, Springfield, OH 45574",
+  "street": "510 Hawthorn Court",
+  "phone": "(555) 831-7510",
+  "email": "aisha.mbeki@example.com",
+  "other_people": [
+   "Declan Takahashi",
+   "Aisha Haddad"
+  ],
+  "injuries": [
+   "a mild concussion"
+  ]
+ }
+}

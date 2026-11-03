@@ -1,0 +1,51 @@
+{
+ "claim_id": "CLM-2024-000110",
+ "scenario": "hh_escape_of_water",
+ "product": "household",
+ "policy_number": "HH-2023-00060",
+ "loss_date": "2024-10-29",
+ "reported_at": "2024-11-05",
+ "fnol_text": "My name is Kofi Abernathy and I live at 749 Sycamore Street, Riverton, WY 82586. You can reach me on (555) 989-8032 or kofi.abernathy@example.com. On 29 October 2024 a pipe under the upstairs bathroom burst while we were out and water came through the kitchen ceiling. Policy HH-2023-00060. I'd like to claim for the damage to my home. I assume this is covered under my policy?",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Abernathy on (555) 989-8032 to acknowledge the claim. Kofi confirmed the loss date as 29 October 2024."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 749 Sycamore Street. Neighbour Lucia Ishikawa was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0412: ground floor with standing water and wet carpets"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:HH-PW §1.7",
+  "clause": "HH-PW §1.7",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "escape_of_water",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 500000,
+   "source": "HH-PW §1.7"
+  },
+  "assessed_loss": 25300,
+  "amount_paid": 24300
+ },
+ "pii": {
+  "claimant_name": "Kofi Abernathy",
+  "address": "749 Sycamore Street, Riverton, WY 82586",
+  "street": "749 Sycamore Street",
+  "phone": "(555) 989-8032",
+  "email": "kofi.abernathy@example.com",
+  "other_people": [
+   "Lucia Ishikawa",
+   "Mei Gallagher"
+  ],
+  "injuries": []
+ }
+}

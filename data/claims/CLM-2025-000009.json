@@ -1,0 +1,51 @@
+{
+ "claim_id": "CLM-2025-000009",
+ "scenario": "mt_hail",
+ "product": "motor",
+ "policy_number": "MT-2023-00103",
+ "loss_date": "2025-01-12",
+ "reported_at": "2025-01-19",
+ "fnol_text": "My name is Samuel Okafor and I live at 892 Maple Court, Clinton, NC 28329. You can reach me on (555) 971-7147 or samuel.okafor@example.com. A hailstorm on 12 January 2025 left dozens of dents across the roof, bonnet and boot of my car. Policy MT-2023-00103. I'd like to claim for the damage to my car. Please just tell me this is covered.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Okafor on (555) 971-7147 to acknowledge the claim. Samuel confirmed the loss date as 12 January 2025."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Hannah Mbeki gave a statement by phone."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2203: dashboard warning lights",
+  "IMG_2201: front passenger side damage"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §3.2",
+  "clause": "MT-PW §3.2",
+  "endorsement_set": "MEND-2023",
+  "limits": {
+   "coverage": "hail",
+   "deductible": 750,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §3.2"
+  },
+  "assessed_loss": 5250,
+  "amount_paid": 4500
+ },
+ "pii": {
+  "claimant_name": "Samuel Okafor",
+  "address": "892 Maple Court, Clinton, NC 28329",
+  "street": "892 Maple Court",
+  "phone": "(555) 971-7147",
+  "email": "samuel.okafor@example.com",
+  "other_people": [
+   "Hannah Mbeki",
+   "Hannah Yilmaz"
+  ],
+  "injuries": []
+ }
+}

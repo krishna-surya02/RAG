@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2024-000010",
+ "scenario": "mt_hail",
+ "product": "motor",
+ "policy_number": "MT-2023-00128",
+ "loss_date": "2024-02-06",
+ "reported_at": "2024-02-07",
+ "fnol_text": "My name is Marcus Ishikawa and I live at 777 Alder Road, Milton, VT 05436. You can reach me on (555) 945-7867 or marcus.ishikawa@example.com. A hailstorm on 6 February 2024 left dozens of dents across the roof, bonnet and boot of my car. Policy MT-2023-00128. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Ishikawa on (555) 945-7867 to acknowledge the claim. Marcus confirmed the loss date as 6 February 2024."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Ines Mbeki gave a statement by phone."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2201: front passenger side damage",
+  "IMG_2203: dashboard warning lights"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §3.2",
+  "clause": "MT-PW §3.2",
+  "endorsement_set": "MEND-2023",
+  "limits": {
+   "coverage": "hail",
+   "deductible": 750,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §3.2"
+  },
+  "assessed_loss": 3800,
+  "amount_paid": 3050
+ },
+ "pii": {
+  "claimant_name": "Marcus Ishikawa",
+  "address": "777 Alder Road, Milton, VT 05436",
+  "street": "777 Alder Road",
+  "phone": "(555) 945-7867",
+  "email": "marcus.ishikawa@example.com",
+  "other_people": [
+   "Ines Mbeki",
+   "Bianca Laurent"
+  ],
+  "injuries": []
+ }
+}

@@ -1,0 +1,54 @@
+{
+ "claim_id": "CLM-2024-000024",
+ "scenario": "mt_flood_23",
+ "product": "motor",
+ "policy_number": "MT-2024-00020",
+ "loss_date": "2024-04-07",
+ "reported_at": "2024-04-10",
+ "fnol_text": "My name is Chloe Raman and I live at 957 Maple Court, Clinton, NC 28391. You can reach me on (555) 591-1130 or chloe.raman@example.com. On 7 April 2024 flash flooding came down the street while my car was parked at home. Water got into the cabin and the engine won't start. Policy MT-2024-00020. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Raman on (555) 591-1130 to acknowledge the claim. Chloe confirmed the loss date as 7 April 2024."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Mateo Varga gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Chloe sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2203: dashboard warning lights",
+  "IMG_2201: front passenger side damage"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MFL-23 §2.1",
+  "clause": "MFL-23 §2.1",
+  "endorsement_set": "MEND-2023",
+  "limits": {
+   "coverage": "flood",
+   "deductible": 750,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MFL-23 §2.1"
+  },
+  "assessed_loss": 15300,
+  "amount_paid": 14550
+ },
+ "pii": {
+  "claimant_name": "Chloe Raman",
+  "address": "957 Maple Court, Clinton, NC 28391",
+  "street": "957 Maple Court",
+  "phone": "(555) 591-1130",
+  "email": "chloe.raman@example.com",
+  "other_people": [
+   "Mateo Varga",
+   "Felix O'Connell"
+  ],
+  "injuries": []
+ }
+}

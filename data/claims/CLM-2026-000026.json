@@ -1,0 +1,51 @@
+{
+ "claim_id": "CLM-2026-000026",
+ "scenario": "hh_escape_of_water",
+ "product": "household",
+ "policy_number": "HH-2024-00017",
+ "loss_date": "2026-03-20",
+ "reported_at": "2026-03-21",
+ "fnol_text": "My name is Olusegun Santos and I live at 222 Juniper Drive, Milton, VT 05436. You can reach me on (555) 525-9977 or olusegun.santos@example.com. On 20 March 2026 a pipe under the upstairs bathroom burst while we were out and water came through the kitchen ceiling. Policy HH-2024-00017. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Santos on (555) 525-9977 to acknowledge the claim. Olusegun confirmed the loss date as 20 March 2026."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 222 Juniper Drive. Neighbour Kwame Thorne was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0413: water line on the skirting boards"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:HH-PW §1.7",
+  "clause": "HH-PW §1.7",
+  "endorsement_set": "HEND-2025",
+  "limits": {
+   "coverage": "escape_of_water",
+   "deductible": 1500,
+   "sub_limit": null,
+   "policy_limit": 600000,
+   "source": "HH-PW §1.7"
+  },
+  "assessed_loss": 7050,
+  "amount_paid": 5550
+ },
+ "pii": {
+  "claimant_name": "Olusegun Santos",
+  "address": "222 Juniper Drive, Milton, VT 05436",
+  "street": "222 Juniper Drive",
+  "phone": "(555) 525-9977",
+  "email": "olusegun.santos@example.com",
+  "other_people": [
+   "Kwame Thorne",
+   "Amara Jovanovic"
+  ],
+  "injuries": []
+ }
+}

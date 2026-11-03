@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2024-000104",
+ "scenario": "hh_gradual_leak",
+ "product": "household",
+ "policy_number": "HH-2023-00082",
+ "loss_date": "2024-10-07",
+ "reported_at": "2024-10-11",
+ "fnol_text": "My name is Maya Oyelaran and I live at 171 Alder Street, Salem, MA 01957. You can reach me on (555) 584-6612 or maya.oyelaran@example.com. Damp patch on the ceiling below the bath that has been growing since the spring; on 7 October 2024 part of the plaster came down. The plumber says the waste pipe has dripped for a long time. Policy HH-2023-00082. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Oyelaran on (555) 584-6612 to acknowledge the claim. Maya confirmed the loss date as 7 October 2024."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 171 Alder Street. Neighbour Valentina Oyelaran was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0412: ground floor with standing water and wet carpets"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:HX-1",
+  "clause": "HX-1",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "escape_of_water",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 500000,
+   "source": "HH-PW §1.7"
+  },
+  "assessed_loss": 18950,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Maya Oyelaran",
+  "address": "171 Alder Street, Salem, MA 01957",
+  "street": "171 Alder Street",
+  "phone": "(555) 584-6612",
+  "email": "maya.oyelaran@example.com",
+  "other_people": [
+   "Valentina Oyelaran",
+   "Aisha Raman"
+  ],
+  "injuries": []
+ }
+}

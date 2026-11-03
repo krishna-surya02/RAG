@@ -1,0 +1,54 @@
+{
+ "claim_id": "CLM-2026-000054",
+ "scenario": "hh_surface_water_25",
+ "product": "household",
+ "policy_number": "HH-2024-00050",
+ "loss_date": "2026-06-05",
+ "reported_at": "2026-06-06",
+ "fnol_text": "My name is Ines Gallagher and I live at 545 Oakridge Avenue, Dover, DE 19925. You can reach me on (555) 390-5703 or ines.gallagher@example.com. After the torrential rain on the night of 5 June 2026, rainwater ran off the field behind us, across the back garden and in under the patio doors. About 5 cm of water covered the kitchen and family room floors. Policy HH-2024-00050. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Gallagher on (555) 390-5703 to acknowledge the claim. Ines confirmed the loss date as 5 June 2026."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 545 Oakridge Avenue. Neighbour Arjun Jovanovic was present and confirmed the timeline."
+  },
+  {
+   "n": 3,
+   "text": "Ines sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0417: damaged furniture stacked in the garage"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:HFL-25 §2.1",
+  "clause": "HFL-25 §2.1",
+  "endorsement_set": "HEND-2025",
+  "limits": {
+   "coverage": "flood_plus",
+   "deductible": 5000,
+   "sub_limit": 25000,
+   "policy_limit": 600000,
+   "source": "HFL-25 §2.2, §2.3; HSL-25 §1"
+  },
+  "assessed_loss": 19650,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Ines Gallagher",
+  "address": "545 Oakridge Avenue, Dover, DE 19925",
+  "street": "545 Oakridge Avenue",
+  "phone": "(555) 390-5703",
+  "email": "ines.gallagher@example.com",
+  "other_people": [
+   "Arjun Jovanovic",
+   "Nikhil Castillo"
+  ],
+  "injuries": []
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "claim_id": "CLM-2023-000005",
+ "scenario": "not_in_force",
+ "product": "household",
+ "policy_number": "HH-2024-00062",
+ "loss_date": "2023-04-13",
+ "reported_at": "2023-04-20",
+ "fnol_text": "My name is Leila Takahashi and I live at 435 Linden Avenue, Madison, WI 53718. You can reach me on (555) 230-6038 or leila.takahashi@example.com. Our house was broken into on 13 April 2023. The back door was forced and a laptop, jewellery and a television were taken. Policy HH-2024-00062. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Takahashi on (555) 230-6038 to acknowledge the claim. Leila confirmed the loss date as 13 April 2023."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 435 Linden Avenue. Neighbour Tariq Mbeki was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0413: water line on the skirting boards"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "NOT_IN_FORCE",
+  "clause": null,
+  "endorsement_set": null,
+  "limits": null,
+  "assessed_loss": 1800,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Leila Takahashi",
+  "address": "435 Linden Avenue, Madison, WI 53718",
+  "street": "435 Linden Avenue",
+  "phone": "(555) 230-6038",
+  "email": "leila.takahashi@example.com",
+  "other_people": [
+   "Tariq Mbeki",
+   "Bianca Kaminski"
+  ],
+  "injuries": []
+ }
+}

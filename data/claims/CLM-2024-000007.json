@@ -1,0 +1,45 @@
+{
+ "claim_id": "CLM-2024-000007",
+ "scenario": "not_in_force",
+ "product": "household",
+ "policy_number": "HH-2025-00076",
+ "loss_date": "2024-01-29",
+ "reported_at": "2024-02-05",
+ "fnol_text": "My name is Ingrid Moreau and I live at 197 Larkspur Way, Springfield, OH 45559. You can reach me on (555) 967-2021 or ingrid.moreau@example.com. Our house was broken into on 29 January 2024. The back door was forced and a laptop, jewellery and a television were taken. Policy HH-2025-00076. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Moreau on (555) 967-2021 to acknowledge the claim. Ingrid confirmed the loss date as 29 January 2024."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 197 Larkspur Way. Neighbour Gabriel Whitfield was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0413: water line on the skirting boards"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "NOT_IN_FORCE",
+  "clause": null,
+  "endorsement_set": null,
+  "limits": null,
+  "assessed_loss": 10500,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Ingrid Moreau",
+  "address": "197 Larkspur Way, Springfield, OH 45559",
+  "street": "197 Larkspur Way",
+  "phone": "(555) 967-2021",
+  "email": "ingrid.moreau@example.com",
+  "other_people": [
+   "Gabriel Whitfield",
+   "Jordan Osei"
+  ],
+  "injuries": []
+ }
+}

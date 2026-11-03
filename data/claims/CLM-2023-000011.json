@@ -1,0 +1,44 @@
+{
+ "claim_id": "CLM-2023-000011",
+ "scenario": "not_in_force",
+ "product": "household",
+ "policy_number": "HH-2025-00018",
+ "loss_date": "2023-05-13",
+ "reported_at": "2023-05-14",
+ "fnol_text": "My name is Leah Haddad and I live at 515 Larkspur Street, Salem, MA 01952. You can reach me on (555) 454-8170 or leah.haddad@example.com. The washing machine hose split on 13 May 2023 and flooded the utility room and hallway before we could turn off the water. Policy HH-2025-00018. I'd like to claim for the damage to my home. Can you confirm I'm covered for this?",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Haddad on (555) 454-8170 to acknowledge the claim. Leah confirmed the loss date as 13 May 2023."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 515 Larkspur Street. Neighbour Elena Rasmussen was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0412: ground floor with standing water and wet carpets"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "NOT_IN_FORCE",
+  "clause": null,
+  "endorsement_set": null,
+  "limits": null,
+  "assessed_loss": 18350,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Leah Haddad",
+  "address": "515 Larkspur Street, Salem, MA 01952",
+  "street": "515 Larkspur Street",
+  "phone": "(555) 454-8170",
+  "email": "leah.haddad@example.com",
+  "other_people": [
+   "Elena Rasmussen",
+   "Olusegun Kaminski"
+  ],
+  "injuries": []
+ }
+}

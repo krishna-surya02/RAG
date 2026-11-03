@@ -1,0 +1,56 @@
+{
+ "claim_id": "CLM-2026-000133",
+ "scenario": "mt_collision",
+ "product": "motor",
+ "policy_number": "MT-2025-00017",
+ "loss_date": "2026-10-15",
+ "reported_at": "2026-10-21",
+ "fnol_text": "My name is Chloe Fitzgerald and I live at 283 Elmstead Terrace, Ashland, OR 97583. You can reach me on (555) 267-7045 or chloe.fitzgerald@example.com. I was stopped at lights on 15 October 2026 when the car behind, driven by Declan Lindqvist, went into the back of mine. Rear bumper and boot are badly damaged. Policy MT-2025-00017. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Fitzgerald on (555) 267-7045 to acknowledge the claim. Chloe confirmed the loss date as 15 October 2026."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Felix Yilmaz gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Third-party driver Declan Lindqvist reports minor burns to the hand and attended St. Brendan's Hospital. Chloe reports minor burns to the hand."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2203: dashboard warning lights",
+  "IMG_2207: vehicle on the recovery truck"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §3.1",
+  "clause": "MT-PW §3.1",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "own_damage",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §3.1"
+  },
+  "assessed_loss": 17750,
+  "amount_paid": 16750
+ },
+ "pii": {
+  "claimant_name": "Chloe Fitzgerald",
+  "address": "283 Elmstead Terrace, Ashland, OR 97583",
+  "street": "283 Elmstead Terrace",
+  "phone": "(555) 267-7045",
+  "email": "chloe.fitzgerald@example.com",
+  "other_people": [
+   "Felix Yilmaz",
+   "Declan Lindqvist"
+  ],
+  "injuries": [
+   "minor burns to the hand"
+  ]
+ }
+}

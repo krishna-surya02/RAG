@@ -1,0 +1,58 @@
+{
+ "claim_id": "CLM-2025-000148",
+ "scenario": "mt_collision",
+ "product": "motor",
+ "policy_number": "MT-2025-00030",
+ "loss_date": "2025-11-04",
+ "reported_at": "2025-11-09",
+ "fnol_text": "My name is Priya Santos and I live at 686 Larkspur Court, Riverton, WY 82595. You can reach me on (555) 918-6425 or priya.santos@example.com. I was stopped at lights on 4 November 2025 when the car behind, driven by Arjun Kaminski, went into the back of mine. Rear bumper and boot are badly damaged. Policy MT-2025-00030. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Santos on (555) 918-6425 to acknowledge the claim. Priya confirmed the loss date as 4 November 2025."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Jordan Ballard gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Third-party driver Arjun Kaminski reports a mild concussion and attended Mercy General. Priya reports a sprained ankle."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2203: dashboard warning lights",
+  "IMG_2201: front passenger side damage",
+  "IMG_2207: vehicle on the recovery truck"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §3.1",
+  "clause": "MT-PW §3.1",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "own_damage",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §3.1"
+  },
+  "assessed_loss": 3050,
+  "amount_paid": 2050
+ },
+ "pii": {
+  "claimant_name": "Priya Santos",
+  "address": "686 Larkspur Court, Riverton, WY 82595",
+  "street": "686 Larkspur Court",
+  "phone": "(555) 918-6425",
+  "email": "priya.santos@example.com",
+  "other_people": [
+   "Jordan Ballard",
+   "Arjun Kaminski"
+  ],
+  "injuries": [
+   "a mild concussion",
+   "a sprained ankle"
+  ]
+ }
+}

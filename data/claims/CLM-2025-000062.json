@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2025-000062",
+ "scenario": "hh_mould",
+ "product": "household",
+ "policy_number": "HH-2025-00125",
+ "loss_date": "2025-05-05",
+ "reported_at": "2025-05-07",
+ "fnol_text": "My name is Maya Varga and I live at 941 Briar Terrace, Springfield, OH 45510. You can reach me on (555) 730-6029 or maya.varga@example.com. After the burst pipe last month was fixed, on 5 May 2025 we found black mould inside the wall cavity behind the kitchen units. Policy HH-2025-00125. I'd like to claim for the damage to my home. I assume this is covered under my policy?",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Varga on (555) 730-6029 to acknowledge the claim. Maya confirmed the loss date as 5 May 2025."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 941 Briar Terrace. Neighbour Samuel Ishikawa was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0413: water line on the skirting boards"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID_SUBLIMIT:HX-5",
+  "clause": "HX-5",
+  "endorsement_set": "HEND-2025",
+  "limits": {
+   "coverage": "mould",
+   "deductible": 1000,
+   "sub_limit": 7500,
+   "policy_limit": 600000,
+   "source": "HX-5; HSL-25 §1"
+  },
+  "assessed_loss": 10000,
+  "amount_paid": 7500
+ },
+ "pii": {
+  "claimant_name": "Maya Varga",
+  "address": "941 Briar Terrace, Springfield, OH 45510",
+  "street": "941 Briar Terrace",
+  "phone": "(555) 730-6029",
+  "email": "maya.varga@example.com",
+  "other_people": [
+   "Samuel Ishikawa",
+   "Yusuf Lindqvist"
+  ],
+  "injuries": []
+ }
+}

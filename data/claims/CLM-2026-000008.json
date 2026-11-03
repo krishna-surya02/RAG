@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2026-000008",
+ "scenario": "hh_theft_forced",
+ "product": "household",
+ "policy_number": "HH-2025-00057",
+ "loss_date": "2026-01-17",
+ "reported_at": "2026-01-21",
+ "fnol_text": "My name is Arjun Herrera and I live at 183 Ashford Avenue, Clinton, NC 28317. You can reach me on (555) 688-6474 or arjun.herrera@example.com. Our house was broken into on 17 January 2026. The back door was forced and a laptop, jewellery and a television were taken. Policy HH-2025-00057. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Herrera on (555) 688-6474 to acknowledge the claim. Arjun confirmed the loss date as 17 January 2026."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 183 Ashford Avenue. Neighbour Gabriel Ueda was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0417: damaged furniture stacked in the garage"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:HH-PW §1.10",
+  "clause": "HH-PW §1.10",
+  "endorsement_set": "HEND-2025",
+  "limits": {
+   "coverage": "theft",
+   "deductible": 500,
+   "sub_limit": null,
+   "policy_limit": 80000,
+   "source": "HH-PW §1.10, §2.2"
+  },
+  "assessed_loss": 17600,
+  "amount_paid": 17100
+ },
+ "pii": {
+  "claimant_name": "Arjun Herrera",
+  "address": "183 Ashford Avenue, Clinton, NC 28317",
+  "street": "183 Ashford Avenue",
+  "phone": "(555) 688-6474",
+  "email": "arjun.herrera@example.com",
+  "other_people": [
+   "Gabriel Ueda",
+   "Liam Delgado"
+  ],
+  "injuries": []
+ }
+}

@@ -1,0 +1,54 @@
+{
+ "claim_id": "CLM-2023-000034",
+ "scenario": "hh_surface_water_23",
+ "product": "household",
+ "policy_number": "HH-2023-00153",
+ "loss_date": "2023-09-06",
+ "reported_at": "2023-09-11",
+ "fnol_text": "My name is Imogen Takahashi and I live at 32 Elmstead Court, Clinton, NC 28375. You can reach me on (555) 444-4497 or imogen.takahashi@example.com. After the torrential rain on the night of 6 September 2023, rainwater ran off the field behind us, across the back garden and in under the patio doors. About 5 cm of water covered the kitchen and family room floors. Policy HH-2023-00153. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Takahashi on (555) 444-4497 to acknowledge the claim. Imogen confirmed the loss date as 6 September 2023."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 32 Elmstead Court. Neighbour Ravi Haddad was present and confirmed the timeline."
+  },
+  {
+   "n": 3,
+   "text": "Imogen sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0412: ground floor with standing water and wet carpets"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID_SUBLIMIT:HFL-23 §2.2",
+  "clause": "HFL-23 §2.2",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "flood_surface_water",
+   "deductible": 2500,
+   "sub_limit": 15000,
+   "policy_limit": 500000,
+   "source": "HFL-23 §2.2, §2.3; HSL-23 §1"
+  },
+  "assessed_loss": 38350,
+  "amount_paid": 15000
+ },
+ "pii": {
+  "claimant_name": "Imogen Takahashi",
+  "address": "32 Elmstead Court, Clinton, NC 28375",
+  "street": "32 Elmstead Court",
+  "phone": "(555) 444-4497",
+  "email": "imogen.takahashi@example.com",
+  "other_people": [
+   "Ravi Haddad",
+   "Anika Delgado"
+  ],
+  "injuries": []
+ }
+}

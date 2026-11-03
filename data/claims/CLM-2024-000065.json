@@ -1,0 +1,55 @@
+{
+ "claim_id": "CLM-2024-000065",
+ "scenario": "hh_surface_water_23",
+ "product": "household",
+ "policy_number": "HH-2023-00068",
+ "loss_date": "2024-08-15",
+ "reported_at": "2024-08-20",
+ "fnol_text": "My name is Amara Sorensen and I live at 175 Linden Drive, Greenville, SC 29659. You can reach me on (555) 354-3527 or amara.sorensen@example.com. After the torrential rain on the night of 15 August 2024, rainwater ran off the field behind us, across the back garden and in under the patio doors. About 5 cm of water covered the kitchen and family room floors. Policy HH-2023-00068. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Sorensen on (555) 354-3527 to acknowledge the claim. Amara confirmed the loss date as 15 August 2024."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 175 Linden Drive. Neighbour Tomas McBride was present and confirmed the timeline."
+  },
+  {
+   "n": 3,
+   "text": "Amara sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0417: damaged furniture stacked in the garage"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:HFL-23 §2.2",
+  "clause": "HFL-23 §2.2",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "flood_surface_water",
+   "deductible": 2500,
+   "sub_limit": 15000,
+   "policy_limit": 500000,
+   "source": "HFL-23 §2.2, §2.3; HSL-23 §1"
+  },
+  "assessed_loss": 16550,
+  "amount_paid": 14050
+ },
+ "pii": {
+  "claimant_name": "Amara Sorensen",
+  "address": "175 Linden Drive, Greenville, SC 29659",
+  "street": "175 Linden Drive",
+  "phone": "(555) 354-3527",
+  "email": "amara.sorensen@example.com",
+  "other_people": [
+   "Tomas McBride",
+   "Owen Abernathy"
+  ],
+  "injuries": []
+ }
+}

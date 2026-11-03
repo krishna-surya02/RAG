@@ -1,0 +1,55 @@
+{
+ "claim_id": "CLM-2024-000038",
+ "scenario": "hh_river_23",
+ "product": "household",
+ "policy_number": "HH-2023-00022",
+ "loss_date": "2024-06-04",
+ "reported_at": "2024-06-09",
+ "fnol_text": "My name is Leah Gallagher and I live at 191 Juniper Court, Fairview, PA 16468. You can reach me on (555) 731-1283 or leah.gallagher@example.com. On 4 June 2024 the Calder River overtopped near our house after a week of storms. River water flooded the downstairs rooms and the garage. Policy HH-2023-00022. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Gallagher on (555) 731-1283 to acknowledge the claim. Leah confirmed the loss date as 4 June 2024."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 191 Juniper Court. Neighbour Anika Jovanovic was present and confirmed the timeline."
+  },
+  {
+   "n": 3,
+   "text": "Leah sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0413: water line on the skirting boards"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:HFL-23 §2.1",
+  "clause": "HFL-23 §2.1",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "flood_surface_water",
+   "deductible": 2500,
+   "sub_limit": 15000,
+   "policy_limit": 500000,
+   "source": "HFL-23 §2.2, §2.3; HSL-23 §1"
+  },
+  "assessed_loss": 36500,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Leah Gallagher",
+  "address": "191 Juniper Court, Fairview, PA 16468",
+  "street": "191 Juniper Court",
+  "phone": "(555) 731-1283",
+  "email": "leah.gallagher@example.com",
+  "other_people": [
+   "Anika Jovanovic",
+   "Aisha Novak"
+  ],
+  "injuries": []
+ }
+}

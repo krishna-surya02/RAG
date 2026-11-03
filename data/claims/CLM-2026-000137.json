@@ -1,0 +1,55 @@
+{
+ "claim_id": "CLM-2026-000137",
+ "scenario": "hh_surface_water_25",
+ "product": "household",
+ "policy_number": "HH-2024-00012",
+ "loss_date": "2026-10-19",
+ "reported_at": "2026-10-23",
+ "fnol_text": "My name is Gabriel Vasquez and I live at 446 Ashford Court, Ashland, OR 97519. You can reach me on (555) 617-6434 or gabriel.vasquez@example.com. After the torrential rain on the night of 19 October 2026, rainwater ran off the field behind us, across the back garden and in under the patio doors. About 5 cm of water covered the kitchen and family room floors. Policy HH-2024-00012. I'd like to claim for the damage to my home. Am I insured for this or not?",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Vasquez on (555) 617-6434 to acknowledge the claim. Gabriel confirmed the loss date as 19 October 2026."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 446 Ashford Court. Neighbour Ingrid Herrera was present and confirmed the timeline."
+  },
+  {
+   "n": 3,
+   "text": "Gabriel sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0417: damaged furniture stacked in the garage"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:HFL-25 §2.1",
+  "clause": "HFL-25 §2.1",
+  "endorsement_set": "HEND-2025",
+  "limits": {
+   "coverage": "flood_plus",
+   "deductible": 5000,
+   "sub_limit": 25000,
+   "policy_limit": 600000,
+   "source": "HFL-25 §2.2, §2.3; HSL-25 §1"
+  },
+  "assessed_loss": 30650,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Gabriel Vasquez",
+  "address": "446 Ashford Court, Ashland, OR 97519",
+  "street": "446 Ashford Court",
+  "phone": "(555) 617-6434",
+  "email": "gabriel.vasquez@example.com",
+  "other_people": [
+   "Ingrid Herrera",
+   "Rafael Nguyen-Tran"
+  ],
+  "injuries": []
+ }
+}

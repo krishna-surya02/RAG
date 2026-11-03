@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2026-000004",
+ "scenario": "hh_below_deductible",
+ "product": "household",
+ "policy_number": "HH-2024-00115",
+ "loss_date": "2026-01-11",
+ "reported_at": "2026-01-17",
+ "fnol_text": "My name is Anika Novak and I live at 184 Foxglove Way, Riverton, WY 82583. You can reach me on (555) 362-2687 or anika.novak@example.com. On 11 January 2026 the dishwasher leaked suddenly and stained a small area of the kitchen floor. Policy HH-2024-00115. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Novak on (555) 362-2687 to acknowledge the claim. Anika confirmed the loss date as 11 January 2026."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 184 Foxglove Way. Neighbour Aisha Takahashi was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0413: water line on the skirting boards"
+ ],
+ "final_decision": {
+  "outcome": "no_payment",
+  "reason_code": "BELOW_DEDUCTIBLE:HH-PW §1.7",
+  "clause": "HH-PW §1.7",
+  "endorsement_set": "HEND-2025",
+  "limits": {
+   "coverage": "escape_of_water",
+   "deductible": 1500,
+   "sub_limit": null,
+   "policy_limit": 600000,
+   "source": "HH-PW §1.7"
+  },
+  "assessed_loss": 700,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Anika Novak",
+  "address": "184 Foxglove Way, Riverton, WY 82583",
+  "street": "184 Foxglove Way",
+  "phone": "(555) 362-2687",
+  "email": "anika.novak@example.com",
+  "other_people": [
+   "Aisha Takahashi",
+   "Rafael Jovanovic"
+  ],
+  "injuries": []
+ }
+}

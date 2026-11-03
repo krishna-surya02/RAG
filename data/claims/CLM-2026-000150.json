@@ -1,0 +1,54 @@
+{
+ "claim_id": "CLM-2026-000150",
+ "scenario": "hh_surface_water_25",
+ "product": "household",
+ "policy_number": "HH-2024-00003",
+ "loss_date": "2026-10-29",
+ "reported_at": "2026-10-30",
+ "fnol_text": "My name is Nikhil Achebe and I live at 941 Primrose Street, Dover, DE 19947. You can reach me on (555) 703-3666 or nikhil.achebe@example.com. After the torrential rain on the night of 29 October 2026, rainwater ran off the field behind us, across the back garden and in under the patio doors. About 5 cm of water covered the kitchen and family room floors. Policy HH-2024-00003. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Achebe on (555) 703-3666 to acknowledge the claim. Nikhil confirmed the loss date as 29 October 2026."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 941 Primrose Street. Neighbour Samuel Whitfield was present and confirmed the timeline."
+  },
+  {
+   "n": 3,
+   "text": "Nikhil sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0417: damaged furniture stacked in the garage"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:HFL-25 §2.1",
+  "clause": "HFL-25 §2.1",
+  "endorsement_set": "HEND-2025",
+  "limits": {
+   "coverage": "flood_plus",
+   "deductible": 5000,
+   "sub_limit": 25000,
+   "policy_limit": 600000,
+   "source": "HFL-25 §2.2, §2.3; HSL-25 §1"
+  },
+  "assessed_loss": 27700,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Nikhil Achebe",
+  "address": "941 Primrose Street, Dover, DE 19947",
+  "street": "941 Primrose Street",
+  "phone": "(555) 703-3666",
+  "email": "nikhil.achebe@example.com",
+  "other_people": [
+   "Samuel Whitfield",
+   "Ethan Chukwu"
+  ],
+  "injuries": []
+ }
+}

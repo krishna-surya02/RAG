@@ -1,0 +1,56 @@
+{
+ "claim_id": "CLM-2025-000007",
+ "scenario": "hh_liability_injury",
+ "product": "household",
+ "policy_number": "HH-2023-00166",
+ "loss_date": "2025-01-10",
+ "reported_at": "2025-01-12",
+ "fnol_text": "My name is Leila Santos and I live at 638 Kestrel Street, Milton, VT 05463. You can reach me on (555) 888-3125 or leila.santos@example.com. A delivery driver slipped on our icy front steps on 10 January 2025 and was taken to hospital. They have said they will make a claim against us. Policy HH-2023-00166. I'd like to claim for the damage to my home. Am I insured for this or not?",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Santos on (555) 888-3125 to acknowledge the claim. Leila confirmed the loss date as 10 January 2025."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 638 Kestrel Street. Neighbour Kwame Fitzgerald was present and confirmed the timeline."
+  },
+  {
+   "n": 3,
+   "text": "Injured party Noor Nakamura sustained a sprained ankle and was treated at St. Brendan's Hospital. Do not admit liability; refer."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0412: ground floor with standing water and wet carpets"
+ ],
+ "final_decision": {
+  "outcome": "referred_liability",
+  "reason_code": "REFERRED_LIABILITY:HH-PW §3.1",
+  "clause": "HH-PW §3.1",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "liability",
+   "deductible": 0,
+   "sub_limit": null,
+   "policy_limit": 2000000,
+   "source": "HH-PW §3.1"
+  },
+  "assessed_loss": 10000,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Leila Santos",
+  "address": "638 Kestrel Street, Milton, VT 05463",
+  "street": "638 Kestrel Street",
+  "phone": "(555) 888-3125",
+  "email": "leila.santos@example.com",
+  "other_people": [
+   "Kwame Fitzgerald",
+   "Noor Nakamura"
+  ],
+  "injuries": [
+   "a sprained ankle"
+  ]
+ }
+}

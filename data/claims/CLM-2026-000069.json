@@ -1,0 +1,55 @@
+{
+ "claim_id": "CLM-2026-000069",
+ "scenario": "mt_flood_drove_25",
+ "product": "motor",
+ "policy_number": "MT-2025-00001",
+ "loss_date": "2026-07-09",
+ "reported_at": "2026-07-10",
+ "fnol_text": "My name is Rafael Khan and I live at 407 Linden Terrace, Fairview, PA 16443. You can reach me on (555) 870-5717 or rafael.khan@example.com. On 9 July 2026 I tried to drive through a flooded road under the bridge. The water was deeper than I thought and the engine cut out and filled with water. Policy MT-2025-00001. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Khan on (555) 870-5717 to acknowledge the claim. Rafael confirmed the loss date as 9 July 2026."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Priya Fitzgerald gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Rafael sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2201: front passenger side damage",
+  "IMG_2203: dashboard warning lights"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:MFL-25 §2.3",
+  "clause": "MFL-25 §2.3",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "flood",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MFL-25 §2.4"
+  },
+  "assessed_loss": 8950,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Rafael Khan",
+  "address": "407 Linden Terrace, Fairview, PA 16443",
+  "street": "407 Linden Terrace",
+  "phone": "(555) 870-5717",
+  "email": "rafael.khan@example.com",
+  "other_people": [
+   "Priya Fitzgerald",
+   "Bianca Takahashi"
+  ],
+  "injuries": []
+ }
+}

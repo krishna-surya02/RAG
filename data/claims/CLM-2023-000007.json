@@ -1,0 +1,45 @@
+{
+ "claim_id": "CLM-2023-000007",
+ "scenario": "not_in_force",
+ "product": "motor",
+ "policy_number": "MT-2023-00093",
+ "loss_date": "2023-04-27",
+ "reported_at": "2023-04-27",
+ "fnol_text": "My name is Elena Vasquez and I live at 926 Primrose Terrace, Springfield, OH 45553. You can reach me on (555) 904-3823 or elena.vasquez@example.com. My car was stolen from outside the house overnight on 27 April 2023. Glass from the driver's window was on the road. Policy MT-2023-00093. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Vasquez on (555) 904-3823 to acknowledge the claim. Elena confirmed the loss date as 27 April 2023."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Sofia Nakamura gave a statement by phone."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2201: front passenger side damage",
+  "IMG_2203: dashboard warning lights",
+  "IMG_2207: vehicle on the recovery truck"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "NOT_IN_FORCE",
+  "clause": null,
+  "endorsement_set": null,
+  "limits": null,
+  "assessed_loss": 11700,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Elena Vasquez",
+  "address": "926 Primrose Terrace, Springfield, OH 45553",
+  "street": "926 Primrose Terrace",
+  "phone": "(555) 904-3823",
+  "email": "elena.vasquez@example.com",
+  "other_people": [
+   "Sofia Nakamura",
+   "Mateo Vasquez"
+  ],
+  "injuries": []
+ }
+}

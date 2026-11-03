@@ -1,0 +1,57 @@
+{
+ "claim_id": "CLM-2026-000127",
+ "scenario": "mt_collision",
+ "product": "motor",
+ "policy_number": "MT-2025-00029",
+ "loss_date": "2026-10-10",
+ "reported_at": "2026-10-18",
+ "fnol_text": "My name is Liam Zielinski and I live at 939 Briar Road, Riverton, WY 82595. You can reach me on (555) 731-3470 or liam.zielinski@example.com. On 10 October 2026 another car pulled out of a side road and hit my front passenger side. The other driver, Rosa Kaminski, admitted they didn't see me. Policy MT-2025-00029. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Zielinski on (555) 731-3470 to acknowledge the claim. Liam confirmed the loss date as 10 October 2026."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Arjun Zielinski gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Third-party driver Rosa Kaminski reports whiplash and attended Mercy General. Liam reports a sprained ankle."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2201: front passenger side damage",
+  "IMG_2207: vehicle on the recovery truck"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §3.1",
+  "clause": "MT-PW §3.1",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "own_damage",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §3.1"
+  },
+  "assessed_loss": 4450,
+  "amount_paid": 3450
+ },
+ "pii": {
+  "claimant_name": "Liam Zielinski",
+  "address": "939 Briar Road, Riverton, WY 82595",
+  "street": "939 Briar Road",
+  "phone": "(555) 731-3470",
+  "email": "liam.zielinski@example.com",
+  "other_people": [
+   "Arjun Zielinski",
+   "Rosa Kaminski"
+  ],
+  "injuries": [
+   "whiplash",
+   "a sprained ankle"
+  ]
+ }
+}

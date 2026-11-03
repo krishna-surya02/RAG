@@ -1,0 +1,54 @@
+{
+ "claim_id": "CLM-2024-000098",
+ "scenario": "hh_surface_water_23",
+ "product": "household",
+ "policy_number": "HH-2024-00115",
+ "loss_date": "2024-09-24",
+ "reported_at": "2024-10-01",
+ "fnol_text": "My name is Anika Novak and I live at 184 Foxglove Way, Riverton, WY 82583. You can reach me on (555) 362-2687 or anika.novak@example.com. Heavy rain all afternoon on 24 September 2024. Water pooled on the lawn and then came into the lounge at floor level. Carpets and the sofa are soaked. Policy HH-2024-00115. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Novak on (555) 362-2687 to acknowledge the claim. Anika confirmed the loss date as 24 September 2024."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 184 Foxglove Way. Neighbour Maya Rasmussen was present and confirmed the timeline."
+  },
+  {
+   "n": 3,
+   "text": "Anika sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0412: ground floor with standing water and wet carpets"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID_SUBLIMIT:HFL-23 §2.2",
+  "clause": "HFL-23 §2.2",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "flood_surface_water",
+   "deductible": 2500,
+   "sub_limit": 15000,
+   "policy_limit": 500000,
+   "source": "HFL-23 §2.2, §2.3; HSL-23 §1"
+  },
+  "assessed_loss": 25500,
+  "amount_paid": 15000
+ },
+ "pii": {
+  "claimant_name": "Anika Novak",
+  "address": "184 Foxglove Way, Riverton, WY 82583",
+  "street": "184 Foxglove Way",
+  "phone": "(555) 362-2687",
+  "email": "anika.novak@example.com",
+  "other_people": [
+   "Maya Rasmussen",
+   "Leah Herrera"
+  ],
+  "injuries": []
+ }
+}

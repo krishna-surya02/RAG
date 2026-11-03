@@ -1,0 +1,55 @@
+{
+ "claim_id": "CLM-2024-000012",
+ "scenario": "hh_surface_water_23",
+ "product": "household",
+ "policy_number": "HH-2023-00002",
+ "loss_date": "2024-02-14",
+ "reported_at": "2024-02-15",
+ "fnol_text": "My name is Lucia Fitzgerald and I live at 561 Thornbury Road, Clinton, NC 28391. You can reach me on (555) 980-2956 or lucia.fitzgerald@example.com. After the torrential rain on the night of 14 February 2024, rainwater ran off the field behind us, across the back garden and in under the patio doors. About 5 cm of water covered the kitchen and family room floors. Policy HH-2023-00002. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Fitzgerald on (555) 980-2956 to acknowledge the claim. Lucia confirmed the loss date as 14 February 2024."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 561 Thornbury Road. Neighbour Mateo Herrera was present and confirmed the timeline."
+  },
+  {
+   "n": 3,
+   "text": "Lucia sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0417: damaged furniture stacked in the garage"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:HFL-23 §2.2",
+  "clause": "HFL-23 §2.2",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "flood_surface_water",
+   "deductible": 2500,
+   "sub_limit": 15000,
+   "policy_limit": 500000,
+   "source": "HFL-23 §2.2, §2.3; HSL-23 §1"
+  },
+  "assessed_loss": 16500,
+  "amount_paid": 14000
+ },
+ "pii": {
+  "claimant_name": "Lucia Fitzgerald",
+  "address": "561 Thornbury Road, Clinton, NC 28391",
+  "street": "561 Thornbury Road",
+  "phone": "(555) 980-2956",
+  "email": "lucia.fitzgerald@example.com",
+  "other_people": [
+   "Mateo Herrera",
+   "Lucia Lindqvist"
+  ],
+  "injuries": []
+ }
+}

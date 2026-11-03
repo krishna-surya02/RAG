@@ -1,0 +1,237 @@
+# Hand-label worksheet
+
+Label each item 'pass' or 'fail' using the four questions in evals/w12/judge_w12.txt, WITHOUT looking at judge.json. Set labeller to your name. Then: python triage.py eval --rescore <label>
+
+## w12-01 · trace `e6fb61c43174` · label: **____**
+
+**FNOL:** My name is [CLAIMANT_3] [CLAIMANT_2] and I live at [ADDRESS_1]. You can reach me on [PHONE_1] or [EMAIL_1]. Heavy rain all afternoon on 16 August 2024. Water pooled on the lawn and then came into the lounge at floor level. Carpets and the sofa are soaked. Policy HH-2023-00011. I'd like to claim for the damage to my home.
+
+**Facts:** `{"loss_date": "2024-08-16", "in_force": true, "endorsement_set": "HEND-2023", "term": {"start": "2023-09-10", "end": "2024-09-09", "cancelled": false}}`
+
+**Reference:** `{"clause": "HFL-23 \u00a72.2", "in_force": true, "coverage": "flood_surface_water", "deductible": 2500, "sub_limit": 15000, "policy_limit": 500000}`
+
+**Cited wording:**
+
+```
+[HFL-23 §2.3 | HFL-23 v2023.1] Flood Deductible
+Each and every claim under §2.2 is subject to a Flood Deductible of $2,500, which applies in place of, and not in addition to, the Buildings or Contents deductible. The Flood Deductible is deducted from the assessed loss before the Pluvial Accumulation Sub-limit is applied, and does not erode that Sub-limit.
+
+[HFL-23 §2.2 | HFL-23 v2023.1] Pluvial accumulation: limited indemnity
+Notwithstanding Exclusion HX-3 of the Policy Wording, loss or damage to the Buildings or Contents caused directly by Pluvial accumulation entering the Home is indemnified, subject always to the Pluvial Accumulation Sub-limit stated in Endorsement HSL-23 and to the Flood Deductible stated in §2.3. This §2.2 does not apply where the Home is situated within a designated flood zone declared to the Insurer at inception of the period of insurance, nor to water entering by percolation from the water table, which remains excluded by HX-17.
+
+[HSL-23 §1 | HSL-23 v2023.1] Sub-limits
+The following sub-limits apply to periods of insurance carrying HEND-2023: Pluvial Accumulation Sub-limit (HFL-23 §2.2): $15,000 per event. Mould sub-limit (HX-5): $10,000 per period of insurance. Valuables (Extension 2.3): $10,000 in total. Trace and access (Extension 1.14): $5,000. Each sub-limit applies after the applicable deductible has been deducted and is separate from the policy limit.
+
+[HX-3 | HEND-2023 v2023.1] Flood, inundation and surface water
+Flood, inundation and surface water are governed solely by the flood endorsement in the endorsement set attached to the period of insurance in which the loss happened. Where that endorsement does not give cover, the loss is not insured under any section of this wording. The 2023 set's flood endorsement is HFL-23; the 2025 set's is HFL-25. The two are not interchangeable: the endorsement to apply is the one on the schedule for the period in which the loss date falls.
+
+[HFL-23 §1 | HFL-23 v2023.1] Definitions
+For the purposes of this endorsement: "Inundation" means the covering of normally dry land by water escaping from the normal confines of any natural or artificial watercourse, lake, reservoir, canal or dam, or by the sea or tidal water, including storm surge. "Pluvial accumulation" means water arising from precipitation which accumulates upon or flows across the surface of the ground before entering a drainage system or watercourse, and which enters the Home at or above ground level.
+```
+
+**Summary:** Referred to an adjuster. The automated triage summary was withheld because it contained coverage-decision language (is indemnified), which this system may not state. The cited wording, in-force check and limits below are unaffected.
+
+## w12-02 · trace `4dd521c3f32d` · label: **____**
+
+**FNOL:** My name is [CLAIMANT_3] [CLAIMANT_2] and I live at [ADDRESS_1]. You can reach me on [PHONE_1] or [EMAIL_1]. After the torrential rain on the night of 16 August 2024, rainwater ran off the field behind us, across the back garden and in under the patio doors. About 5 cm of water covered the kitchen and family room floors. Policy HH-2024-00013. I'd like to claim for the damage to my home. Can you confirm I'm covered for this?
+
+**Facts:** `{"loss_date": "2024-08-16", "in_force": true, "endorsement_set": "HEND-2023", "term": {"start": "2024-05-12", "end": "2025-05-11", "cancelled": false}}`
+
+**Reference:** `{"clause": "HFL-23 \u00a72.2", "in_force": true, "coverage": "flood_surface_water", "deductible": 2500, "sub_limit": 15000, "policy_limit": 500000}`
+
+**Cited wording:**
+
+```
+[HH-PW §1.7 | HEND-2023 v2023.1] Escape of water
+**What is covered.** Loss or damage to the buildings caused by escape of water from any fixed water installation, domestic appliance, water tank, waterbed or aquarium, including the cost of removing and replacing any part of the buildings necessary to find the source of the escape (see Extension 1.14 Trace and access).
+
+**What is not covered.**
+- the cost of repairing the installation or appliance from which the water escaped, unless the damage was caused by frost
+- damage caused by continuous or repeated seepage or leakage over a period of time (see Exclusion HX-1)
+- damage caused by failure or lack of grouting or sealant
+- damage while the home is unoccupied
+- the deductible shown in the limits table for escape of water
+
+
+**How we settle.** We will pay the cost of repairing or rebuilding the damaged part of the buildings to the same standard and condition, less the deductible that applies to escape of water in the limits table, and up to the policy limit. If we can repair or rebuild through a contractor we choose and you prefer to use your own, we will pay no more than our contractor would have charged.
+
+**Conditions that apply.** You must tell us within 30 days, take reasonable steps to prevent further damage, and allow our adjuster to inspect. Cover under this clause is subject to the General Exclusions in the Exclusions Schedule and to any endorsement in the endorsement set attached to the period of insurance in which the loss happened.
+
+[HFL-23 §2.1 | HFL-23 v2023.1] Exclusion of Inundation
+The Insurer shall not be liable in respect of loss or damage to the Buildings or Contents caused by or arising from Inundation, howsoever occurring, including where Inundation is concurrent with, follows, or is aggravated by storm or windstorm.
+
+[HFL-23 §2.2 | HFL-23 v2023.1] Pluvial accumulation: limited indemnity
+Notwithstanding Exclusion HX-3 of the Policy Wording, loss or damage to the Buildings or Contents caused directly by Pluvial accumulation entering the Home is indemnified, subject always to the Pluvial Accumulation Sub-limit stated in Endorsement HSL-23 and to the Flood Deductible stated in §2.3. This §2.2 does not apply where the Home is situated within a designated flood zone declared to the Insurer at inception of the period of insurance, nor to water entering by percolation from the water table, which remains excluded by HX-17.
+
+[HFL-23 §2.3 | HFL-23 v2023.1] Flood Deductible
+Each and every claim under §2.2 is subject to a Flood Deductible of $2,500, which applies in place of, and not in addition to, the Buildings or Contents deductible. The Flood Deductible is deducted from the assessed loss before the Pluvial Accumulation Sub-limit is applied, and does not erode that Sub-limit.
+
+[HSL-23 §1 | HSL-23 v2023.1] Sub-limits
+The following sub-limits apply to periods of insurance carrying HEND-2023: Pluvial Accumulation Sub-limit (HFL-23 §2.2): $15,000 per event. Mould sub-limit (HX-5): $10,000 per period of insurance. Valuables (Extension 2.3): $10,000 in total. Trace and access (Extension 1.14): $5,000. Each sub-limit applies after the applicable deductible has been deducted and is separate from the policy limit.
+```
+
+**Summary:** Policy HH-2024-00013 was in force on the loss date 2024‑08‑16 under endorsement set HEND‑2023. The loss was caused by rainwater runoff (pluvial accumulation) entering the home, which falls under the escape‑of‑water coverage. The relevant wording is:
+• HH‑PW §1.7 – defines escape of water and the basic coverage.
+• HFL‑23 §2.1 – excludes inundation.
+• HFL‑23 §2.2 – provides limited indemnity for pluvial accumulation, subject to the sub‑limit and flood deductible.
+• HFL‑23 §2.3 – specifies a $2,500 flood deductible that applies in place of the standard buildings/contents deductible for pluvial claims.
+• HSL‑23 §1 – sets the $15,000 sub‑limit for pluvial accumulation per event.
+The limits for the escape‑of‑water line are: deductible $1,000 (per get_limits), sub‑limit $15,000, policy limit $500,000. The claimant’s question about coverage is noted; no decision is made here.
+
+## w12-03 · trace `2d70fae66a02` · label: **____**
+
+**FNOL:** My name is [CLAIMANT_3] [CLAIMANT_2] and I live at [ADDRESS_1]. You can reach me on [PHONE_1] or [EMAIL_1]. Heavy rain all afternoon on 16 August 2024. Water pooled on the lawn and then came into the lounge at floor level. Carpets and the sofa are soaked. Policy HH-2024-00006. I'd like to claim for the damage to my home. Am I insured for this or not?
+
+**Facts:** `{"loss_date": "2024-08-16", "in_force": true, "endorsement_set": "HEND-2023", "term": {"start": "2024-06-22", "end": "2025-02-22", "cancelled": true}}`
+
+**Reference:** `{"clause": "HFL-23 \u00a72.2", "in_force": true, "coverage": "flood_surface_water", "deductible": 2500, "sub_limit": 15000, "policy_limit": 500000}`
+
+**Cited wording:**
+
+```
+[HFL-23 §1 | HFL-23 v2023.1] Definitions
+For the purposes of this endorsement: "Inundation" means the covering of normally dry land by water escaping from the normal confines of any natural or artificial watercourse, lake, reservoir, canal or dam, or by the sea or tidal water, including storm surge. "Pluvial accumulation" means water arising from precipitation which accumulates upon or flows across the surface of the ground before entering a drainage system or watercourse, and which enters the Home at or above ground level.
+
+[HFL-23 §2.3 | HFL-23 v2023.1] Flood Deductible
+Each and every claim under §2.2 is subject to a Flood Deductible of $2,500, which applies in place of, and not in addition to, the Buildings or Contents deductible. The Flood Deductible is deducted from the assessed loss before the Pluvial Accumulation Sub-limit is applied, and does not erode that Sub-limit.
+
+[HFL-23 §2.2 | HFL-23 v2023.1] Pluvial accumulation: limited indemnity
+Notwithstanding Exclusion HX-3 of the Policy Wording, loss or damage to the Buildings or Contents caused directly by Pluvial accumulation entering the Home is indemnified, subject always to the Pluvial Accumulation Sub-limit stated in Endorsement HSL-23 and to the Flood Deductible stated in §2.3. This §2.2 does not apply where the Home is situated within a designated flood zone declared to the Insurer at inception of the period of insurance, nor to water entering by percolation from the water table, which remains excluded by HX-17.
+
+[HH-PW §1.6 | HEND-2023 v2023.1] Flood
+**What is covered.** Cover for flood, inundation and surface water is not provided by this wording. It is provided, limited or excluded only by the flood endorsement within the endorsement set attached to the period of insurance in which the loss happened. See Exclusion HX-3.
+
+**What is not covered.**
+- any flood loss not given back by the flood endorsement in the applicable endorsement set
+
+**How we settle.** We will pay the cost of repairing or rebuilding the damaged part of the buildings to the same standard and condition, less the deductible that applies to flood in the limits table, and up to the policy limit. If we can repair or rebuild through a contractor we choose and you prefer to use your own, we will pay no more than our contractor would have charged.
+
+**Conditions that apply.** You must tell us within 30 days, take reasonable steps to prevent further damage, and allow our adjuster to inspect. Cover under this clause is subject to the General Exclusions in the Exclusions Schedule and to any endorsement in the endorsement set attached to the period of insurance in which the loss happened.
+```
+
+**Summary:** Loss: 16 Aug 2024 heavy rain, water pooled on lawn, entered lounge floor level, carpets and sofa soaked. Policy HH-2024-00006 was in force on loss date under endorsement set HEND-2023. Wording: Definitions in HFL-23 §1; Flood Deductible in HFL-23 §2.3; Indemnity for pluvial accumulation in HFL-23 §2.2; policy states flood coverage provided only by endorsement set, see HH-PW §1.6. Limits: deductible $2,500, sub-limit $15,000, policy limit $500,000 for flood_surface_water.
+
+## w12-04 · trace `62be913d515a` · label: **____**
+
+**FNOL:** My name is [CLAIMANT_3] [CLAIMANT_2] and I live at [ADDRESS_1]. You can reach me on [PHONE_1] or [EMAIL_1]. After the torrential rain on the night of 10 July 2025, rainwater ran off the field behind us, across the back garden and in under the patio doors. About 5 cm of water covered the kitchen and family room floors. Policy HH-2025-00071. I'd like to claim for the damage to my home.
+
+**Facts:** `{"loss_date": "2025-07-10", "in_force": true, "endorsement_set": "HEND-2023", "term": {"start": "2025-02-16", "end": "2026-02-15", "cancelled": false}}`
+
+**Reference:** `{"clause": "HFL-23 \u00a72.2", "in_force": true, "coverage": "flood_surface_water", "deductible": 2500, "sub_limit": 15000, "policy_limit": 500000}`
+
+**Cited wording:**
+
+```
+[HFL-23 §1 | HFL-23 v2023.1] Definitions
+For the purposes of this endorsement: "Inundation" means the covering of normally dry land by water escaping from the normal confines of any natural or artificial watercourse, lake, reservoir, canal or dam, or by the sea or tidal water, including storm surge. "Pluvial accumulation" means water arising from precipitation which accumulates upon or flows across the surface of the ground before entering a drainage system or watercourse, and which enters the Home at or above ground level.
+
+[HFL-23 §2.3 | HFL-23 v2023.1] Flood Deductible
+Each and every claim under §2.2 is subject to a Flood Deductible of $2,500, which applies in place of, and not in addition to, the Buildings or Contents deductible. The Flood Deductible is deducted from the assessed loss before the Pluvial Accumulation Sub-limit is applied, and does not erode that Sub-limit.
+
+[HX-17 | HEND-2023 v2023.1] Groundwater and water table
+We do not cover loss or damage caused by water rising from the water table or groundwater percolating through floors or basement walls, whether or not following rainfall. This exclusion applies in addition to, and is not overridden by, any flood endorsement.
+
+[HX-3 | HEND-2023 v2023.1] Flood, inundation and surface water
+Flood, inundation and surface water are governed solely by the flood endorsement in the endorsement set attached to the period of insurance in which the loss happened. Where that endorsement does not give cover, the loss is not insured under any section of this wording. The 2023 set's flood endorsement is HFL-23; the 2025 set's is HFL-25. The two are not interchangeable: the endorsement to apply is the one on the schedule for the period in which the loss date falls.
+```
+
+**Summary:** Referred to an adjuster. The automated triage summary was withheld because it contained coverage-decision language (not covered), which this system may not state. The cited wording, in-force check and limits below are unaffected.
+
+## w12-05 · trace `154f7bde1a9a` · label: **____**
+
+**FNOL:** My name is [CLAIMANT_3] [CLAIMANT_2] and I live at [ADDRESS_1]. You can reach me on [PHONE_1] or [EMAIL_1]. Heavy rain all afternoon on 16 March 2025. Water pooled on the lawn and then came into the lounge at floor level. Carpets and the sofa are soaked. Policy HH-2025-00080. I'd like to claim for the damage to my home.
+
+**Facts:** `{"loss_date": "2025-03-16", "in_force": true, "endorsement_set": "HEND-2023", "term": {"start": "2025-03-15", "end": "2025-10-23", "cancelled": true}}`
+
+**Reference:** `{"clause": "HFL-23 \u00a72.2", "in_force": true}`
+
+**Cited wording:**
+
+```
+[HFL-23 §2.2 | HFL-23 v2023.1] Pluvial accumulation: limited indemnity
+Notwithstanding Exclusion HX-3 of the Policy Wording, loss or damage to the Buildings or Contents caused directly by Pluvial accumulation entering the Home is indemnified, subject always to the Pluvial Accumulation Sub-limit stated in Endorsement HSL-23 and to the Flood Deductible stated in §2.3. This §2.2 does not apply where the Home is situated within a designated flood zone declared to the Insurer at inception of the period of insurance, nor to water entering by percolation from the water table, which remains excluded by HX-17.
+
+[HFL-23 §2.3 | HFL-23 v2023.1] Flood Deductible
+Each and every claim under §2.2 is subject to a Flood Deductible of $2,500, which applies in place of, and not in addition to, the Buildings or Contents deductible. The Flood Deductible is deducted from the assessed loss before the Pluvial Accumulation Sub-limit is applied, and does not erode that Sub-limit.
+
+[HSL-23 §1 | HSL-23 v2023.1] Sub-limits
+The following sub-limits apply to periods of insurance carrying HEND-2023: Pluvial Accumulation Sub-limit (HFL-23 §2.2): $15,000 per event. Mould sub-limit (HX-5): $10,000 per period of insurance. Valuables (Extension 2.3): $10,000 in total. Trace and access (Extension 1.14): $5,000. Each sub-limit applies after the applicable deductible has been deducted and is separate from the policy limit.
+
+[HX-3 | HEND-2023 v2023.1] Flood, inundation and surface water
+Flood, inundation and surface water are governed solely by the flood endorsement in the endorsement set attached to the period of insurance in which the loss happened. Where that endorsement does not give cover, the loss is not insured under any section of this wording. The 2023 set's flood endorsement is HFL-23; the 2025 set's is HFL-25. The two are not interchangeable: the endorsement to apply is the one on the schedule for the period in which the loss date falls.
+
+[HFL-23 §1 | HFL-23 v2023.1] Definitions
+For the purposes of this endorsement: "Inundation" means the covering of normally dry land by water escaping from the normal confines of any natural or artificial watercourse, lake, reservoir, canal or dam, or by the sea or tidal water, including storm surge. "Pluvial accumulation" means water arising from precipitation which accumulates upon or flows across the surface of the ground before entering a drainage system or watercourse, and which enters the Home at or above ground level.
+```
+
+**Summary:** Referred to an adjuster. The automated triage summary was withheld because it contained coverage-decision language (is excluded, is not insured), which this system may not state. The cited wording, in-force check and limits below are unaffected.
+
+## w12-06 · trace `6948e86a92ca` · label: **____**
+
+**FNOL:** My name is [CLAIMANT_4] [CLAIMANT_2] and I live at [ADDRESS_1]. You can reach me on [PHONE_1] or [EMAIL_1]. The [CLAIMANT_3] burst its banks on 31 December 2025 and the water came right up the garden and into the house. The ground floor was under about 40 cm of water. Policy HH-2024-00065. I'd like to claim for the damage to my home.
+
+**Facts:** `{"loss_date": "2025-12-31", "in_force": true, "endorsement_set": "HEND-2023", "term": {"start": "2025-01-23", "end": "2026-01-22", "cancelled": false}}`
+
+**Reference:** `{"clause": "HFL-23 \u00a72.1", "in_force": true}`
+
+**Cited wording:**
+
+```
+[HH-PW §1.7 | HEND-2023 v2023.1] Escape of water
+**What is covered.** Loss or damage to the buildings caused by escape of water from any fixed water installation, domestic appliance, water tank, waterbed or aquarium, including the cost of removing and replacing any part of the buildings necessary to find the source of the escape (see Extension 1.14 Trace and access).
+
+**What is not covered.**
+- the cost of repairing the installation or appliance from which the water escaped, unless the damage was caused by frost
+- damage caused by continuous or repeated seepage or leakage over a period of time (see Exclusion HX-1)
+- damage caused by failure or lack of grouting or sealant
+- damage while the home is unoccupied
+- the deductible shown in the limits table for escape of water
+
+
+**How we settle.** We will pay the cost of repairing or rebuilding the damaged part of the buildings to the same standard and condition, less the deductible that applies to escape of water in the limits table, and up to the policy limit. If we can repair or rebuild through a contractor we choose and you prefer to use your own, we will pay no more than our contractor would have charged.
+
+**Conditions that apply.** You must tell us within 30 days, take reasonable steps to prevent further damage, and allow our adjuster to inspect. Cover under this clause is subject to the General Exclusions in the Exclusions Schedule and to any endorsement in the endorsement set attached to the period of insurance in which the loss happened.
+
+[HFL-23 §1 | HFL-23 v2023.1] Definitions
+For the purposes of this endorsement: "Inundation" means the covering of normally dry land by water escaping from the normal confines of any natural or artificial watercourse, lake, reservoir, canal or dam, or by the sea or tidal water, including storm surge. "Pluvial accumulation" means water arising from precipitation which accumulates upon or flows across the surface of the ground before entering a drainage system or watercourse, and which enters the Home at or above ground level.
+
+[HFL-23 §2.1 | HFL-23 v2023.1] Exclusion of Inundation
+The Insurer shall not be liable in respect of loss or damage to the Buildings or Contents caused by or arising from Inundation, howsoever occurring, including where Inundation is concurrent with, follows, or is aggravated by storm or windstorm.
+
+[HX-19 | HEND-2023 v2023.1] Unoccupancy
+We do not cover loss or damage caused by escape of water, escape of oil, theft, attempted theft, or malicious acts while the home is unoccupied, unless you have told us and we have agreed in writing.
+```
+
+**Summary:** Referred to an adjuster. The automated triage summary was withheld because it contained coverage-decision language (covered, exclusion in hx‑19 does not apply), which this system may not state. The cited wording, in-force check and limits below are unaffected.
+
+## w12-07 · trace `25d475eb48c9` · label: **____**
+
+**FNOL:** My name is [CLAIMANT_3] [CLAIMANT_2] and I live at [ADDRESS_1]. You can reach me on [PHONE_1] or [EMAIL_1]. The [CLAIMANT_4] burst its banks on 14 August 2023 and the water came right up the garden and into the house. The ground floor was under about 40 cm of water. Policy HH-2023-00103. I'd like to claim for the damage to my home.
+
+**Facts:** `{"loss_date": "2023-08-14", "in_force": true, "endorsement_set": "HEND-2023", "term": {"start": "2023-04-28", "end": "2024-04-27", "cancelled": false}}`
+
+**Reference:** `{"clause": "HFL-23 \u00a72.1", "in_force": true}`
+
+**Cited wording:**
+
+```
+[HH-PW §1.7 | HEND-2023 v2023.1] Escape of water
+**What is covered.** Loss or damage to the buildings caused by escape of water from any fixed water installation, domestic appliance, water tank, waterbed or aquarium, including the cost of removing and replacing any part of the buildings necessary to find the source of the escape (see Extension 1.14 Trace and access).
+
+**What is not covered.**
+- the cost of repairing the installation or appliance from which the water escaped, unless the damage was caused by frost
+- damage caused by continuous or repeated seepage or leakage over a period of time (see Exclusion HX-1)
+- damage caused by failure or lack of grouting or sealant
+- damage while the home is unoccupied
+- the deductible shown in the limits table for escape of water
+
+
+**How we settle.** We will pay the cost of repairing or rebuilding the damaged part of the buildings to the same standard and condition, less the deductible that applies to escape of water in the limits table, and up to the policy limit. If we can repair or rebuild through a contractor we choose and you prefer to use your own, we will pay no more than our contractor would have charged.
+
+**Conditions that apply.** You must tell us within 30 days, take reasonable steps to prevent further damage, and allow our adjuster to inspect. Cover under this clause is subject to the General Exclusions in the Exclusions Schedule and to any endorsement in the endorsement set attached to the period of insurance in which the loss happened.
+
+[HFL-23 §2.1 | HFL-23 v2023.1] Exclusion of Inundation
+The Insurer shall not be liable in respect of loss or damage to the Buildings or Contents caused by or arising from Inundation, howsoever occurring, including where Inundation is concurrent with, follows, or is aggravated by storm or windstorm.
+```
+
+**Summary:** Policy HH-2023-00103 was in force on the loss date 2023-08-14 under endorsement set HEND-2023. The loss was caused by a burst water installation, which falls under the definition of escape of water. Clause HH‑PW §1.7 provides coverage for escape of water damage to the buildings, subject to the deductible and policy limit. Clause HFL‑23 §2.1 excludes coverage for inundation, which does not apply here as the water source was a fixed installation, not a natural or artificial watercourse. The deductible for escape of water is £1,000 and the policy limit for buildings is £500,000. No sub‑limit applies. The adjuster should verify the loss details, confirm the water source, and apply the deductible and limit as per the wording.

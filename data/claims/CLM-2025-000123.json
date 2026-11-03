@@ -1,0 +1,57 @@
+{
+ "claim_id": "CLM-2025-000123",
+ "scenario": "mt_personal_accident",
+ "product": "motor",
+ "policy_number": "MT-2024-00081",
+ "loss_date": "2025-09-10",
+ "reported_at": "2025-09-12",
+ "fnol_text": "My name is Dmitri Zielinski and I live at 953 Willow Court, Dover, DE 19955. You can reach me on (555) 908-4479 or dmitri.zielinski@example.com. I was badly hurt when my car left the road on 10 September 2025. I suffered loss of the left hand below the wrist. Policy MT-2024-00081. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Zielinski on (555) 908-4479 to acknowledge the claim. Dmitri confirmed the loss date as 10 September 2025."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Imogen Haddad gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Medical report from St. Brendan's Hospital confirms loss of the left hand below the wrist. Dmitri is still off work."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2201: front passenger side damage",
+  "IMG_2203: dashboard warning lights"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §5.1",
+  "clause": "MT-PW §5.1",
+  "endorsement_set": "MEND-2023",
+  "limits": {
+   "coverage": "personal_accident",
+   "deductible": 0,
+   "sub_limit": 25000,
+   "policy_limit": 25000,
+   "source": "MT-PW §5.1; MPA-23 §1"
+  },
+  "assessed_loss": 25000,
+  "amount_paid": 25000
+ },
+ "pii": {
+  "claimant_name": "Dmitri Zielinski",
+  "address": "953 Willow Court, Dover, DE 19955",
+  "street": "953 Willow Court",
+  "phone": "(555) 908-4479",
+  "email": "dmitri.zielinski@example.com",
+  "other_people": [
+   "Imogen Haddad",
+   "Fatima Al-Sayed"
+  ],
+  "injuries": [
+   "loss of the left hand below the wrist"
+  ]
+ }
+}

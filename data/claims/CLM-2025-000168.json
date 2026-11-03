@@ -1,0 +1,51 @@
+{
+ "claim_id": "CLM-2025-000168",
+ "scenario": "mt_windscreen",
+ "product": "motor",
+ "policy_number": "MT-2025-00134",
+ "loss_date": "2025-12-16",
+ "reported_at": "2025-12-16",
+ "fnol_text": "My name is Grace Sorensen and I live at 662 Kestrel Place, Clinton, NC 28386. You can reach me on (555) 983-8664 or grace.sorensen@example.com. A stone thrown up by a lorry cracked my windscreen right across on 16 December 2025. Policy MT-2025-00134. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Sorensen on (555) 983-8664 to acknowledge the claim. Grace confirmed the loss date as 16 December 2025."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Arjun Rasmussen gave a statement by phone."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2201: front passenger side damage",
+  "IMG_2203: dashboard warning lights"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §4.1",
+  "clause": "MT-PW §4.1",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "windscreen",
+   "deductible": 150,
+   "sub_limit": 1500,
+   "policy_limit": 60000,
+   "source": "MT-PW §4.1; MWS-25 §1"
+  },
+  "assessed_loss": 850,
+  "amount_paid": 700
+ },
+ "pii": {
+  "claimant_name": "Grace Sorensen",
+  "address": "662 Kestrel Place, Clinton, NC 28386",
+  "street": "662 Kestrel Place",
+  "phone": "(555) 983-8664",
+  "email": "grace.sorensen@example.com",
+  "other_people": [
+   "Arjun Rasmussen",
+   "Liam Brennan"
+  ],
+  "injuries": []
+ }
+}

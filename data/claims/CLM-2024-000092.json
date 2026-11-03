@@ -1,0 +1,45 @@
+{
+ "claim_id": "CLM-2024-000092",
+ "scenario": "not_in_force",
+ "product": "household",
+ "policy_number": "HH-2024-00113",
+ "loss_date": "2024-09-05",
+ "reported_at": "2024-09-11",
+ "fnol_text": "My name is Anika Achebe and I live at 589 Hawthorn Road, Salem, MA 01962. You can reach me on (555) 848-8977 or anika.achebe@example.com. Our house was broken into on 5 September 2024. The back door was forced and a laptop, jewellery and a television were taken. Policy HH-2024-00113. I'd like to claim for the damage to my home. Am I insured for this or not?",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Achebe on (555) 848-8977 to acknowledge the claim. Anika confirmed the loss date as 5 September 2024."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 589 Hawthorn Road. Neighbour Nikhil Ueda was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0412: ground floor with standing water and wet carpets"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "NOT_IN_FORCE",
+  "clause": null,
+  "endorsement_set": null,
+  "limits": null,
+  "assessed_loss": 4850,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Anika Achebe",
+  "address": "589 Hawthorn Road, Salem, MA 01962",
+  "street": "589 Hawthorn Road",
+  "phone": "(555) 848-8977",
+  "email": "anika.achebe@example.com",
+  "other_people": [
+   "Nikhil Ueda",
+   "Ethan Gallagher"
+  ],
+  "injuries": []
+ }
+}

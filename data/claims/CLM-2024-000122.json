@@ -1,0 +1,55 @@
+{
+ "claim_id": "CLM-2024-000122",
+ "scenario": "hh_surface_water_23",
+ "product": "household",
+ "policy_number": "HH-2024-00113",
+ "loss_date": "2024-12-31",
+ "reported_at": "2024-12-31",
+ "fnol_text": "My name is Anika Achebe and I live at 589 Hawthorn Road, Salem, MA 01962. You can reach me on (555) 848-8977 or anika.achebe@example.com. We had a cloudburst on 31 December 2024. The drains in the street could not cope and surface water from the road came up the drive and into the ground floor through the front door. Policy HH-2024-00113. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Achebe on (555) 848-8977 to acknowledge the claim. Anika confirmed the loss date as 31 December 2024."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 589 Hawthorn Road. Neighbour Grace Osei was present and confirmed the timeline."
+  },
+  {
+   "n": 3,
+   "text": "Anika sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0412: ground floor with standing water and wet carpets"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID_SUBLIMIT:HFL-23 §2.2",
+  "clause": "HFL-23 §2.2",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "flood_surface_water",
+   "deductible": 2500,
+   "sub_limit": 15000,
+   "policy_limit": 500000,
+   "source": "HFL-23 §2.2, §2.3; HSL-23 §1"
+  },
+  "assessed_loss": 47300,
+  "amount_paid": 15000
+ },
+ "pii": {
+  "claimant_name": "Anika Achebe",
+  "address": "589 Hawthorn Road, Salem, MA 01962",
+  "street": "589 Hawthorn Road",
+  "phone": "(555) 848-8977",
+  "email": "anika.achebe@example.com",
+  "other_people": [
+   "Grace Osei",
+   "Viktor Whitlock"
+  ],
+  "injuries": []
+ }
+}

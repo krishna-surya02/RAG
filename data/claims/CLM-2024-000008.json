@@ -1,0 +1,55 @@
+{
+ "claim_id": "CLM-2024-000008",
+ "scenario": "hh_surface_water_23",
+ "product": "household",
+ "policy_number": "HH-2023-00005",
+ "loss_date": "2024-02-02",
+ "reported_at": "2024-02-06",
+ "fnol_text": "My name is Ethan Ferreira and I live at 787 Juniper Street, Riverton, WY 82587. You can reach me on (555) 741-5672 or ethan.ferreira@example.com. We had a cloudburst on 2 February 2024. The drains in the street could not cope and surface water from the road came up the drive and into the ground floor through the front door. Policy HH-2023-00005. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Ferreira on (555) 741-5672 to acknowledge the claim. Ethan confirmed the loss date as 2 February 2024."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 787 Juniper Street. Neighbour Elena Jovanovic was present and confirmed the timeline."
+  },
+  {
+   "n": 3,
+   "text": "Ethan sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0417: damaged furniture stacked in the garage"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID_SUBLIMIT:HFL-23 §2.2",
+  "clause": "HFL-23 §2.2",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "flood_surface_water",
+   "deductible": 2500,
+   "sub_limit": 15000,
+   "policy_limit": 500000,
+   "source": "HFL-23 §2.2, §2.3; HSL-23 §1"
+  },
+  "assessed_loss": 40600,
+  "amount_paid": 15000
+ },
+ "pii": {
+  "claimant_name": "Ethan Ferreira",
+  "address": "787 Juniper Street, Riverton, WY 82587",
+  "street": "787 Juniper Street",
+  "phone": "(555) 741-5672",
+  "email": "ethan.ferreira@example.com",
+  "other_people": [
+   "Elena Jovanovic",
+   "Marcus Castillo"
+  ],
+  "injuries": []
+ }
+}

@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2024-000120",
+ "scenario": "hh_escape_of_water",
+ "product": "household",
+ "policy_number": "HH-2024-00049",
+ "loss_date": "2024-12-24",
+ "reported_at": "2024-12-31",
+ "fnol_text": "My name is Olusegun Fitzgerald and I live at 796 Cedar Street, Clinton, NC 28375. You can reach me on (555) 771-6110 or olusegun.fitzgerald@example.com. On 24 December 2024 a pipe under the upstairs bathroom burst while we were out and water came through the kitchen ceiling. Policy HH-2024-00049. I'd like to claim for the damage to my home. Can you confirm I'm covered for this?",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Fitzgerald on (555) 771-6110 to acknowledge the claim. Olusegun confirmed the loss date as 24 December 2024."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 796 Cedar Street. Neighbour Naomi Nguyen-Tran was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0412: ground floor with standing water and wet carpets"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:HH-PW §1.7",
+  "clause": "HH-PW §1.7",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "escape_of_water",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 500000,
+   "source": "HH-PW §1.7"
+  },
+  "assessed_loss": 25400,
+  "amount_paid": 24400
+ },
+ "pii": {
+  "claimant_name": "Olusegun Fitzgerald",
+  "address": "796 Cedar Street, Clinton, NC 28375",
+  "street": "796 Cedar Street",
+  "phone": "(555) 771-6110",
+  "email": "olusegun.fitzgerald@example.com",
+  "other_people": [
+   "Naomi Nguyen-Tran",
+   "Rosa Ferreira"
+  ],
+  "injuries": []
+ }
+}

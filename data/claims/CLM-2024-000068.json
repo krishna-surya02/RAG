@@ -1,0 +1,54 @@
+{
+ "claim_id": "CLM-2024-000068",
+ "scenario": "hh_surface_water_aug24",
+ "product": "household",
+ "policy_number": "HH-2023-00089",
+ "loss_date": "2024-08-15",
+ "reported_at": "2024-08-20",
+ "fnol_text": "My name is Ines Nguyen-Tran and I live at 583 Hawthorn Street, Dover, DE 19937. You can reach me on (555) 254-1898 or ines.nguyentran@example.com. Heavy rain all afternoon on 15 August 2024. Water pooled on the lawn and then came into the lounge at floor level. Carpets and the sofa are soaked. Policy HH-2023-00089. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Nguyen-Tran on (555) 254-1898 to acknowledge the claim. Ines confirmed the loss date as 15 August 2024."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 583 Hawthorn Street. Neighbour Sofia Pereira was present and confirmed the timeline."
+  },
+  {
+   "n": 3,
+   "text": "Ines sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0413: water line on the skirting boards"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID_SUBLIMIT:HFL-23 §2.2",
+  "clause": "HFL-23 §2.2",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "flood_surface_water",
+   "deductible": 2500,
+   "sub_limit": 15000,
+   "policy_limit": 500000,
+   "source": "HFL-23 §2.2, §2.3; HSL-23 §1"
+  },
+  "assessed_loss": 33350,
+  "amount_paid": 15000
+ },
+ "pii": {
+  "claimant_name": "Ines Nguyen-Tran",
+  "address": "583 Hawthorn Street, Dover, DE 19937",
+  "street": "583 Hawthorn Street",
+  "phone": "(555) 254-1898",
+  "email": "ines.nguyentran@example.com",
+  "other_people": [
+   "Sofia Pereira",
+   "Rosa Gallagher"
+  ],
+  "injuries": []
+ }
+}

@@ -1,0 +1,68 @@
+{
+ "w12-01": {
+  "trace_id": "e6fb61c43174417282040406adeaf5ec",
+  "claim_id": "CLM-2024-000073",
+  "ran_on": "2026-11-02",
+  "status": "ok"
+ },
+ "w12-02": {
+  "trace_id": "4dd521c3f32d472791b5e0de12169abc",
+  "claim_id": "CLM-2024-000079",
+  "ran_on": "2026-11-02",
+  "status": "ok"
+ },
+ "w12-03": {
+  "trace_id": "2d70fae66a0243b7943017a0fd1a8c1a",
+  "claim_id": "CLM-2024-000077",
+  "ran_on": "2026-11-02",
+  "status": "ok"
+ },
+ "w12-04": {
+  "trace_id": "62be913d515a462cac5c2453aa11dfa6",
+  "claim_id": "CLM-2025-000093",
+  "ran_on": "2026-11-02",
+  "status": "ok"
+ },
+ "w12-05": {
+  "trace_id": "154f7bde1a9a4ce2b3160d809bfc8ab7",
+  "claim_id": "CLM-2025-000034",
+  "ran_on": "2026-11-02",
+  "status": "ok"
+ },
+ "w12-06": {
+  "trace_id": "6948e86a92ca4294b8db529d333de220",
+  "claim_id": "CLM-2026-000002",
+  "ran_on": "2026-11-02",
+  "status": "ok"
+ },
+ "w12-07": {
+  "trace_id": "25d475eb48c948c898d01bb071367287",
+  "claim_id": "CLM-2023-000029",
+  "ran_on": "2026-11-02",
+  "status": "ok"
+ },
+ "w12-08": {
+  "trace_id": "9ec99b04e516486fafd3820f524eafdd",
+  "claim_id": "CLM-2026-000068",
+  "ran_on": "2026-11-03",
+  "status": "ok"
+ },
+ "w12-09": {
+  "trace_id": "cba67a06c97247038212166a7cf73dda",
+  "claim_id": "CLM-2026-000029",
+  "ran_on": "2026-11-03",
+  "status": "ok"
+ },
+ "w12-10": {
+  "trace_id": "b91cdc6aa182474097fa96b3c193a303",
+  "claim_id": "CLM-2026-000014",
+  "ran_on": "2026-11-03",
+  "status": "ok"
+ },
+ "w12-11": {
+  "trace_id": "11502990ad65448c802aca22e813e4f7",
+  "claim_id": "CLM-2025-000076",
+  "ran_on": "2026-11-03",
+  "status": "ended_without_referral"
+ }
+}

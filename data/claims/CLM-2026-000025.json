@@ -1,0 +1,58 @@
+{
+ "claim_id": "CLM-2026-000025",
+ "scenario": "mt_collision",
+ "product": "motor",
+ "policy_number": "MT-2024-00139",
+ "loss_date": "2026-03-17",
+ "reported_at": "2026-03-21",
+ "fnol_text": "My name is Bianca Al-Sayed and I live at 567 Maple Road, Milton, VT 05478. You can reach me on (555) 889-5373 or bianca.alsayed@example.com. On 17 March 2026 another car pulled out of a side road and hit my front passenger side. The other driver, Owen Oyelaran, admitted they didn't see me. Policy MT-2024-00139. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Al-Sayed on (555) 889-5373 to acknowledge the claim. Bianca confirmed the loss date as 17 March 2026."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Samuel Achebe gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Third-party driver Owen Oyelaran reports a mild concussion and attended County General. Bianca reports minor burns to the hand."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2201: front passenger side damage",
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2203: dashboard warning lights"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §3.1",
+  "clause": "MT-PW §3.1",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "own_damage",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §3.1"
+  },
+  "assessed_loss": 12250,
+  "amount_paid": 11250
+ },
+ "pii": {
+  "claimant_name": "Bianca Al-Sayed",
+  "address": "567 Maple Road, Milton, VT 05478",
+  "street": "567 Maple Road",
+  "phone": "(555) 889-5373",
+  "email": "bianca.alsayed@example.com",
+  "other_people": [
+   "Samuel Achebe",
+   "Owen Oyelaran"
+  ],
+  "injuries": [
+   "a mild concussion",
+   "minor burns to the hand"
+  ]
+ }
+}

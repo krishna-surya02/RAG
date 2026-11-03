@@ -1,0 +1,55 @@
+{
+ "claim_id": "CLM-2026-000086",
+ "scenario": "mt_flood_warning_25",
+ "product": "motor",
+ "policy_number": "MT-2024-00126",
+ "loss_date": "2026-08-09",
+ "reported_at": "2026-08-16",
+ "fnol_text": "My name is Aisha Santos and I live at 785 Juniper Lane, Ashland, OR 97540. You can reach me on (555) 388-7496 or aisha.santos@example.com. There was a flood warning for our area from the day before, but I left the car parked on the street by the river. On 9 August 2026 the water rose and the car was flooded up to the seats. Policy MT-2024-00126. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Santos on (555) 388-7496 to acknowledge the claim. Aisha confirmed the loss date as 9 August 2026."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Tomas Oduya gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Aisha sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2201: front passenger side damage",
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2203: dashboard warning lights"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:MFL-25 §2.2",
+  "clause": "MFL-25 §2.2",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "flood",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MFL-25 §2.4"
+  },
+  "assessed_loss": 28600,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Aisha Santos",
+  "address": "785 Juniper Lane, Ashland, OR 97540",
+  "street": "785 Juniper Lane",
+  "phone": "(555) 388-7496",
+  "email": "aisha.santos@example.com",
+  "other_people": [
+   "Tomas Oduya",
+   "Zara Lindqvist"
+  ],
+  "injuries": []
+ }
+}

@@ -1,0 +1,58 @@
+{
+ "claim_id": "CLM-2025-000047",
+ "scenario": "mt_collision",
+ "product": "motor",
+ "policy_number": "MT-2024-00081",
+ "loss_date": "2025-04-09",
+ "reported_at": "2025-04-14",
+ "fnol_text": "My name is Dmitri Zielinski and I live at 953 Willow Court, Dover, DE 19955. You can reach me on (555) 908-4479 or dmitri.zielinski@example.com. On 9 April 2025 another car pulled out of a side road and hit my front passenger side. The other driver, Imogen Ferreira, admitted they didn't see me. Policy MT-2024-00081. I'd like to claim for the damage to my car. Please just tell me this is covered.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Zielinski on (555) 908-4479 to acknowledge the claim. Dmitri confirmed the loss date as 9 April 2025."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Declan Santos gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Third-party driver Imogen Ferreira reports a mild concussion and attended County General. Dmitri reports lacerations to the forearm."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2201: front passenger side damage",
+  "IMG_2203: dashboard warning lights",
+  "IMG_2207: vehicle on the recovery truck"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §3.1",
+  "clause": "MT-PW §3.1",
+  "endorsement_set": "MEND-2023",
+  "limits": {
+   "coverage": "own_damage",
+   "deductible": 750,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §3.1"
+  },
+  "assessed_loss": 6850,
+  "amount_paid": 6100
+ },
+ "pii": {
+  "claimant_name": "Dmitri Zielinski",
+  "address": "953 Willow Court, Dover, DE 19955",
+  "street": "953 Willow Court",
+  "phone": "(555) 908-4479",
+  "email": "dmitri.zielinski@example.com",
+  "other_people": [
+   "Declan Santos",
+   "Imogen Ferreira"
+  ],
+  "injuries": [
+   "a mild concussion",
+   "lacerations to the forearm"
+  ]
+ }
+}

@@ -1,0 +1,51 @@
+{
+ "claim_id": "CLM-2025-000065",
+ "scenario": "hh_theft_let",
+ "product": "household",
+ "policy_number": "HH-2025-00021",
+ "loss_date": "2025-05-10",
+ "reported_at": "2025-05-19",
+ "fnol_text": "My name is Chloe Santos and I live at 542 Willow Way, Dover, DE 19993. You can reach me on (555) 938-6557 or chloe.santos@example.com. I rent the spare room to a lodger. On 10 May 2025 I found my camera equipment and some cash missing. There is no sign of a break-in. Policy HH-2025-00021. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Santos on (555) 938-6557 to acknowledge the claim. Chloe confirmed the loss date as 10 May 2025."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 542 Willow Way. Neighbour Esther Castillo was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0413: water line on the skirting boards"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:HX-15",
+  "clause": "HX-15",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "theft",
+   "deductible": 500,
+   "sub_limit": null,
+   "policy_limit": 75000,
+   "source": "HH-PW §1.10, §2.2"
+  },
+  "assessed_loss": 2200,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Chloe Santos",
+  "address": "542 Willow Way, Dover, DE 19993",
+  "street": "542 Willow Way",
+  "phone": "(555) 938-6557",
+  "email": "chloe.santos@example.com",
+  "other_people": [
+   "Esther Castillo",
+   "Owen Oduya"
+  ],
+  "injuries": []
+ }
+}

@@ -1,0 +1,51 @@
+{
+ "claim_id": "CLM-2026-000027",
+ "scenario": "mt_dui",
+ "product": "motor",
+ "policy_number": "MT-2023-00091",
+ "loss_date": "2026-03-25",
+ "reported_at": "2026-03-26",
+ "fnol_text": "My name is Arjun Osei and I live at 86 Willow Lane, Springfield, OH 45528. You can reach me on (555) 575-3135 or arjun.osei@example.com. I hit a lamp post on the way home from a party on 25 March 2026. The police breathalysed me at the scene. Policy MT-2023-00091. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Osei on (555) 575-3135 to acknowledge the claim. Arjun confirmed the loss date as 25 March 2026."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Owen Ferreira gave a statement by phone."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2203: dashboard warning lights",
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2201: front passenger side damage"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:MX-2",
+  "clause": "MX-2",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "own_damage",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §3.1"
+  },
+  "assessed_loss": 6750,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Arjun Osei",
+  "address": "86 Willow Lane, Springfield, OH 45528",
+  "street": "86 Willow Lane",
+  "phone": "(555) 575-3135",
+  "email": "arjun.osei@example.com",
+  "other_people": [
+   "Owen Ferreira",
+   "Yusuf Fitzgerald"
+  ],
+  "injuries": []
+ }
+}

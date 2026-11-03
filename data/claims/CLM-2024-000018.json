@@ -1,0 +1,58 @@
+{
+ "claim_id": "CLM-2024-000018",
+ "scenario": "mt_collision",
+ "product": "motor",
+ "policy_number": "MT-2023-00056",
+ "loss_date": "2024-03-09",
+ "reported_at": "2024-03-16",
+ "fnol_text": "My name is Hannah Ballard and I live at 973 Maple Road, Springfield, OH 45528. You can reach me on (555) 468-1624 or hannah.ballard@example.com. On 9 March 2024 another car pulled out of a side road and hit my front passenger side. The other driver, Rosa Mensah, admitted they didn't see me. Policy MT-2023-00056. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Ballard on (555) 468-1624 to acknowledge the claim. Hannah confirmed the loss date as 9 March 2024."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Declan Okafor gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Third-party driver Rosa Mensah reports whiplash and attended St. Brendan's Hospital. Hannah reports lower back strain."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2203: dashboard warning lights",
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2201: front passenger side damage"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §3.1",
+  "clause": "MT-PW §3.1",
+  "endorsement_set": "MEND-2023",
+  "limits": {
+   "coverage": "own_damage",
+   "deductible": 750,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §3.1"
+  },
+  "assessed_loss": 8350,
+  "amount_paid": 7600
+ },
+ "pii": {
+  "claimant_name": "Hannah Ballard",
+  "address": "973 Maple Road, Springfield, OH 45528",
+  "street": "973 Maple Road",
+  "phone": "(555) 468-1624",
+  "email": "hannah.ballard@example.com",
+  "other_people": [
+   "Declan Okafor",
+   "Rosa Mensah"
+  ],
+  "injuries": [
+   "whiplash",
+   "lower back strain"
+  ]
+ }
+}

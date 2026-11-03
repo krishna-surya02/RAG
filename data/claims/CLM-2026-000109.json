@@ -1,0 +1,51 @@
+{
+ "claim_id": "CLM-2026-000109",
+ "scenario": "mt_windscreen",
+ "product": "motor",
+ "policy_number": "MT-2023-00045",
+ "loss_date": "2026-09-14",
+ "reported_at": "2026-09-20",
+ "fnol_text": "My name is Leila O'Connell and I live at 219 Cedar Road, Madison, WI 53780. You can reach me on (555) 631-9922 or leila.oconnell@example.com. A stone thrown up by a lorry cracked my windscreen right across on 14 September 2026. Policy MT-2023-00045. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr O'Connell on (555) 631-9922 to acknowledge the claim. Leila confirmed the loss date as 14 September 2026."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Tomas Herrera gave a statement by phone."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2203: dashboard warning lights",
+  "IMG_2201: front passenger side damage"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §4.1",
+  "clause": "MT-PW §4.1",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "windscreen",
+   "deductible": 150,
+   "sub_limit": 1500,
+   "policy_limit": 60000,
+   "source": "MT-PW §4.1; MWS-25 §1"
+  },
+  "assessed_loss": 250,
+  "amount_paid": 100
+ },
+ "pii": {
+  "claimant_name": "Leila O'Connell",
+  "address": "219 Cedar Road, Madison, WI 53780",
+  "street": "219 Cedar Road",
+  "phone": "(555) 631-9922",
+  "email": "leila.oconnell@example.com",
+  "other_people": [
+   "Tomas Herrera",
+   "Leah Yilmaz"
+  ],
+  "injuries": []
+ }
+}

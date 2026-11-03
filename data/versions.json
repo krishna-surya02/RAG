@@ -1,0 +1,82 @@
+{
+ "_about": "Effective windows say which endorsement set NEW and RENEWING periods of insurance received. The set in force for a loss is the set on the policy term covering the loss date (see policies.json terms[].endorsement_set). A term that started before 2025-04-01 keeps the 2023 set until it renews, even for a loss after 2025-04-01.",
+ "documents": [
+  {
+   "doc_id": "HH-PW",
+   "product": "household",
+   "kind": "wording",
+   "version": "v2023.1",
+   "file": "data/wordings/household_wording.md",
+   "effective_from": "2023-04-01",
+   "effective_to": null
+  },
+  {
+   "doc_id": "HEND-2023",
+   "product": "household",
+   "kind": "endorsement_set",
+   "version": "v2023.1",
+   "file": "data/wordings/household_endorsements_2023.md",
+   "effective_from": "2023-04-01",
+   "effective_to": "2025-03-31",
+   "endorsements": [
+    "HFL-23",
+    "HAD-23",
+    "HBU-23",
+    "HSL-23"
+   ]
+  },
+  {
+   "doc_id": "HEND-2025",
+   "product": "household",
+   "kind": "endorsement_set",
+   "version": "v2025.1",
+   "file": "data/wordings/household_endorsements_2025.md",
+   "effective_from": "2025-04-01",
+   "effective_to": null,
+   "endorsements": [
+    "HFL-25",
+    "HAD-25",
+    "HBU-25",
+    "HSL-25"
+   ]
+  },
+  {
+   "doc_id": "MT-PW",
+   "product": "motor",
+   "kind": "wording",
+   "version": "v2023.1",
+   "file": "data/wordings/motor_wording.md",
+   "effective_from": "2023-04-01",
+   "effective_to": null
+  },
+  {
+   "doc_id": "MEND-2023",
+   "product": "motor",
+   "kind": "endorsement_set",
+   "version": "v2023.1",
+   "file": "data/wordings/motor_endorsements_2023.md",
+   "effective_from": "2023-04-01",
+   "effective_to": "2025-03-31",
+   "endorsements": [
+    "MFL-23",
+    "MWS-23",
+    "MPA-23"
+   ]
+  },
+  {
+   "doc_id": "MEND-2025",
+   "product": "motor",
+   "kind": "endorsement_set",
+   "version": "v2025.1",
+   "file": "data/wordings/motor_endorsements_2025.md",
+   "effective_from": "2025-04-01",
+   "effective_to": null,
+   "endorsements": [
+    "MFL-25",
+    "MHA-25",
+    "MWS-25",
+    "MPA-25"
+   ]
+  }
+ ]
+}

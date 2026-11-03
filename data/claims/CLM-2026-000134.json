@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2026-000134",
+ "scenario": "mt_theft_forced",
+ "product": "motor",
+ "policy_number": "MT-2025-00121",
+ "loss_date": "2026-10-15",
+ "reported_at": "2026-10-17",
+ "fnol_text": "My name is Tomas Ueda and I live at 839 Cedar Street, Ashland, OR 97521. You can reach me on (555) 587-5122 or tomas.ueda@example.com. My car was stolen from outside the house overnight on 15 October 2026. Glass from the driver's window was on the road. Policy MT-2025-00121. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Ueda on (555) 587-5122 to acknowledge the claim. Tomas confirmed the loss date as 15 October 2026."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Grace Whitlock gave a statement by phone."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2201: front passenger side damage",
+  "IMG_2207: vehicle on the recovery truck"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §2.2",
+  "clause": "MT-PW §2.2",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "theft",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §2.2"
+  },
+  "assessed_loss": 9450,
+  "amount_paid": 8450
+ },
+ "pii": {
+  "claimant_name": "Tomas Ueda",
+  "address": "839 Cedar Street, Ashland, OR 97521",
+  "street": "839 Cedar Street",
+  "phone": "(555) 587-5122",
+  "email": "tomas.ueda@example.com",
+  "other_people": [
+   "Grace Whitlock",
+   "Leah Takahashi"
+  ],
+  "injuries": []
+ }
+}

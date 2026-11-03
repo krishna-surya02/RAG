@@ -1,0 +1,51 @@
+{
+ "claim_id": "CLM-2025-000049",
+ "scenario": "hh_mould",
+ "product": "household",
+ "policy_number": "HH-2023-00088",
+ "loss_date": "2025-04-10",
+ "reported_at": "2025-04-12",
+ "fnol_text": "My name is Viktor Petrov and I live at 9 Alder Way, Riverton, WY 82591. You can reach me on (555) 818-4923 or viktor.petrov@example.com. After the burst pipe last month was fixed, on 10 April 2025 we found black mould inside the wall cavity behind the kitchen units. Policy HH-2023-00088. I'd like to claim for the damage to my home. Please just tell me this is covered.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Petrov on (555) 818-4923 to acknowledge the claim. Viktor confirmed the loss date as 10 April 2025."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 9 Alder Way. Neighbour Ingrid Ferreira was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0412: ground floor with standing water and wet carpets"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:HX-5",
+  "clause": "HX-5",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "mould",
+   "deductible": 1000,
+   "sub_limit": 10000,
+   "policy_limit": 500000,
+   "source": "HX-5; HSL-23 §1"
+  },
+  "assessed_loss": 9900,
+  "amount_paid": 8900
+ },
+ "pii": {
+  "claimant_name": "Viktor Petrov",
+  "address": "9 Alder Way, Riverton, WY 82591",
+  "street": "9 Alder Way",
+  "phone": "(555) 818-4923",
+  "email": "viktor.petrov@example.com",
+  "other_people": [
+   "Ingrid Ferreira",
+   "Aisha Oduya"
+  ],
+  "injuries": []
+ }
+}

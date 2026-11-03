@@ -1,0 +1,58 @@
+{
+ "claim_id": "CLM-2024-000095",
+ "scenario": "mt_collision_tpft",
+ "product": "motor",
+ "policy_number": "MT-2024-00052",
+ "loss_date": "2024-09-12",
+ "reported_at": "2024-09-21",
+ "fnol_text": "My name is Tariq Petrov and I live at 39 Thornbury Lane, Fairview, PA 16425. You can reach me on (555) 408-7678 or tariq.petrov@example.com. On 12 September 2024 another car pulled out of a side road and hit my front passenger side. The other driver, Rafael Thorne, admitted they didn't see me. Policy MT-2024-00052. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Petrov on (555) 408-7678 to acknowledge the claim. Tariq confirmed the loss date as 12 September 2024."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Nikhil Whitfield gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Third-party driver Rafael Thorne reports minor burns to the hand and attended Mercy General. Tariq reports lower back strain."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2203: dashboard warning lights",
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2201: front passenger side damage"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:MT-PW §1.2",
+  "clause": "MT-PW §1.2",
+  "endorsement_set": "MEND-2023",
+  "limits": {
+   "coverage": "own_damage",
+   "deductible": 750,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §3.1"
+  },
+  "assessed_loss": 6550,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Tariq Petrov",
+  "address": "39 Thornbury Lane, Fairview, PA 16425",
+  "street": "39 Thornbury Lane",
+  "phone": "(555) 408-7678",
+  "email": "tariq.petrov@example.com",
+  "other_people": [
+   "Nikhil Whitfield",
+   "Rafael Thorne"
+  ],
+  "injuries": [
+   "minor burns to the hand",
+   "lower back strain"
+  ]
+ }
+}

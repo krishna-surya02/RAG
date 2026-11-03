@@ -1,0 +1,39 @@
+product,endorsement_set,coverage,deductible,sub_limit,policy_limit,source_clause
+household,HEND-2023,buildings,1000,,500000,HH-PW §1
+household,HEND-2023,contents,500,,75000,HH-PW §2
+household,HEND-2023,escape_of_water,1000,,500000,HH-PW §1.7
+household,HEND-2023,flood_surface_water,2500,15000,500000,"HFL-23 §2.2, §2.3; HSL-23 §1"
+household,HEND-2023,mould,1000,10000,500000,HX-5; HSL-23 §1
+household,HEND-2023,theft,500,,75000,"HH-PW §1.10, §2.2"
+household,HEND-2023,storm,1000,,500000,HH-PW §1.5
+household,HEND-2023,subsidence,2500,,500000,HH-PW §1.11
+household,HEND-2023,liability,0,,2000000,HH-PW §3.1
+household,HEND-2023,accidental_damage,250,,75000,HAD-23 §1
+household,HEND-2025,buildings,1000,,600000,HH-PW §1
+household,HEND-2025,contents,500,,80000,HH-PW §2
+household,HEND-2025,escape_of_water,1500,,600000,HH-PW §1.7
+household,HEND-2025,flood_plus,5000,25000,600000,"HFL-25 §2.2, §2.3; HSL-25 §1"
+household,HEND-2025,mould,1000,7500,600000,HX-5; HSL-25 §1
+household,HEND-2025,theft,500,,80000,"HH-PW §1.10, §2.2"
+household,HEND-2025,storm,1000,,600000,HH-PW §1.5
+household,HEND-2025,subsidence,2500,,600000,HH-PW §1.11
+household,HEND-2025,liability,0,,2000000,HH-PW §3.1
+household,HEND-2025,accidental_damage,250,,80000,HAD-25 §1
+motor,MEND-2023,own_damage,750,,60000,MT-PW §3.1
+motor,MEND-2023,theft,750,,60000,MT-PW §2.2
+motor,MEND-2023,windscreen,100,1500,60000,MT-PW §4.1; MWS-23 §1
+motor,MEND-2023,flood,750,,60000,MFL-23 §2.1
+motor,MEND-2023,hail,750,,60000,MT-PW §3.2
+motor,MEND-2023,third_party_property,0,,1000000,MT-PW §1.1
+motor,MEND-2023,third_party_injury,0,,5000000,MT-PW §1.1
+motor,MEND-2023,personal_accident,0,25000,25000,MT-PW §5.1; MPA-23 §1
+motor,MEND-2023,medical_expenses,0,2000,2000,MT-PW §6.1; MPA-23 §1
+motor,MEND-2025,own_damage,1000,,60000,MT-PW §3.1
+motor,MEND-2025,theft,1000,,60000,MT-PW §2.2
+motor,MEND-2025,windscreen,150,1500,60000,MT-PW §4.1; MWS-25 §1
+motor,MEND-2025,flood,1000,,60000,MFL-25 §2.4
+motor,MEND-2025,hail,500,,60000,MHA-25 §1
+motor,MEND-2025,third_party_property,0,,1000000,MT-PW §1.1
+motor,MEND-2025,third_party_injury,0,,5000000,MT-PW §1.1
+motor,MEND-2025,personal_accident,0,25000,25000,MT-PW §5.1; MPA-25 §1
+motor,MEND-2025,medical_expenses,0,2500,2500,MT-PW §6.1; MPA-25 §1

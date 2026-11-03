@@ -1,0 +1,54 @@
+{
+ "claim_id": "CLM-2025-000160",
+ "scenario": "hh_surface_water_25_floodplus",
+ "product": "household",
+ "policy_number": "HH-2023-00072",
+ "loss_date": "2025-12-04",
+ "reported_at": "2025-12-11",
+ "fnol_text": "My name is Arjun Sorensen and I live at 413 Foxglove Terrace, Madison, WI 53762. You can reach me on (555) 980-3033 or arjun.sorensen@example.com. We had a cloudburst on 4 December 2025. The drains in the street could not cope and surface water from the road came up the drive and into the ground floor through the front door. Policy HH-2023-00072. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Sorensen on (555) 980-3033 to acknowledge the claim. Arjun confirmed the loss date as 4 December 2025."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 413 Foxglove Terrace. Neighbour Olusegun Thorne was present and confirmed the timeline."
+  },
+  {
+   "n": 3,
+   "text": "Arjun sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0413: water line on the skirting boards"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:HFL-25 §2.2",
+  "clause": "HFL-25 §2.2",
+  "endorsement_set": "HEND-2025",
+  "limits": {
+   "coverage": "flood_plus",
+   "deductible": 5000,
+   "sub_limit": 25000,
+   "policy_limit": 600000,
+   "source": "HFL-25 §2.2, §2.3; HSL-25 §1"
+  },
+  "assessed_loss": 14000,
+  "amount_paid": 9000
+ },
+ "pii": {
+  "claimant_name": "Arjun Sorensen",
+  "address": "413 Foxglove Terrace, Madison, WI 53762",
+  "street": "413 Foxglove Terrace",
+  "phone": "(555) 980-3033",
+  "email": "arjun.sorensen@example.com",
+  "other_people": [
+   "Olusegun Thorne",
+   "Jordan Moreau"
+  ],
+  "injuries": []
+ }
+}

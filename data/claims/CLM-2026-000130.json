@@ -1,0 +1,45 @@
+{
+ "claim_id": "CLM-2026-000130",
+ "scenario": "not_in_force",
+ "product": "motor",
+ "policy_number": "MT-2023-00061",
+ "loss_date": "2026-10-12",
+ "reported_at": "2026-10-18",
+ "fnol_text": "My name is Maya Petrov and I live at 659 Ashford Avenue, Dover, DE 19933. You can reach me on (555) 639-1638 or maya.petrov@example.com. My car was stolen from outside the house overnight on 12 October 2026. Glass from the driver's window was on the road. Policy MT-2023-00061. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Petrov on (555) 639-1638 to acknowledge the claim. Maya confirmed the loss date as 12 October 2026."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Ingrid Kowalski gave a statement by phone."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2201: front passenger side damage",
+  "IMG_2203: dashboard warning lights"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "NOT_IN_FORCE",
+  "clause": null,
+  "endorsement_set": null,
+  "limits": null,
+  "assessed_loss": 3900,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Maya Petrov",
+  "address": "659 Ashford Avenue, Dover, DE 19933",
+  "street": "659 Ashford Avenue",
+  "phone": "(555) 639-1638",
+  "email": "maya.petrov@example.com",
+  "other_people": [
+   "Ingrid Kowalski",
+   "Jordan Whitfield"
+  ],
+  "injuries": []
+ }
+}

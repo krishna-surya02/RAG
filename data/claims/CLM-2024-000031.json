@@ -1,0 +1,45 @@
+{
+ "claim_id": "CLM-2024-000031",
+ "scenario": "not_in_force",
+ "product": "motor",
+ "policy_number": "MT-2024-00102",
+ "loss_date": "2024-05-06",
+ "reported_at": "2024-05-10",
+ "fnol_text": "My name is Naomi Thorne and I live at 727 Marigold Drive, Greenville, SC 29676. You can reach me on (555) 850-1994 or naomi.thorne@example.com. My car was stolen from outside the house overnight on 6 May 2024. Glass from the driver's window was on the road. Policy MT-2024-00102. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Thorne on (555) 850-1994 to acknowledge the claim. Naomi confirmed the loss date as 6 May 2024."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Lucia Chukwu gave a statement by phone."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2203: dashboard warning lights",
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2201: front passenger side damage"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "NOT_IN_FORCE",
+  "clause": null,
+  "endorsement_set": null,
+  "limits": null,
+  "assessed_loss": 4250,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Naomi Thorne",
+  "address": "727 Marigold Drive, Greenville, SC 29676",
+  "street": "727 Marigold Drive",
+  "phone": "(555) 850-1994",
+  "email": "naomi.thorne@example.com",
+  "other_people": [
+   "Lucia Chukwu",
+   "Grace Mensah"
+  ],
+  "injuries": []
+ }
+}

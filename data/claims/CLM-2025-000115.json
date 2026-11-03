@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2025-000115",
+ "scenario": "hh_mould",
+ "product": "household",
+ "policy_number": "HH-2025-00119",
+ "loss_date": "2025-08-28",
+ "reported_at": "2025-08-30",
+ "fnol_text": "My name is Maya Laurent and I live at 459 Primrose Lane, Fairview, PA 16447. You can reach me on (555) 550-9592 or maya.laurent@example.com. After the burst pipe last month was fixed, on 28 August 2025 we found black mould inside the wall cavity behind the kitchen units. Policy HH-2025-00119. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Laurent on (555) 550-9592 to acknowledge the claim. Maya confirmed the loss date as 28 August 2025."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 459 Primrose Lane. Neighbour Tomas Takahashi was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0412: ground floor with standing water and wet carpets"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:HX-5",
+  "clause": "HX-5",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "mould",
+   "deductible": 1000,
+   "sub_limit": 10000,
+   "policy_limit": 500000,
+   "source": "HX-5; HSL-23 §1"
+  },
+  "assessed_loss": 10900,
+  "amount_paid": 9900
+ },
+ "pii": {
+  "claimant_name": "Maya Laurent",
+  "address": "459 Primrose Lane, Fairview, PA 16447",
+  "street": "459 Primrose Lane",
+  "phone": "(555) 550-9592",
+  "email": "maya.laurent@example.com",
+  "other_people": [
+   "Tomas Takahashi",
+   "Bianca Oyelaran"
+  ],
+  "injuries": []
+ }
+}

@@ -1,0 +1,57 @@
+{
+ "claim_id": "CLM-2026-000020",
+ "scenario": "mt_collision",
+ "product": "motor",
+ "policy_number": "MT-2025-00134",
+ "loss_date": "2026-02-18",
+ "reported_at": "2026-02-20",
+ "fnol_text": "My name is Grace Sorensen and I live at 662 Kestrel Place, Clinton, NC 28386. You can reach me on (555) 983-8664 or grace.sorensen@example.com. On 18 February 2026 another car pulled out of a side road and hit my front passenger side. The other driver, Tariq McBride, admitted they didn't see me. Policy MT-2025-00134. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Sorensen on (555) 983-8664 to acknowledge the claim. Grace confirmed the loss date as 18 February 2026."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Naomi Brennan gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Third-party driver Tariq McBride reports a sprained wrist and attended Mercy General. Grace reports lacerations to the forearm."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2201: front passenger side damage",
+  "IMG_2203: dashboard warning lights"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §3.1",
+  "clause": "MT-PW §3.1",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "own_damage",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §3.1"
+  },
+  "assessed_loss": 6250,
+  "amount_paid": 5250
+ },
+ "pii": {
+  "claimant_name": "Grace Sorensen",
+  "address": "662 Kestrel Place, Clinton, NC 28386",
+  "street": "662 Kestrel Place",
+  "phone": "(555) 983-8664",
+  "email": "grace.sorensen@example.com",
+  "other_people": [
+   "Naomi Brennan",
+   "Tariq McBride"
+  ],
+  "injuries": [
+   "a sprained wrist",
+   "lacerations to the forearm"
+  ]
+ }
+}

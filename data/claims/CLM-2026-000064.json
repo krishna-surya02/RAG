@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2026-000064",
+ "scenario": "hh_escape_of_water",
+ "product": "household",
+ "policy_number": "HH-2025-00007",
+ "loss_date": "2026-06-25",
+ "reported_at": "2026-06-30",
+ "fnol_text": "My name is Declan Iyer and I live at 80 Oakridge Road, Riverton, WY 82570. You can reach me on (555) 431-1397 or declan.iyer@example.com. On 25 June 2026 a pipe under the upstairs bathroom burst while we were out and water came through the kitchen ceiling. Policy HH-2025-00007. I'd like to claim for the damage to my home. Am I insured for this or not?",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Iyer on (555) 431-1397 to acknowledge the claim. Declan confirmed the loss date as 25 June 2026."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 80 Oakridge Road. Neighbour Esther Varga was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0413: water line on the skirting boards"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:HH-PW §1.7",
+  "clause": "HH-PW §1.7",
+  "endorsement_set": "HEND-2025",
+  "limits": {
+   "coverage": "escape_of_water",
+   "deductible": 1500,
+   "sub_limit": null,
+   "policy_limit": 600000,
+   "source": "HH-PW §1.7"
+  },
+  "assessed_loss": 8800,
+  "amount_paid": 7300
+ },
+ "pii": {
+  "claimant_name": "Declan Iyer",
+  "address": "80 Oakridge Road, Riverton, WY 82570",
+  "street": "80 Oakridge Road",
+  "phone": "(555) 431-1397",
+  "email": "declan.iyer@example.com",
+  "other_people": [
+   "Esther Varga",
+   "Zara Haddad"
+  ],
+  "injuries": []
+ }
+}

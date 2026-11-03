@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2026-000141",
+ "scenario": "hh_gradual_leak",
+ "product": "household",
+ "policy_number": "HH-2024-00111",
+ "loss_date": "2026-10-23",
+ "reported_at": "2026-10-24",
+ "fnol_text": "My name is Hannah Castillo and I live at 146 Linden Drive, Greenville, SC 29669. You can reach me on (555) 465-8224 or hannah.castillo@example.com. We noticed on 23 October 2026 that the floor around the shower is soft. A plumber says the seal has been leaking slowly for months and the joists are rotten. Policy HH-2024-00111. I'd like to claim for the damage to my home. Can you confirm I'm covered for this?",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Castillo on (555) 465-8224 to acknowledge the claim. Hannah confirmed the loss date as 23 October 2026."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 146 Linden Drive. Neighbour Rafael Oyelaran was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0413: water line on the skirting boards"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:HX-1",
+  "clause": "HX-1",
+  "endorsement_set": "HEND-2025",
+  "limits": {
+   "coverage": "escape_of_water",
+   "deductible": 1500,
+   "sub_limit": null,
+   "policy_limit": 600000,
+   "source": "HH-PW §1.7"
+  },
+  "assessed_loss": 24450,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Hannah Castillo",
+  "address": "146 Linden Drive, Greenville, SC 29669",
+  "street": "146 Linden Drive",
+  "phone": "(555) 465-8224",
+  "email": "hannah.castillo@example.com",
+  "other_people": [
+   "Rafael Oyelaran",
+   "Noor Takahashi"
+  ],
+  "injuries": []
+ }
+}

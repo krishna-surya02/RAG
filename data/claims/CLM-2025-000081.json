@@ -1,0 +1,54 @@
+{
+ "claim_id": "CLM-2025-000081",
+ "scenario": "hh_surface_water_23_floodzone",
+ "product": "household",
+ "policy_number": "HH-2023-00085",
+ "loss_date": "2025-06-14",
+ "reported_at": "2025-06-14",
+ "fnol_text": "My name is Rosa Castillo and I live at 896 Ashford Close, Madison, WI 53740. You can reach me on (555) 282-7450 or rosa.castillo@example.com. We had a cloudburst on 14 June 2025. The drains in the street could not cope and surface water from the road came up the drive and into the ground floor through the front door. Policy HH-2023-00085. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Castillo on (555) 282-7450 to acknowledge the claim. Rosa confirmed the loss date as 14 June 2025."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 896 Ashford Close. Neighbour Dmitri Rasmussen was present and confirmed the timeline."
+  },
+  {
+   "n": 3,
+   "text": "Rosa sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0413: water line on the skirting boards"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:HFL-23 §2.2",
+  "clause": "HFL-23 §2.2",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "flood_surface_water",
+   "deductible": 2500,
+   "sub_limit": 15000,
+   "policy_limit": 500000,
+   "source": "HFL-23 §2.2, §2.3; HSL-23 §1"
+  },
+  "assessed_loss": 44450,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Rosa Castillo",
+  "address": "896 Ashford Close, Madison, WI 53740",
+  "street": "896 Ashford Close",
+  "phone": "(555) 282-7450",
+  "email": "rosa.castillo@example.com",
+  "other_people": [
+   "Dmitri Rasmussen",
+   "Imogen Al-Sayed"
+  ],
+  "injuries": []
+ }
+}

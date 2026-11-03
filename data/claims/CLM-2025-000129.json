@@ -1,0 +1,55 @@
+{
+ "claim_id": "CLM-2025-000129",
+ "scenario": "mt_flood_23",
+ "product": "motor",
+ "policy_number": "MT-2024-00083",
+ "loss_date": "2025-09-30",
+ "reported_at": "2025-10-04",
+ "fnol_text": "My name is Anika Al-Sayed and I live at 50 Ashford Street, Clinton, NC 28387. You can reach me on (555) 745-2564 or anika.alsayed@example.com. On 30 September 2025 flash flooding came down the street while my car was parked at home. Water got into the cabin and the engine won't start. Policy MT-2024-00083. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Al-Sayed on (555) 745-2564 to acknowledge the claim. Anika confirmed the loss date as 30 September 2025."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Priya Gallagher gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Anika sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2203: dashboard warning lights",
+  "IMG_2201: front passenger side damage"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MFL-23 §2.1",
+  "clause": "MFL-23 §2.1",
+  "endorsement_set": "MEND-2023",
+  "limits": {
+   "coverage": "flood",
+   "deductible": 750,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MFL-23 §2.1"
+  },
+  "assessed_loss": 18050,
+  "amount_paid": 17300
+ },
+ "pii": {
+  "claimant_name": "Anika Al-Sayed",
+  "address": "50 Ashford Street, Clinton, NC 28387",
+  "street": "50 Ashford Street",
+  "phone": "(555) 745-2564",
+  "email": "anika.alsayed@example.com",
+  "other_people": [
+   "Priya Gallagher",
+   "Esther Okafor"
+  ],
+  "injuries": []
+ }
+}

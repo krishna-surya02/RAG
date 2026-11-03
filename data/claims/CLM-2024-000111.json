@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2024-000111",
+ "scenario": "hh_mould",
+ "product": "household",
+ "policy_number": "HH-2024-00141",
+ "loss_date": "2024-11-01",
+ "reported_at": "2024-11-10",
+ "fnol_text": "My name is Dmitri Mbeki and I live at 343 Alder Close, Madison, WI 53769. You can reach me on (555) 444-2982 or dmitri.mbeki@example.com. After the burst pipe last month was fixed, on 1 November 2024 we found black mould inside the wall cavity behind the kitchen units. Policy HH-2024-00141. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Mbeki on (555) 444-2982 to acknowledge the claim. Dmitri confirmed the loss date as 1 November 2024."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 343 Alder Close. Neighbour Hiroshi Mbeki was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0413: water line on the skirting boards"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID_SUBLIMIT:HX-5",
+  "clause": "HX-5",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "mould",
+   "deductible": 1000,
+   "sub_limit": 10000,
+   "policy_limit": 500000,
+   "source": "HX-5; HSL-23 §1"
+  },
+  "assessed_loss": 17850,
+  "amount_paid": 10000
+ },
+ "pii": {
+  "claimant_name": "Dmitri Mbeki",
+  "address": "343 Alder Close, Madison, WI 53769",
+  "street": "343 Alder Close",
+  "phone": "(555) 444-2982",
+  "email": "dmitri.mbeki@example.com",
+  "other_people": [
+   "Hiroshi Mbeki",
+   "Esther Oduya"
+  ],
+  "injuries": []
+ }
+}

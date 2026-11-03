@@ -1,0 +1,55 @@
+{
+ "claim_id": "CLM-2025-000107",
+ "scenario": "mt_flood_warning_23",
+ "product": "motor",
+ "policy_number": "MT-2024-00081",
+ "loss_date": "2025-08-10",
+ "reported_at": "2025-08-16",
+ "fnol_text": "My name is Dmitri Zielinski and I live at 953 Willow Court, Dover, DE 19955. You can reach me on (555) 908-4479 or dmitri.zielinski@example.com. There was a flood warning for our area from the day before, but I left the car parked on the street by the river. On 10 August 2025 the water rose and the car was flooded up to the seats. Policy MT-2024-00081. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Zielinski on (555) 908-4479 to acknowledge the claim. Dmitri confirmed the loss date as 10 August 2025."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Tomas Delgado gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Dmitri sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2203: dashboard warning lights",
+  "IMG_2201: front passenger side damage",
+  "IMG_2207: vehicle on the recovery truck"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MFL-23 §2.1",
+  "clause": "MFL-23 §2.1",
+  "endorsement_set": "MEND-2023",
+  "limits": {
+   "coverage": "flood",
+   "deductible": 750,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MFL-23 §2.1"
+  },
+  "assessed_loss": 24900,
+  "amount_paid": 24150
+ },
+ "pii": {
+  "claimant_name": "Dmitri Zielinski",
+  "address": "953 Willow Court, Dover, DE 19955",
+  "street": "953 Willow Court",
+  "phone": "(555) 908-4479",
+  "email": "dmitri.zielinski@example.com",
+  "other_people": [
+   "Tomas Delgado",
+   "Leah Osei"
+  ],
+  "injuries": []
+ }
+}

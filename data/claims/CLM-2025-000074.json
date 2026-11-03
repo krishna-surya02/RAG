@@ -1,0 +1,57 @@
+{
+ "claim_id": "CLM-2025-000074",
+ "scenario": "mt_collision",
+ "product": "motor",
+ "policy_number": "MT-2024-00108",
+ "loss_date": "2025-06-02",
+ "reported_at": "2025-06-11",
+ "fnol_text": "My name is Sofia Ballard and I live at 701 Linden Drive, Milton, VT 05468. You can reach me on (555) 866-2075 or sofia.ballard@example.com. On 2 June 2025 another car pulled out of a side road and hit my front passenger side. The other driver, Jordan Whitlock, admitted they didn't see me. Policy MT-2024-00108. I'd like to claim for the damage to my car. Am I insured for this or not?",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Ballard on (555) 866-2075 to acknowledge the claim. Sofia confirmed the loss date as 2 June 2025."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Naomi Rasmussen gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Third-party driver Jordan Whitlock reports a sprained wrist and attended Mercy General. Sofia reports lower back strain."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2201: front passenger side damage"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §3.1",
+  "clause": "MT-PW §3.1",
+  "endorsement_set": "MEND-2023",
+  "limits": {
+   "coverage": "own_damage",
+   "deductible": 750,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §3.1"
+  },
+  "assessed_loss": 20850,
+  "amount_paid": 20100
+ },
+ "pii": {
+  "claimant_name": "Sofia Ballard",
+  "address": "701 Linden Drive, Milton, VT 05468",
+  "street": "701 Linden Drive",
+  "phone": "(555) 866-2075",
+  "email": "sofia.ballard@example.com",
+  "other_people": [
+   "Naomi Rasmussen",
+   "Jordan Whitlock"
+  ],
+  "injuries": [
+   "a sprained wrist",
+   "lower back strain"
+  ]
+ }
+}

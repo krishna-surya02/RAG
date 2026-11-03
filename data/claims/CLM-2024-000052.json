@@ -1,0 +1,45 @@
+{
+ "claim_id": "CLM-2024-000052",
+ "scenario": "not_in_force",
+ "product": "household",
+ "policy_number": "HH-2025-00086",
+ "loss_date": "2024-07-20",
+ "reported_at": "2024-07-20",
+ "fnol_text": "My name is Chloe Abernathy and I live at 57 Briar Lane, Clinton, NC 28348. You can reach me on (555) 467-4731 or chloe.abernathy@example.com. During the storm on 20 July 2024 high winds ripped tiles off the roof and rain came into the loft and the back bedroom. Policy HH-2025-00086. I'd like to claim for the damage to my home. I assume this is covered under my policy?",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Abernathy on (555) 467-4731 to acknowledge the claim. Chloe confirmed the loss date as 20 July 2024."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 57 Briar Lane. Neighbour Jordan Mbeki was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0417: damaged furniture stacked in the garage"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "NOT_IN_FORCE",
+  "clause": null,
+  "endorsement_set": null,
+  "limits": null,
+  "assessed_loss": 23050,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Chloe Abernathy",
+  "address": "57 Briar Lane, Clinton, NC 28348",
+  "street": "57 Briar Lane",
+  "phone": "(555) 467-4731",
+  "email": "chloe.abernathy@example.com",
+  "other_people": [
+   "Jordan Mbeki",
+   "Leah Castillo"
+  ],
+  "injuries": []
+ }
+}

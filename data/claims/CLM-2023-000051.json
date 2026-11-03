@@ -1,0 +1,52 @@
+{
+ "claim_id": "CLM-2023-000051",
+ "scenario": "not_in_force",
+ "product": "motor",
+ "policy_number": "MT-2024-00024",
+ "loss_date": "2023-12-26",
+ "reported_at": "2023-12-28",
+ "fnol_text": "My name is Fatima Whitlock and I live at 902 Thornbury Terrace, Clinton, NC 28355. You can reach me on (555) 850-6558 or fatima.whitlock@example.com. On 26 December 2023 another car pulled out of a side road and hit my front passenger side. The other driver, Tariq Yilmaz, admitted they didn't see me. Policy MT-2024-00024. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Whitlock on (555) 850-6558 to acknowledge the claim. Fatima confirmed the loss date as 26 December 2023."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Leah McBride gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Third-party driver Tariq Yilmaz reports bruised ribs and attended Mercy General. Fatima reports a sprained ankle."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2201: front passenger side damage",
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2203: dashboard warning lights"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "NOT_IN_FORCE",
+  "clause": null,
+  "endorsement_set": null,
+  "limits": null,
+  "assessed_loss": 5150,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Fatima Whitlock",
+  "address": "902 Thornbury Terrace, Clinton, NC 28355",
+  "street": "902 Thornbury Terrace",
+  "phone": "(555) 850-6558",
+  "email": "fatima.whitlock@example.com",
+  "other_people": [
+   "Leah McBride",
+   "Tariq Yilmaz"
+  ],
+  "injuries": [
+   "bruised ribs",
+   "a sprained ankle"
+  ]
+ }
+}

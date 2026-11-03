@@ -1,0 +1,51 @@
+{
+ "claim_id": "CLM-2024-000097",
+ "scenario": "hh_storm_fence",
+ "product": "household",
+ "policy_number": "HH-2024-00040",
+ "loss_date": "2024-09-18",
+ "reported_at": "2024-09-24",
+ "fnol_text": "My name is Jordan Fitzgerald and I live at 764 Maple Lane, Riverton, WY 82575. You can reach me on (555) 313-6778 or jordan.fitzgerald@example.com. The storm on 18 September 2024 blew down about 20 metres of the garden fence and a gate. Policy HH-2024-00040. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Fitzgerald on (555) 313-6778 to acknowledge the claim. Jordan confirmed the loss date as 18 September 2024."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 764 Maple Lane. Neighbour Arjun Delgado was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0413: water line on the skirting boards"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:HX-9",
+  "clause": "HX-9",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "storm",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 500000,
+   "source": "HH-PW §1.5"
+  },
+  "assessed_loss": 1150,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Jordan Fitzgerald",
+  "address": "764 Maple Lane, Riverton, WY 82575",
+  "street": "764 Maple Lane",
+  "phone": "(555) 313-6778",
+  "email": "jordan.fitzgerald@example.com",
+  "other_people": [
+   "Arjun Delgado",
+   "Sofia Santos"
+  ],
+  "injuries": []
+ }
+}

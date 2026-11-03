@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2026-000101",
+ "scenario": "mt_windscreen",
+ "product": "motor",
+ "policy_number": "MT-2024-00059",
+ "loss_date": "2026-09-04",
+ "reported_at": "2026-09-04",
+ "fnol_text": "My name is Esther Kaminski and I live at 191 Kestrel Road, Dover, DE 19930. You can reach me on (555) 382-1264 or esther.kaminski@example.com. A stone thrown up by a lorry cracked my windscreen right across on 4 September 2026. Policy MT-2024-00059. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Kaminski on (555) 382-1264 to acknowledge the claim. Esther confirmed the loss date as 4 September 2026."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Olusegun McBride gave a statement by phone."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2201: front passenger side damage"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID_SUBLIMIT:MT-PW §4.1",
+  "clause": "MT-PW §4.1",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "windscreen",
+   "deductible": 150,
+   "sub_limit": 1500,
+   "policy_limit": 60000,
+   "source": "MT-PW §4.1; MWS-25 §1"
+  },
+  "assessed_loss": 1750,
+  "amount_paid": 1500
+ },
+ "pii": {
+  "claimant_name": "Esther Kaminski",
+  "address": "191 Kestrel Road, Dover, DE 19930",
+  "street": "191 Kestrel Road",
+  "phone": "(555) 382-1264",
+  "email": "esther.kaminski@example.com",
+  "other_people": [
+   "Olusegun McBride",
+   "Ingrid Oyelaran"
+  ],
+  "injuries": []
+ }
+}

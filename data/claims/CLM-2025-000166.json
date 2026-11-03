@@ -1,0 +1,51 @@
+{
+ "claim_id": "CLM-2025-000166",
+ "scenario": "mt_mechanical",
+ "product": "motor",
+ "policy_number": "MT-2024-00115",
+ "loss_date": "2025-12-14",
+ "reported_at": "2025-12-16",
+ "fnol_text": "My name is Ines Iyer and I live at 785 Elmstead Close, Fairview, PA 16453. You can reach me on (555) 840-7764 or ines.iyer@example.com. On 14 December 2025 the gearbox failed on the motorway and the garage says it needs replacing. Policy MT-2024-00115. I'd like to claim for the damage to my car. Am I insured for this or not?",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Iyer on (555) 840-7764 to acknowledge the claim. Ines confirmed the loss date as 14 December 2025."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Tariq Oduya gave a statement by phone."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2201: front passenger side damage",
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2203: dashboard warning lights"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:MX-4",
+  "clause": "MX-4",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "own_damage",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §3.1"
+  },
+  "assessed_loss": 4100,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Ines Iyer",
+  "address": "785 Elmstead Close, Fairview, PA 16453",
+  "street": "785 Elmstead Close",
+  "phone": "(555) 840-7764",
+  "email": "ines.iyer@example.com",
+  "other_people": [
+   "Tariq Oduya",
+   "Gabriel Kowalski"
+  ],
+  "injuries": []
+ }
+}

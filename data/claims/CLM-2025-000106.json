@@ -1,0 +1,54 @@
+{
+ "claim_id": "CLM-2025-000106",
+ "scenario": "hh_surface_water_crossboundary",
+ "product": "household",
+ "policy_number": "HH-2025-00128",
+ "loss_date": "2025-08-05",
+ "reported_at": "2025-08-14",
+ "fnol_text": "My name is Dmitri Nakamura and I live at 296 Elmstead Street, Salem, MA 01945. You can reach me on (555) 366-8323 or dmitri.nakamura@example.com. After the torrential rain on the night of 5 August 2025, rainwater ran off the field behind us, across the back garden and in under the patio doors. About 5 cm of water covered the kitchen and family room floors. Policy HH-2025-00128. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Nakamura on (555) 366-8323 to acknowledge the claim. Dmitri confirmed the loss date as 5 August 2025."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 296 Elmstead Street. Neighbour Naomi Abernathy was present and confirmed the timeline."
+  },
+  {
+   "n": 3,
+   "text": "Dmitri sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0417: damaged furniture stacked in the garage"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID_SUBLIMIT:HFL-23 §2.2",
+  "clause": "HFL-23 §2.2",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "flood_surface_water",
+   "deductible": 2500,
+   "sub_limit": 15000,
+   "policy_limit": 500000,
+   "source": "HFL-23 §2.2, §2.3; HSL-23 §1"
+  },
+  "assessed_loss": 38700,
+  "amount_paid": 15000
+ },
+ "pii": {
+  "claimant_name": "Dmitri Nakamura",
+  "address": "296 Elmstead Street, Salem, MA 01945",
+  "street": "296 Elmstead Street",
+  "phone": "(555) 366-8323",
+  "email": "dmitri.nakamura@example.com",
+  "other_people": [
+   "Naomi Abernathy",
+   "Ingrid Ballard"
+  ],
+  "injuries": []
+ }
+}

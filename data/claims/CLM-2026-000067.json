@@ -1,0 +1,51 @@
+{
+ "claim_id": "CLM-2026-000067",
+ "scenario": "mt_hail",
+ "product": "motor",
+ "policy_number": "MT-2024-00006",
+ "loss_date": "2026-07-03",
+ "reported_at": "2026-07-07",
+ "fnol_text": "My name is Gabriel Oyelaran and I live at 893 Sycamore Way, Dover, DE 19952. You can reach me on (555) 402-1535 or gabriel.oyelaran@example.com. A hailstorm on 3 July 2026 left dozens of dents across the roof, bonnet and boot of my car. Policy MT-2024-00006. I'd like to claim for the damage to my car. Please just tell me this is covered.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Oyelaran on (555) 402-1535 to acknowledge the claim. Gabriel confirmed the loss date as 3 July 2026."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Fatima Raman gave a statement by phone."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2201: front passenger side damage",
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2203: dashboard warning lights"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MHA-25 §1",
+  "clause": "MHA-25 §1",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "hail",
+   "deductible": 500,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MHA-25 §1"
+  },
+  "assessed_loss": 1350,
+  "amount_paid": 850
+ },
+ "pii": {
+  "claimant_name": "Gabriel Oyelaran",
+  "address": "893 Sycamore Way, Dover, DE 19952",
+  "street": "893 Sycamore Way",
+  "phone": "(555) 402-1535",
+  "email": "gabriel.oyelaran@example.com",
+  "other_people": [
+   "Fatima Raman",
+   "Priya Ishikawa"
+  ],
+  "injuries": []
+ }
+}

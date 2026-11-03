@@ -1,0 +1,54 @@
+{
+ "claim_id": "CLM-2024-000082",
+ "scenario": "hh_surface_water_aug24",
+ "product": "household",
+ "policy_number": "HH-2024-00081",
+ "loss_date": "2024-08-16",
+ "reported_at": "2024-08-16",
+ "fnol_text": "My name is Viktor Oduya and I live at 150 Rowan Place, Ashland, OR 97562. You can reach me on (555) 680-5908 or viktor.oduya@example.com. Heavy rain all afternoon on 16 August 2024. Water pooled on the lawn and then came into the lounge at floor level. Carpets and the sofa are soaked. Policy HH-2024-00081. I'd like to claim for the damage to my home. I assume this is covered under my policy?",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Oduya on (555) 680-5908 to acknowledge the claim. Viktor confirmed the loss date as 16 August 2024."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 150 Rowan Place. Neighbour Ravi Ferreira was present and confirmed the timeline."
+  },
+  {
+   "n": 3,
+   "text": "Viktor sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0413: water line on the skirting boards"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:HFL-23 §2.2",
+  "clause": "HFL-23 §2.2",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "flood_surface_water",
+   "deductible": 2500,
+   "sub_limit": 15000,
+   "policy_limit": 500000,
+   "source": "HFL-23 §2.2, §2.3; HSL-23 §1"
+  },
+  "assessed_loss": 10700,
+  "amount_paid": 8200
+ },
+ "pii": {
+  "claimant_name": "Viktor Oduya",
+  "address": "150 Rowan Place, Ashland, OR 97562",
+  "street": "150 Rowan Place",
+  "phone": "(555) 680-5908",
+  "email": "viktor.oduya@example.com",
+  "other_people": [
+   "Ravi Ferreira",
+   "Fatima Haddad"
+  ],
+  "injuries": []
+ }
+}

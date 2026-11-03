@@ -1,0 +1,51 @@
+{
+ "claim_id": "CLM-2025-000050",
+ "scenario": "hh_storm_roof",
+ "product": "household",
+ "policy_number": "HH-2023-00072",
+ "loss_date": "2025-04-15",
+ "reported_at": "2025-04-17",
+ "fnol_text": "My name is Arjun Sorensen and I live at 413 Foxglove Terrace, Madison, WI 53762. You can reach me on (555) 980-3033 or arjun.sorensen@example.com. During the storm on 15 April 2025 high winds ripped tiles off the roof and rain came into the loft and the back bedroom. Policy HH-2023-00072. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Sorensen on (555) 980-3033 to acknowledge the claim. Arjun confirmed the loss date as 15 April 2025."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 413 Foxglove Terrace. Neighbour Mei Haddad was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0412: ground floor with standing water and wet carpets"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:HH-PW §1.5",
+  "clause": "HH-PW §1.5",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "storm",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 500000,
+   "source": "HH-PW §1.5"
+  },
+  "assessed_loss": 6850,
+  "amount_paid": 5850
+ },
+ "pii": {
+  "claimant_name": "Arjun Sorensen",
+  "address": "413 Foxglove Terrace, Madison, WI 53762",
+  "street": "413 Foxglove Terrace",
+  "phone": "(555) 980-3033",
+  "email": "arjun.sorensen@example.com",
+  "other_people": [
+   "Mei Haddad",
+   "Dmitri McBride"
+  ],
+  "injuries": []
+ }
+}

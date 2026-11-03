@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2023-000025",
+ "scenario": "hh_storm_roof",
+ "product": "household",
+ "policy_number": "HH-2023-00088",
+ "loss_date": "2023-07-13",
+ "reported_at": "2023-07-17",
+ "fnol_text": "My name is Viktor Petrov and I live at 9 Alder Way, Riverton, WY 82591. You can reach me on (555) 818-4923 or viktor.petrov@example.com. During the storm on 13 July 2023 high winds ripped tiles off the roof and rain came into the loft and the back bedroom. Policy HH-2023-00088. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Petrov on (555) 818-4923 to acknowledge the claim. Viktor confirmed the loss date as 13 July 2023."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 9 Alder Way. Neighbour Priya Pereira was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0413: water line on the skirting boards"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:HH-PW §1.5",
+  "clause": "HH-PW §1.5",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "storm",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 500000,
+   "source": "HH-PW §1.5"
+  },
+  "assessed_loss": 19900,
+  "amount_paid": 18900
+ },
+ "pii": {
+  "claimant_name": "Viktor Petrov",
+  "address": "9 Alder Way, Riverton, WY 82591",
+  "street": "9 Alder Way",
+  "phone": "(555) 818-4923",
+  "email": "viktor.petrov@example.com",
+  "other_people": [
+   "Priya Pereira",
+   "Mei Sorensen"
+  ],
+  "injuries": []
+ }
+}

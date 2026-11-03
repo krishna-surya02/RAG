@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2026-000052",
+ "scenario": "mt_theft_forced",
+ "product": "motor",
+ "policy_number": "MT-2025-00054",
+ "loss_date": "2026-05-28",
+ "reported_at": "2026-06-06",
+ "fnol_text": "My name is Ethan McBride and I live at 390 Kestrel Place, Riverton, WY 82570. You can reach me on (555) 808-7145 or ethan.mcbride@example.com. My car was stolen from outside the house overnight on 28 May 2026. Glass from the driver's window was on the road. Policy MT-2025-00054. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms McBride on (555) 808-7145 to acknowledge the claim. Ethan confirmed the loss date as 28 May 2026."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Naomi Herrera gave a statement by phone."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2203: dashboard warning lights"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §2.2",
+  "clause": "MT-PW §2.2",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "theft",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §2.2"
+  },
+  "assessed_loss": 4900,
+  "amount_paid": 3900
+ },
+ "pii": {
+  "claimant_name": "Ethan McBride",
+  "address": "390 Kestrel Place, Riverton, WY 82570",
+  "street": "390 Kestrel Place",
+  "phone": "(555) 808-7145",
+  "email": "ethan.mcbride@example.com",
+  "other_people": [
+   "Naomi Herrera",
+   "Tariq Thorne"
+  ],
+  "injuries": []
+ }
+}

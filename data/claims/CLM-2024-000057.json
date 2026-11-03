@@ -1,0 +1,54 @@
+{
+ "claim_id": "CLM-2024-000057",
+ "scenario": "hh_river_23",
+ "product": "household",
+ "policy_number": "HH-2024-00077",
+ "loss_date": "2024-07-25",
+ "reported_at": "2024-07-25",
+ "fnol_text": "My name is Elena Pereira and I live at 737 Thornbury Avenue, Madison, WI 53751. You can reach me on (555) 752-1132 or elena.pereira@example.com. On 25 July 2024 the Calder River overtopped near our house after a week of storms. River water flooded the downstairs rooms and the garage. Policy HH-2024-00077. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Pereira on (555) 752-1132 to acknowledge the claim. Elena confirmed the loss date as 25 July 2024."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 737 Thornbury Avenue. Neighbour Yusuf Thorne was present and confirmed the timeline."
+  },
+  {
+   "n": 3,
+   "text": "Elena sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0417: damaged furniture stacked in the garage"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:HFL-23 §2.1",
+  "clause": "HFL-23 §2.1",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "flood_surface_water",
+   "deductible": 2500,
+   "sub_limit": 15000,
+   "policy_limit": 500000,
+   "source": "HFL-23 §2.2, §2.3; HSL-23 §1"
+  },
+  "assessed_loss": 51000,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Elena Pereira",
+  "address": "737 Thornbury Avenue, Madison, WI 53751",
+  "street": "737 Thornbury Avenue",
+  "phone": "(555) 752-1132",
+  "email": "elena.pereira@example.com",
+  "other_people": [
+   "Yusuf Thorne",
+   "Ines Whitlock"
+  ],
+  "injuries": []
+ }
+}

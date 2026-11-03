@@ -1,0 +1,45 @@
+{
+ "claim_id": "CLM-2024-000109",
+ "scenario": "not_in_force",
+ "product": "motor",
+ "policy_number": "MT-2023-00058",
+ "loss_date": "2024-10-25",
+ "reported_at": "2024-10-31",
+ "fnol_text": "My name is Jordan Haddad and I live at 875 Alder Drive, Fairview, PA 16421. You can reach me on (555) 893-3751 or jordan.haddad@example.com. My car was stolen from outside the house overnight on 25 October 2024. Glass from the driver's window was on the road. Policy MT-2023-00058. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Haddad on (555) 893-3751 to acknowledge the claim. Jordan confirmed the loss date as 25 October 2024."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Mei Delgado gave a statement by phone."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2201: front passenger side damage",
+  "IMG_2203: dashboard warning lights"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "NOT_IN_FORCE",
+  "clause": null,
+  "endorsement_set": null,
+  "limits": null,
+  "assessed_loss": 12150,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Jordan Haddad",
+  "address": "875 Alder Drive, Fairview, PA 16421",
+  "street": "875 Alder Drive",
+  "phone": "(555) 893-3751",
+  "email": "jordan.haddad@example.com",
+  "other_people": [
+   "Mei Delgado",
+   "Declan Kowalski"
+  ],
+  "injuries": []
+ }
+}

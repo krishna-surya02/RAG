@@ -1,0 +1,55 @@
+{
+ "claim_id": "CLM-2025-000108",
+ "scenario": "hh_surface_water_crossboundary",
+ "product": "household",
+ "policy_number": "HH-2024-00137",
+ "loss_date": "2025-08-11",
+ "reported_at": "2025-08-11",
+ "fnol_text": "My name is Ines Nakamura and I live at 416 Hawthorn Road, Riverton, WY 82560. You can reach me on (555) 630-9870 or ines.nakamura@example.com. After the torrential rain on the night of 11 August 2025, rainwater ran off the field behind us, across the back garden and in under the patio doors. About 5 cm of water covered the kitchen and family room floors. Policy HH-2024-00137. I'd like to claim for the damage to my home. Am I insured for this or not?",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Nakamura on (555) 630-9870 to acknowledge the claim. Ines confirmed the loss date as 11 August 2025."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 416 Hawthorn Road. Neighbour Ines Yilmaz was present and confirmed the timeline."
+  },
+  {
+   "n": 3,
+   "text": "Ines sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0413: water line on the skirting boards"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID_SUBLIMIT:HFL-23 §2.2",
+  "clause": "HFL-23 §2.2",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "flood_surface_water",
+   "deductible": 2500,
+   "sub_limit": 15000,
+   "policy_limit": 500000,
+   "source": "HFL-23 §2.2, §2.3; HSL-23 §1"
+  },
+  "assessed_loss": 33350,
+  "amount_paid": 15000
+ },
+ "pii": {
+  "claimant_name": "Ines Nakamura",
+  "address": "416 Hawthorn Road, Riverton, WY 82560",
+  "street": "416 Hawthorn Road",
+  "phone": "(555) 630-9870",
+  "email": "ines.nakamura@example.com",
+  "other_people": [
+   "Ines Yilmaz",
+   "Ravi Mbeki"
+  ],
+  "injuries": []
+ }
+}

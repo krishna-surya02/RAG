@@ -1,0 +1,44 @@
+{
+ "claim_id": "CLM-2024-000037",
+ "scenario": "not_in_force",
+ "product": "household",
+ "policy_number": "HH-2024-00003",
+ "loss_date": "2024-06-03",
+ "reported_at": "2024-06-09",
+ "fnol_text": "My name is Nikhil Achebe and I live at 941 Primrose Street, Dover, DE 19947. You can reach me on (555) 703-3666 or nikhil.achebe@example.com. Our house was broken into on 3 June 2024. The back door was forced and a laptop, jewellery and a television were taken. Policy HH-2024-00003. I'd like to claim for the damage to my home. I assume this is covered under my policy?",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Achebe on (555) 703-3666 to acknowledge the claim. Nikhil confirmed the loss date as 3 June 2024."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 941 Primrose Street. Neighbour Maya Santos was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0413: water line on the skirting boards"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "NOT_IN_FORCE",
+  "clause": null,
+  "endorsement_set": null,
+  "limits": null,
+  "assessed_loss": 16050,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Nikhil Achebe",
+  "address": "941 Primrose Street, Dover, DE 19947",
+  "street": "941 Primrose Street",
+  "phone": "(555) 703-3666",
+  "email": "nikhil.achebe@example.com",
+  "other_people": [
+   "Maya Santos",
+   "Nikhil Al-Sayed"
+  ],
+  "injuries": []
+ }
+}

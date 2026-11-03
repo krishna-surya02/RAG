@@ -1,0 +1,57 @@
+{
+ "claim_id": "CLM-2023-000039",
+ "scenario": "mt_personal_accident",
+ "product": "motor",
+ "policy_number": "MT-2023-00146",
+ "loss_date": "2023-10-03",
+ "reported_at": "2023-10-10",
+ "fnol_text": "My name is Priya O'Connell and I live at 141 Kestrel Avenue, Ashland, OR 97539. You can reach me on (555) 480-2550 or priya.oconnell@example.com. I was badly hurt when my car left the road on 3 October 2023. I suffered loss of the left hand below the wrist. Policy MT-2023-00146. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr O'Connell on (555) 480-2550 to acknowledge the claim. Priya confirmed the loss date as 3 October 2023."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Liam Osei gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Medical report from St. Brendan's Hospital confirms loss of the left hand below the wrist. Priya is still off work."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2203: dashboard warning lights",
+  "IMG_2201: front passenger side damage",
+  "IMG_2207: vehicle on the recovery truck"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §5.1",
+  "clause": "MT-PW §5.1",
+  "endorsement_set": "MEND-2023",
+  "limits": {
+   "coverage": "personal_accident",
+   "deductible": 0,
+   "sub_limit": 25000,
+   "policy_limit": 25000,
+   "source": "MT-PW §5.1; MPA-23 §1"
+  },
+  "assessed_loss": 25000,
+  "amount_paid": 25000
+ },
+ "pii": {
+  "claimant_name": "Priya O'Connell",
+  "address": "141 Kestrel Avenue, Ashland, OR 97539",
+  "street": "141 Kestrel Avenue",
+  "phone": "(555) 480-2550",
+  "email": "priya.oconnell@example.com",
+  "other_people": [
+   "Liam Osei",
+   "Priya Jovanovic"
+  ],
+  "injuries": [
+   "loss of the left hand below the wrist"
+  ]
+ }
+}

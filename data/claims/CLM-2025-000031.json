@@ -1,0 +1,54 @@
+{
+ "claim_id": "CLM-2025-000031",
+ "scenario": "hh_surface_water_23",
+ "product": "household",
+ "policy_number": "HH-2023-00121",
+ "loss_date": "2025-03-12",
+ "reported_at": "2025-03-16",
+ "fnol_text": "My name is Amara Kowalski and I live at 542 Alder Road, Milton, VT 05447. You can reach me on (555) 986-4125 or amara.kowalski@example.com. Heavy rain all afternoon on 12 March 2025. Water pooled on the lawn and then came into the lounge at floor level. Carpets and the sofa are soaked. Policy HH-2023-00121. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Kowalski on (555) 986-4125 to acknowledge the claim. Amara confirmed the loss date as 12 March 2025."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 542 Alder Road. Neighbour Noor Chukwu was present and confirmed the timeline."
+  },
+  {
+   "n": 3,
+   "text": "Amara sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0412: ground floor with standing water and wet carpets"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID_SUBLIMIT:HFL-23 §2.2",
+  "clause": "HFL-23 §2.2",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "flood_surface_water",
+   "deductible": 2500,
+   "sub_limit": 15000,
+   "policy_limit": 500000,
+   "source": "HFL-23 §2.2, §2.3; HSL-23 §1"
+  },
+  "assessed_loss": 31150,
+  "amount_paid": 15000
+ },
+ "pii": {
+  "claimant_name": "Amara Kowalski",
+  "address": "542 Alder Road, Milton, VT 05447",
+  "street": "542 Alder Road",
+  "phone": "(555) 986-4125",
+  "email": "amara.kowalski@example.com",
+  "other_people": [
+   "Noor Chukwu",
+   "Ingrid McBride"
+  ],
+  "injuries": []
+ }
+}

@@ -1,0 +1,57 @@
+{
+ "claim_id": "CLM-2026-000126",
+ "scenario": "mt_collision",
+ "product": "motor",
+ "policy_number": "MT-2025-00109",
+ "loss_date": "2026-10-09",
+ "reported_at": "2026-10-15",
+ "fnol_text": "My name is Dana Al-Sayed and I live at 929 Kestrel Court, Greenville, SC 29637. You can reach me on (555) 711-1779 or dana.alsayed@example.com. I was stopped at lights on 9 October 2026 when the car behind, driven by Imogen Raman, went into the back of mine. Rear bumper and boot are badly damaged. Policy MT-2025-00109. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Al-Sayed on (555) 711-1779 to acknowledge the claim. Dana confirmed the loss date as 9 October 2026."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Hannah Nakamura gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Third-party driver Imogen Raman reports lower back strain and attended County General. Dana reports a sprained wrist."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2203: dashboard warning lights",
+  "IMG_2201: front passenger side damage"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §3.1",
+  "clause": "MT-PW §3.1",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "own_damage",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §3.1"
+  },
+  "assessed_loss": 12450,
+  "amount_paid": 11450
+ },
+ "pii": {
+  "claimant_name": "Dana Al-Sayed",
+  "address": "929 Kestrel Court, Greenville, SC 29637",
+  "street": "929 Kestrel Court",
+  "phone": "(555) 711-1779",
+  "email": "dana.alsayed@example.com",
+  "other_people": [
+   "Hannah Nakamura",
+   "Imogen Raman"
+  ],
+  "injuries": [
+   "lower back strain",
+   "a sprained wrist"
+  ]
+ }
+}

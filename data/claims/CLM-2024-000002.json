@@ -1,0 +1,44 @@
+{
+ "claim_id": "CLM-2024-000002",
+ "scenario": "not_in_force",
+ "product": "motor",
+ "policy_number": "MT-2024-00052",
+ "loss_date": "2024-01-02",
+ "reported_at": "2024-01-07",
+ "fnol_text": "My name is Tariq Petrov and I live at 39 Thornbury Lane, Fairview, PA 16425. You can reach me on (555) 408-7678 or tariq.petrov@example.com. My car was stolen from outside the house overnight on 2 January 2024. Glass from the driver's window was on the road. Policy MT-2024-00052. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Petrov on (555) 408-7678 to acknowledge the claim. Tariq confirmed the loss date as 2 January 2024."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Hannah Abernathy gave a statement by phone."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2203: dashboard warning lights",
+  "IMG_2207: vehicle on the recovery truck"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "NOT_IN_FORCE",
+  "clause": null,
+  "endorsement_set": null,
+  "limits": null,
+  "assessed_loss": 17950,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Tariq Petrov",
+  "address": "39 Thornbury Lane, Fairview, PA 16425",
+  "street": "39 Thornbury Lane",
+  "phone": "(555) 408-7678",
+  "email": "tariq.petrov@example.com",
+  "other_people": [
+   "Hannah Abernathy",
+   "Ravi Iyer"
+  ],
+  "injuries": []
+ }
+}

@@ -1,0 +1,45 @@
+{
+ "claim_id": "CLM-2023-000045",
+ "scenario": "not_in_force",
+ "product": "household",
+ "policy_number": "HH-2024-00008",
+ "loss_date": "2023-10-24",
+ "reported_at": "2023-11-02",
+ "fnol_text": "My name is Grace Moreau and I live at 578 Alder Terrace, Springfield, OH 45554. You can reach me on (555) 913-6548 or grace.moreau@example.com. The washing machine hose split on 24 October 2023 and flooded the utility room and hallway before we could turn off the water. Policy HH-2024-00008. I'd like to claim for the damage to my home. Can you confirm I'm covered for this?",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Moreau on (555) 913-6548 to acknowledge the claim. Grace confirmed the loss date as 24 October 2023."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 578 Alder Terrace. Neighbour Samuel Delgado was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0412: ground floor with standing water and wet carpets"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "NOT_IN_FORCE",
+  "clause": null,
+  "endorsement_set": null,
+  "limits": null,
+  "assessed_loss": 9650,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Grace Moreau",
+  "address": "578 Alder Terrace, Springfield, OH 45554",
+  "street": "578 Alder Terrace",
+  "phone": "(555) 913-6548",
+  "email": "grace.moreau@example.com",
+  "other_people": [
+   "Samuel Delgado",
+   "Owen Pereira"
+  ],
+  "injuries": []
+ }
+}

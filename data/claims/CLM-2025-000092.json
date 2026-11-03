@@ -1,0 +1,54 @@
+{
+ "claim_id": "CLM-2025-000092",
+ "scenario": "mt_flood_23",
+ "product": "motor",
+ "policy_number": "MT-2025-00109",
+ "loss_date": "2025-07-09",
+ "reported_at": "2025-07-17",
+ "fnol_text": "My name is Dana Al-Sayed and I live at 929 Kestrel Court, Greenville, SC 29637. You can reach me on (555) 711-1779 or dana.alsayed@example.com. On 9 July 2025 flash flooding came down the street while my car was parked at home. Water got into the cabin and the engine won't start. Policy MT-2025-00109. I'd like to claim for the damage to my car. I assume this is covered under my policy?",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Al-Sayed on (555) 711-1779 to acknowledge the claim. Dana confirmed the loss date as 9 July 2025."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Ingrid Kaminski gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Dana sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2201: front passenger side damage",
+  "IMG_2207: vehicle on the recovery truck"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MFL-23 §2.1",
+  "clause": "MFL-23 §2.1",
+  "endorsement_set": "MEND-2023",
+  "limits": {
+   "coverage": "flood",
+   "deductible": 750,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MFL-23 §2.1"
+  },
+  "assessed_loss": 6900,
+  "amount_paid": 6150
+ },
+ "pii": {
+  "claimant_name": "Dana Al-Sayed",
+  "address": "929 Kestrel Court, Greenville, SC 29637",
+  "street": "929 Kestrel Court",
+  "phone": "(555) 711-1779",
+  "email": "dana.alsayed@example.com",
+  "other_people": [
+   "Ingrid Kaminski",
+   "Ingrid Laurent"
+  ],
+  "injuries": []
+ }
+}

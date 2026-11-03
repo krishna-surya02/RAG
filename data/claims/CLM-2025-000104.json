@@ -1,0 +1,55 @@
+{
+ "claim_id": "CLM-2025-000104",
+ "scenario": "hh_surface_water_25",
+ "product": "household",
+ "policy_number": "HH-2024-00163",
+ "loss_date": "2025-08-02",
+ "reported_at": "2025-08-11",
+ "fnol_text": "My name is Ravi Varga and I live at 265 Briar Terrace, Fairview, PA 16423. You can reach me on (555) 472-2274 or ravi.varga@example.com. Heavy rain all afternoon on 2 August 2025. Water pooled on the lawn and then came into the lounge at floor level. Carpets and the sofa are soaked. Policy HH-2024-00163. I'd like to claim for the damage to my home. Please just tell me this is covered.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Varga on (555) 472-2274 to acknowledge the claim. Ravi confirmed the loss date as 2 August 2025."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 265 Briar Terrace. Neighbour Dana Gallagher was present and confirmed the timeline."
+  },
+  {
+   "n": 3,
+   "text": "Ravi sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0412: ground floor with standing water and wet carpets"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:HFL-25 §2.1",
+  "clause": "HFL-25 §2.1",
+  "endorsement_set": "HEND-2025",
+  "limits": {
+   "coverage": "flood_plus",
+   "deductible": 5000,
+   "sub_limit": 25000,
+   "policy_limit": 600000,
+   "source": "HFL-25 §2.2, §2.3; HSL-25 §1"
+  },
+  "assessed_loss": 30750,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Ravi Varga",
+  "address": "265 Briar Terrace, Fairview, PA 16423",
+  "street": "265 Briar Terrace",
+  "phone": "(555) 472-2274",
+  "email": "ravi.varga@example.com",
+  "other_people": [
+   "Dana Gallagher",
+   "Zara Nakamura"
+  ],
+  "injuries": []
+ }
+}

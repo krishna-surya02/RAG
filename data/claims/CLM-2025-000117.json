@@ -1,0 +1,56 @@
+{
+ "claim_id": "CLM-2025-000117",
+ "scenario": "mt_personal_accident",
+ "product": "motor",
+ "policy_number": "MT-2023-00031",
+ "loss_date": "2025-09-02",
+ "reported_at": "2025-09-02",
+ "fnol_text": "My name is Olusegun Kowalski and I live at 116 Hawthorn Terrace, Fairview, PA 16469. You can reach me on (555) 598-7283 or olusegun.kowalski@example.com. I was badly hurt when my car left the road on 2 September 2025. I suffered permanent loss of sight in the right eye. Policy MT-2023-00031. I'd like to claim for the damage to my car. Am I insured for this or not?",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Kowalski on (555) 598-7283 to acknowledge the claim. Olusegun confirmed the loss date as 2 September 2025."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Naomi Ferreira gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Medical report from Riverside Medical Center confirms permanent loss of sight in the right eye. Olusegun is still off work."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2201: front passenger side damage"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §5.1",
+  "clause": "MT-PW §5.1",
+  "endorsement_set": "MEND-2023",
+  "limits": {
+   "coverage": "personal_accident",
+   "deductible": 0,
+   "sub_limit": 25000,
+   "policy_limit": 25000,
+   "source": "MT-PW §5.1; MPA-23 §1"
+  },
+  "assessed_loss": 25000,
+  "amount_paid": 25000
+ },
+ "pii": {
+  "claimant_name": "Olusegun Kowalski",
+  "address": "116 Hawthorn Terrace, Fairview, PA 16469",
+  "street": "116 Hawthorn Terrace",
+  "phone": "(555) 598-7283",
+  "email": "olusegun.kowalski@example.com",
+  "other_people": [
+   "Naomi Ferreira",
+   "Sofia Sorensen"
+  ],
+  "injuries": [
+   "permanent loss of sight in the right eye"
+  ]
+ }
+}

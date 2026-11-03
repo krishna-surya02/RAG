@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2026-000123",
+ "scenario": "hh_subsidence",
+ "product": "household",
+ "policy_number": "HH-2025-00102",
+ "loss_date": "2026-10-07",
+ "reported_at": "2026-10-08",
+ "fnol_text": "My name is Bianca Yilmaz and I live at 570 Primrose Road, Dover, DE 19970. You can reach me on (555) 877-5428 or bianca.yilmaz@example.com. Large diagonal cracks appeared above the doors and windows at the back of the house around 7 October 2026. A surveyor thinks the clay soil has shrunk. Policy HH-2025-00102. I'd like to claim for the damage to my home. Am I insured for this or not?",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Yilmaz on (555) 877-5428 to acknowledge the claim. Bianca confirmed the loss date as 7 October 2026."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 570 Primrose Road. Neighbour Naomi Al-Sayed was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0417: damaged furniture stacked in the garage"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:HH-PW §1.11",
+  "clause": "HH-PW §1.11",
+  "endorsement_set": "HEND-2025",
+  "limits": {
+   "coverage": "subsidence",
+   "deductible": 2500,
+   "sub_limit": null,
+   "policy_limit": 600000,
+   "source": "HH-PW §1.11"
+  },
+  "assessed_loss": 78200,
+  "amount_paid": 75700
+ },
+ "pii": {
+  "claimant_name": "Bianca Yilmaz",
+  "address": "570 Primrose Road, Dover, DE 19970",
+  "street": "570 Primrose Road",
+  "phone": "(555) 877-5428",
+  "email": "bianca.yilmaz@example.com",
+  "other_people": [
+   "Naomi Al-Sayed",
+   "Marcus Khan"
+  ],
+  "injuries": []
+ }
+}

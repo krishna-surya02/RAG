@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2026-000048",
+ "scenario": "mt_windscreen",
+ "product": "motor",
+ "policy_number": "MT-2023-00003",
+ "loss_date": "2026-05-19",
+ "reported_at": "2026-05-27",
+ "fnol_text": "My name is Declan Nguyen-Tran and I live at 746 Marigold Way, Springfield, OH 45519. You can reach me on (555) 560-8995 or declan.nguyentran@example.com. A stone thrown up by a lorry cracked my windscreen right across on 19 May 2026. Policy MT-2023-00003. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Nguyen-Tran on (555) 560-8995 to acknowledge the claim. Declan confirmed the loss date as 19 May 2026."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Callum Delgado gave a statement by phone."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2201: front passenger side damage"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §4.1",
+  "clause": "MT-PW §4.1",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "windscreen",
+   "deductible": 150,
+   "sub_limit": 1500,
+   "policy_limit": 60000,
+   "source": "MT-PW §4.1; MWS-25 §1"
+  },
+  "assessed_loss": 1200,
+  "amount_paid": 1050
+ },
+ "pii": {
+  "claimant_name": "Declan Nguyen-Tran",
+  "address": "746 Marigold Way, Springfield, OH 45519",
+  "street": "746 Marigold Way",
+  "phone": "(555) 560-8995",
+  "email": "declan.nguyentran@example.com",
+  "other_people": [
+   "Callum Delgado",
+   "Zara Pereira"
+  ],
+  "injuries": []
+ }
+}

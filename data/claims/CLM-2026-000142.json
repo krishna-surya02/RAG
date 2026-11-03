@@ -1,0 +1,57 @@
+{
+ "claim_id": "CLM-2026-000142",
+ "scenario": "mt_collision",
+ "product": "motor",
+ "policy_number": "MT-2024-00120",
+ "loss_date": "2026-10-23",
+ "reported_at": "2026-10-26",
+ "fnol_text": "My name is Maya Quinlan and I live at 389 Cedar Close, Riverton, WY 82574. You can reach me on (555) 919-8072 or maya.quinlan@example.com. I was stopped at lights on 23 October 2026 when the car behind, driven by Mei Mbeki, went into the back of mine. Rear bumper and boot are badly damaged. Policy MT-2024-00120. I'd like to claim for the damage to my car. Can you confirm I'm covered for this?",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Quinlan on (555) 919-8072 to acknowledge the claim. Maya confirmed the loss date as 23 October 2026."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Olusegun Osei gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Third-party driver Mei Mbeki reports minor burns to the hand and attended St. Brendan's Hospital. Maya reports bruised ribs."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2201: front passenger side damage"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §3.1",
+  "clause": "MT-PW §3.1",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "own_damage",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §3.1"
+  },
+  "assessed_loss": 18100,
+  "amount_paid": 17100
+ },
+ "pii": {
+  "claimant_name": "Maya Quinlan",
+  "address": "389 Cedar Close, Riverton, WY 82574",
+  "street": "389 Cedar Close",
+  "phone": "(555) 919-8072",
+  "email": "maya.quinlan@example.com",
+  "other_people": [
+   "Olusegun Osei",
+   "Mei Mbeki"
+  ],
+  "injuries": [
+   "minor burns to the hand",
+   "bruised ribs"
+  ]
+ }
+}

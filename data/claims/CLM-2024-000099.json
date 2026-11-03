@@ -1,0 +1,57 @@
+{
+ "claim_id": "CLM-2024-000099",
+ "scenario": "mt_collision_tpft",
+ "product": "motor",
+ "policy_number": "MT-2023-00080",
+ "loss_date": "2024-09-26",
+ "reported_at": "2024-10-02",
+ "fnol_text": "My name is Esther Haddad and I live at 307 Cedar Terrace, Clinton, NC 28346. You can reach me on (555) 714-2353 or esther.haddad@example.com. On 26 September 2024 another car pulled out of a side road and hit my front passenger side. The other driver, Chloe Mensah, admitted they didn't see me. Policy MT-2023-00080. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Haddad on (555) 714-2353 to acknowledge the claim. Esther confirmed the loss date as 26 September 2024."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Fatima Castillo gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Third-party driver Chloe Mensah reports a mild concussion and attended St. Brendan's Hospital. Esther reports a mild concussion."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2203: dashboard warning lights",
+  "IMG_2201: front passenger side damage"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:MT-PW §1.2",
+  "clause": "MT-PW §1.2",
+  "endorsement_set": "MEND-2023",
+  "limits": {
+   "coverage": "own_damage",
+   "deductible": 750,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §3.1"
+  },
+  "assessed_loss": 18450,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Esther Haddad",
+  "address": "307 Cedar Terrace, Clinton, NC 28346",
+  "street": "307 Cedar Terrace",
+  "phone": "(555) 714-2353",
+  "email": "esther.haddad@example.com",
+  "other_people": [
+   "Fatima Castillo",
+   "Chloe Mensah"
+  ],
+  "injuries": [
+   "a mild concussion"
+  ]
+ }
+}

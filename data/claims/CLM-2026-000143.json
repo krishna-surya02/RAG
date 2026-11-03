@@ -1,0 +1,57 @@
+{
+ "claim_id": "CLM-2026-000143",
+ "scenario": "mt_collision_tpft",
+ "product": "motor",
+ "policy_number": "MT-2024-00125",
+ "loss_date": "2026-10-24",
+ "reported_at": "2026-10-31",
+ "fnol_text": "My name is Amara Nakamura and I live at 430 Foxglove Court, Madison, WI 53744. You can reach me on (555) 231-1905 or amara.nakamura@example.com. I was stopped at lights on 24 October 2026 when the car behind, driven by Gabriel O'Connell, went into the back of mine. Rear bumper and boot are badly damaged. Policy MT-2024-00125. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Nakamura on (555) 231-1905 to acknowledge the claim. Amara confirmed the loss date as 24 October 2026."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Yusuf Nakamura gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Third-party driver Gabriel O'Connell reports a sprained wrist and attended Riverside Medical Center. Amara reports a mild concussion."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2201: front passenger side damage",
+  "IMG_2203: dashboard warning lights"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:MT-PW §1.2",
+  "clause": "MT-PW §1.2",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "own_damage",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §3.1"
+  },
+  "assessed_loss": 6800,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Amara Nakamura",
+  "address": "430 Foxglove Court, Madison, WI 53744",
+  "street": "430 Foxglove Court",
+  "phone": "(555) 231-1905",
+  "email": "amara.nakamura@example.com",
+  "other_people": [
+   "Yusuf Nakamura",
+   "Gabriel O'Connell"
+  ],
+  "injuries": [
+   "a sprained wrist",
+   "a mild concussion"
+  ]
+ }
+}

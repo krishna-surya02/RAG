@@ -1,0 +1,58 @@
+{
+ "claim_id": "CLM-2026-000042",
+ "scenario": "mt_collision",
+ "product": "motor",
+ "policy_number": "MT-2023-00076",
+ "loss_date": "2026-05-05",
+ "reported_at": "2026-05-10",
+ "fnol_text": "My name is Viktor Kaminski and I live at 980 Willow Lane, Clinton, NC 28338. You can reach me on (555) 699-7070 or viktor.kaminski@example.com. I was stopped at lights on 5 May 2026 when the car behind, driven by Kofi Santos, went into the back of mine. Rear bumper and boot are badly damaged. Policy MT-2023-00076. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Kaminski on (555) 699-7070 to acknowledge the claim. Viktor confirmed the loss date as 5 May 2026."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Bianca Fitzgerald gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Third-party driver Kofi Santos reports lacerations to the forearm and attended County General. Viktor reports whiplash."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2201: front passenger side damage",
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2203: dashboard warning lights"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §3.1",
+  "clause": "MT-PW §3.1",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "own_damage",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §3.1"
+  },
+  "assessed_loss": 9000,
+  "amount_paid": 8000
+ },
+ "pii": {
+  "claimant_name": "Viktor Kaminski",
+  "address": "980 Willow Lane, Clinton, NC 28338",
+  "street": "980 Willow Lane",
+  "phone": "(555) 699-7070",
+  "email": "viktor.kaminski@example.com",
+  "other_people": [
+   "Bianca Fitzgerald",
+   "Kofi Santos"
+  ],
+  "injuries": [
+   "lacerations to the forearm",
+   "whiplash"
+  ]
+ }
+}

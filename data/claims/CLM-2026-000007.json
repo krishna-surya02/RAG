@@ -1,0 +1,56 @@
+{
+ "claim_id": "CLM-2026-000007",
+ "scenario": "mt_personal_accident",
+ "product": "motor",
+ "policy_number": "MT-2023-00062",
+ "loss_date": "2026-01-14",
+ "reported_at": "2026-01-18",
+ "fnol_text": "My name is Elena Abernathy and I live at 54 Ashford Place, Fairview, PA 16474. You can reach me on (555) 730-5376 or elena.abernathy@example.com. I was badly hurt when my car left the road on 14 January 2026. I suffered permanent loss of sight in the right eye. Policy MT-2023-00062. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Abernathy on (555) 730-5376 to acknowledge the claim. Elena confirmed the loss date as 14 January 2026."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Rafael Lindqvist gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Medical report from Mercy General confirms permanent loss of sight in the right eye. Elena is still off work."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2203: dashboard warning lights",
+  "IMG_2201: front passenger side damage"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §5.1",
+  "clause": "MT-PW §5.1",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "personal_accident",
+   "deductible": 0,
+   "sub_limit": 25000,
+   "policy_limit": 25000,
+   "source": "MT-PW §5.1; MPA-25 §1"
+  },
+  "assessed_loss": 25000,
+  "amount_paid": 25000
+ },
+ "pii": {
+  "claimant_name": "Elena Abernathy",
+  "address": "54 Ashford Place, Fairview, PA 16474",
+  "street": "54 Ashford Place",
+  "phone": "(555) 730-5376",
+  "email": "elena.abernathy@example.com",
+  "other_people": [
+   "Rafael Lindqvist",
+   "Tomas Lindqvist"
+  ],
+  "injuries": [
+   "permanent loss of sight in the right eye"
+  ]
+ }
+}

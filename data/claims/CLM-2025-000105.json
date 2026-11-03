@@ -1,0 +1,57 @@
+{
+ "claim_id": "CLM-2025-000105",
+ "scenario": "mt_collision",
+ "product": "motor",
+ "policy_number": "MT-2024-00127",
+ "loss_date": "2025-08-04",
+ "reported_at": "2025-08-07",
+ "fnol_text": "My name is Sofia Achebe and I live at 571 Larkspur Street, Riverton, WY 82570. You can reach me on (555) 221-1789 or sofia.achebe@example.com. I was stopped at lights on 4 August 2025 when the car behind, driven by Lucia Osei, went into the back of mine. Rear bumper and boot are badly damaged. Policy MT-2024-00127. I'd like to claim for the damage to my car. Please just tell me this is covered.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Achebe on (555) 221-1789 to acknowledge the claim. Sofia confirmed the loss date as 4 August 2025."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Jordan Iyer gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Third-party driver Lucia Osei reports lower back strain and attended St. Brendan's Hospital. Sofia reports a sprained ankle."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2203: dashboard warning lights",
+  "IMG_2207: vehicle on the recovery truck"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §3.1",
+  "clause": "MT-PW §3.1",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "own_damage",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §3.1"
+  },
+  "assessed_loss": 3700,
+  "amount_paid": 2700
+ },
+ "pii": {
+  "claimant_name": "Sofia Achebe",
+  "address": "571 Larkspur Street, Riverton, WY 82570",
+  "street": "571 Larkspur Street",
+  "phone": "(555) 221-1789",
+  "email": "sofia.achebe@example.com",
+  "other_people": [
+   "Jordan Iyer",
+   "Lucia Osei"
+  ],
+  "injuries": [
+   "lower back strain",
+   "a sprained ankle"
+  ]
+ }
+}

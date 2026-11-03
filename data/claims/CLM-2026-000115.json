@@ -1,0 +1,55 @@
+{
+ "claim_id": "CLM-2026-000115",
+ "scenario": "hh_surface_water_25_floodplus",
+ "product": "household",
+ "policy_number": "HH-2025-00144",
+ "loss_date": "2026-09-24",
+ "reported_at": "2026-09-27",
+ "fnol_text": "My name is Samuel Oyelaran and I live at 410 Rowan Way, Salem, MA 01971. You can reach me on (555) 908-6492 or samuel.oyelaran@example.com. After the torrential rain on the night of 24 September 2026, rainwater ran off the field behind us, across the back garden and in under the patio doors. About 5 cm of water covered the kitchen and family room floors. Policy HH-2025-00144. I'd like to claim for the damage to my home. I assume this is covered under my policy?",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Oyelaran on (555) 908-6492 to acknowledge the claim. Samuel confirmed the loss date as 24 September 2026."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 410 Rowan Way. Neighbour Noor McBride was present and confirmed the timeline."
+  },
+  {
+   "n": 3,
+   "text": "Samuel sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0417: damaged furniture stacked in the garage"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:HFL-25 §2.2",
+  "clause": "HFL-25 §2.2",
+  "endorsement_set": "HEND-2025",
+  "limits": {
+   "coverage": "flood_plus",
+   "deductible": 5000,
+   "sub_limit": 25000,
+   "policy_limit": 600000,
+   "source": "HFL-25 §2.2, §2.3; HSL-25 §1"
+  },
+  "assessed_loss": 15100,
+  "amount_paid": 10100
+ },
+ "pii": {
+  "claimant_name": "Samuel Oyelaran",
+  "address": "410 Rowan Way, Salem, MA 01971",
+  "street": "410 Rowan Way",
+  "phone": "(555) 908-6492",
+  "email": "samuel.oyelaran@example.com",
+  "other_people": [
+   "Noor McBride",
+   "Mei Zielinski"
+  ],
+  "injuries": []
+ }
+}

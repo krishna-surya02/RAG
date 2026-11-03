@@ -1,0 +1,57 @@
+{
+ "claim_id": "CLM-2025-000071",
+ "scenario": "mt_personal_accident",
+ "product": "motor",
+ "policy_number": "MT-2025-00065",
+ "loss_date": "2025-05-28",
+ "reported_at": "2025-06-02",
+ "fnol_text": "My name is Ines Abernathy and I live at 898 Maple Close, Fairview, PA 16497. You can reach me on (555) 211-6402 or ines.abernathy@example.com. I was badly hurt when my car left the road on 28 May 2025. I suffered loss of the left hand below the wrist. Policy MT-2025-00065. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Abernathy on (555) 211-6402 to acknowledge the claim. Ines confirmed the loss date as 28 May 2025."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Rosa Whitfield gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Medical report from Riverside Medical Center confirms loss of the left hand below the wrist. Ines is still off work."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2203: dashboard warning lights",
+  "IMG_2201: front passenger side damage"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §5.1",
+  "clause": "MT-PW §5.1",
+  "endorsement_set": "MEND-2023",
+  "limits": {
+   "coverage": "personal_accident",
+   "deductible": 0,
+   "sub_limit": 25000,
+   "policy_limit": 25000,
+   "source": "MT-PW §5.1; MPA-23 §1"
+  },
+  "assessed_loss": 25000,
+  "amount_paid": 25000
+ },
+ "pii": {
+  "claimant_name": "Ines Abernathy",
+  "address": "898 Maple Close, Fairview, PA 16497",
+  "street": "898 Maple Close",
+  "phone": "(555) 211-6402",
+  "email": "ines.abernathy@example.com",
+  "other_people": [
+   "Rosa Whitfield",
+   "Grace Laurent"
+  ],
+  "injuries": [
+   "loss of the left hand below the wrist"
+  ]
+ }
+}

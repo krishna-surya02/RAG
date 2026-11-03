@@ -1,0 +1,55 @@
+{
+ "claim_id": "CLM-2026-000072",
+ "scenario": "hh_surface_water_25",
+ "product": "household",
+ "policy_number": "HH-2025-00051",
+ "loss_date": "2026-07-24",
+ "reported_at": "2026-07-28",
+ "fnol_text": "My name is Sofia Raman and I live at 672 Foxglove Way, Dover, DE 19941. You can reach me on (555) 344-7064 or sofia.raman@example.com. After the torrential rain on the night of 24 July 2026, rainwater ran off the field behind us, across the back garden and in under the patio doors. About 5 cm of water covered the kitchen and family room floors. Policy HH-2025-00051. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Raman on (555) 344-7064 to acknowledge the claim. Sofia confirmed the loss date as 24 July 2026."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 672 Foxglove Way. Neighbour Olusegun Delgado was present and confirmed the timeline."
+  },
+  {
+   "n": 3,
+   "text": "Sofia sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0417: damaged furniture stacked in the garage"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:HFL-25 §2.1",
+  "clause": "HFL-25 §2.1",
+  "endorsement_set": "HEND-2025",
+  "limits": {
+   "coverage": "flood_plus",
+   "deductible": 5000,
+   "sub_limit": 25000,
+   "policy_limit": 600000,
+   "source": "HFL-25 §2.2, §2.3; HSL-25 §1"
+  },
+  "assessed_loss": 32000,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Sofia Raman",
+  "address": "672 Foxglove Way, Dover, DE 19941",
+  "street": "672 Foxglove Way",
+  "phone": "(555) 344-7064",
+  "email": "sofia.raman@example.com",
+  "other_people": [
+   "Olusegun Delgado",
+   "Arjun Abernathy"
+  ],
+  "injuries": []
+ }
+}

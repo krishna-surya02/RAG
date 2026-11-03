@@ -1,0 +1,55 @@
+{
+ "claim_id": "CLM-2025-000094",
+ "scenario": "hh_surface_water_25",
+ "product": "household",
+ "policy_number": "HH-2025-00161",
+ "loss_date": "2025-07-10",
+ "reported_at": "2025-07-17",
+ "fnol_text": "My name is Leah Chukwu and I live at 499 Larkspur Court, Dover, DE 19960. You can reach me on (555) 589-1942 or leah.chukwu@example.com. We had a cloudburst on 10 July 2025. The drains in the street could not cope and surface water from the road came up the drive and into the ground floor through the front door. Policy HH-2025-00161. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Chukwu on (555) 589-1942 to acknowledge the claim. Leah confirmed the loss date as 10 July 2025."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 499 Larkspur Court. Neighbour Maya Pereira was present and confirmed the timeline."
+  },
+  {
+   "n": 3,
+   "text": "Leah sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0412: ground floor with standing water and wet carpets"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:HFL-25 §2.1",
+  "clause": "HFL-25 §2.1",
+  "endorsement_set": "HEND-2025",
+  "limits": {
+   "coverage": "flood_plus",
+   "deductible": 5000,
+   "sub_limit": 25000,
+   "policy_limit": 600000,
+   "source": "HFL-25 §2.2, §2.3; HSL-25 §1"
+  },
+  "assessed_loss": 30750,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Leah Chukwu",
+  "address": "499 Larkspur Court, Dover, DE 19960",
+  "street": "499 Larkspur Court",
+  "phone": "(555) 589-1942",
+  "email": "leah.chukwu@example.com",
+  "other_people": [
+   "Maya Pereira",
+   "Ines Haddad"
+  ],
+  "injuries": []
+ }
+}

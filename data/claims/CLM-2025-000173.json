@@ -1,0 +1,57 @@
+{
+ "claim_id": "CLM-2025-000173",
+ "scenario": "mt_collision",
+ "product": "motor",
+ "policy_number": "MT-2023-00114",
+ "loss_date": "2025-12-26",
+ "reported_at": "2025-12-28",
+ "fnol_text": "My name is Kofi Haddad and I live at 833 Thornbury Lane, Greenville, SC 29642. You can reach me on (555) 913-3676 or kofi.haddad@example.com. I was stopped at lights on 26 December 2025 when the car behind, driven by Imogen Whitfield, went into the back of mine. Rear bumper and boot are badly damaged. Policy MT-2023-00114. I'd like to claim for the damage to my car. Can you confirm I'm covered for this?",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Haddad on (555) 913-3676 to acknowledge the claim. Kofi confirmed the loss date as 26 December 2025."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Dmitri Oduya gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Third-party driver Imogen Whitfield reports minor burns to the hand and attended County General. Kofi reports a sprained wrist."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2201: front passenger side damage",
+  "IMG_2207: vehicle on the recovery truck"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §3.1",
+  "clause": "MT-PW §3.1",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "own_damage",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §3.1"
+  },
+  "assessed_loss": 15250,
+  "amount_paid": 14250
+ },
+ "pii": {
+  "claimant_name": "Kofi Haddad",
+  "address": "833 Thornbury Lane, Greenville, SC 29642",
+  "street": "833 Thornbury Lane",
+  "phone": "(555) 913-3676",
+  "email": "kofi.haddad@example.com",
+  "other_people": [
+   "Dmitri Oduya",
+   "Imogen Whitfield"
+  ],
+  "injuries": [
+   "minor burns to the hand",
+   "a sprained wrist"
+  ]
+ }
+}

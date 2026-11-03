@@ -1,0 +1,56 @@
+{
+ "claim_id": "CLM-2024-000105",
+ "scenario": "mt_collision",
+ "product": "motor",
+ "policy_number": "MT-2023-00026",
+ "loss_date": "2024-10-07",
+ "reported_at": "2024-10-09",
+ "fnol_text": "My name is Owen Quinlan and I live at 775 Rowan Way, Clinton, NC 28325. You can reach me on (555) 503-3652 or owen.quinlan@example.com. On 7 October 2024 another car pulled out of a side road and hit my front passenger side. The other driver, Hannah Gallagher, admitted they didn't see me. Policy MT-2023-00026. I'd like to claim for the damage to my car. Please just tell me this is covered.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Quinlan on (555) 503-3652 to acknowledge the claim. Owen confirmed the loss date as 7 October 2024."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Ethan Rasmussen gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Third-party driver Hannah Gallagher reports minor burns to the hand and attended St. Brendan's Hospital. Owen reports minor burns to the hand."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2201: front passenger side damage"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §3.1",
+  "clause": "MT-PW §3.1",
+  "endorsement_set": "MEND-2023",
+  "limits": {
+   "coverage": "own_damage",
+   "deductible": 750,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §3.1"
+  },
+  "assessed_loss": 9750,
+  "amount_paid": 9000
+ },
+ "pii": {
+  "claimant_name": "Owen Quinlan",
+  "address": "775 Rowan Way, Clinton, NC 28325",
+  "street": "775 Rowan Way",
+  "phone": "(555) 503-3652",
+  "email": "owen.quinlan@example.com",
+  "other_people": [
+   "Ethan Rasmussen",
+   "Hannah Gallagher"
+  ],
+  "injuries": [
+   "minor burns to the hand"
+  ]
+ }
+}

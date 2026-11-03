@@ -1,0 +1,51 @@
+{
+ "claim_id": "CLM-2026-000013",
+ "scenario": "mt_theft_forced",
+ "product": "motor",
+ "policy_number": "MT-2025-00135",
+ "loss_date": "2026-02-06",
+ "reported_at": "2026-02-06",
+ "fnol_text": "My name is Marcus Mbeki and I live at 511 Juniper Lane, Clinton, NC 28344. You can reach me on (555) 807-9940 or marcus.mbeki@example.com. My car was stolen from outside the house overnight on 6 February 2026. Glass from the driver's window was on the road. Policy MT-2025-00135. I'd like to claim for the damage to my car. I assume this is covered under my policy?",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Mbeki on (555) 807-9940 to acknowledge the claim. Marcus confirmed the loss date as 6 February 2026."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Lucia Kaminski gave a statement by phone."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2203: dashboard warning lights",
+  "IMG_2201: front passenger side damage"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §2.2",
+  "clause": "MT-PW §2.2",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "theft",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §2.2"
+  },
+  "assessed_loss": 5850,
+  "amount_paid": 4850
+ },
+ "pii": {
+  "claimant_name": "Marcus Mbeki",
+  "address": "511 Juniper Lane, Clinton, NC 28344",
+  "street": "511 Juniper Lane",
+  "phone": "(555) 807-9940",
+  "email": "marcus.mbeki@example.com",
+  "other_people": [
+   "Lucia Kaminski",
+   "Yusuf Quinlan"
+  ],
+  "injuries": []
+ }
+}

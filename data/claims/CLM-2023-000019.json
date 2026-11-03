@@ -1,0 +1,51 @@
+{
+ "claim_id": "CLM-2023-000019",
+ "scenario": "not_in_force",
+ "product": "motor",
+ "policy_number": "MT-2025-00054",
+ "loss_date": "2023-06-17",
+ "reported_at": "2023-06-23",
+ "fnol_text": "My name is Ethan McBride and I live at 390 Kestrel Place, Riverton, WY 82570. You can reach me on (555) 808-7145 or ethan.mcbride@example.com. On 17 June 2023 another car pulled out of a side road and hit my front passenger side. The other driver, Nikhil Varga, admitted they didn't see me. Policy MT-2025-00054. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs McBride on (555) 808-7145 to acknowledge the claim. Ethan confirmed the loss date as 17 June 2023."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Grace Varga gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Third-party driver Nikhil Varga reports whiplash and attended Mercy General. Ethan reports lower back strain."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2201: front passenger side damage",
+  "IMG_2203: dashboard warning lights"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "NOT_IN_FORCE",
+  "clause": null,
+  "endorsement_set": null,
+  "limits": null,
+  "assessed_loss": 2200,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Ethan McBride",
+  "address": "390 Kestrel Place, Riverton, WY 82570",
+  "street": "390 Kestrel Place",
+  "phone": "(555) 808-7145",
+  "email": "ethan.mcbride@example.com",
+  "other_people": [
+   "Grace Varga",
+   "Nikhil Varga"
+  ],
+  "injuries": [
+   "whiplash",
+   "lower back strain"
+  ]
+ }
+}

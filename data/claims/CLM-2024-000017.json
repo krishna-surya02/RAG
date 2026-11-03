@@ -1,0 +1,56 @@
+{
+ "claim_id": "CLM-2024-000017",
+ "scenario": "mt_personal_accident",
+ "product": "motor",
+ "policy_number": "MT-2023-00041",
+ "loss_date": "2024-03-02",
+ "reported_at": "2024-03-10",
+ "fnol_text": "My name is Arjun Oyelaran and I live at 639 Juniper Place, Riverton, WY 82528. You can reach me on (555) 259-2632 or arjun.oyelaran@example.com. I was badly hurt when my car left the road on 2 March 2024. I suffered loss of the left hand below the wrist. Policy MT-2023-00041. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Oyelaran on (555) 259-2632 to acknowledge the claim. Arjun confirmed the loss date as 2 March 2024."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Samuel Ueda gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Medical report from Mercy General confirms loss of the left hand below the wrist. Arjun is still off work."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2203: dashboard warning lights"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §5.1",
+  "clause": "MT-PW §5.1",
+  "endorsement_set": "MEND-2023",
+  "limits": {
+   "coverage": "personal_accident",
+   "deductible": 0,
+   "sub_limit": 25000,
+   "policy_limit": 25000,
+   "source": "MT-PW §5.1; MPA-23 §1"
+  },
+  "assessed_loss": 25000,
+  "amount_paid": 25000
+ },
+ "pii": {
+  "claimant_name": "Arjun Oyelaran",
+  "address": "639 Juniper Place, Riverton, WY 82528",
+  "street": "639 Juniper Place",
+  "phone": "(555) 259-2632",
+  "email": "arjun.oyelaran@example.com",
+  "other_people": [
+   "Samuel Ueda",
+   "Bianca O'Connell"
+  ],
+  "injuries": [
+   "loss of the left hand below the wrist"
+  ]
+ }
+}

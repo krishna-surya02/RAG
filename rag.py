@@ -161,6 +161,105 @@ def answer(question, source="cli", request=None, user=None):
         tracing.write_trace(record, pii_values=[value for _, value, _ in found])
 
 
+# --- Week 12: claim questions against the wording in force on the loss date ---
+#
+# Same served path as answer() -- redact, retrieve, prompt, generate, trace --
+# with three differences the integration needed: retrieval is scoped by
+# product and loss date (retrieval.retrieve_in_force), citations come back as
+# structured objects built from chunk metadata rather than prose, and the text
+# goes through w12.guard, because this path also may not state a decision.
+TRIAGE_PROMPT_VERSION = "triage-v1"
+
+TRIAGE_PROMPT = PromptTemplate(
+    input_variables=["context", "question", "loss_date", "wording"],
+    template="""You are helping a claims adjuster read policy wording. You do not decide \
+coverage; the adjuster does.
+
+The wording below is what was in force for a loss on {loss_date}: {wording}. Use ONLY it.
+
+Answer the question by saying which clauses bear on it and what they say, quoting the \
+operative words. Name every clause by its ref exactly as shown in the brackets \
+(e.g. HFL-23 §2.2). Do not say a loss is covered, not covered, excluded, denied, approved \
+or payable -- say what the wording provides and what the adjuster should check.
+
+If a deductible, sub-limit or policy limit is relevant, give each under its own name; they \
+are different numbers and are never added together.
+
+If the clause the question needs is not in the wording below, say it was not retrieved; \
+its absence is not evidence about cover.
+
+Wording in force:
+{context}
+
+Question:
+{question}
+
+Answer:""",
+)
+TRIAGE_PROMPT_SHA256 = hashlib.sha256(TRIAGE_PROMPT.template.encode("utf-8")).hexdigest()
+
+
+def answer_claim(question, product, loss_date, endorsement_set=None, policy_number=None,
+                 tracer=None, source="cli", k=None):
+    """Answer a claim question from the wording in force on `loss_date`.
+
+    With a policy number, the endorsement set is taken from the policy term
+    covering the loss date; otherwise from the calendar date, and the result
+    says so. Returns {answer, citations, resolution, trace_id, cost_usd, guard}.
+    """
+    from w12 import citations, guard, store, trace as w12trace
+
+    tracer = tracer or w12trace.Tracer(service="rag")
+    k = k or config.TOP_K
+    with tracer.span("ask", "run", product=product, loss_date=str(loss_date), source=source,
+                     prompt_version=TRIAGE_PROMPT_VERSION) as root:
+        with tracer.span("redact", "redact") as sp:
+            clean, found = redact.redact(question)
+            tracer.add_pii([v for _, v, _ in found])
+            sp["attrs"]["redacted"] = redact.counts(found)
+        if policy_number and not endorsement_set:
+            facts = store.in_force(policy_number, loss_date)
+            endorsement_set = facts.get("endorsement_set")
+            root["attrs"]["in_force"] = facts.get("in_force")
+        with tracer.span("retrieval", "retrieval") as sp:
+            hits, resolution = retrieval.retrieve_in_force(clean, product, loss_date, endorsement_set, k=k)
+            sp["attrs"].update(hits=[h.meta["ref"] for h in hits], resolution=resolution)
+        context = "\n\n".join(
+            f"[{h.meta['ref']} | {h.meta['doc_id']} {h.meta['version']} | p.{h.page}]\n"
+            f"{h.text.split(chr(10), 1)[1] if chr(10) in h.text else h.text}" for h in hits)
+        wording = f"{resolution['base_wording']} with endorsement set {resolution['endorsement_set']} " \
+                  f"{resolution['endorsement_set_version']} (chosen by {resolution['resolved_by'].replace('_', ' ')})"
+        rendered = TRIAGE_PROMPT.format(context=context, question=clean, loss_date=loss_date, wording=wording)
+        llm = config.get_llm()
+        with tracer.span("generation", "llm") as sp:
+            sp["model"] = llm.model_name
+            message = llm.bind(seed=tracing.seed_for(tracer.trace_id)).invoke(rendered)
+            usage = (message.response_metadata or {}).get("token_usage") or {}
+            sp["prompt_tokens"] = usage.get("prompt_tokens", 0)
+            sp["completion_tokens"] = usage.get("completion_tokens", 0)
+        with tracer.span("guard", "guard") as sp:
+            text, tripped = guard.enforce(strip_think(message.content))
+            sp["attrs"]["tripped"] = tripped
+        # gpt-oss writes refs with non-breaking hyphens ("HFL\u201123"), so match
+        # on a hyphen-normalised copy or every citation silently goes missing.
+        said = re.sub(r"[\u2010-\u2015]", "-", message.content)
+        cited = [h for h in hits if h.meta["ref"] in said]
+        cits = []
+        for h in cited:
+            c = citations.build({**h.meta, "page": h.page}, loss_date, resolution["endorsement_set"],
+                                resolution["resolved_by"])
+            c["problems"] = citations.problems(c, resolution["endorsement_set"])
+            c["valid"] = not c["problems"]
+            cits.append(c)
+    result = {"trace_id": tracer.trace_id, "question": clean, "answer": text, "citations": cits,
+              "context_refs": [h.meta["ref"] for h in hits], "resolution": resolution,
+              "guard": {"tripped": bool(tripped), "found": tripped}, "prompt_version": TRIAGE_PROMPT_VERSION,
+              "prompt_sha256": TRIAGE_PROMPT_SHA256, **tracer.totals()}
+    w12trace.append(w12trace.runs_path(), {"ts": tracing.now_utc(), "kind": "ask", "app": tracing.app_version(),
+                                           "prompt_rendered": rendered, **result}, tracer.pii_values)
+    return result
+
+
 def answer_with_context(question, k=None):
     """Answer, and hand back the chunks it was answered from.
 

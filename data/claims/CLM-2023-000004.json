@@ -1,0 +1,51 @@
+{
+ "claim_id": "CLM-2023-000004",
+ "scenario": "not_in_force",
+ "product": "motor",
+ "policy_number": "MT-2023-00146",
+ "loss_date": "2023-04-10",
+ "reported_at": "2023-04-18",
+ "fnol_text": "My name is Priya O'Connell and I live at 141 Kestrel Avenue, Ashland, OR 97539. You can reach me on (555) 480-2550 or priya.oconnell@example.com. On 10 April 2023 another car pulled out of a side road and hit my front passenger side. The other driver, Mateo Mbeki, admitted they didn't see me. Policy MT-2023-00146. I'd like to claim for the damage to my car. I assume this is covered under my policy?",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr O'Connell on (555) 480-2550 to acknowledge the claim. Priya confirmed the loss date as 10 April 2023."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Anika Ferreira gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Third-party driver Mateo Mbeki reports lower back strain and attended Riverside Medical Center. Priya reports a mild concussion."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2201: front passenger side damage"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "NOT_IN_FORCE",
+  "clause": null,
+  "endorsement_set": null,
+  "limits": null,
+  "assessed_loss": 19100,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Priya O'Connell",
+  "address": "141 Kestrel Avenue, Ashland, OR 97539",
+  "street": "141 Kestrel Avenue",
+  "phone": "(555) 480-2550",
+  "email": "priya.oconnell@example.com",
+  "other_people": [
+   "Anika Ferreira",
+   "Mateo Mbeki"
+  ],
+  "injuries": [
+   "lower back strain",
+   "a mild concussion"
+  ]
+ }
+}

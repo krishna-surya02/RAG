@@ -1,0 +1,45 @@
+{
+ "claim_id": "CLM-2025-000167",
+ "scenario": "not_in_force",
+ "product": "household",
+ "policy_number": "HH-2025-00108",
+ "loss_date": "2025-12-14",
+ "reported_at": "2025-12-17",
+ "fnol_text": "My name is Ravi Gallagher and I live at 233 Sycamore Drive, Salem, MA 01957. You can reach me on (555) 967-7770 or ravi.gallagher@example.com. On 14 December 2025 a pipe under the upstairs bathroom burst while we were out and water came through the kitchen ceiling. Policy HH-2025-00108. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Gallagher on (555) 967-7770 to acknowledge the claim. Ravi confirmed the loss date as 14 December 2025."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 233 Sycamore Drive. Neighbour Rafael Ferreira was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0413: water line on the skirting boards"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "NOT_IN_FORCE",
+  "clause": null,
+  "endorsement_set": null,
+  "limits": null,
+  "assessed_loss": 13900,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Ravi Gallagher",
+  "address": "233 Sycamore Drive, Salem, MA 01957",
+  "street": "233 Sycamore Drive",
+  "phone": "(555) 967-7770",
+  "email": "ravi.gallagher@example.com",
+  "other_people": [
+   "Rafael Ferreira",
+   "Olusegun Pereira"
+  ],
+  "injuries": []
+ }
+}

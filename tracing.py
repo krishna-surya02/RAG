@@ -142,10 +142,12 @@ class Timer:
 # retrieved chunk ids; these are the rest.
 
 
-def cost_usd(prompt_tokens, completion_tokens):
+def cost_usd(prompt_tokens, completion_tokens, model=None):
+    """`model` picks the price from config.PRICES; None keeps the pre-week-12
+    behaviour (CHAT_MODEL's price), so existing traces cost the same."""
+    price_in, price_out = config.PRICES.get(model, (config.PRICE_INPUT_PER_M, config.PRICE_OUTPUT_PER_M))
     return round(
-        (prompt_tokens or 0) / 1_000_000 * config.PRICE_INPUT_PER_M
-        + (completion_tokens or 0) / 1_000_000 * config.PRICE_OUTPUT_PER_M,
+        (prompt_tokens or 0) / 1_000_000 * price_in + (completion_tokens or 0) / 1_000_000 * price_out,
         8,
     )
 

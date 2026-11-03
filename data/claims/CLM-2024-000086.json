@@ -1,0 +1,57 @@
+{
+ "claim_id": "CLM-2024-000086",
+ "scenario": "mt_collision",
+ "product": "motor",
+ "policy_number": "MT-2023-00073",
+ "loss_date": "2024-08-16",
+ "reported_at": "2024-08-24",
+ "fnol_text": "My name is Dana Ballard and I live at 466 Maple Drive, Ashland, OR 97577. You can reach me on (555) 912-9634 or dana.ballard@example.com. On 16 August 2024 another car pulled out of a side road and hit my front passenger side. The other driver, Hannah Whitlock, admitted they didn't see me. Policy MT-2023-00073. I'd like to claim for the damage to my car. Can you confirm I'm covered for this?",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Ballard on (555) 912-9634 to acknowledge the claim. Dana confirmed the loss date as 16 August 2024."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Rosa Khan gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Third-party driver Hannah Whitlock reports lower back strain and attended Riverside Medical Center. Dana reports a sprained ankle."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2203: dashboard warning lights",
+  "IMG_2201: front passenger side damage"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §3.1",
+  "clause": "MT-PW §3.1",
+  "endorsement_set": "MEND-2023",
+  "limits": {
+   "coverage": "own_damage",
+   "deductible": 750,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §3.1"
+  },
+  "assessed_loss": 3000,
+  "amount_paid": 2250
+ },
+ "pii": {
+  "claimant_name": "Dana Ballard",
+  "address": "466 Maple Drive, Ashland, OR 97577",
+  "street": "466 Maple Drive",
+  "phone": "(555) 912-9634",
+  "email": "dana.ballard@example.com",
+  "other_people": [
+   "Rosa Khan",
+   "Hannah Whitlock"
+  ],
+  "injuries": [
+   "lower back strain",
+   "a sprained ankle"
+  ]
+ }
+}

@@ -1,0 +1,56 @@
+{
+ "claim_id": "CLM-2025-000170",
+ "scenario": "mt_personal_accident",
+ "product": "motor",
+ "policy_number": "MT-2024-00125",
+ "loss_date": "2025-12-19",
+ "reported_at": "2025-12-25",
+ "fnol_text": "My name is Amara Nakamura and I live at 430 Foxglove Court, Madison, WI 53744. You can reach me on (555) 231-1905 or amara.nakamura@example.com. I was badly hurt when my car left the road on 19 December 2025. I suffered loss of the left hand below the wrist. Policy MT-2024-00125. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Nakamura on (555) 231-1905 to acknowledge the claim. Amara confirmed the loss date as 19 December 2025."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Liam Jovanovic gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Medical report from County General confirms loss of the left hand below the wrist. Amara is still off work."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2203: dashboard warning lights",
+  "IMG_2207: vehicle on the recovery truck"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §5.1",
+  "clause": "MT-PW §5.1",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "personal_accident",
+   "deductible": 0,
+   "sub_limit": 25000,
+   "policy_limit": 25000,
+   "source": "MT-PW §5.1; MPA-25 §1"
+  },
+  "assessed_loss": 25000,
+  "amount_paid": 25000
+ },
+ "pii": {
+  "claimant_name": "Amara Nakamura",
+  "address": "430 Foxglove Court, Madison, WI 53744",
+  "street": "430 Foxglove Court",
+  "phone": "(555) 231-1905",
+  "email": "amara.nakamura@example.com",
+  "other_people": [
+   "Liam Jovanovic",
+   "Lucia Haddad"
+  ],
+  "injuries": [
+   "loss of the left hand below the wrist"
+  ]
+ }
+}

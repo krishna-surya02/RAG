@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2026-000091",
+ "scenario": "mt_windscreen",
+ "product": "motor",
+ "policy_number": "MT-2023-00080",
+ "loss_date": "2026-08-24",
+ "reported_at": "2026-08-24",
+ "fnol_text": "My name is Esther Haddad and I live at 307 Cedar Terrace, Clinton, NC 28346. You can reach me on (555) 714-2353 or esther.haddad@example.com. A stone thrown up by a lorry cracked my windscreen right across on 24 August 2026. Policy MT-2023-00080. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Haddad on (555) 714-2353 to acknowledge the claim. Esther confirmed the loss date as 24 August 2026."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Samuel Nakamura gave a statement by phone."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2201: front passenger side damage",
+  "IMG_2207: vehicle on the recovery truck"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §4.1",
+  "clause": "MT-PW §4.1",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "windscreen",
+   "deductible": 150,
+   "sub_limit": 1500,
+   "policy_limit": 60000,
+   "source": "MT-PW §4.1; MWS-25 §1"
+  },
+  "assessed_loss": 1650,
+  "amount_paid": 1500
+ },
+ "pii": {
+  "claimant_name": "Esther Haddad",
+  "address": "307 Cedar Terrace, Clinton, NC 28346",
+  "street": "307 Cedar Terrace",
+  "phone": "(555) 714-2353",
+  "email": "esther.haddad@example.com",
+  "other_people": [
+   "Samuel Nakamura",
+   "Kwame Abernathy"
+  ],
+  "injuries": []
+ }
+}

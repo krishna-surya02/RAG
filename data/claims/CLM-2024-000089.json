@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2024-000089",
+ "scenario": "mt_theft_forced",
+ "product": "motor",
+ "policy_number": "MT-2024-00039",
+ "loss_date": "2024-08-31",
+ "reported_at": "2024-09-01",
+ "fnol_text": "My name is Naomi Delgado and I live at 411 Primrose Street, Madison, WI 53787. You can reach me on (555) 658-6787 or naomi.delgado@example.com. My car was stolen from outside the house overnight on 31 August 2024. Glass from the driver's window was on the road. Policy MT-2024-00039. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Delgado on (555) 658-6787 to acknowledge the claim. Naomi confirmed the loss date as 31 August 2024."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Dana Ferreira gave a statement by phone."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2201: front passenger side damage",
+  "IMG_2207: vehicle on the recovery truck"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §2.2",
+  "clause": "MT-PW §2.2",
+  "endorsement_set": "MEND-2023",
+  "limits": {
+   "coverage": "theft",
+   "deductible": 750,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §2.2"
+  },
+  "assessed_loss": 10550,
+  "amount_paid": 9800
+ },
+ "pii": {
+  "claimant_name": "Naomi Delgado",
+  "address": "411 Primrose Street, Madison, WI 53787",
+  "street": "411 Primrose Street",
+  "phone": "(555) 658-6787",
+  "email": "naomi.delgado@example.com",
+  "other_people": [
+   "Dana Ferreira",
+   "Rosa Raman"
+  ],
+  "injuries": []
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "claim_id": "CLM-2026-000098",
+ "scenario": "not_in_force",
+ "product": "household",
+ "policy_number": "HH-2023-00041",
+ "loss_date": "2026-09-01",
+ "reported_at": "2026-09-10",
+ "fnol_text": "My name is Felix Raman and I live at 342 Heather Street, Riverton, WY 82516. You can reach me on (555) 892-7058 or felix.raman@example.com. On 1 September 2026 a pipe under the upstairs bathroom burst while we were out and water came through the kitchen ceiling. Policy HH-2023-00041. I'd like to claim for the damage to my home. I assume this is covered under my policy?",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Raman on (555) 892-7058 to acknowledge the claim. Felix confirmed the loss date as 1 September 2026."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 342 Heather Street. Neighbour Imogen Whitlock was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0413: water line on the skirting boards"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "NOT_IN_FORCE",
+  "clause": null,
+  "endorsement_set": null,
+  "limits": null,
+  "assessed_loss": 19950,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Felix Raman",
+  "address": "342 Heather Street, Riverton, WY 82516",
+  "street": "342 Heather Street",
+  "phone": "(555) 892-7058",
+  "email": "felix.raman@example.com",
+  "other_people": [
+   "Imogen Whitlock",
+   "Dana Mensah"
+  ],
+  "injuries": []
+ }
+}

@@ -1,0 +1,58 @@
+{
+ "claim_id": "CLM-2025-000159",
+ "scenario": "mt_collision",
+ "product": "motor",
+ "policy_number": "MT-2025-00109",
+ "loss_date": "2025-12-03",
+ "reported_at": "2025-12-11",
+ "fnol_text": "My name is Dana Al-Sayed and I live at 929 Kestrel Court, Greenville, SC 29637. You can reach me on (555) 711-1779 or dana.alsayed@example.com. I was stopped at lights on 3 December 2025 when the car behind, driven by Kofi Laurent, went into the back of mine. Rear bumper and boot are badly damaged. Policy MT-2025-00109. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Al-Sayed on (555) 711-1779 to acknowledge the claim. Dana confirmed the loss date as 3 December 2025."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Chloe O'Connell gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Third-party driver Kofi Laurent reports a mild concussion and attended Riverside Medical Center. Dana reports minor burns to the hand."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2203: dashboard warning lights",
+  "IMG_2201: front passenger side damage"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §3.1",
+  "clause": "MT-PW §3.1",
+  "endorsement_set": "MEND-2023",
+  "limits": {
+   "coverage": "own_damage",
+   "deductible": 750,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §3.1"
+  },
+  "assessed_loss": 3600,
+  "amount_paid": 2850
+ },
+ "pii": {
+  "claimant_name": "Dana Al-Sayed",
+  "address": "929 Kestrel Court, Greenville, SC 29637",
+  "street": "929 Kestrel Court",
+  "phone": "(555) 711-1779",
+  "email": "dana.alsayed@example.com",
+  "other_people": [
+   "Chloe O'Connell",
+   "Kofi Laurent"
+  ],
+  "injuries": [
+   "a mild concussion",
+   "minor burns to the hand"
+  ]
+ }
+}

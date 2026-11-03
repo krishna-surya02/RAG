@@ -1,0 +1,54 @@
+{
+ "claim_id": "CLM-2025-000072",
+ "scenario": "hh_surface_water_crossboundary",
+ "product": "household",
+ "policy_number": "HH-2025-00116",
+ "loss_date": "2025-05-29",
+ "reported_at": "2025-05-30",
+ "fnol_text": "My name is Noor Brennan and I live at 715 Willow Drive, Riverton, WY 82541. You can reach me on (555) 549-8824 or noor.brennan@example.com. We had a cloudburst on 29 May 2025. The drains in the street could not cope and surface water from the road came up the drive and into the ground floor through the front door. Policy HH-2025-00116. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Brennan on (555) 549-8824 to acknowledge the claim. Noor confirmed the loss date as 29 May 2025."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 715 Willow Drive. Neighbour Valentina Jovanovic was present and confirmed the timeline."
+  },
+  {
+   "n": 3,
+   "text": "Noor sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0413: water line on the skirting boards",
+  "IMG_0417: damaged furniture stacked in the garage"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID_SUBLIMIT:HFL-23 §2.2",
+  "clause": "HFL-23 §2.2",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "flood_surface_water",
+   "deductible": 2500,
+   "sub_limit": 15000,
+   "policy_limit": 500000,
+   "source": "HFL-23 §2.2, §2.3; HSL-23 §1"
+  },
+  "assessed_loss": 38350,
+  "amount_paid": 15000
+ },
+ "pii": {
+  "claimant_name": "Noor Brennan",
+  "address": "715 Willow Drive, Riverton, WY 82541",
+  "street": "715 Willow Drive",
+  "phone": "(555) 549-8824",
+  "email": "noor.brennan@example.com",
+  "other_people": [
+   "Valentina Jovanovic",
+   "Aisha Moreau"
+  ],
+  "injuries": []
+ }
+}

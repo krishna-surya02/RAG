@@ -1,0 +1,45 @@
+{
+ "claim_id": "CLM-2026-000079",
+ "scenario": "not_in_force",
+ "product": "household",
+ "policy_number": "HH-2024-00049",
+ "loss_date": "2026-07-31",
+ "reported_at": "2026-08-02",
+ "fnol_text": "My name is Olusegun Fitzgerald and I live at 796 Cedar Street, Clinton, NC 28375. You can reach me on (555) 771-6110 or olusegun.fitzgerald@example.com. Our house was broken into on 31 July 2026. The back door was forced and a laptop, jewellery and a television were taken. Policy HH-2024-00049. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Dr Fitzgerald on (555) 771-6110 to acknowledge the claim. Olusegun confirmed the loss date as 31 July 2026."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 796 Cedar Street. Neighbour Imogen Zielinski was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0417: damaged furniture stacked in the garage",
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0413: water line on the skirting boards"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "NOT_IN_FORCE",
+  "clause": null,
+  "endorsement_set": null,
+  "limits": null,
+  "assessed_loss": 11950,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Olusegun Fitzgerald",
+  "address": "796 Cedar Street, Clinton, NC 28375",
+  "street": "796 Cedar Street",
+  "phone": "(555) 771-6110",
+  "email": "olusegun.fitzgerald@example.com",
+  "other_people": [
+   "Imogen Zielinski",
+   "Lucia McBride"
+  ],
+  "injuries": []
+ }
+}

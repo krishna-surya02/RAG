@@ -1,0 +1,54 @@
+{
+ "claim_id": "CLM-2026-000128",
+ "scenario": "mt_flood_25",
+ "product": "motor",
+ "policy_number": "MT-2025-00095",
+ "loss_date": "2026-10-11",
+ "reported_at": "2026-10-16",
+ "fnol_text": "My name is Dana Mbeki and I live at 233 Briar Court, Dover, DE 19918. You can reach me on (555) 951-5294 or dana.mbeki@example.com. On 11 October 2026 flash flooding came down the street while my car was parked at home. Water got into the cabin and the engine won't start. Policy MT-2025-00095. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Mbeki on (555) 951-5294 to acknowledge the claim. Dana confirmed the loss date as 11 October 2026."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Leila Raman gave a statement by phone."
+  },
+  {
+   "n": 3,
+   "text": "Dana sent photos and a contractor's estimate. Water line visible on walls."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2203: dashboard warning lights",
+  "IMG_2201: front passenger side damage"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MFL-25 §2.1",
+  "clause": "MFL-25 §2.1",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "flood",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MFL-25 §2.4"
+  },
+  "assessed_loss": 29900,
+  "amount_paid": 28900
+ },
+ "pii": {
+  "claimant_name": "Dana Mbeki",
+  "address": "233 Briar Court, Dover, DE 19918",
+  "street": "233 Briar Court",
+  "phone": "(555) 951-5294",
+  "email": "dana.mbeki@example.com",
+  "other_people": [
+   "Leila Raman",
+   "Bianca Zielinski"
+  ],
+  "injuries": []
+ }
+}

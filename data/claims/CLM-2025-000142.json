@@ -1,0 +1,50 @@
+{
+ "claim_id": "CLM-2025-000142",
+ "scenario": "hh_theft_let",
+ "product": "household",
+ "policy_number": "HH-2023-00075",
+ "loss_date": "2025-10-25",
+ "reported_at": "2025-11-02",
+ "fnol_text": "My name is Gabriel Ballard and I live at 767 Marigold Street, Salem, MA 01922. You can reach me on (555) 241-6910 or gabriel.ballard@example.com. I rent the spare room to a lodger. On 25 October 2025 I found my camera equipment and some cash missing. There is no sign of a break-in. Policy HH-2023-00075. I'd like to claim for the damage to my home.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Ms Ballard on (555) 241-6910 to acknowledge the claim. Gabriel confirmed the loss date as 25 October 2025."
+  },
+  {
+   "n": 2,
+   "text": "Site visit to 767 Marigold Street. Neighbour Valentina Raman was present and confirmed the timeline."
+  }
+ ],
+ "photo_captions": [
+  "IMG_0412: ground floor with standing water and wet carpets",
+  "IMG_0413: water line on the skirting boards"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:HX-15",
+  "clause": "HX-15",
+  "endorsement_set": "HEND-2023",
+  "limits": {
+   "coverage": "theft",
+   "deductible": 500,
+   "sub_limit": null,
+   "policy_limit": 75000,
+   "source": "HH-PW §1.10, §2.2"
+  },
+  "assessed_loss": 3900,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Gabriel Ballard",
+  "address": "767 Marigold Street, Salem, MA 01922",
+  "street": "767 Marigold Street",
+  "phone": "(555) 241-6910",
+  "email": "gabriel.ballard@example.com",
+  "other_people": [
+   "Valentina Raman",
+   "Jordan Oyelaran"
+  ],
+  "injuries": []
+ }
+}

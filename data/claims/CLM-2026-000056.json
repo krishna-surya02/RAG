@@ -1,0 +1,51 @@
+{
+ "claim_id": "CLM-2026-000056",
+ "scenario": "mt_theft_keys",
+ "product": "motor",
+ "policy_number": "MT-2024-00086",
+ "loss_date": "2026-06-05",
+ "reported_at": "2026-06-08",
+ "fnol_text": "My name is Dana Whitlock and I live at 12 Larkspur Close, Springfield, OH 45553. You can reach me on (555) 764-6786 or dana.whitlock@example.com. I left the engine running with the keys in while I ran into the shop on 5 June 2026 and someone drove off in my car. Policy MT-2024-00086. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mrs Whitlock on (555) 764-6786 to acknowledge the claim. Dana confirmed the loss date as 5 June 2026."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Gabriel Abernathy gave a statement by phone."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2207: vehicle on the recovery truck",
+  "IMG_2203: dashboard warning lights",
+  "IMG_2201: front passenger side damage"
+ ],
+ "final_decision": {
+  "outcome": "declined",
+  "reason_code": "EXCL:MX-6",
+  "clause": "MX-6",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "theft",
+   "deductible": 1000,
+   "sub_limit": null,
+   "policy_limit": 60000,
+   "source": "MT-PW §2.2"
+  },
+  "assessed_loss": 23100,
+  "amount_paid": 0
+ },
+ "pii": {
+  "claimant_name": "Dana Whitlock",
+  "address": "12 Larkspur Close, Springfield, OH 45553",
+  "street": "12 Larkspur Close",
+  "phone": "(555) 764-6786",
+  "email": "dana.whitlock@example.com",
+  "other_people": [
+   "Gabriel Abernathy",
+   "Dana Petrov"
+  ],
+  "injuries": []
+ }
+}

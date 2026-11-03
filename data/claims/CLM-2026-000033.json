@@ -1,0 +1,51 @@
+{
+ "claim_id": "CLM-2026-000033",
+ "scenario": "mt_windscreen",
+ "product": "motor",
+ "policy_number": "MT-2025-00131",
+ "loss_date": "2026-04-14",
+ "reported_at": "2026-04-23",
+ "fnol_text": "My name is Felix Vasquez and I live at 971 Juniper Street, Springfield, OH 45528. You can reach me on (555) 440-3369 or felix.vasquez@example.com. A stone thrown up by a lorry cracked my windscreen right across on 14 April 2026. Policy MT-2025-00131. I'd like to claim for the damage to my car.",
+ "adjuster_notes": [
+  {
+   "n": 1,
+   "text": "Called Mr Vasquez on (555) 440-3369 to acknowledge the claim. Felix confirmed the loss date as 14 April 2026."
+  },
+  {
+   "n": 2,
+   "text": "Vehicle inspected at the repairer. Witness Mei Khan gave a statement by phone."
+  }
+ ],
+ "photo_captions": [
+  "IMG_2201: front passenger side damage",
+  "IMG_2203: dashboard warning lights",
+  "IMG_2207: vehicle on the recovery truck"
+ ],
+ "final_decision": {
+  "outcome": "paid",
+  "reason_code": "PAID:MT-PW §4.1",
+  "clause": "MT-PW §4.1",
+  "endorsement_set": "MEND-2025",
+  "limits": {
+   "coverage": "windscreen",
+   "deductible": 150,
+   "sub_limit": 1500,
+   "policy_limit": 60000,
+   "source": "MT-PW §4.1; MWS-25 §1"
+  },
+  "assessed_loss": 650,
+  "amount_paid": 500
+ },
+ "pii": {
+  "claimant_name": "Felix Vasquez",
+  "address": "971 Juniper Street, Springfield, OH 45528",
+  "street": "971 Juniper Street",
+  "phone": "(555) 440-3369",
+  "email": "felix.vasquez@example.com",
+  "other_people": [
+   "Mei Khan",
+   "Zara Vasquez"
+  ],
+  "injuries": []
+ }
+}
